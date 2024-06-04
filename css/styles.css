@@ -1,0 +1,104 @@
+/* Mobile First Design */
+body {
+  font-family: 'Arial', sans-serif;
+  scroll-behavior: smooth; /* Smooth scroll */
+  background-color: #121212; /* Dark background */
+}
+
+.navbar {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-item {
+  color: #ffffff; /* White text */
+}
+
+.hero, .parallax {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero {
+  background-image: url('https://via.placeholder.com/1500x500/000000/FFFFFF');
+}
+
+.parallax {
+  background-attachment: fixed;
+}
+
+#section2 {
+  background-image: url('https://via.placeholder.com/1500x500/1a1a1a/FFFFFF');
+}
+
+#section3 {
+  background-image: url('https://via.placeholder.com/1500x500/2e2e2e/FFFFFF');
+}
+
+#section4 {
+  background-color: #121212; /* Dark background */
+}
+
+#section4 .box {
+  background-color: #1e1e1e; /* Dark box background */
+  border: 1px solid #333; /* Border color */
+}
+
+#section4 .title, #section4 .subtitle, #section4 .label {
+  color: #ffffff; /* Light text */
+}
+
+#section4 .has-text-grey-light {
+  color: #b0b0b0; /* Light grey text */
+}
+
+#section4 .input, #section4 .textarea {
+  background-color: #333; /* Dark input background */
+  border: 1px solid #444; /* Dark input border */
+  color: #ffffff; /* Light text */
+}
+
+#section4 .input::placeholder, #section4 .textarea::placeholder {
+  color: #b0b0b0; /* Light grey placeholder text */
+}
+
+#section4 .button.is-primary.is-outlined {
+  border-color: #00d1b2; /* Primary color outline */
+  color: #00d1b2; /* Primary color text */
+}
+
+
+.section {
+  padding: 6rem 1.5rem;
+  color: white;
+}
+
+.box {
+  background-color: #1e1e1e; /* Dark box background */
+  border: 1px solid #333; /* Border color */
+}
+
+.has-text-light {
+  color: #ffffff; /* Light text */
+}
+
+.has-text-grey-light {
+  color: #b0b0b0; /* Light grey text */
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .section {
+    padding: 12rem 3rem;
+  }
+
+  .hero-body {
+    padding: 12rem 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-body {
+    padding: 12rem 6rem;
+  }
+}
