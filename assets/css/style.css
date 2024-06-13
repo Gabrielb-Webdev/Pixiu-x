@@ -602,3 +602,123 @@ button:focus {
     height: 100vh;
   }
 }
+
+.services {
+  display: flex;
+  justify-content: center; /* Centra las tarjetas horizontalmente */
+  align-items: center; /* Centra las tarjetas verticalmente */
+  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan cuando no hay suficiente espacio */
+  height: 100vh;
+  max-height: 200vh;
+  padding: 20px;
+  background-color: #000; /* Cambia el color de fondo de la sección */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  height: 600px;
+  padding: 20px;
+  margin: 75px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 10px 15px -3px rgba(33, 150, 243, .4), 0 4px 6px -4px rgba(33, 150, 243, .4);
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #8B0000, #FF4500, #FFA500); /* Gradiente de rojo oscuro a naranja oscuro vertical */
+  color: white;
+}
+
+.content {
+  flex: 1; /* Hace que el contenido ocupe todo el espacio disponible verticalmente */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.content .price {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.42);
+}
+
+.content .description {
+  /* color: rgba(255, 255, 255, 0.6); */
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.content .title {
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+button {
+  border: none;
+  outline: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .75rem;
+  padding: 10px 20px;
+  background-color: #FF4500; /* Color rojo */
+  border-radius: 0.5rem;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #FFA500; /* Color naranja */
+}
+
+.description {
+  color: transparent; /* Hace que el texto sea transparente */
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 1.5; /* Ajusta la altura de línea si es necesario */
+}
+
+.skeleton {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.1); /* Color de fondo del skeleton */
+  overflow: hidden;
+}
+
+.skeleton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0.2) 50%, transparent 100%);
+  animation: loading 1.5s infinite linear; /* Animación del efecto de carga */
+}
+
+@keyframes loading {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .services {
+    height: auto; /* Elimina la altura fija en dispositivos más pequeños */
+  }
+  .card {
+    width: 100%; /* Ocupa todo el ancho disponible en dispositivos más pequeños */
+    height: auto; /* Deja que la altura se ajuste al contenido en dispositivos más pequeños */
+    margin-bottom: 20px; /* Espacio entre tarjetas en dispositivos más pequeños */
+    margin: 20px;
+  }
+}
