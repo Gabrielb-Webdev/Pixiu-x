@@ -604,11 +604,23 @@ button:focus {
 }
 
 .services {
+  padding: 20px;
+  background-color: #000;
+  text-align: center;
+}
+
+.section-title {
+  color: #fff;
+  font-weight: bold;
+  margin-top: 5rem;
+}
+
+.serices-card {
   display: flex;
   justify-content: center; /* Centra las tarjetas horizontalmente */
   align-items: center; /* Centra las tarjetas verticalmente */
   flex-wrap: wrap; /* Permite que las tarjetas se envuelvan cuando no hay suficiente espacio */
-  height: 100vh;
+  height: 80vh;
   max-height: 200vh;
   padding: 20px;
   background-color: #000; /* Cambia el color de fondo de la sección */
@@ -624,7 +636,6 @@ button:focus {
   margin: 75px;
   text-align: center;
   cursor: pointer;
-  box-shadow: 0 10px 15px -3px rgba(33, 150, 243, .4), 0 4px 6px -4px rgba(33, 150, 243, .4);
   border-radius: 10px;
   background: linear-gradient(to bottom, #8B0000, #FF4500, #FFA500); /* Gradiente de rojo oscuro a naranja oscuro vertical */
   color: white;

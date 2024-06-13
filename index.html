@@ -1,146 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Pixiu X</title>
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
-        <link rel="stylesheet" href="assets/css/animate.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pixiu X</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-    <body>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top custom-nav sticky">
+      <div class="container">
+        <a class="navbar-brand logo" href="index.html">
+          <h1>Pixiu X</h1>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="true"
+          aria-label="Toggle navigation"
+        >
+          <i class="mdi mdi-menu"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Services" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-        <nav class="navbar navbar-expand-lg fixed-top custom-nav sticky">
-            <div class="container">
-                <a class='navbar-brand logo' href='index.html'>
-                        <h1>Pixiu X</h1>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
-                        <i class="mdi mdi-menu"></i>
-                    </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="#about" class="nav-link">About</a>
-                      </li>
-                        <li class="nav-item">
-                            <a href="#Services" class="nav-link">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+    <section class="home-bg section h-100vh" id="home">
+      <div class="bg-overlay"></div>
+      <div class="container z-index">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="text-white text-center">
+              <h1 class="header_title mb-0 mt-3">
+                We Are
+                <span
+                  class="element fw-bold"
+                  data-elements="Web Developers., Hubspot Experts"
+                ></span>
+              </h1>
             </div>
-        </nav>
-
-        <section class="home-bg section h-100vh" id="home">
-            <div class="bg-overlay"></div>
-                <div class="container z-index">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-12">
-                            <div class="text-white text-center">
-                                <h1 class="header_title mb-0 mt-3">We Are <span class="element fw-bold" data-elements="Web Developers., Hubspot Experts"></span></h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <div class="scroll_down">
-                <a href="#about" class="scroll">
-                    <i class="mbri-arrow-down text-white"></i>
-                </a>
-            </div>
-        </section>
-
-        <section class="about-us section bg-dark text-white h-100vh d-flex align-items-center" id="about" style="max-height: 200vh;">
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-6" data-aos="zoom-in" data-aos-duration="1500">
-                      <h2 class="section-title">About Us</h2>
-                      <p class="mb-4">Pixiu X is a web development company committed to delivering cutting-edge solutions. Since our inception in 2010, we have consistently innovated to meet the evolving needs of our clients. Our team consists of passionate developers, designers, and project managers dedicated to delivering high-quality products.</p>
-                      <h4>Our Mission</h4>
-                      <p>Our mission is to empower businesses by creating innovative and efficient web solutions. We strive to exceed our clients' expectations with top-notch service and support.</p>
-                      <h4>Our Values</h4>
-                      <ul>
-                          <li>Integrity</li>
-                          <li>Innovation</li>
-                          <li>Excellence</li>
-                          <li>Customer Satisfaction</li>
-                      </ul>
-                      <h4>Why Choose Us?</h4>
-                      <p>We understand the importance of effective communication, transparent collaboration, and streamlined project management. With our expertise, we transform ideas into reality, providing tailored solutions to meet your specific business goals.</p>
-                  </div>
-                  <div class="col-lg-6 d-flex justify-content-center align-items-center" data-aos="fade-right" data-aos-duration="1500">
-                      <img src="https://via.placeholder.com/400x600?text=Vertical+Image" class="img-fluid rounded" alt="About Us Image">
-                  </div>
-              </div>
           </div>
-      </section>
+        </div>
+      </div>
+      <div class="scroll_down">
+        <a href="#about" class="scroll">
+          <i class="mbri-arrow-down text-white"></i>
+        </a>
+      </div>
+    </section>
 
-      <section class="services" id="Services">
+    <section
+      class="about-us section bg-dark text-white h-100vh d-flex align-items-center"
+      id="about"
+      style="max-height: 200vh"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-duration="1500">
+            <h2 class="section-title">About Us</h2>
+            <p class="mb-4">
+              Pixiu X is a web development company committed to delivering
+              cutting-edge solutions. Since our inception in 2010, we have
+              consistently innovated to meet the evolving needs of our clients.
+              Our team consists of passionate developers, designers, and project
+              managers dedicated to delivering high-quality products.
+            </p>
+            <h4>Our Mission</h4>
+            <p>
+              Our mission is to empower businesses by creating innovative and
+              efficient web solutions. We strive to exceed our clients'
+              expectations with top-notch service and support.
+            </p>
+            <h4>Our Values</h4>
+            <ul>
+              <li>Integrity</li>
+              <li>Innovation</li>
+              <li>Excellence</li>
+              <li>Customer Satisfaction</li>
+            </ul>
+            <h4>Why Choose Us?</h4>
+            <p>
+              We understand the importance of effective communication,
+              transparent collaboration, and streamlined project management.
+              With our expertise, we transform ideas into reality, providing
+              tailored solutions to meet your specific business goals.
+            </p>
+          </div>
+          <div
+            class="col-lg-6 d-flex justify-content-center align-items-center"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            <img
+              src="https://via.placeholder.com/400x600?text=Vertical+Image"
+              class="img-fluid rounded"
+              alt="About Us Image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="Services">
+      <div class="section-title">
+        <h2>Services</h2>
+      </div>
+      <div class="serices-card">
         <div class="card">
-            <div class="content">
-              <div class="title">Website Development</div>
-              <div class="description skeleton">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam tempore ipsa distinctio deleniti numquam debitis, itaque, rem veritatis repellat velit praesentium corporis animi unde voluptatem ratione similique quo possimus.</div>
-              <div class="price">$39.99</div>
+          <div class="content">
+            <div class="title">Website Development</div>
+            <div class="description skeleton">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem,
+              ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+              quibusdam tempore ipsa distinctio deleniti numquam debitis,
+              itaque, rem veritatis repellat velit praesentium corporis animi
+              unde voluptatem ratione similique quo possimus.
             </div>
-            <button>Contact Us</button>
+            <div class="price">$39.99</div>
           </div>
-          <div class="card">
-            <div class="content">
-              <div class="title">Hubspot Sercives</div>
-              <div class="description skeleton">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam tempore ipsa distinctio deleniti numquam debitis, itaque, rem veritatis repellat velit praesentium corporis animi unde voluptatem ratione similique quo possimus.</div>
-              <div class="price">$59.99</div>
+          <button>Contact Us</button>
+        </div>
+        <div class="card">
+          <div class="content">
+            <div class="title">Hubspot Sercives</div>
+            <div class="description skeleton">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem,
+              ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+              quibusdam tempore ipsa distinctio deleniti numquam debitis,
+              itaque, rem veritatis repellat velit praesentium corporis animi
+              unde voluptatem ratione similique quo possimus.
             </div>
-            <button>Contact Us</button>
+            <div class="price">$59.99</div>
           </div>
-          <div class="card">
-            <div class="content">
-              <div class="title">Consultancy Services</div>
-              <div class="description skeleton">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam tempore ipsa distinctio deleniti numquam debitis, itaque, rem veritatis repellat velit praesentium corporis animi unde voluptatem ratione similique quo possimus.</div>
-              <div class="price">$99.99</div>
+          <button>Contact Us</button>
+        </div>
+        <div class="card">
+          <div class="content">
+            <div class="title">Consultancy Services</div>
+            <div class="description skeleton">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem,
+              ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+              quibusdam tempore ipsa distinctio deleniti numquam debitis,
+              itaque, rem veritatis repellat velit praesentium corporis animi
+              unde voluptatem ratione similique quo possimus.
             </div>
-            <button>Contact Us</button>
+            <div class="price">$99.99</div>
           </div>
-        </section>
-                            
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+          <button>Contact Us</button>
+        </div>
+      </div>
+    </section>
 
-         <script src="assets/js/jquery.min.js"></script>
-         <script src="assets/js/typed.js"></script>     
-         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>    
-        <script>
-            $(".element").each(function() {
-                var $this = $(this);
-                $this.typed({
-                    strings: $this.attr('data-elements').split(','),
-                    typeSpeed: 100,
-                    backDelay: 3000
-                });
-            });
-        </script>
-        <script>
-          AOS.init();
-      </script>
-      <script>
-        window.addEventListener('scroll', function() {
-            var navbar = document.querySelector('.navbar');
-            if(window.scrollY > 50) {
-                navbar.classList.add('bg-black');
-            } else {
-                navbar.classList.remove('bg-black');
-            }
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/typed.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      $(".element").each(function () {
+        var $this = $(this);
+        $this.typed({
+          strings: $this.attr("data-elements").split(","),
+          typeSpeed: 100,
+          backDelay: 3000,
         });
+      });
     </script>
-    
-    </body>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      window.addEventListener("scroll", function () {
+        var navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("bg-black");
+        } else {
+          navbar.classList.remove("bg-black");
+        }
+      });
+    </script>
+  </body>
 </html>
