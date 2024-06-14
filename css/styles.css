@@ -110,3 +110,10 @@ header {
     color: #f0ad4e;
     /* Cambio de color al pasar el ratón */
 }
+
+@media (max-width: 767.98px) {
+    .mt-md-0 {
+        margin-top: 5rem;
+        /* Adjust this value to increase or decrease the space */
+    }
+}
