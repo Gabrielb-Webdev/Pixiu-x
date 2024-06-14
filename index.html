@@ -1,217 +1,455 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Pixiu X</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/materialdesignicons.min.css" />
-    <link rel="stylesheet" href="assets/css/animate.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg fixed-top custom-nav sticky">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Pixiu X</title>
+</head>
+
+<body>
+  <!-- Page Content -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
       <div class="container">
-        <a class="navbar-brand logo" href="index.html">
-          <h1>Pixiu X</h1>
+        <a class="navbar-brand" href="#">
+          <img src="sources/images/logo.avif" alt="Pixiu X Logo" width="100" height="auto">
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="true"
-          aria-label="Toggle navigation"
-        >
-          <i class="mdi mdi-menu"></i>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a href="#" class="nav-link">Home</a>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#about" class="nav-link">About</a>
+              <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a href="#Services" class="nav-link">Services</a>
+              <a class="nav-link" href="#">Services</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Contact</a>
+              <a class="nav-link" href="#">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+  </header>
 
-    <section class="home-bg section h-100vh" id="home">
-      <div class="bg-overlay"></div>
-      <div class="container z-index">
-        <div class="row justify-content-center">
-          <div class="col-lg-12">
-            <div class="text-white text-center">
-              <h1 class="header_title mb-0 mt-3">
-                We Are
-                <span
-                  class="element fw-bold"
-                  data-elements="Web Developers., Hubspot Experts"
-                ></span>
-              </h1>
+  <!-- Section 1: Title, text, buttons, and wireframe image -->
+  <section class="section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>Section Title 1</h2>
+          <p>Description text about the section.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 offset-md-3 text-center">
+          <a href="#" class="btn btn-primary btn-lg btn-block">Button 1</a>
+          <a href="#" class="btn btn-secondary btn-lg btn-block mt-2">Button 2</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center mt-4">
+          <img src="https://via.placeholder.com/800x400.png?text=Example" alt="Wireframe Example" class="img-fluid"
+            style="max-width: 100%;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Title, long paragraph, button, and cards with icons -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>Section Title 2</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eu ex accumsan, vitae
+            dictum lorem ullamcorper. Quisque sed turpis non leo malesuada placerat. Proin nec justo a lorem congue
+            tristique. Duis a efficitur urna, a suscipit nisi.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <a href="#" class="btn btn-primary btn-lg">Read More</a>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <i class="fas fa-cog fa-2x mb-3"></i>
+              <h5 class="card-title">Card Title 1</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <i class="fas fa-laptop fa-2x mb-3"></i>
+              <h5 class="card-title">Card Title 2</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <i class="fas fa-lightbulb fa-2x mb-3"></i>
+              <h5 class="card-title">Card Title 3</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <i class="fas fa-bell fa-2x mb-3"></i>
+              <h5 class="card-title">Card Title 4</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <i class="fas fa-pen fa-2x mb-3"></i>
+              <h5 class="card-title">Card Title 5</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <i class="fas fa-map-marker-alt fa-2x mb-3"></i>
+              <h5 class="card-title">Card Title 6</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="scroll_down">
-        <a href="#about" class="scroll">
-          <i class="mbri-arrow-down text-white"></i>
+    </div>
+  </section>
+
+  <!-- Section 3: Title, paragraphs, button, and wireframe image -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>Section Title 3</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p><strong>Sub_Title 1: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis
+            libero eu ex accumsan, vitae dictum lorem ullamcorper.</p>
+        </div>
+        <div class="col-12">
+          <p><strong>Sub_Title 2: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis
+            libero eu ex accumsan, vitae dictum lorem ullamcorper.</p>
+        </div>
+        <div class="col-12">
+          <p><strong>Sub_Title 3: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis
+            libero eu ex accumsan, vitae dictum lorem ullamcorper.</p>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-12">
+          <a href="#" class="btn btn-primary btn-lg">Learn More</a>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12 text-center">
+          <img src="https://via.placeholder.com/800x400.png?text=Example" alt="Wireframe Example" class="img-fluid"
+            style="max-width: 100%;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Title, long paragraph, button, and 4 cards with icons -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>Section Title 4</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eu ex accumsan, vitae
+            dictum lorem ullamcorper. Quisque sed turpis non leo malesuada placerat. Proin nec justo a lorem congue
+            tristique. Duis a efficitur urna, a suscipit nisi.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <a href="#" class="btn btn-primary btn-lg">Read More</a>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg-6 col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <i class="fas fa-cog fa-2x mb-3"></i>
+              <h5 class="card-title">Card Title 1</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <i class="fas fa-laptop fa-2x mb-3"></i>
+              <h5 class="card-title">Card Title 2</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <i class="fas fa-lightbulb fa-2x mb-3"></i>
+              <h5 class="card-title">Card Title 3</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <i class="fas fa-bell fa-2x mb-3"></i>
+              <h5 class="card-title">Card Title 4</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Title, wireframe image, paragraphs, and button -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>Section Title 5</h2>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12 text-center">
+          <img src="https://via.placeholder.com/800x400.png?text=Example" alt="Wireframe Example" class="img-fluid"
+            style="max-width: 100%;">
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12">
+          <p><strong>Sub_Title 1: </strong>Lorem ipsum dolor sit amet.</p>
+          <p><strong>Sub_Title 2: </strong>Lorem ipsum dolor sit amet.</p>
+          <p><strong>Sub_Title 3: </strong>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <a href="#" class="btn btn-primary btn-lg">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Title and text carousel -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>Section Title 6</h2>
+        </div>
+      </div>
+      <div id="textCarousel" class="carousel slide mt-4" data-ride="carousel">
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-block w-100 text-center">
+              <h5>Step 1: Title</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eu ex accumsan, vitae
+                dictum lorem ullamcorper.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-block w-100 text-center">
+              <h5>Step 2: Title</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eu ex accumsan, vitae
+                dictum lorem ullamcorper.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-block w-100 text-center">
+              <h5>Step 3: Title</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eu ex accumsan, vitae
+                dictum lorem ullamcorper.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-block w-100 text-center">
+              <h5>Step 4: Title</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eu ex accumsan, vitae
+                dictum lorem ullamcorper.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-block w-100 text-center">
+              <h5>Step 5: Title</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eu ex accumsan, vitae
+                dictum lorem ullamcorper.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators mt-4">
+          <li data-target="#textCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#textCarousel" data-slide-to="1"></li>
+          <li data-target="#textCarousel" data-slide-to="2"></li>
+          <li data-target="#textCarousel" data-slide-to="3"></li>
+          <li data-target="#textCarousel" data-slide-to="4"></li>
+        </ol>
+
+        <!-- Controls (hidden on mobile) -->
+        <a class="carousel-control-prev d-none d-md-block" href="#textCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(100%);"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next d-none d-md-block" href="#textCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(100%);"></span>
+          <span class="sr-only">Next</span>
         </a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section
-      class="about-us section bg-dark text-white h-100vh d-flex align-items-center"
-      id="about"
-      style="max-height: 200vh"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-duration="1500">
-            <h2 class="section-title">About Us</h2>
-            <p class="mb-4">
-              Pixiu X is a web development company committed to delivering
-              cutting-edge solutions. Since our inception in 2010, we have
-              consistently innovated to meet the evolving needs of our clients.
-              Our team consists of passionate developers, designers, and project
-              managers dedicated to delivering high-quality products.
-            </p>
-            <h4>Our Mission</h4>
-            <p>
-              Our mission is to empower businesses by creating innovative and
-              efficient web solutions. We strive to exceed our clients'
-              expectations with top-notch service and support.
-            </p>
-            <h4>Our Values</h4>
-            <ul>
-              <li>Integrity</li>
-              <li>Innovation</li>
-              <li>Excellence</li>
-              <li>Customer Satisfaction</li>
-            </ul>
-            <h4>Why Choose Us?</h4>
-            <p>
-              We understand the importance of effective communication,
-              transparent collaboration, and streamlined project management.
-              With our expertise, we transform ideas into reality, providing
-              tailored solutions to meet your specific business goals.
-            </p>
-          </div>
-          <div
-            class="col-lg-6 d-flex justify-content-center align-items-center"
-            data-aos="fade-right"
-            data-aos-duration="1500"
-          >
-            <img
-              src="https://via.placeholder.com/400x600?text=Vertical+Image"
-              class="img-fluid rounded"
-              alt="About Us Image"
-            />
+  <!-- Section 7: Calendar for scheduling calls/meetings -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>Schedule a Call or Meeting</h2>
+          <p>Select a date and time for your appointment:</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <!-- Aquí colocamos el cuadro grande de wireframe con el texto "Calendario" -->
+          <div class="wireframe-box text-center">
+            <h3>Calendario</h3>
+            <img src="https://via.placeholder.com/800x600.png?text=Calendario" alt="Calendario" class="img-fluid">
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="services" id="Services">
-      <div class="section-title">
-        <h2>Services</h2>
-      </div>
-      <div class="serices-card">
-        <div class="card">
-          <div class="content">
-            <div class="title">Website Development</div>
-            <div class="description skeleton">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem,
-              ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-              quibusdam tempore ipsa distinctio deleniti numquam debitis,
-              itaque, rem veritatis repellat velit praesentium corporis animi
-              unde voluptatem ratione similique quo possimus.
-            </div>
-            <div class="price">$39.99</div>
-          </div>
-          <button>Contact Us</button>
-        </div>
-        <div class="card">
-          <div class="content">
-            <div class="title">Hubspot Sercives</div>
-            <div class="description skeleton">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem,
-              ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-              quibusdam tempore ipsa distinctio deleniti numquam debitis,
-              itaque, rem veritatis repellat velit praesentium corporis animi
-              unde voluptatem ratione similique quo possimus.
-            </div>
-            <div class="price">$59.99</div>
-          </div>
-          <button>Contact Us</button>
-        </div>
-        <div class="card">
-          <div class="content">
-            <div class="title">Consultancy Services</div>
-            <div class="description skeleton">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem,
-              ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-              quibusdam tempore ipsa distinctio deleniti numquam debitis,
-              itaque, rem veritatis repellat velit praesentium corporis animi
-              unde voluptatem ratione similique quo possimus.
-            </div>
-            <div class="price">$99.99</div>
-          </div>
-          <button>Contact Us</button>
+  <!-- Section 8: Dark orange background with centered title and paragraph -->
+  <section class="section bg-darkorange text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>Section Title 8</h2>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<!-- Footer -->
+<footer class="footer bg-dark text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <h5>Company</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Investors</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <h5>Services</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">Graphic Design</a></li>
+          <li><a href="#">SEO Services</a></li>
+          <li><a href="#">Digital Marketing</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <h5>Case Study</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Case Study 1</a></li>
+          <li><a href="#">Case Study 2</a></li>
+          <li><a href="#">Case Study 3</a></li>
+          <li><a href="#">Case Study 4</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <h5>Office</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Location</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/typed.js"></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <script>
-      $(".element").each(function () {
-        var $this = $(this);
-        $this.typed({
-          strings: $this.attr("data-elements").split(","),
-          typeSpeed: 100,
-          backDelay: 3000,
-        });
-      });
-    </script>
-    <script>
-      AOS.init();
-    </script>
-    <script>
-      window.addEventListener("scroll", function () {
-        var navbar = document.querySelector(".navbar");
-        if (window.scrollY > 50) {
-          navbar.classList.add("bg-black");
-        } else {
-          navbar.classList.remove("bg-black");
+  <!-- Scripts at the end of the body -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core/main.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid/main.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/timegrid/main.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/interaction/main.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var calendarEl = document.getElementById('calendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        plugins: ['dayGrid', 'timeGrid', 'interaction'],
+        header: {
+          left: 'prev,next today',
+          center: 'title',
+          right: 'dayGridMonth,timeGridWeek,timeGridDay'
+        },
+        editable: true,
+        selectable: true,
+        dateClick: function (info) {
+          alert('Date: ' + info.dateStr);
         }
       });
-    </script>
-  </body>
+      calendar.render();
+    });
+  </script>
+
+  <script src="js/scripts.js"></script>
+</body>
+
 </html>

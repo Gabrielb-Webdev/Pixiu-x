@@ -1,0 +1,112 @@
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #fff;
+    /* Fondo blanco */
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0,0,0,0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-brand img {
+    max-width: 150px;
+    /* Ajusta el ancho máximo según sea necesario */
+    height: auto;
+    /* Para mantener la proporción */
+    vertical-align: middle;
+    /* Alineación vertical centrada */
+}
+
+/* Estilo para el header */
+header {
+    margin-bottom: 20px;
+    /* Ajusta el margen inferior según sea necesario */
+}
+
+/* Estilo para la sección principal */
+.section {
+    padding-top: 20px;
+    /* Añade espacio superior a la sección */
+    padding-bottom: 20px;
+    /* Añade espacio inferior a la sección */
+}
+
+.carousel-indicators {
+    position: relative;
+    bottom: -20px;
+    /* Adjust this value to move the indicators lower */
+    color: black;
+    /* Set indicator color */
+}
+
+.carousel-indicators li {
+    background-color: black;
+    /* Set indicator bullet color */
+    border: none;
+    /* Remove indicator bullet border */
+    box-shadow: none;
+    /* Remove indicator bullet box shadow */
+    margin-right: 5px;
+    /* Adjust space between indicators */
+    width: 10px;
+    /* Set indicator bullet width */
+    height: 10px;
+    /* Set indicator bullet height */
+    border-radius: 50%;
+    /* Round indicator bullet */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    margin-top: -30px;
+    /* Adjust space between controls and carousel */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    /* Ensure controls are black */
+    border-radius: 50%;
+    /* Round control button */
+}
+
+.bg-darkorange {
+    background-color: #FFA500;
+    /* Cambia el color a tu preferencia */
+    padding: 50px 0;
+    /* Ajusta el padding según sea necesario */
+}
+
+.bg-darkorange h2 {
+    font-size: 36px;
+    /* Tamaño de fuente para el título */
+}
+
+.bg-darkorange p {
+    font-size: 18px;
+    /* Tamaño de fuente para el párrafo */
+}
+
+.footer {
+    padding: 50px 0;
+    /* Ajusta el padding según sea necesario */
+}
+
+.footer h5 {
+    font-size: 18px;
+    /* Tamaño de fuente para los títulos */
+    font-weight: bold;
+    /* Opcional: si deseas negrita */
+}
+
+.footer ul li a {
+    color: #ffffff;
+    /* Color del texto */
+    text-decoration: none;
+    /* Sin subrayado */
+}
+
+.footer ul li a:hover {
+    color: #f0ad4e;
+    /* Cambio de color al pasar el ratón */
+}
