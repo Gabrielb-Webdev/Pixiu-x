@@ -1,3 +1,7 @@
+body {
+    user-select: none;
+}
+
 /* Estilos para la barra de navegación */
 .navbar {
     background-color: #fff;
@@ -138,4 +142,11 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+}
+
+.icon-image {
+    width: 2em; /* Ajusta el tamaño según tus necesidades */
+    height: 2em;
+    /* margin-bottom: 1rem; Mantiene el margen inferior similar al ícono anterior */
 }
