@@ -160,3 +160,8 @@ header {
         max-width: calc(80vw - 30px);
     }
 }
+@media (max-width: 500px) {
+    .section {
+        padding-top: 5rem;
+    }
+}
