@@ -9,7 +9,7 @@
 }
 
 .navbar-brand img {
-    max-width: 150px;
+    width: 200px;
     /* Ajusta el ancho máximo según sea necesario */
     height: auto;
     /* Para mantener la proporción */
@@ -25,10 +25,9 @@ header {
 
 /* Estilo para la sección principal */
 .section {
-    padding-top: 20px;
-    /* Añade espacio superior a la sección */
+    padding-top: 7.5%;
     padding-bottom: 20px;
-    /* Añade espacio inferior a la sección */
+    min-height: 500px;
 }
 
 .carousel-indicators {
@@ -116,4 +115,27 @@ header {
         margin-top: 5rem;
         /* Adjust this value to increase or decrease the space */
     }
+}
+
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1400px;
+    }
+}
+
+.container-fluid {
+    max-width: 1400px; /* Ancho máximo de 1400px */
+    margin: 0 auto; /* Centrado horizontal */
+    padding-left: 15px; /* Añade padding a izquierda */
+    padding-right: 15px; /* Añade padding a derecha */
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 20rem;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
