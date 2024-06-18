@@ -1,0 +1,7 @@
+agregar seccion con los servicios en scrapping
+agrega el formulario de contacto
+mejorar el mapa de pasos
+mejorar la calidad del logo
+agregarle el color a los botones
+quitar links del footer y que solo sea texto
+agrandar el logo un poco mas
