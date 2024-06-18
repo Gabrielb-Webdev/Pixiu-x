@@ -138,18 +138,21 @@ header {
 .card-body {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
-    min-height: 20rem;
-    padding: 1.25rem;
+    min-height: 16rem;
+    padding: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
+}
+
+.card-body .card-text {
+    text-align: justify;
 }
 
 .icon-image {
     width: 2em; /* Ajusta el tamaño según tus necesidades */
     height: 2em;
-    /* margin-bottom: 1rem; Mantiene el margen inferior similar al ícono anterior */
 }
 
 @media (min-width: 992px) {
@@ -191,6 +194,7 @@ header {
 
 .form label {
     position: relative;
+    width: 100%;
 }
 
 .form label .input {
