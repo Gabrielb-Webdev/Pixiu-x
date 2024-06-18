@@ -188,75 +188,123 @@
     </div>
   </section>
 
-  <!-- Section 5: Title and text carousel -->
-  <section class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2>Section Title 6</h2>
-        </div>
-      </div>
-      <div id="textCarousel" class="carousel slide mt-4" data-ride="carousel">
-        <!-- Carousel items -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="d-block w-100 text-center">
-              <h5>Step 1: Title</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eu ex accumsan, vitae
-                dictum lorem ullamcorper.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="d-block w-100 text-center">
-              <h5>Step 2: Title</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eu ex accumsan, vitae
-                dictum lorem ullamcorper.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="d-block w-100 text-center">
-              <h5>Step 3: Title</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eu ex accumsan, vitae
-                dictum lorem ullamcorper.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="d-block w-100 text-center">
-              <h5>Step 4: Title</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eu ex accumsan, vitae
-                dictum lorem ullamcorper.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="d-block w-100 text-center">
-              <h5>Step 5: Title</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eu ex accumsan, vitae
-                dictum lorem ullamcorper.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Indicators -->
-        <ol class="carousel-indicators mt-4">
-          <li data-target="#textCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#textCarousel" data-slide-to="1"></li>
-          <li data-target="#textCarousel" data-slide-to="2"></li>
-          <li data-target="#textCarousel" data-slide-to="3"></li>
-          <li data-target="#textCarousel" data-slide-to="4"></li>
-        </ol>
-
-        <!-- Controls (hidden on mobile) -->
-        <a class="carousel-control-prev d-none d-md-block" href="#textCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(100%);"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next d-none d-md-block" href="#textCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(100%);"></span>
-          <span class="sr-only">Next</span>
-        </a>
+<!-- Section 5: Title and step timeline -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2>Section Title 6</h2>
       </div>
     </div>
-  </section>
+    <div class="row justify-content-center mt-4">
+      <div class="timeline">
+        <!-- Step 1 -->
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <span>1</span>
+          </div>
+          <div class="timeline-content">
+            <h5>Step 1: Title</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eu ex accumsan, vitae
+              dictum lorem ullamcorper.</p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <span>2</span>
+          </div>
+          <div class="timeline-content">
+            <h5>Step 2: Title</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eu ex accumsan, vitae
+              dictum lorem ullamcorper.</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <span>3</span>
+          </div>
+          <div class="timeline-content">
+            <h5>Step 3: Title</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eu ex accumsan, vitae
+              dictum lorem ullamcorper.</p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <span>4</span>
+          </div>
+          <div class="timeline-content">
+            <h5>Step 4: Title</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eu ex accumsan, vitae
+              dictum lorem ullamcorper.</p>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <span>5</span>
+          </div>
+          <div class="timeline-content">
+            <h5>Step 5: Title</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eu ex accumsan, vitae
+              dictum lorem ullamcorper.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .timeline-item {
+    flex: 1;
+    text-align: center;
+    position: relative;
+  }
+  
+  .timeline-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+    color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 18px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .timeline-content {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .timeline-content h5 {
+    margin-top: 0;
+  }
+</style>
+
 
   <!-- Section 6: Calendar for scheduling calls/meetings -->
   <section id="contact" class="section">
