@@ -4,7 +4,24 @@ body {
 
 html {
     scroll-behavior: smooth;
-  }  
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
 
 /* Estilos para la barra de navegación */
 .navbar {
@@ -12,7 +29,8 @@ html {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Asegúrate de que la navbar esté sobre otros elementos */
+    z-index: 1000;
+    /* Asegúrate de que la navbar esté sobre otros elementos */
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -38,7 +56,7 @@ header {
 .section {
     padding-top: calc(10vh + 20px);
     padding-bottom: 20px;
-    min-height: calc(50vh + 100px); 
+    min-height: calc(50vh + 100px);
 }
 
 .carousel-indicators {
@@ -81,7 +99,7 @@ header {
 }
 
 .bg-darkorange {
-    background-color: #FFA500;
+    background-color: #ffa500;
     /* Cambia el color a tu preferencia */
     padding: 50px 0;
     /* Ajusta el padding según sea necesario */
@@ -129,10 +147,14 @@ header {
 }
 
 .container-fluid {
-    max-width: calc(80vw - 30px); /* Calcula el ancho máximo dinámicamente */
-    margin: 0 auto; /* Centrado horizontal */
-    padding-left: 15px; /* Añade padding a izquierda */
-    padding-right: 15px; /* Añade padding a derecha */
+    max-width: calc(80vw - 30px);
+    /* Calcula el ancho máximo dinámicamente */
+    margin: 0 auto;
+    /* Centrado horizontal */
+    padding-left: 15px;
+    /* Añade padding a izquierda */
+    padding-right: 15px;
+    /* Añade padding a derecha */
 }
 
 .card-body {
@@ -151,18 +173,26 @@ header {
 }
 
 .icon-image {
-    width: 2em; /* Ajusta el tamaño según tus necesidades */
+    width: 2em;
+    /* Ajusta el tamaño según tus necesidades */
     height: 2em;
 }
 
 @media (min-width: 992px) {
-    .navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid, .navbar-expand-lg>.container-lg, .navbar-expand-lg>.container-md, .navbar-expand-lg>.container-sm, .navbar-expand-lg>.container-xl {
+
+    .navbar-expand-lg>.container,
+    .navbar-expand-lg>.container-fluid,
+    .navbar-expand-lg>.container-lg,
+    .navbar-expand-lg>.container-md,
+    .navbar-expand-lg>.container-sm,
+    .navbar-expand-lg>.container-xl {
         -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
         margin: 0 auto;
         max-width: calc(80vw - 30px);
     }
 }
+
 @media (max-width: 500px) {
     .section {
         padding-top: 5rem;
@@ -173,7 +203,8 @@ header {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-width: 600px; /* Ajusta este valor para aumentar el ancho del formulario */
+    max-width: 600px;
+    /* Ajusta este valor para aumentar el ancho del formulario */
     width: 100%;
     background-color: #fff;
     padding: 20px;
@@ -205,7 +236,7 @@ header {
     border-radius: 5px;
 }
 
-.form label .input + span {
+.form label .input+span {
     position: absolute;
     left: 10px;
     top: 15px;
@@ -215,18 +246,19 @@ header {
     transition: 0.3s ease;
 }
 
-.form label .input:placeholder-shown + span {
+.form label .input:placeholder-shown+span {
     top: 15px;
     font-size: 0.9em;
 }
 
-.form label .input:focus + span, .form label .input:valid + span {
+.form label .input:focus+span,
+.form label .input:valid+span {
     top: 30px;
     font-size: 0.7em;
     font-weight: 600;
 }
 
-.form label .input:valid + span {
+.form label .input:valid+span {
     color: green;
 }
 
@@ -238,7 +270,7 @@ header {
     border-radius: 5px;
 }
 
-.form label .input01 + span {
+.form label .input01+span {
     position: absolute;
     left: 10px;
     top: 50px;
@@ -248,18 +280,19 @@ header {
     transition: 0.3s ease;
 }
 
-.form label .input01:placeholder-shown + span {
+.form label .input01:placeholder-shown+span {
     top: 40px;
     font-size: 0.9em;
 }
 
-.form label .input01:focus + span, .form label .input01:valid + span {
+.form label .input01:focus+span,
+.form label .input01:valid+span {
     top: 50px;
     font-size: 0.7em;
     font-weight: 600;
 }
 
-.form label .input01:valid + span {
+.form label .input01:valid+span {
     color: green;
 }
 
@@ -370,13 +403,17 @@ header {
 }
 
 .btn-custom-orange {
-    background-color: #DD6D2C;
-    border-color: #DD6D2C; /* Opcional: para cambiar el color del borde si es necesario */
-    color: #fff; /* Color del texto */
+    background-color: #dd6d2c;
+    border-color: #dd6d2c;
+    /* Opcional: para cambiar el color del borde si es necesario */
+    color: #fff;
+    /* Color del texto */
 }
 
 .btn-custom-lightgray {
-    background-color: #D7D1CA;
-    border-color: #D7D1CA; /* Opcional: para cambiar el color del borde si es necesario */
-    color: #000; /* Color del texto */
+    background-color: #d7d1ca;
+    border-color: #d7d1ca;
+    /* Opcional: para cambiar el color del borde si es necesario */
+    color: #000;
+    /* Color del texto */
 }
