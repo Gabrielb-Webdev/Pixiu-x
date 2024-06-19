@@ -424,43 +424,47 @@ p {
     font-weight: 100;
 }
 
-.timeline {
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.steps {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 20px;
-    position: relative;
-  }
-  
-  .timeline-item {
-    flex: 1;
-    text-align: center;
-    position: relative;
-  }
-  
-  .timeline-icon {
-    width: 40px;
-    height: 40px;
-    background-color: #007bff;
-    color: #fff;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-size: 18px;
-    margin-bottom: 10px;
-    position: relative;
-    z-index: 1;
-  }
-  
-  .timeline-content {
+    transition: transform 0.3s ease-in-out;
+}
+
+.step {
+    flex: 0 0 33.3333%;
     padding: 20px;
-    background-color: #f0f0f0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .timeline-content h5 {
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.step-title {
+    font-size: 1.2em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.step-content h3 {
     margin-top: 0;
-  }
+}
+
+.navigation {
+    margin-top: 20px;
+}
+
+.navigation button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navigation button:disabled {
+    background-color: #ccc;
+}
