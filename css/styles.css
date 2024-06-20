@@ -4,7 +4,7 @@ body {
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .h1,
@@ -62,6 +62,7 @@ header {
     padding-top: calc(10vh + 20px);
     padding-bottom: 20px;
     min-height: calc(50vh + 100px);
+    overflow: hidden; /* Evita el scroll vertical */
 }
 
 .carousel-indicators {
@@ -452,18 +453,16 @@ h2 {
 .steps {
     display: flex;
     transition: transform 0.3s ease-in-out;
+    width: 200%; /* Ajusta el ancho para mostrar todos los steps sin scroll */
 }
 
 .step {
-    flex: 0 0 33.3333%;
+    flex: 0 0 25%; /* Ajusta el tamaño de cada step */
     padding: 20px;
     border-radius: 10px;
     box-sizing: border-box;
-    border: 2px solid #E76C5D; /* Color del borde */
-    border-radius: 8px; /* Radio de las esquinas redondeadas */
-    padding: 20px; /* Espaciado interno */
-    margin-bottom: 20px; /* Espaciado inferior */
-  
+    border: 2px solid #E76C5D;
+    margin-right: 20px; /* Espacio entre steps */
 }
 
 .step-title {
@@ -480,8 +479,9 @@ h2 {
 .navigation {
     margin-top: 20px;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between; /* Alinea los botones de navegación */
+    align-items: center;
+    width: 100%; /* Ajusta el ancho */
 }
 
 .navigation button {
@@ -489,14 +489,14 @@ h2 {
     border: none;
     color: white;
     padding: 10px 20px;
-    margin: 0 5px;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .navigation button:disabled {
     background-color: #ccc;
-}
+    cursor: not-allowed;
+}   
 
 .wrapper {
     display: inline-flex;
