@@ -1,5 +1,5 @@
 let currentStep = 0;
-const stepsVisible = 2; // Number of steps visible at a time
+const stepsVisible = 1; // Number of steps visible at a time
 const totalSteps = document.querySelectorAll('.step').length;
 
 document.addEventListener("DOMContentLoaded", () => {

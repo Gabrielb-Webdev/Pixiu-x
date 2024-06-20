@@ -24,7 +24,7 @@ h6 {
     line-height: 1.2;
 }
 
-p{
+p {
     font-size: 1.1rem;
 }
 
@@ -62,7 +62,8 @@ header {
     padding-top: calc(10vh + 20px);
     padding-bottom: 20px;
     min-height: calc(50vh + 100px);
-    overflow: hidden; /* Evita el scroll vertical */
+    overflow: hidden;
+    /* Evita el scroll vertical */
 }
 
 .carousel-indicators {
@@ -453,16 +454,19 @@ h2 {
 .steps {
     display: flex;
     transition: transform 0.3s ease-in-out;
-    width: 200%; /* Ajusta el ancho para mostrar todos los steps sin scroll */
+    width: 200%;
+    /* Ajusta el ancho para mostrar todos los steps sin scroll */
 }
 
 .step {
-    flex: 0 0 25%; /* Ajusta el tamaño de cada step */
+    flex: 0 0 25%;
+    /* Ajusta el tamaño de cada step */
     padding: 20px;
     border-radius: 10px;
     box-sizing: border-box;
     border: 2px solid #E76C5D;
-    margin-right: 20px; /* Espacio entre steps */
+    margin-right: 20px;
+    /* Espacio entre steps */
 }
 
 .step-title {
@@ -479,9 +483,11 @@ h2 {
 .navigation {
     margin-top: 20px;
     display: flex;
-    justify-content: space-between; /* Alinea los botones de navegación */
+    justify-content: space-between;
+    /* Alinea los botones de navegación */
     align-items: center;
-    width: 100%; /* Ajusta el ancho */
+    width: 100%;
+    /* Ajusta el ancho */
 }
 
 .navigation button {
@@ -496,16 +502,16 @@ h2 {
 .navigation button:disabled {
     background-color: #ccc;
     cursor: not-allowed;
-}   
+}
 
 .wrapper {
     display: inline-flex;
     list-style: none;
     font-family: "Poppins", sans-serif;
     justify-content: center;
-  }
-  
-  .wrapper .icon {
+}
+
+.wrapper .icon {
     position: relative;
     background: black;
     border-radius: 50%;
@@ -520,9 +526,9 @@ h2 {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  
-  .wrapper .tooltip {
+}
+
+.wrapper .tooltip {
     position: absolute;
     top: 0;
     font-size: 14px;
@@ -534,9 +540,9 @@ h2 {
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  
-  .wrapper .tooltip::before {
+}
+
+.wrapper .tooltip::before {
     position: absolute;
     content: "";
     height: 8px;
@@ -546,49 +552,67 @@ h2 {
     left: 50%;
     transform: translate(-50%) rotate(45deg);
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  
-  .wrapper .icon:hover .tooltip {
+}
+
+.wrapper .icon:hover .tooltip {
     top: 60px;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-  }
-  
-  .wrapper .icon:hover span,
-  .wrapper .icon:hover .tooltip {
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
-  }
-  
-  .wrapper .linkedin:hover,
-  .wrapper .linkedin:hover .tooltip,
-  .wrapper .linkedin:hover .tooltip::before {
+}
+
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
     background: #0a66c2;
     color: #fff;
-  }
-  
-  .wrapper .github:hover,
-  .wrapper .github:hover .tooltip,
-  .wrapper .github:hover .tooltip::before {
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
     background: #fff;
     color: #000;
-  }
-  
-  .wrapper .Upwork:hover,
-  .wrapper .Upwork:hover .tooltip,
-  .wrapper .Upwork:hover .tooltip::before {
+}
+
+.wrapper .Upwork:hover,
+.wrapper .Upwork:hover .tooltip,
+.wrapper .Upwork:hover .tooltip::before {
     background: #14a800;
     color: #fff;
-  }
-  
-  
-  .wrapper .Whatsapp:hover,
-  .wrapper .Whatsapp:hover .tooltip,
-  .wrapper .Whatsapp:hover .tooltip::before {
+}
+
+
+.wrapper .Whatsapp:hover,
+.wrapper .Whatsapp:hover .tooltip,
+.wrapper .Whatsapp:hover .tooltip::before {
     background: #25d366;
     color: #fff;
-  }
-  
-  p{
+}
+
+p {
     font-weight: 400;
-  }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+        /* Ajusta la distancia de la flotación */
+    }
+}
+
+.floating-image {
+    animation: float 3s ease-in-out infinite;
+    /* Ajusta la duración y la interpolación de la animación según sea necesario */
+}
