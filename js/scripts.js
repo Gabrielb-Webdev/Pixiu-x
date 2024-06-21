@@ -33,3 +33,16 @@ function nextStep() {
         updateButtons();
     }
 }
+
+const inputs = document.querySelectorAll('.form .input, .form .input01');
+
+inputs.forEach(input => {
+    input.addEventListener('input', () => {
+        const label = input.parentElement.querySelector('span');
+        if (input.value.trim() !== '') {
+            label.style.display = 'none';
+        } else {
+            label.style.display = 'block';
+        }
+    });
+});

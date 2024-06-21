@@ -424,6 +424,23 @@ li {
     width: 0;
 }
 
+/* CSS para ocultar los span cuando se escribe en los campos */
+.form label .input:focus + span,
+.form label .input:not(:placeholder-shown) + span,
+.form label .input:valid + span,
+.form label .input01:focus + span,
+.form label .input01:not(:placeholder-shown) + span,
+.form label .input01:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.form label .input:valid + span,
+.form label .input01:valid + span {
+    color: green;
+}
+
 .btn-custom-orange {
     background-color: #dd6d2c;
     border-color: #dd6d2c;
@@ -615,4 +632,34 @@ p {
 .floating-image {
     animation: float 3s ease-in-out infinite;
     /* Ajusta la duración y la interpolación de la animación según sea necesario */
+}
+
+.custom-btn {
+    background-color: #dd6d2c;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .custom-btn:hover {
+    background-color: #e67a2c;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+
+  .custom-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(221, 109, 44, 0.5);
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, .5);
+    font-weight: 500;
+    padding: 10px;
 }

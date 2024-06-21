@@ -22,7 +22,7 @@
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
+  
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
@@ -34,12 +34,15 @@
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link custom-btn" href="#book-a-call" style="color: #fff;">Book A Call</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
-
+    
   <section id="home" class="section">
     <div class="container-fluid">
       <div class="row align-items-center">
@@ -51,7 +54,7 @@
           </div>
           <div class="row">
             <div class="col-md-6">
-              <a href="#" class="btn btn-custom-orange btn-lg btn-block">Contact us</a>
+              <a href="#contact" class="btn btn-custom-orange btn-lg btn-block">Contact us</a>
             </div>
           </div>
         </div>
@@ -75,7 +78,7 @@
           <h2 style="margin-bottom: 1rem;">Custom Software Development</h2>
           <p>We specialize in creating tailored software solutions that meet your specific business needs. Our team
             ensures high-quality, efficient, and scalable software that enhances your operations and drives growth.</p>
-          <a href="#" class="btn btn-custom-orange  btn-lg">Contact Us</a>
+          <a href="#contact" class="btn btn-custom-orange  btn-lg">Contact Us</a>
         </div>
         <!-- Column for cards -->
         <div class="col-lg-6 mt-4 mt-lg-0">
@@ -145,7 +148,7 @@
               reporting, data management, custom objects, workflows, and automations.</p>
             <p><strong>Personalized HubSpot Consulting: </strong>Certified experts offer one-on-one consultations to
               optimize infrastructure, resolve issues, and boost your company's use of HubSpot.</p>
-            <a href="#" class="btn btn-custom-orange btn-lg mt-4">Contact Us</a>
+            <a href="#contact" class="btn btn-custom-orange btn-lg mt-4">Contact Us</a>
           </div>
         </div>
       </div>
@@ -167,7 +170,7 @@
               (formerly Twitter), and more, using diverse search criteria.</p>
             <p><strong>Market Research Data Extraction: </strong>Accelerate research with accurate data on target
               audiences, market trends, competitive analysis, and customer insights.</p>
-            <a href="#" class="btn btn-custom-orange btn-lg mt-4">Contact Us</a>
+            <a href="#contact" class="btn btn-custom-orange btn-lg mt-4">Contact Us</a>
           </div>
         </div>
         <div class="col-md-6 text-right">
@@ -223,55 +226,61 @@
   </section>
 
 
-  <!-- Section 6: Calendar for scheduling calls/meetings -->
-  <section id="contact" class="section">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2>Schedule a Call or Meeting</h2>
-          <p>Select a date and time for your appointment:</p>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-8 d-flex justify-content-center">
-          <form class="form">
-            <div class="flex">
-              <label>
-                <input required="" placeholder="" type="text" class="input">
-                <span>First Name</span>
-              </label>
-
-              <label>
-                <input required="" placeholder="" type="text" class="input">
-                <span>Last Name</span>
-              </label>
-            </div>
-
-            <label>
-              <input required="" placeholder="" type="email" class="input">
-              <span>Email</span>
-            </label>
-
-            <label>
-              <input required="" type="tel" placeholder="" class="input">
-              <span>Contact Number</span>
-            </label>
-            <label>
-              <textarea required="" rows="3" placeholder="" class="input01"></textarea>
-              <span>Message</span>
-            </label>
-
-            <button class="fancy" href="#">
-              <span class="top-key"></span>
-              <span class="text">Submit</span>
-              <span class="bottom-key-1"></span>
-              <span class="bottom-key-2"></span>
-            </button>
-          </form>
-        </div>
+<!-- Section 6: Calendar for scheduling calls/meetings -->
+<section id="contact" class="section">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2>Contact Us</h2>
       </div>
     </div>
-  </section>
+    <div class="row justify-content-center">
+      <div class="col-lg-8 d-flex justify-content-center">
+        <form class="form">
+          <div class="flex">
+            <label>
+              <input required placeholder="" type="text" class="input">
+              <span>First Name</span>
+            </label>
+
+            <label>
+              <input required placeholder="" type="text" class="input">
+              <span>Last Name</span>
+            </label>
+          </div>
+
+          <label>
+            <input required placeholder="" type="email" class="input">
+            <span>Email</span>
+          </label>
+
+          <label>
+            <select required class="input">
+              <option value="" selected disabled>Select an Option</option>
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+              <option value="option4">Option 4</option>
+              <option value="option5">Option 5</option>
+            </select>
+          </label>
+
+          <label>
+            <textarea required rows="3" placeholder="" class="input01"></textarea>
+            <span>Message</span>
+          </label>
+
+          <button type="submit" class="fancy">
+            <span class="top-key"></span>
+            <span class="text">Submit</span>
+            <span class="bottom-key-1"></span>
+            <span class="bottom-key-2"></span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- Section 7: Dark orange background with centered title and paragraph -->
   <section class="section bg-darkorange text-white" style="min-height: calc(5vh + 100px);">
