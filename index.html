@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="css/styles.css">
   <title>Pixiu X</title>
 </head>
@@ -22,10 +23,10 @@
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-  
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
@@ -35,14 +36,16 @@
               <a class="nav-link" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link custom-btn" href="#" style="color: #fff;" data-toggle="modal" data-target="#bookACallModal">Book A Call</a>
-            </li>            
+              <a class="nav-link custom-btn" href="#" style="color: #fff;" data-toggle="modal"
+                data-target="#bookACallModal">Book A Call</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
-    
+
+
   <section id="home" class="section">
     <div class="container-fluid">
       <div class="row align-items-center">
@@ -69,62 +72,71 @@
     </div>
   </section>
 
-<!-- Section 2: Title, long paragraph, button, and 4 cards with icons -->
-<section id="services" class="section bg-light">
-  <div class="container-fluid">
-    <div class="row align-items-center">
-      <!-- Column for text content -->
-      <div class="col-lg-5 text-left">
-        <h2 style="margin-bottom: 1rem;">Custom Software Development</h2>
-        <p>We specialize in creating tailored software solutions that meet your specific business needs. Our team ensures high-quality, efficient, and scalable software that enhances your operations and drives growth.</p>
-        <!-- Image -->
-        <img src="sources/images/Imagenes Pixiu/Programming-pana.png" alt="Custom Image" class="img-fluid mt-4 mb-4" style="width: 90%;">
-        <a href="#contact" class="btn btn-custom-orange btn-lg">Contact Us</a>
-      </div>
-      <!-- Column for cards -->
-      <div class="col-lg-7 mt-4 mt-lg-5">
-        <div class="row">
-          <div class="col-md-6 mb-5">
-            <div class="card">
-              <div class="card-body text-center">
-                <img src="sources/icons/code.svg" alt="Code Icon" class="icon-image">
-                <h5 class="card-title">Web Design</h5>
-                <p class="card-text">Developing stunning one-of-a-kind digital designs that catch people’s eyes and bring your brand to life online. Our creative team crafts unique visual experiences that resonate with your audience.</p>
+  <!-- Section 2: Title, long paragraph, button, and 4 cards with icons -->
+  <section id="services" class="section bg-light">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <!-- Column for text content -->
+        <div class="col-lg-5 text-left">
+          <h2 style="margin-bottom: 1rem;">Custom Software Development</h2>
+          <p>We specialize in creating tailored software solutions that meet your specific business needs. Our team
+            ensures high-quality, efficient, and scalable software that enhances your operations and drives growth.</p>
+          <!-- Image -->
+          <img src="sources/images/Imagenes Pixiu/Programming-pana.png" alt="Custom Image" class="img-fluid mt-4 mb-4"
+            style="width: 90%;">
+          <a href="#contact" class="btn btn-custom-orange btn-lg">Contact Us</a>
+        </div>
+        <!-- Column for cards -->
+        <div class="col-lg-7 mt-4 mt-lg-5">
+          <div class="row">
+            <div class="col-md-6 mb-5">
+              <div class="card">
+                <div class="card-body text-center">
+                  <img src="sources/icons/code.svg" alt="Code Icon" class="icon-image">
+                  <h5 class="card-title">Web Design</h5>
+                  <p class="card-text">Developing stunning one-of-a-kind digital designs that catch people’s eyes and
+                    bring your brand to life online. Our creative team crafts unique visual experiences that resonate
+                    with your audience.</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6 mb-5">
-            <div class="card">
-              <div class="card-body text-center">
-                <img src="sources/icons/web.svg" alt="Code Icon" class="icon-image">
-                <h5 class="card-title">Custom Web Development</h5>
-                <p class="card-text">Our customized web development solutions provide high accuracy and technological competence. We deliver fully functional, highly interactive, and dynamic web applications that elevate your digital presence.</p>
+            <div class="col-md-6 mb-5">
+              <div class="card">
+                <div class="card-body text-center">
+                  <img src="sources/icons/web.svg" alt="Code Icon" class="icon-image">
+                  <h5 class="card-title">Custom Web Development</h5>
+                  <p class="card-text">Our customized web development solutions provide high accuracy and technological
+                    competence. We deliver fully functional, highly interactive, and dynamic web applications that
+                    elevate your digital presence.</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6 mb-5">
-            <div class="card">
-              <div class="card-body text-center">
-                <img src="sources/icons/mobile.svg" alt="Code Icon" class="icon-image">
-                <h5 class="card-title">Mobile Applications</h5>
-                <p class="card-text">We develop native, hybrid, and web applications. Our team assists clients in selecting the best technology for their project, ensuring a seamless and efficient development process.</p>
+            <div class="col-md-6 mb-5">
+              <div class="card">
+                <div class="card-body text-center">
+                  <img src="sources/icons/mobile.svg" alt="Code Icon" class="icon-image">
+                  <h5 class="card-title">Mobile Applications</h5>
+                  <p class="card-text">We develop native, hybrid, and web applications. Our team assists clients in
+                    selecting the best technology for their project, ensuring a seamless and efficient development
+                    process.</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6 mb-5">
-            <div class="card">
-              <div class="card-body text-center">
-                <img src="sources/icons/ecommerce.svg" alt="Code Icon" class="icon-image">
-                <h5 class="card-title">E-commerce Web Development</h5>
-                <p class="card-text">We help you create and launch your own online store easily and quickly. Our solutions streamline the process, allowing you to start selling your products without hassle.</p>
+            <div class="col-md-6 mb-5">
+              <div class="card">
+                <div class="card-body text-center">
+                  <img src="sources/icons/ecommerce.svg" alt="Code Icon" class="icon-image">
+                  <h5 class="card-title">E-commerce Web Development</h5>
+                  <p class="card-text">We help you create and launch your own online store easily and quickly. Our
+                    solutions streamline the process, allowing you to start selling your products without hassle.</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- Section 3: Title, paragraphs, button, and wireframe image -->
   <section class="section" id="hubspot">
@@ -219,69 +231,70 @@
     </div>
   </section>
 
-
-<!-- Section 6: Calendar for scheduling calls/meetings -->
-<section id="contact" class="section" style="padding-top: calc(2.5vh + 20px);">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2>Contact Us</h2>
+  <!-- Section 6: Calendar for scheduling calls/meetings -->
+  <section id="contact" class="section" style="padding-top: calc(5vh + 20px);">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>Contact Us</h2>
+        </div>
       </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-lg-8 d-flex justify-content-center">
-        <form class="form">
-          <div class="flex">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 d-flex justify-content-center">
+          <form class="form">
+            <div class="flex">
+              <label>
+                <input required placeholder="First Name" type="text" class="input">
+              </label>
+
+              <label>
+                <input required placeholder="Last Name" type="text" class="input">
+              </label>
+            </div>
+
             <label>
-              <input required placeholder="First Name" type="text" class="input">
+              <input required placeholder="Email" type="email" class="input">
             </label>
 
             <label>
-              <input required placeholder="Last Name" type="text" class="input">
-            </label>
-          </div>
-
-          <label>
-            <input required placeholder="Email" type="email" class="input">
-          </label>
-
-          <label>
-            <select required class="input" id="service-select">
-              <option value="" selected disabled>Select a Service</option>
-              <option value="option1">Custom Software Development</option>
-              <option value="option2">HubSpot implementation and consulting</option>
-              <option value="option3">Data Extraction</option>
-            </select>
-          </label>
-
-          <!-- Segundo dropdown que se muestra cuando se selecciona "Custom Software Development" -->
-          <div class="custom-software-dropdown" style="display: none;">
-            <label>
-              <select class="input">
-                <option value="" selected disabled>Select an Option</option>
-                <option value="optionA">Web Design</option>
-                <option value="optionB">Custom Web Development/option>
-                <option value="optionC">Mobile Applications</option>
-                <option value="optionC">E-Commerce Web Development</option>
+              <select required class="input" id="service-select">
+                <option value="" selected disabled>Select a Service</option>
+                <option value="option1">Custom Software Development</option>
+                <option value="option2">HubSpot implementation and consulting</option>
+                <option value="option3">Data Extraction</option>
               </select>
             </label>
-          </div>
 
-          <label>
-            <textarea required rows="3" placeholder="Hello, how are you?, I am interested in hiring your services for....." class="input01"></textarea>
-          </label>
+            <!-- Segundo dropdown que se muestra cuando se selecciona "Custom Software Development" -->
+            <div class="custom-software-dropdown" style="display: none;">
+              <label>
+                <select class="input">
+                  <option value="" selected disabled>Select an Option</option>
+                  <option value="optionA">Web Design</option>
+                  <option value="optionB">Custom Web Development</option>
+                  <option value="optionC">Mobile Applications</option>
+                  <option value="optionC">E-Commerce Web Development</option>
+                </select>
+              </label>
+            </div>
 
-          <button type="submit" class="fancy">
-            <span class="top-key"></span>
-            <span class="text">Submit</span>
-            <span class="bottom-key-1"></span>
-            <span class="bottom-key-2"></span>
-          </button>
-        </form>
+            <label>
+              <textarea required rows="3"
+                placeholder="Hello, how are you?, I am interested in hiring your services for....."
+                class="input01"></textarea>
+            </label>
+
+            <button type="submit" class="fancy">
+              <span class="top-key"></span>
+              <span class="text">Submit</span>
+              <span class="bottom-key-1"></span>
+              <span class="bottom-key-2"></span>
+            </button>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- Section 7: Dark orange background with centered title and paragraph -->
   <section class="section bg-darkorange text-white" style="min-height: calc(5vh + 100px);">
@@ -301,7 +314,9 @@
         <!-- Columna 1: Logo, párrafo y redes sociales -->
         <div class="col-lg-4 col-md-4 mb-4 mb-lg-0">
           <img src="sources/images/Logo.webp" alt="Logo" class="img-fluid mb- logo-footer">
-          <p>At Pixiu, we focus on excellent service and innovation, specializing in custom software development, HubSpot consulting, and data scraping services. We're on a mission to bridge the gap between Marketplace Businesses and custom solutions. Contact us for inquiries on how we can improve your business.</p>
+          <p>At Pixiu, we focus on excellent service and innovation, specializing in custom software development,
+            HubSpot consulting, and data scraping services. We're on a mission to bridge the gap between Marketplace
+            Businesses and custom solutions. Contact us for inquiries on how we can improve your business.</p>
           <div class="wrapper">
             <a href="https://www.linkedin.com/company/pixiu-x" target="_blank">
               <li class="icon linkedin">
@@ -398,43 +413,44 @@
   </footer>
 
   <!-- Modal -->
-<div class="modal fade" id="bookACallModal" tabindex="-1" role="dialog" aria-labelledby="bookACallModalLabel"
-aria-hidden="true">
-<div class="modal-dialog" role="document">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title" id="bookACallModalLabel">Book A Call</h5>
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    <div class="modal-body">
-      <!-- Formulario para reservar una llamada -->
-      <form>
-        <div class="form-group">
-          <label for="fullname">Full Name</label>
-          <input type="text" class="form-control" id="fullname" placeholder="Enter your full name">
+  <div class="modal fade" id="bookACallModal" tabindex="-1" role="dialog" aria-labelledby="bookACallModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookACallModalLabel">Book A Call</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-        <div class="form-group">
-          <label for="email">Email address</label>
-          <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-            placeholder="Enter your email">
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        <div class="modal-body">
+          <!-- Formulario para reservar una llamada -->
+          <form>
+            <div class="form-group">
+              <label for="fullname">Full Name</label>
+              <input type="text" class="form-control" id="fullname" placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                placeholder="Enter your email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-</div>
 
 
   <!-- Scripts at the end of the body -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
