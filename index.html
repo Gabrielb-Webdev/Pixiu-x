@@ -35,8 +35,8 @@
               <a class="nav-link" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link custom-btn" href="#book-a-call" style="color: #fff;">Book A Call</a>
-            </li>
+              <a class="nav-link custom-btn" href="#" style="color: #fff;" data-toggle="modal" data-target="#bookACallModal">Book A Call</a>
+            </li>            
           </ul>
         </div>
       </div>
@@ -239,19 +239,19 @@
         <form class="form">
           <div class="flex">
             <label>
-              <input required placeholder="" type="text" class="input">
-              <span>First Name</span>
+              <input required placeholder="First Name" type="text" class="input">
+              <!-- <span>First Name</span> -->
             </label>
 
             <label>
-              <input required placeholder="" type="text" class="input">
-              <span>Last Name</span>
+              <input required placeholder="Last Name" type="text" class="input">
+              <!-- <span>Last Name</span> -->
             </label>
           </div>
 
           <label>
-            <input required placeholder="" type="email" class="input">
-            <span>Email</span>
+            <input required placeholder="Email" type="email" class="input">
+            <!-- <span>Email</span> -->
           </label>
 
           <label>
@@ -266,8 +266,8 @@
           </label>
 
           <label>
-            <textarea required rows="3" placeholder="" class="input01"></textarea>
-            <span>Message</span>
+            <textarea required rows="3" placeholder="Message" class="input01"></textarea>
+            <!-- <span>Message</span> -->
           </label>
 
           <button type="submit" class="fancy">
@@ -300,9 +300,7 @@
         <!-- Columna 1: Logo, párrafo y redes sociales -->
         <div class="col-lg-4 col-md-4 mb-4 mb-lg-0">
           <img src="sources/images/Logo.webp" alt="Logo" class="img-fluid mb- logo-footer">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium expedita nihil suscipit cum itaque,
-            perferendis assumenda quibusdam voluptatum nesciunt tempore rerum maxime aut perspiciatis laboriosam quia
-            minima ex inventore nulla!</p>
+          <p>At Pixiu, we focus on excellent service and innovation, specializing in custom software development, HubSpot consulting, and data scraping services. We're on a mission to bridge the gap between Marketplace Businesses and custom solutions. Contact us for inquiries on how we can improve your business.</p>
           <div class="wrapper">
             <a href="https://www.linkedin.com/company/pixiu-x" target="_blank">
               <li class="icon linkedin">
@@ -398,6 +396,39 @@
     </div>
   </footer>
 
+  <!-- Modal -->
+<div class="modal fade" id="bookACallModal" tabindex="-1" role="dialog" aria-labelledby="bookACallModalLabel"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="bookACallModalLabel">Book A Call</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <!-- Formulario para reservar una llamada -->
+      <form>
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" class="form-control" id="fullname" placeholder="Enter your full name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+            placeholder="Enter your email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div>
 
 
   <!-- Scripts at the end of the body -->

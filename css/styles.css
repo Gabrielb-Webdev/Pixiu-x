@@ -341,7 +341,7 @@ li {
     font-size: 13px;
 }
 
-.fancy::before {
+/* .fancy::before {
     content: " ";
     width: 1.7rem;
     height: 2px;
@@ -353,12 +353,12 @@ li {
     transform: translateX(230%);
     transform-origin: center;
     transition: background 0.3s linear, width 0.3s linear;
-}
+} */
 
 .fancy .text {
     font-size: 1.125em;
     line-height: 1.33333em;
-    padding-left: 2em;
+    padding-left: 4.5em;
     display: block;
     text-align: left;
     transition: all 0.3s ease-in-out;
