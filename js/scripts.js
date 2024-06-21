@@ -46,3 +46,16 @@ inputs.forEach(input => {
         }
     });
 });
+
+// Captura el evento de cambio en el primer dropdown
+document.getElementById('service-select').addEventListener('change', function() {
+    var serviceValue = this.value;
+    
+    // Muestra u oculta el segundo dropdown dependiendo de la opción seleccionada
+    if (serviceValue === 'option1') {
+      document.querySelector('.custom-software-dropdown').style.display = 'block';
+    } else {
+      document.querySelector('.custom-software-dropdown').style.display = 'none';
+    }
+  });
+  

@@ -320,7 +320,7 @@ li {
 
 .fancy {
     background-color: transparent;
-    border: 2px solid #cacaca;
+    border: 2px solid #ffa500;
     border-radius: 0px;
     box-sizing: border-box;
     color: #fff;
@@ -400,7 +400,7 @@ li {
 
 .fancy:hover {
     color: white;
-    background: #cacaca;
+    background: #dd6d2c;
 }
 
 .fancy:hover::before {
