@@ -59,3 +59,12 @@ document.getElementById('service-select').addEventListener('change', function() 
     }
   });
   
+  $(document).ready(function() {
+    // Inicializar Bootstrap Datepicker
+    $('#date').datepicker({
+      autoclose: true,
+      todayHighlight: true,
+      format: 'yyyy-mm-dd' // Formato de la fecha
+    });
+  });
+  
