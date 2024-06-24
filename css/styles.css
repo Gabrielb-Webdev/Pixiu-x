@@ -727,3 +727,20 @@ p {
         font-size: 2.5vw;
     }
 }
+
+.navbar-nav .nav-link.custom-btn {
+    padding: 8px 15px;
+    margin-left: 10px;
+    /* Color naranja */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    font-weight: bold;
+    /* Texto en negrita */
+    transition: background-color 0.3s ease;
+    /* Transición suave */
+}
+
+.navbar-nav .nav-link.custom-btn:hover {
+    background-color: #FF8C00;
+    /* Naranja más oscuro al pasar el ratón */
+}
