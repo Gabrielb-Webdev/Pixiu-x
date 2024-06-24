@@ -14,7 +14,7 @@ function toggleLanguage() {
 
     if (isSpanish) {
         // Cambiar a Inglés
-        languageToggle.textContent = 'Cambiar a Español';
+        languageToggle.innerHTML = '<img src="../sources/icons/spain.svg" alt="Bandera de México" class="flag-icon">' + ' Es';
         navLinks.forEach(link => {
             switch (link.textContent.trim()) {
                 case 'Inicio':
@@ -369,7 +369,8 @@ function toggleLanguage() {
 
     } else {
         // Cambiar a Español
-        languageToggle.textContent = 'Cambiar a Inglés';
+        languageToggle.innerHTML = '<img src="../sources/icons/USA.svg" alt="Bandera de US" class="flag-icon">' + ' En';
+
         navLinks.forEach(link => {
             switch (link.textContent.trim()) {
                 case 'Home':

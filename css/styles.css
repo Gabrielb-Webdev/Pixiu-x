@@ -744,3 +744,20 @@ p {
     background-color: #FF8C00;
     /* Naranja más oscuro al pasar el ratón */
 }
+
+.flag-spain {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    text-decoration: none; /* Quita la subraya del enlace */
+  }
+  
+  .flag-icon {
+    width: 30px; /* Ajusta el tamaño de la bandera */
+    height: auto; /* Mantén la proporción */
+    margin-right: 5px; /* Espacio entre la bandera y el texto */
+  }
+  
+  .language-text {
+    color: #fff; /* Color del texto */
+  }
+  
