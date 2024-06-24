@@ -28,7 +28,9 @@ p {
     font-size: 1.1rem;
 }
 
+
 /* Estilos para la barra de navegación */
+
 .navbar {
     background-color: #fff;
     position: fixed;
@@ -44,20 +46,21 @@ p {
 
 .navbar-brand img {
     width: 250px;
-    /* Ajusta el ancho máximo según sea necesario */
     height: auto;
-    /* Para mantener la proporción */
     vertical-align: middle;
-    /* Alineación vertical centrada */
 }
 
+
 /* Estilo para el header */
+
 header {
     margin-bottom: 20px;
     /* Ajusta el margen inferior según sea necesario */
 }
 
+
 /* Estilo para la sección principal */
+
 .section {
     padding-top: calc(10vh + 20px);
     padding-bottom: 20px;
@@ -201,7 +204,6 @@ li {
 }
 
 @media (min-width: 992px) {
-
     .navbar-expand-lg>.container,
     .navbar-expand-lg>.container-fluid,
     .navbar-expand-lg>.container-lg,
@@ -341,6 +343,7 @@ li {
     font-size: 13px;
 }
 
+
 /* .fancy::before {
     content: " ";
     width: 1.7rem;
@@ -424,20 +427,22 @@ li {
     width: 0;
 }
 
+
 /* CSS para ocultar los span cuando se escribe en los campos */
-.form label .input:focus + span,
-.form label .input:not(:placeholder-shown) + span,
-.form label .input:valid + span,
-.form label .input01:focus + span,
-.form label .input01:not(:placeholder-shown) + span,
-.form label .input01:valid + span {
+
+.form label .input:focus+span,
+.form label .input:not(:placeholder-shown)+span,
+.form label .input:valid+span,
+.form label .input01:focus+span,
+.form label .input01:not(:placeholder-shown)+span,
+.form label .input01:valid+span {
     top: 30px;
     font-size: 0.7em;
     font-weight: 600;
 }
 
-.form label .input:valid + span,
-.form label .input01:valid + span {
+.form label .input:valid+span,
+.form label .input01:valid+span {
     color: green;
 }
 
@@ -604,7 +609,6 @@ h2 {
     color: #fff;
 }
 
-
 .wrapper .Whatsapp:hover,
 .wrapper .Whatsapp:hover .tooltip,
 .wrapper .Whatsapp:hover .tooltip::before {
@@ -617,12 +621,10 @@ p {
 }
 
 @keyframes float {
-
     0%,
     100% {
         transform: translateY(0);
     }
-
     50% {
         transform: translateY(10px);
         /* Ajusta la distancia de la flotación */
@@ -645,21 +647,83 @@ p {
     font-size: 16px;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
+}
 
-  .custom-btn:hover {
+.custom-btn:hover {
     background-color: #e67a2c;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
     transform: translateY(-2px);
-  }
+}
 
-  .custom-btn:focus {
+.custom-btn:focus {
     outline: none;
     box-shadow: 0 0 0 2px rgba(221, 109, 44, 0.5);
-  }
+}
 
-  .navbar-light .navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link {
     color: rgba(0, 0, 0, .5);
     font-weight: 500;
     padding: 10px;
+}
+
+.responsive-heading {
+    font-size: 6vw;
+    /* Ajuste general del tamaño de la fuente */
+}
+
+
+/* Media queries combinados para mayor control y menor cantidad */
+
+
+/* Estilos para pantallas pequeñas (menores a 576px) */
+
+@media (max-width: 575.98px) {
+    .navbar-brand img {
+        width: 100px;
+    }
+}
+
+
+/* Estilos para pantallas medianas (576px a 767.98px) */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar-brand img {
+        width: 150px;
+    }
+    .responsive-heading {
+        font-size: 5vw;
+    }
+}
+
+
+/* Estilos para pantallas grandes (768px a 991.98px) */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar-brand img {
+        width: 200px;
+    }
+    .responsive-heading {
+        font-size: 4vw;
+    }
+}
+
+
+/* Estilos para pantallas muy grandes (mayores a 992px) */
+
+@media (min-width: 992px) {
+    .navbar-brand img {
+        width: 250px;
+    }
+    .responsive-heading {
+        font-size: 3vw;
+    }
+}
+
+
+/* Estilos específicos para pantallas extra grandes (mayores a 1200px) */
+
+@media (min-width: 1200px) {
+    .responsive-heading {
+        font-size: 2.5vw;
+    }
 }
