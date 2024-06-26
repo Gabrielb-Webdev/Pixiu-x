@@ -350,8 +350,7 @@ function toggleLanguage() {
                 <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
                     <h5>Office Locations</h5>
                     <ul class="list-unstyled">
-                        <li>407 Lincoln Rd</li>
-                        <li>Miami Beach, FL, US 33139</li>
+                        <li>Miami Beach, FL, US</li>
                         <li>+1 (786) 798-8207</li>
                     </ul>
                     <ul class="list-unstyled">
@@ -617,7 +616,7 @@ function toggleLanguage() {
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h2>Acelera Tu Viaje de Desarrollo Con Pixiu X</h2>
+                    <h2>Acelera el Éxito de tus Proyectos con Pixiu</h2>
                 </div>
             </div>
         </div>
@@ -703,10 +702,9 @@ function toggleLanguage() {
                 </div>
                 <!-- Columna 3: Oficina en EE.UU. -->
                 <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
-                    <h5>Ubicacion de Oficinas</h5>
+                    <h5>Oficinas</h5>
                     <ul class="list-unstyled">
-                        <li>407 Lincoln Rd</li>
-                        <li>Miami Beach, FL, US 33139</li>
+                        <li>Miami Beach, FL, US</li>
                         <li>+1 (786) 798-8207</li>
                     </ul>
                     <ul class="list-unstyled">
