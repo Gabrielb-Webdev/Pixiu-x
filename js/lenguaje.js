@@ -489,7 +489,7 @@ function toggleLanguage() {
         // Cambiar contenido de la sección Data a Español
         sectionData.innerHTML = `
             <div class="container-fluid">
-                <h2 class="mb-4 text-center" style="font-size: 3rem;">Extracción de Datos (Data Scraping).</h2>
+                <h2 class="mb-4 text-center" style="font-size: 3rem;">Extracción de Datos (Data Scraping)</h2>
                 <div class="row align-items-center">
                     <div class="col-md-6 d-flex align-items-end justify-content-center">
                         <div class="text-justify">
