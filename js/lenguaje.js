@@ -141,7 +141,7 @@ function toggleLanguage() {
                             <p><strong>Prospect/Lead Data Extraction: </strong>Enhance sales and marketing by identifying and extracting customer lead information, providing tailored prospect lists.</p>
                             <p><strong>Social Media Data Extraction: </strong>Gather comprehensive data from LinkedIn, Facebook, X (formerly Twitter), and more, using diverse search criteria.</p>
                             <p><strong>Market Research Data Extraction: </strong>Accelerate research with accurate data on target audiences, market trends, competitive analysis, and customer insights.</p>
-                            <a href="#contact" class="btn btn-custom-orange btn-lg mt-4">Contact Us</a>
+                            <a href="scrap.html" class="btn btn-custom-orange btn-lg mt-4">Learn More</a>
                         </div>
                     </div>
                     <div class="col-md-6 text-right">
@@ -496,7 +496,7 @@ function toggleLanguage() {
                             <p><strong>Extracción de Datos de Prospectos/Leads: </strong>Mejora tus esfuerzos de ventas y marketing identificando y extrayendo información de leads de clientes, proporcionándote listas de prospectos personalizadas.</p>
                             <p><strong>Extracción de Datos de Redes Sociales: </strong>Recopila datos completos de LinkedIn, Facebook, X (anteriormente Twitter) y otras redes sociales utilizando diversos criterios de búsqueda.</p>
                             <p><strong>Investigación de Mercado y Extracción de Datos: </strong>Agiliza tu investigación con datos precisos sobre audiencias objetivo, tendencias de mercado, análisis competitivo e insights de clientes.</p>
-                            <a href="#contact" class="btn btn-custom-orange btn-lg mt-4">Contáctanos</a>
+                            <a href="scrap.html" class="btn btn-custom-orange btn-lg mt-4">Saber Mas</a>
                         </div>
                     </div>
                     <div class="col-md-6 text-right">
