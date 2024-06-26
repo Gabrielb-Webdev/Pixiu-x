@@ -394,7 +394,7 @@ function toggleLanguage() {
                 <div class="row align-items-center">
                     <div class="col-md-6">
                         <div>
-                            <h2 class="responsive-heading">Acelera Tu Proyecto Con Pixiu X</h2>
+                            <h2 style="font-size: 3.5rem;" class="responsive-heading">Impulsa tus Proyectos con Pixiu X</h2>
                             <p>Descubre cómo Pixiu puede elevar tu negocio hoy</p>
                         </div>
                         <div class="row">
@@ -418,7 +418,7 @@ function toggleLanguage() {
                 <div class="row align-items-center">
                     <div class="col-lg-5 text-left">
                         <h2 style="margin-bottom: 1rem;">Desarrollo de Software Personalizado</h2>
-                        <p>Nos especializamos en crear soluciones de software personalizadas que satisfacen las necesidades específicas de tu negocio. Nuestro equipo garantiza software de alta calidad, eficiente y escalable que mejora tus operaciones y impulsa el crecimiento.</p>
+                        <p>Nos especializamos en crear soluciones de software a medida que satisfacen las necesidades específicas de tu negocio. Nuestro equipo garantiza un software de alta calidad, eficiente y escalable que mejora tus operaciones e impulsa el crecimiento.</p>
                         <img src="sources/images/Imagenes Pixiu/Programming-pana.png" alt="Custom Image" class="img-fluid mt-4 mb-4" style="width: 90%;">
                         <a href="#contact" class="btn btn-custom-orange btn-lg">Contáctanos</a>
                     </div>
@@ -429,7 +429,7 @@ function toggleLanguage() {
                                     <div class="card-body text-left">
                                         <img src="sources/icons/code.svg" alt="Code Icon" class="icon-image">
                                         <h5 class="card-title">Diseño Web</h5>
-                                        <p class="card-text">Desarrollo de diseños digitales impresionantes y únicos que captan la atención y dan vida a tu marca en línea. Nuestro equipo creativo crea experiencias visuales únicas que resuenan con tu audiencia.</p>
+                                        <p class="card-text">Desarrollamos diseños digitales impresionantes y únicos que captan la atención y dan vida a tu marca en línea. Nuestro equipo creativo crea experiencias visuales que resuenan profundamente con tu audiencia.</p>
                                     </div>
                                 </div>
                             </div>
@@ -438,7 +438,7 @@ function toggleLanguage() {
                                     <div class="card-body text-left">
                                         <img src="sources/icons/web.svg" alt="Code Icon" class="icon-image">
                                         <h5 class="card-title">Desarrollo Web Personalizado</h5>
-                                        <p class="card-text">Nuestras soluciones de desarrollo web personalizadas proporcionan alta precisión y competencia tecnológica. Ofrecemos aplicaciones web totalmente funcionales, altamente interactivas y dinámicas que elevan tu presencia digital.</p>
+                                        <p class="card-text">Nuestras soluciones de desarrollo web personalizadas ofrecen alta precisión y competencia tecnológica. Creamos aplicaciones web totalmente funcionales, altamente interactivas y dinámicas que elevan tu presencia digital.</p>
                                     </div>
                                 </div>
                             </div>
@@ -447,7 +447,7 @@ function toggleLanguage() {
                                     <div class="card-body text-left">
                                         <img src="sources/icons/mobile.svg" alt="Code Icon" class="icon-image">
                                         <h5 class="card-title">Aplicaciones Móviles</h5>
-                                        <p class="card-text">Desarrollamos aplicaciones nativas, híbridas y web. Nuestro equipo ayuda a los clientes a seleccionar la mejor tecnología para su proyecto, garantizando un proceso de desarrollo fluido y eficiente.</p>
+                                        <p class="card-text">Desarrollamos aplicaciones nativas, híbridas y web. Nuestro equipo te ayuda a seleccionar la mejor tecnología para tu proyecto, garantizando un proceso de desarrollo fluido y eficiente.</p>
                                     </div>
                                 </div>
                             </div>
@@ -476,9 +476,9 @@ function toggleLanguage() {
                     </div>
                     <div class="col-md-6 d-flex align-items-end justify-content-center">
                         <div class="text-justify">
-                            <p><strong>Implementación de HubSpot: </strong>Maximiza el potencial de HubSpot con una incorporación y capacitación personalizadas, integrándolo perfectamente en tu ecosistema.</p>
-                            <p><strong>Optimización de HubSpot: </strong>Aborda los desafíos diarios, mejora el rendimiento con informes personalizados, gestión de datos, objetos personalizados, flujos de trabajo y automatizaciones.</p>
-                            <p><strong>Consultoría Personalizada de HubSpot: </strong>Expertos certificados ofrecen consultas individuales para optimizar la infraestructura, resolver problemas y mejorar el uso de HubSpot en tu empresa.</p>
+                            <p><strong>Implementación de HubSpot: </strong>Maximiza el potencial de HubSpot con una Implementación y capacitación personalizadas, integrándose de manera perfecta en tu ecosistema empresarial.</p>
+                            <p><strong>Optimización de HubSpot: </strong>Enfrenta los desafíos diarios y mejora el rendimiento de tu sistema con informes personalizados, gestión de datos, creación de objetos personalizados, flujos de trabajo y automatizaciones.</p>
+                            <p><strong>Consultoría Personalizada de HubSpot: </strong>Nuestros expertos certificados ofrecen consultas individuales para optimizar la infraestructura de HubSpot, resolver problemas existentes y mejorar el uso de Hubspot en tu empresa.</p>
                             <a href="#contact" class="btn btn-custom-orange btn-lg mt-4">Contáctanos</a>
                         </div>
                     </div>
@@ -489,14 +489,14 @@ function toggleLanguage() {
         // Cambiar contenido de la sección Data a Español
         sectionData.innerHTML = `
             <div class="container-fluid">
-                <h2 class="mb-4 text-center" style="font-size: 3rem;">Extracción de Datos</h2>
+                <h2 class="mb-4 text-center" style="font-size: 3rem;">Extracción de Datos (Data Scraping).</h2>
                 <div class="row align-items-center">
                     <div class="col-md-6 d-flex align-items-end justify-content-center">
                         <div class="text-justify">
-                            <p><strong>Extracción de datos del sitio web: </strong>Obtén datos web precisos de manera rápida utilizando APIs, scripts y métodos manuales, organizados en una base de datos para facilitar su recuperación.</p>
-                            <p><strong>Extracción de Datos de Prospectos/Leads: </strong>Mejora las ventas y el marketing identificando y extrayendo información de leads de clientes, proporcionando listas de prospectos personalizadas.</p>
-                            <p><strong>Extracción de Datos de Redes Sociales: </strong>Recopila datos completos de LinkedIn, Facebook, X (anteriormente Twitter) y más, utilizando diversos criterios de búsqueda.</p>
-                            <p><strong>Investigación de Mercado y Extracción de Datos: </strong>Agiliza la investigación con datos precisos sobre audiencias objetivas, tendencias de mercado, análisis competitivo e insights de clientes.</p>
+                            <p><strong>Extracción de datos del sitio web: </strong>Obtén datos web precisos de manera rápida mediante APIs, scripts y métodos manuales. Organizamos estos datos en una base de datos para facilitar su recuperación.</p>
+                            <p><strong>Extracción de Datos de Prospectos/Leads: </strong>Mejora tus esfuerzos de ventas y marketing identificando y extrayendo información de leads de clientes, proporcionándote listas de prospectos personalizadas.</p>
+                            <p><strong>Extracción de Datos de Redes Sociales: </strong>Recopila datos completos de LinkedIn, Facebook, X (anteriormente Twitter) y otras redes sociales utilizando diversos criterios de búsqueda.</p>
+                            <p><strong>Investigación de Mercado y Extracción de Datos: </strong>Agiliza tu investigación con datos precisos sobre audiencias objetivo, tendencias de mercado, análisis competitivo e insights de clientes.</p>
                             <a href="#contact" class="btn btn-custom-orange btn-lg mt-4">Contáctanos</a>
                         </div>
                     </div>
@@ -510,7 +510,7 @@ function toggleLanguage() {
         // Cambiar contenido de la sección How we work a Español
         sectionHowWeWork.innerHTML = `
                 <div class="container-fluid">
-                    <h2 style="margin-bottom: 1rem;">Cómo trabajamos</h2>
+                    <h2 style="margin-bottom: 1rem;">Nuestro Proceso de Trabajo</h2>
                     <div class="steps">
                         <div class="step" id="step1">
                             <div class="step-title">1er Paso</div>
@@ -530,14 +530,14 @@ function toggleLanguage() {
                             <div class="step-title">3er Paso</div>
                             <div class="step-content">
                                 <h3>Estimación Final del Proyecto</h3>
-                                <p>Prepararemos una estimación con alcance y objetivos y te la compartiremos para revisión. Una vez acordado, podemos proceder con la firma del NDA.</p>
+                                <p>Prepararemos una estimación detallada con el alcance y los objetivos del proyecto. Te la compartiremos para su revisión y, una vez acordada, procederemos con la firma del acuerdo de confidencialidad (NDA).</p>
                             </div>
                         </div>
                         <div class="step" id="step4">
                             <div class="step-title">4to Paso</div>
                             <div class="step-content">
                                 <h3>Inicio del Proyecto</h3>
-                                <p>Después de que apruebes el proyecto, comenzaremos de inmediato. Nuestro equipo trabajará estrechamente contigo, funcionando como una extensión de tu equipo interno.</p>
+                                <p>Una vez aprobado el proyecto, comenzaremos de inmediato. Nuestro equipo trabajará estrechamente contigo, funcionando como una extensión de tu equipo interno para asegurar una colaboración fluida y exitosa.</p>
                             </div>
                         </div>
                     </div>
@@ -630,7 +630,7 @@ function toggleLanguage() {
                 <!-- Columna 1: Logo, párrafo y redes sociales -->
                 <div class="col-lg-4 col-md-4 mb-4 mb-lg-0">
                     <img src="sources/images/Logo.webp" alt="Logo" class="img-fluid mb- logo-footer">
-            <p>En Pixiu nos enfocamos en ofrecer un excelente servicio e innovación, especializándonos en desarrollo de software personalizado, consultoría de HubSpot y servicios de extracción de datos. Estamos en una misión para cerrar la brecha entre las empresas del mercado y las soluciones personalizadas. Contáctanos para consultas sobre cómo podemos mejorar tu negocio.</p>
+            <p>En Pixiu nos dedicamos a proporcionar un servicio excelente e innovador, especializándonos en desarrollo de software personalizado, consultoría de HubSpot y servicios de extracción de datos. Nuestra misión es cerrar la brecha entre las empresas del mercado y las soluciones personalizadas. ¡Contáctanos para obtener más información sobre cómo podemos mejorar tu negocio!</p>
                     <div class="wrapper">
                         <a href="https://www.linkedin.com/company/pixiu-x" target="_blank">
                             <li class="icon linkedin">
