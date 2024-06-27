@@ -785,8 +785,7 @@ p {
     }
 }
 
-.sticky-top {
-    position: sticky;
-    top: 100px;
-    /* Punto donde la columna izquierda se detendrá */
+.table td,
+.table th {
+    border: none; /* Eliminar bordes de las celdas */
 }
