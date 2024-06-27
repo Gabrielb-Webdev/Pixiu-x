@@ -204,6 +204,7 @@ li {
 }
 
 @media (min-width: 992px) {
+
     .navbar-expand-lg>.container,
     .navbar-expand-lg>.container-fluid,
     .navbar-expand-lg>.container-lg,
@@ -234,6 +235,12 @@ li {
     padding: 20px;
     border-radius: 10px;
     position: relative;
+}
+
+@media (max-width: 500px) {
+    .form {
+        max-width: 800px;
+    }
 }
 
 .message {
@@ -621,10 +628,12 @@ p {
 }
 
 @keyframes float {
+
     0%,
     100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(10px);
         /* Ajusta la distancia de la flotación */
@@ -690,6 +699,7 @@ p {
     .navbar-brand img {
         width: 150px;
     }
+
     .responsive-heading {
         font-size: 5vw;
     }
@@ -702,6 +712,7 @@ p {
     .navbar-brand img {
         width: 200px;
     }
+
     .responsive-heading {
         font-size: 4vw;
     }
@@ -714,6 +725,7 @@ p {
     .navbar-brand img {
         width: 250px;
     }
+
     .responsive-heading {
         font-size: 3vw;
     }
@@ -747,17 +759,34 @@ p {
 
 .flag-spain {
     display: flex;
-    align-items: center; /* Centra verticalmente */
-    text-decoration: none; /* Quita la subraya del enlace */
-  }
-  
-  .flag-icon {
-    width: 30px; /* Ajusta el tamaño de la bandera */
-    height: auto; /* Mantén la proporción */
-    margin-right: 5px; /* Espacio entre la bandera y el texto */
-  }
-  
-  .language-text {
-    color: #fff; /* Color del texto */
-  }
-  
+    align-items: center;
+    /* Centra verticalmente */
+    text-decoration: none;
+    /* Quita la subraya del enlace */
+}
+
+.flag-icon {
+    width: 30px;
+    /* Ajusta el tamaño de la bandera */
+    height: auto;
+    /* Mantén la proporción */
+    margin-right: 5px;
+    /* Espacio entre la bandera y el texto */
+}
+
+.language-text {
+    color: #fff;
+    /* Color del texto */
+}
+
+@media (max-width: 500px) {
+    .container-fluid {
+        max-width: calc(95vw - 30px);
+    }
+}
+
+.sticky-top {
+    position: sticky;
+    top: 100px;
+    /* Punto donde la columna izquierda se detendrá */
+}
