@@ -204,7 +204,6 @@ li {
 }
 
 @media (min-width: 992px) {
-
     .navbar-expand-lg>.container,
     .navbar-expand-lg>.container-fluid,
     .navbar-expand-lg>.container-lg,
@@ -628,12 +627,10 @@ p {
 }
 
 @keyframes float {
-
     0%,
     100% {
         transform: translateY(0);
     }
-
     50% {
         transform: translateY(10px);
         /* Ajusta la distancia de la flotación */
@@ -699,7 +696,6 @@ p {
     .navbar-brand img {
         width: 150px;
     }
-
     .responsive-heading {
         font-size: 5vw;
     }
@@ -712,7 +708,6 @@ p {
     .navbar-brand img {
         width: 200px;
     }
-
     .responsive-heading {
         font-size: 4vw;
     }
@@ -725,7 +720,6 @@ p {
     .navbar-brand img {
         width: 250px;
     }
-
     .responsive-heading {
         font-size: 3vw;
     }
@@ -787,5 +781,72 @@ p {
 
 .table td,
 .table th {
-    border: none; /* Eliminar bordes de las celdas */
+    border: none;
+    /* Eliminar bordes de las celdas */
+}
+
+.faq-section {
+    padding: 50px;
+    background-color: #f8f9fa;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-header {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.faq {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #f0f0f0;
+}
+
+.faq-question:after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+.faq.open .faq-answer {
+    max-height: 300px;
+    /* Ajusta según la longitud de tus respuestas */
+    padding: 20px;
+}
+
+.faq.open .faq-question:after {
+    content: '-';
+    transform: rotate(180deg);
 }

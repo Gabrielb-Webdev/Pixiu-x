@@ -1,35 +1,35 @@
 let isSpanish = false; // Estado inicial: Inglés
 
 function toggleLanguage() {
-  const languageToggle = document.getElementById("language-toggle");
-  const navLinks = document.querySelectorAll(".nav-link");
-  const welcomeSection = document.getElementById("welcome-section");
-  const sectionFooter = document.getElementById("footer");
+    const languageToggle = document.getElementById("language-toggle");
+    const navLinks = document.querySelectorAll(".nav-link");
+    const welcomeSection = document.getElementById("welcome-section");
+    const sectionFooter = document.getElementById("footer");
 
-  if (isSpanish) {
-    // Cambiar a Inglés
-    languageToggle.innerHTML =
-      '<img src="../sources/icons/spain.svg" alt="Bandera de México" class="flag-icon">' +
-      " Es";
-    navLinks.forEach((link) => {
-      switch (link.textContent.trim()) {
-        case "Inicio":
-          link.textContent = "Home";
-          break;
-        case "Servicios":
-          link.textContent = "Services";
-          break;
-        case "Contacto":
-          link.textContent = "Contact";
-          break;
-        case "Agendar una Llamada":
-          link.textContent = "Book A Call";
-          break;
-      }
-    });
+    if (isSpanish) {
+        // Cambiar a Inglés
+        languageToggle.innerHTML =
+            '<img src="../sources/icons/spain.svg" alt="Bandera de México" class="flag-icon">' +
+            " Es";
+        navLinks.forEach((link) => {
+            switch (link.textContent.trim()) {
+                case "Inicio":
+                    link.textContent = "Home";
+                    break;
+                case "Servicios":
+                    link.textContent = "Services";
+                    break;
+                case "Contacto":
+                    link.textContent = "Contact";
+                    break;
+                case "Agendar una Llamada":
+                    link.textContent = "Book A Call";
+                    break;
+            }
+        });
 
-    // Cambiar contenido de la sección Bienvenidos a Inglés
-    welcomeSection.innerHTML = `
+        // Cambiar contenido de la sección Bienvenidos a Inglés
+        welcomeSection.innerHTML = `
             <div class="container-fluid h-100">
               <div class="row h-100 align-items-center">
                 <div class="col text-center">
@@ -41,20 +41,20 @@ function toggleLanguage() {
             </div>
           `;
 
-    // Cambiar contenido de la sección Footer a Inglés
-    sectionFooter.innerHTML = `
+        // Cambiar contenido de la sección Footer a Inglés
+        sectionFooter.innerHTML = `
                 <div class="container-fluid">
                 <div class="row">
                     <!-- Columna 1: Logo, párrafo y redes sociales -->
                     <div class="col-lg-4 col-md-4 mb-4 mb-lg-0">
-                        <img src="sources/images/Logo.webp" alt="Logo" class="img-fluid mb- logo-footer">
+                        <img src="sources/images/logo.webp" alt="Logo" class="img-fluid mb- logo-footer">
                         <p>At Pixiu, we focus on excellent service and innovation, specializing in custom software development, HubSpot consulting, and data scraping services. We're on a mission to bridge the gap between Marketplace Businesses and custom solutions.
                             Contact us for inquiries on how we can improve your business.</p>
                         <div class="wrapper">
                             <a href="https://www.linkedin.com/company/pixiu-x" target="_blank">
                                 <li class="icon linkedin">
-                                    <span class="tooltip">LinkedIn</span>
-                                <img src="sources/icons/LinkedIn.svg" alt="">
+                                    <span class="tooltip">linkedIn</span>
+                                <img src="sources/icons/linkedin.svg" alt="">
                                 </li>
                             </a>
                             <a href="" target="_blank">
@@ -107,31 +107,31 @@ function toggleLanguage() {
                 </div>
             </div>
             `;
-  } else {
-    // Cambiar a Español
-    languageToggle.innerHTML =
-      '<img src="../sources/icons/USA.svg" alt="Bandera de US" class="flag-icon">' +
-      " En";
+    } else {
+        // Cambiar a Español
+        languageToggle.innerHTML =
+            '<img src="../sources/icons/USA.svg" alt="Bandera de US" class="flag-icon">' +
+            " En";
 
-    navLinks.forEach((link) => {
-      switch (link.textContent.trim()) {
-        case "Home":
-          link.textContent = "Inicio";
-          break;
-        case "Services":
-          link.textContent = "Servicios";
-          break;
-        case "Contact":
-          link.textContent = "Contacto";
-          break;
-        case "Book A Call":
-          link.textContent = "Agendar una Llamada";
-          break;
-      }
-    });
+        navLinks.forEach((link) => {
+            switch (link.textContent.trim()) {
+                case "Home":
+                    link.textContent = "Inicio";
+                    break;
+                case "Services":
+                    link.textContent = "Servicios";
+                    break;
+                case "Contact":
+                    link.textContent = "Contacto";
+                    break;
+                case "Book A Call":
+                    link.textContent = "Agendar una Llamada";
+                    break;
+            }
+        });
 
-    // Cambiar contenido de la sección Bienvenidos a Español
-    welcomeSection.innerHTML = `
+        // Cambiar contenido de la sección Bienvenidos a Español
+        welcomeSection.innerHTML = `
             <div class="container-fluid h-100">
               <div class="row h-100 align-items-center">
                 <div class="col text-center">
@@ -143,19 +143,19 @@ function toggleLanguage() {
             </div>
           `;
 
-    // Cambiar contenido de la sección Footer a Español
-    sectionFooter.innerHTML = `
+        // Cambiar contenido de la sección Footer a Español
+        sectionFooter.innerHTML = `
             <div class="container-fluid">
             <div class="row">
                 <!-- Columna 1: Logo, párrafo y redes sociales -->
                 <div class="col-lg-4 col-md-4 mb-4 mb-lg-0">
-                    <img src="sources/images/Logo.webp" alt="Logo" class="img-fluid mb- logo-footer">
+                    <img src="sources/images/logo.webp" alt="Logo" class="img-fluid mb- logo-footer">
             <p>En Pixiu nos dedicamos a proporcionar un servicio excelente e innovador, especializándonos en desarrollo de software personalizado, consultoría de HubSpot y servicios de extracción de datos. Nuestra misión es cerrar la brecha entre las empresas del mercado y las soluciones personalizadas. ¡Contáctanos para obtener más información sobre cómo podemos mejorar tu negocio!</p>
                     <div class="wrapper">
                         <a href="https://www.linkedin.com/company/pixiu-x" target="_blank">
                             <li class="icon linkedin">
-                                <span class="tooltip">LinkedIn</span>
-                                <img src="sources/icons/LinkedIn.svg" alt="">
+                                <span class="tooltip">linkedIn</span>
+                                <img src="sources/icons/linkedin.svg" alt="">
                                 </li>
                         </a>
                         <a href="" target="_blank">
@@ -208,7 +208,7 @@ function toggleLanguage() {
             </div>
         </div>
         `;
-  }
+    }
 
-  isSpanish = !isSpanish; // Alternar el estado
+    isSpanish = !isSpanish; // Alternar el estado
 }
