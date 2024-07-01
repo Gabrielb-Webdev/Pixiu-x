@@ -926,3 +926,31 @@ p {
 .service-item h4 {
     margin-bottom: 0.5em;
 }
+
+#detalle-servicios-hubspot .service-detail-item {
+    padding: 30px;
+    transition: transform 0.3s ease;
+}
+
+#detalle-servicios-hubspot .service-detail-item:hover {
+    transform: translateY(-10px);
+}
+
+#detalle-servicios-hubspot h3 {
+    color: #dd6d2c;
+    margin-bottom: 15px;
+}
+
+#detalle-servicios-hubspot p {
+    line-height: 1.8;
+}
+
+#detalle-servicios-hubspot .service-detail-img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+#detalle-servicios-hubspot .service-detail-img:hover {
+    transform: scale(1.05);
+}
