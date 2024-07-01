@@ -133,7 +133,7 @@
     <!-- Sección de Detalles de Servicios de HubSpot -->
     <section id="detalle-servicios-hubspot" style="padding: 50px;">
         <div class="container-fluid">
-            <div class="row mb-5" style="margin-bottom: -7.5rem !important;">
+            <div class="row mb-5" style="margin-bottom: 0rem !important;">
                 <div class="col-md-6 d-flex align-items-center">
                     <div class="service-detail-item">
                         <h3>HubSpot Implementation and Training</h3>
@@ -144,9 +144,45 @@
                             Pixiu's expert support and continuous guidance.</p>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <img src="sources/images/Imagenes Pixiu/Operating system-amico.png"
-                        alt="HubSpot Implementation and Training" class="service-detail-img">
+                <!-- Sustitución de la imagen por la tarjeta -->
+                <div class="col-md-6 d-flex">
+                    <div class="card h-100 flex-fill">
+                        <div class="card-header text-center">
+                            <h5 class="card-title">Implementation Package</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="card-text">
+                                        <li><i class="fas fa-database"></i> Data mapping</li>
+                                        <li><i class="fas fa-exchange-alt"></i> Data migration</li>
+                                        <li><i class="fas fa-users"></i> Workshops with your team to understand your
+                                            company and business</li>
+                                        <li><i class="fas fa-cogs"></i> CRM configuration</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="card-text">
+                                        <li><i class="fas fa-envelope"></i> Templates for emails, forms, landing pages
+                                        </li>
+                                        <li><i class="fas fa-seedling"></i> Email sequences</li>
+                                        <li><i class="fas fa-sync-alt"></i> Automations to keep your data consistent and
+                                            help your team be productive</li>
+                                        <li><i class="fas fa-chalkboard-teacher"></i> Training</li>
+                                        <li><i class="fas fa-chart-line"></i> Reporting</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p>We'll work together to define objectives for your team, ensuring HubSpot aligns perfectly
+                                with your business goals.</p>
+                            <p>(and we'll also be the first ones to tell you if it seems to us that HubSpot is not the
+                                right solution for you)</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <p class="card-price">Talk to sales</p>
+                            <a href="#" class="btn custom-btn">Contact Sales</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row mb-5" style="margin-bottom: -7.5rem !important;">
@@ -187,6 +223,7 @@
         </div>
     </section>
 
+
     <!-- Sección de Paquetes de Implementación y Soporte de HubSpot -->
     <section id="paquetes-hubspot" style="padding: 50px;">
         <div class="container-fluid">
@@ -196,39 +233,8 @@
                 </div>
             </div>
             <div class="row d-flex align-items-stretch">
-                <!-- Card 1 -->
-                <div class="col-md-3 d-flex">
-                    <div class="card h-100 flex-fill">
-                        <div class="card-header text-center">
-                            <h5 class="card-title">Implementation Package</h5>
-                        </div>
-                        <div class="card-body">
-                            <ul class="card-text">
-                                <li><i class="fas fa-database"></i> Data mapping</li>
-                                <li><i class="fas fa-exchange-alt"></i> Data migration</li>
-                                <li><i class="fas fa-users"></i> Workshops with your team to understand your company and
-                                    business</li>
-                                <li><i class="fas fa-cogs"></i> CRM configuration</li>
-                                <li><i class="fas fa-envelope"></i> Templates for emails, forms, landing pages</li>
-                                <li><i class="fas fa-seedling"></i> Email sequences</li>
-                                <li><i class="fas fa-sync-alt"></i> Automations to keep your data consistent and help
-                                    your team be productive</li>
-                                <li><i class="fas fa-chalkboard-teacher"></i> Training</li>
-                                <li><i class="fas fa-chart-line"></i> Reporting</li>
-                                <li>We'll work together to define objectives for your team, ensuring HubSpot aligns
-                                    perfectly with your business goals.</li>
-                                <li>(and we'll also be the first ones to tell you if it seems to us that HubSpot is not
-                                    the right solution for you)</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer text-center">
-                            <p class="card-price">Talk to sales</p>
-                            <a href="#" class="btn custom-btn">Contact Sales</a>
-                        </div>
-                    </div>
-                </div>
                 <!-- Card 2 -->
-                <div class="col-md-3 d-flex">
+                <div class="col-md-4 d-flex">
                     <div class="card h-100 flex-fill popular-card">
                         <div class="card-header text-center">
                             <h5 class="card-title">Starter</h5>
@@ -248,7 +254,7 @@
                     </div>
                 </div>
                 <!-- Card 3 -->
-                <div class="col-md-3 d-flex">
+                <div class="col-md-4 d-flex">
                     <div class="card h-100 flex-fill">
                         <div class="card-header text-center">
                             <h5 class="card-title">Growth</h5>
@@ -271,7 +277,7 @@
                     </div>
                 </div>
                 <!-- Card 4 -->
-                <div class="col-md-3 d-flex">
+                <div class="col-md-4 d-flex">
                     <div class="card h-100 flex-fill">
                         <div class="card-header text-center">
                             <h5 class="card-title">Hyper Growth</h5>
@@ -296,79 +302,6 @@
             </div>
         </div>
     </section>
-
-    <style>
-        #paquetes-hubspot .card {
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        #paquetes-hubspot .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-        }
-
-        #paquetes-hubspot .card-header {
-            background-color: #f8f9fa;
-            border-bottom: 1px solid #ddd;
-            padding: 20px;
-            border-radius: 10px 10px 0 0;
-        }
-
-        #paquetes-hubspot .card-title {
-            margin: 0;
-            color: #dd6d2c;
-        }
-
-        #paquetes-hubspot .card-body {
-            padding: 20px;
-        }
-
-        #paquetes-hubspot .card-body ul {
-            padding-left: 0;
-            list-style: none;
-        }
-
-        #paquetes-hubspot .card-body ul li {
-            margin-bottom: 10px;
-            line-height: 1.5;
-            display: flex;
-            align-items: center;
-        }
-
-        #paquetes-hubspot .card-body ul li i {
-            margin-right: 10px;
-            color: #dd6d2c;
-        }
-
-        #paquetes-hubspot .card-footer {
-            background-color: #f8f9fa;
-            border-top: 1px solid #ddd;
-            padding: 20px;
-            border-radius: 0 0 10px 10px;
-        }
-
-        #paquetes-hubspot .card-price {
-            margin: 0;
-            font-size: 1.5rem;
-            color: #dd6d2c;
-        }
-
-        .custom-btn {
-            background-color: #dd6d2c;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-transform: uppercase;
-            transition: background-color 0.3s ease;
-        }
-
-        .custom-btn:hover {
-            background-color: #c55a26;
-            color: #fff;
-        }
-    </style>
 
     <!-- Step timeline -->
     <section class="section section-how-we-work" style="background-color: #FEE4D9;">
