@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/card.css">
 
     <!-- Logos -->
     <link rel="apple-touch-icon" sizes="180x180" href="Logos/apple-touch-icon.png">
@@ -34,7 +36,9 @@
                 <a class="navbar-brand" href="index.html">
                     <img src="sources/images/logo.webp" alt="Pixiu X Logo" width="100" height="auto">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -50,7 +54,8 @@
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link custom-btn" href="https://meetings.hubspot.com/pixiu" style="color: #fff;" target="_blank">Book A Call</a>
+                            <a class="nav-link custom-btn" href="https://meetings.hubspot.com/pixiu"
+                                style="color: #fff;" target="_blank">Book A Call</a>
                         </li>
                         <li class="nav-item">
                             <a id="language-toggle" class="nav-link flag-spain" href="#" onclick="toggleLanguage()">
@@ -65,13 +70,23 @@
     </header>
 
     <!-- Sección de Bienvenidos -->
-    <section id="welcome-section" style="background-color: #FEE4D9; padding: 20px; height: 50vh;">
+    <section id="welcome-section" style="height: 75vh; background: linear-gradient(to bottom, #FEE4D9, #dd6d2c);">
         <div class="container-fluid h-100">
             <div class="row h-100 align-items-center">
-                <div class="col text-center">
-                    <h2 style="font-size: 4rem;">Unlock HubSpot's Full Potential</h2>
-                    <p>At Pixiu, we specialize in seamless HubSpot onboarding and training tailored to your team's needs. Integrate HubSpot effortlessly into your company's ecosystem for smooth and effective implementation.</p>
-                    <a href="https://meetings.hubspot.com/pixiu" class="btn mt-5 custom-btn">Book A Call</a>
+                <div class="col-md-6">
+                    <div class="welcome-content text-left">
+                        <h2 style="font-size: 4rem;">Unlock HubSpot's Full Potential</h2>
+                        <p>At Pixiu, we specialize in seamless HubSpot onboarding and training tailored to your team's
+                            needs. Integrate HubSpot effortlessly into your company's ecosystem for smooth and effective
+                            implementation.</p>
+                        <a href="https://meetings.hubspot.com/pixiu" class="btn mt-5 custom-btn">Book A Call</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="welcome-image floating-image">
+                        <img src="sources/images/Imagenes Pixiu/Operating system-pana.png" alt="Imagen de bienvenida"
+                            style="max-width: 100%; height: auto;">
+                    </div>
                 </div>
             </div>
         </div>
@@ -81,49 +96,108 @@
     <section id="servicios-hubspot" style="padding: 50px;">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-14 offset-md-1">
-                    <table class="table">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-5" style="text-align: left; font-weight: bold; font-size: 20px; position: sticky; top: 100px; background: white; z-index: 1;">
-                                    <strong>HubSpot Implementation and Training</strong>
-                                </td>
-                                <td style="text-align: left; font-size: 25px;">
-                                    Unlock the full potential of HubSpot with Pixiu’s specialized onboarding and training services. Our tailored approach ensures that your team gets the most out of HubSpot, with a focus on your unique business needs. We handle the seamless integration of
-                                    HubSpot into your company’s ecosystem, ensuring a smooth and effective implementation process. Our step-by-step onboarding is designed to minimize disruptions and maximize efficiency, allowing your team to adapt quickly
-                                    and start benefiting from HubSpot’s robust features right away. We provide comprehensive training sessions and playbooks that empower your team with the knowledge and skills they need to utilize HubSpot effectively,
-                                    ensuring your business leverages all available tools to drive growth and success.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: left; font-weight: bold; font-size: 20px; position: sticky; top: 100px; background: white; z-index: 2;">
-                                    <strong>HubSpot Optimization</strong>
-                                </td>
-                                <td style="text-align: left; font-size: 25px;">
-                                    At Pixiu, our HubSpot optimization services are designed to tackle the daily challenges your business faces, enhancing your overall performance and productivity. We focus on identifying and addressing potential issues, ensuring your HubSpot setup is always
-                                    running at peak efficiency. Our experts assist with custom reporting, providing detailed insights that help you make informed decisions. We also manage your data to ensure it is accurate and well-organized, enabling
-                                    smoother operations. Additionally, we create custom objects, workflows, check your integrations, and tailor automations to your specific business processes, streamlining your operations and improving overall efficiency.
-                                    Our goal is to ensure that your HubSpot platform evolves with your business, providing ongoing support and optimization to meet your changing needs.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: left; font-weight: bold; font-size: 20px; position: sticky; top: 0; background: white; z-index: 3;">
-                                    <strong style="position: sticky; top: 100px;">Personalized HubSpot Consulting</strong>
-                                </td>
-                                <td style="text-align: left; font-size: 25px;">
-                                    Our team of certified HubSpot experts at Pixiu offers personalized, one-on-one consulting services to help you optimize your HubSpot infrastructure. Whether you’re looking to fix existing issues, enhance your current setup, or explore new ways to boost
-                                    your company’s performance using HubSpot, we are here to assist. We understand that each business is unique, and our consultations are tailored to address your specific challenges and goals. From troubleshooting and
-                                    problem-solving to strategic planning and implementation, our experts provide the guidance and support you need to succeed. We also keep you up to date with integrations that can maximize your use of HubSpot, such as
-                                    Clay, Instantly, Apollo, and others. Our consulting services include continuous improvement strategies, ensuring that your HubSpot environment remains aligned with your business objectives and adapts to new opportunities
-                                    and challenges. Partner with Pixiu to unlock new levels of efficiency, productivity, and growth with HubSpot.
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="col-md-4">
+                    <div class="service-item text-center">
+                        <div class="service-icon"
+                            style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+                            <img src="sources/icons/crm.svg" alt="Icono 1" style="max-width: 80px; height: auto;">
+                        </div>
+                        <h4 style="color: #dd6d2c;">HubSpot Implementation and Training</h4>
+                        <p>Customized onboarding and training to maximize your HubSpot investment.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item text-center">
+                        <div class="service-icon"
+                            style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+                            <img src="sources/icons/data-four.svg" alt="Icono 2" style="max-width: 80px; height: auto;">
+                        </div>
+                        <h4 style="color: #dd6d2c;">HubSpot Optimization</h4>
+                        <p>Optimize and streamline your HubSpot processes for enhanced efficiency.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item text-center">
+                        <div class="service-icon"
+                            style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+                            <img src="sources/icons/hubspot.svg" alt="Icono 3" style="max-width: 80px; height: auto;">
+                        </div>
+                        <h4 style="color: #dd6d2c;">Personalized HubSpot Consulting</h4>
+                        <p>Consulting services tailored to your specific business needs and goals.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    
+<!-- Sección de Detalles de Servicios de HubSpot -->
+<section id="detalle-servicios-hubspot" style="padding: 50px;">
+    <div class="container-fluid">
+        <div class="row mb-5">
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="service-detail-item">
+                    <h3>HubSpot Implementation and Training</h3>
+                    <p>We provide tailored HubSpot onboarding and training sessions to ensure your team is equipped with the knowledge and tools to leverage HubSpot effectively. Our step-by-step implementation process is designed to fit seamlessly into your business operations, ensuring a smooth transition and quick adoption.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="sources/images/Imagenes Pixiu/Operating system-amico.png" alt="HubSpot Implementation and Training" class="service-detail-img">
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-md-6 order-md-2 d-flex align-items-center">
+                <div class="service-detail-item">
+                    <h3>HubSpot Optimization</h3>
+                    <p>Our optimization services focus on refining your existing HubSpot setup to maximize efficiency and performance. We analyze your current processes, identify areas for improvement, and implement best practices to ensure you're getting the most out of your HubSpot investment.</p>
+                </div>
+            </div>
+            <div class="col-md-6 order-md-1">
+                <img src="sources/images/Imagenes Pixiu/Operating system-cuate.png" alt="HubSpot Optimization" class="service-detail-img">
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="service-detail-item">
+                    <h3>Personalized HubSpot Consulting</h3>
+                    <p>Our consulting services are designed to address your unique business challenges and goals. We offer personalized advice and strategies tailored to your specific needs, helping you to unlock the full potential of HubSpot and drive your business forward.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="sources/images/Imagenes Pixiu/Operating system-rafiki.png" alt="Personalized HubSpot Consulting" class="service-detail-img">
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    #detalle-servicios-hubspot .service-detail-item {
+        padding: 30px;
+        transition: transform 0.3s ease;
+    }
+
+    #detalle-servicios-hubspot .service-detail-item:hover {
+        transform: translateY(-10px);
+    }
+
+    #detalle-servicios-hubspot h3 {
+        color: #dd6d2c;
+        margin-bottom: 15px;
+    }
+
+    #detalle-servicios-hubspot p {
+        line-height: 1.8;
+    }
+
+    #detalle-servicios-hubspot .service-detail-img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease;
+    }
+
+    #detalle-servicios-hubspot .service-detail-img:hover {
+        transform: scale(1.05);
+    }
+</style>
 
     <!-- Sección de Paquetes de Implementación y Soporte de HubSpot -->
     <section id="paquetes-hubspot" style="padding: 50px;">
@@ -133,84 +207,94 @@
                     <h2 style="text-align: center; margin-bottom: 50px;">Our HubSpot Service Packages</h2>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="card h-100">
-                        <div class="card-body">
+            <div class="row d-flex align-items-stretch">
+                <!-- Card 1 -->
+                <div class="col-md-3 d-flex">
+                    <div class="card h-100 flex-fill">
+                        <div class="card-header text-center">
                             <h5 class="card-title">Implementation Package</h5>
-                            <div class="price">
-                                <p class="card-price">Talk to Sales</p>
-                            </div>
+                            <p class="card-price">Talk to sales</p>
+                            <a href="#" class="btn custom-btn">Contact Sales</a>
+                        </div>
+                        <div class="card-body">
                             <p class="card-text">
-                                Data mapping<br> Data migration<br> Workshops with your team to understand your company and business<br> CRM configuration<br> Templates for emails, forms, landing pages<br> Email sequences<br> Automations to keep your
-                                data consistent and help your team be productive<br> Training
-                                <br> Reporting
+                                Data mapping<br>
+                                Data migration<br>
+                                Workshops with your team to understand your company and business<br>
+                                CRM configuration<br>
+                                Templates for emails, forms, landing pages<br>
+                                Email sequences<br>
+                                Automations to keep your data consistent and help your team be productive<br>
+                                Training<br>
+                                Reporting<br>
+                                We'll work together to define objectives for your team, ensuring HubSpot aligns
+                                perfectly with your business goals.<br>
+                                (and we'll also be the first ones to tell you if it seems to us that HubSpot is not the
+                                right solution for you)
                             </p>
-                            <div class="price">
-                                <a href="#" class="btn btn-primary">Talk to Sales</a>
-                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card h-100">
-                        <div class="card-body">
+                <!-- Card 2 -->
+                <div class="col-md-3 d-flex">
+                    <div class="card h-100 flex-fill popular-card">
+                        <div class="card-header text-center">
                             <h5 class="card-title">Starter</h5>
-                            <div class="price">
-                                <p class="card-price">$1399/month</p>
-                            </div>
+                            <p class="card-price">$1399/month</p>
+                            <a href="#" class="btn custom-btn">Start a Trial</a>
+                        </div>
+                        <div class="card-body">
                             <p class="card-text">
-                                This service is tailored to address potential issues and challenges you may encounter daily.<br> We provide 8 hours of support each month.<br> Support tickets will be responded to on weekdays in the order they are received.
+                                This service is tailored to address potential issues and challenges you may encounter
+                                daily.<br>
+                                We provide 8 hours of support each month.<br>
+                                Support tickets will be responded to on weekdays in the order they are received.
                             </p>
-                            <a href="#" class="btn btn-primary">Subscribe</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card h-100">
-                        <div class="card-body">
+                <!-- Card 3 -->
+                <div class="col-md-3 d-flex">
+                    <div class="card h-100 flex-fill">
+                        <div class="card-header text-center">
                             <h5 class="card-title">Growth</h5>
-                            <div class="price">
-                                <p class="card-price">$2900/month</p>
-                            </div>
+                            <p class="card-price">$2900/month</p>
+                            <a href="#" class="btn custom-btn">Start a Trial</a>
+                        </div>
+                        <div class="card-body">
                             <p class="card-text">
-                                Full HubSpot support with a dedicated HubSpot specialist.<br> Proactive monthly planning and reporting.<br> Addressing and resolving issues as they arise.<br> Receive 20 credits per month to use for development, support
-                                tickets, or a combination of both.<br> Long-term optimization of HubSpot usage and license tier.
+                                Full HubSpot support with a dedicated HubSpot specialist.<br>
+                                Proactive monthly planning and reporting.<br>
+                                Addressing and resolving issues as they arise.<br>
+                                Receive 20 credits per month to use for development, support tickets, or a combination
+                                of both.<br>
+                                Long-term optimization of HubSpot usage and license tier.
                             </p>
-                            <a href="#" class="btn btn-primary">Subscribe</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card h-100">
-                        <div class="card-body">
+                <!-- Card 4 -->
+                <div class="col-md-3 d-flex">
+                    <div class="card h-100 flex-fill">
+                        <div class="card-header text-center">
                             <h5 class="card-title">Hyper Growth</h5>
-                            <div class="price">
-                                <p class="card-price">$3900/month</p>
-                            </div>
+                            <p class="card-price">$3900/month</p>
+                            <a href="#" class="btn custom-btn">Start a Trial</a>
+                        </div>
+                        <div class="card-body">
                             <p class="card-text">
-                                Full HubSpot support with your dedicated HubSpot specialist.<br> Proactive monthly planning and reporting.<br> Addressing and resolving issues as they arise.<br> Receive 30 credits per month to use for development, support
-                                tickets, or both.<br> Long-term optimization of HubSpot usage and license tier.
+                                Full HubSpot support with your dedicated HubSpot specialist.<br>
+                                Proactive monthly planning and reporting.<br>
+                                Addressing and resolving issues as they arise.<br>
+                                Receive 30 credits per month to use for development, support tickets, or both.<br>
+                                Long-term optimization of HubSpot usage and license tier.
                             </p>
-                            <a href="#" class="btn btn-primary">Subscribe</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <style>
-        .price {
-            margin-bottom: 10px;
-            text-align: center;
-        }
-        
-        .card-price {
-            font-size: 20px;
-            font-weight: bold;
-        }
-    </style>
 
     <!-- Step timeline -->
     <section class="section section-how-we-work" style="background-color: #FEE4D9;">
@@ -221,28 +305,33 @@
                     <div class="step-title">1st Step</div>
                     <div class="step-content">
                         <h3>Initial Consultation</h3>
-                        <p>Our first interaction begins with understanding your requirements, industry, tech stacks, architecture, deadlines, and budget for custom software development, HubSpot consulting, or data scraping services.</p>
+                        <p>Our first interaction begins with understanding your requirements, industry, tech stacks,
+                            architecture, deadlines, and budget for custom software development, HubSpot consulting, or
+                            data scraping services.</p>
                     </div>
                 </div>
                 <div class="step" id="step2">
                     <div class="step-title">2nd Step</div>
                     <div class="step-content">
                         <h3>Requirement Analysis</h3>
-                        <p>Next, you connect with our tech team to simplify your project and explore technical possibilities tailored to your needs.</p>
+                        <p>Next, you connect with our tech team to simplify your project and explore technical
+                            possibilities tailored to your needs.</p>
                     </div>
                 </div>
                 <div class="step" id="step3">
                     <div class="step-title">3rd Step</div>
                     <div class="step-content">
                         <h3>Final Project Estimation</h3>
-                        <p>We’ll prepare an estimation with scope and objectives and share it with you for review. Once agreed, we can proceed with signing the NDA.</p>
+                        <p>We’ll prepare an estimation with scope and objectives and share it with you for review. Once
+                            agreed, we can proceed with signing the NDA.</p>
                     </div>
                 </div>
                 <div class="step" id="step4">
                     <div class="step-title">4th Step</div>
                     <div class="step-content">
                         <h3>Project Kickoff</h3>
-                        <p>After you sign off on the project, we will immediately begin. Our team will work closely with you, functioning as an extension of your in-house team.</p>
+                        <p>After you sign off on the project, we will immediately begin. Our team will work closely with
+                            you, functioning as an extension of your in-house team.</p>
                     </div>
                 </div>
             </div>
@@ -259,19 +348,26 @@
             <div class="faq-header">Frequently Asked Questions</div>
             <div class="faq">
                 <div class="faq-question">What is Pixiu's data extraction service?</div>
-                <div class="faq-answer">Pixiu's data extraction service leverages APIs, scripts, and manual methods to collect data from various websites, organizing it into a database for easy future retrieval.</div>
+                <div class="faq-answer">Pixiu's data extraction service leverages APIs, scripts, and manual methods to
+                    collect data from various websites, organizing it into a database for easy future retrieval.</div>
             </div>
             <div class="faq">
                 <div class="faq-question">How can Pixiu help with prospect/lead data extraction?</div>
-                <div class="faq-answer">We employ a personalized approach to delve into your target audience, identify permanent data sources, extract customer lead information, and provide you with a tailored list of potential prospects.</div>
+                <div class="faq-answer">We employ a personalized approach to delve into your target audience, identify
+                    permanent data sources, extract customer lead information, and provide you with a tailored list of
+                    potential prospects.</div>
             </div>
             <div class="faq">
                 <div class="faq-question">What types of data can be extracted from social media?</div>
-                <div class="faq-answer">We retrieve a comprehensive range of data, including user profiles, posts, comments, and user information from platforms like LinkedIn, Facebook, X (formerly Twitter), and others.</div>
+                <div class="faq-answer">We retrieve a comprehensive range of data, including user profiles, posts,
+                    comments, and user information from platforms like LinkedIn, Facebook, X (formerly Twitter), and
+                    others.</div>
             </div>
             <div class="faq">
                 <div class="faq-question">How does Pixiu support market research data extraction?</div>
-                <div class="faq-answer">We provide accurate and relevant data on your target audience, market trends, competitive analysis, customer insights, and previous studies to accelerate your research and analytics.</div>
+                <div class="faq-answer">We provide accurate and relevant data on your target audience, market trends,
+                    competitive analysis, customer insights, and previous studies to accelerate your research and
+                    analytics.</div>
             </div>
         </div>
     </section>
@@ -283,7 +379,9 @@
                 <!-- Columna 1: Logo, párrafo y redes sociales -->
                 <div class="col-lg-4 col-md-4 mb-4 mb-lg-0">
                     <img src="sources/images/logo.webp" alt="Logo" class="img-fluid mb- logo-footer">
-                    <p>At Pixiu, we focus on excellent service and innovation, specializing in custom software development, HubSpot consulting, and data scraping services. Contact us for inquiries on how we can improve your business.</p>
+                    <p>At Pixiu, we focus on excellent service and innovation, specializing in custom software
+                        development, HubSpot consulting, and data scraping services. Contact us for inquiries on how we
+                        can improve your business.</p>
                     <div class="wrapper">
                         <a href="https://www.linkedin.com/company/pixiu-x" target="_blank">
                             <li class="icon linkedin">
@@ -346,7 +444,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/scripts_services.js"></script>
     <script src="js/lenguaje-scrap.js"></script>
