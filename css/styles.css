@@ -957,8 +957,7 @@ p {
 }
 
 #paquetes-hubspot .card {
-    border: 1px solid #ddd;
-    border-radius: 10px;
+    border: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -975,8 +974,7 @@ p {
 }
 
 #paquetes-hubspot .card-title {
-    margin: 0;
-    color: #dd6d2c;
+    margin-top: 20px;
 }
 
 #paquetes-hubspot .card-body {
@@ -986,6 +984,10 @@ p {
 #paquetes-hubspot .card-body ul {
     padding-left: 0;
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 #paquetes-hubspot .card-body ul li {
@@ -1002,15 +1004,12 @@ p {
 
 #paquetes-hubspot .card-footer {
     background-color: #f8f9fa;
-    border-top: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 0 0 10px 10px;
+    border-top: none;
 }
 
 #paquetes-hubspot .card-price {
     margin: 0;
-    font-size: 1.5rem;
-    color: #dd6d2c;
+    font-size: 2rem;
 }
 
 #detalle-servicios-hubspot .service-detail-item h3 {
@@ -1084,4 +1083,27 @@ p {
     margin: 0;
     font-size: 1.5rem;
     color: #dd6d2c;
+}
+
+#paquetes-hubspot .card-text {
+    padding-left: 0;
+    list-style: none;
+}
+
+#paquetes-hubspot .card-text li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+#paquetes-hubspot .btn {
+    background-color: #dd6d2c;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+#paquetes-hubspot .btn:hover {
+    background-color: #c55a26;
+    color: #fff;
 }
