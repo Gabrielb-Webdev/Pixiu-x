@@ -1,39 +1,41 @@
 let isSpanish = false; // Estado inicial: Inglés
 
 function toggleLanguage() {
-    const languageToggle = document.getElementById('language-toggle');
-    const navLinks = document.querySelectorAll('.nav-link');
-    const sectionHome = document.getElementById('home');
-    const sectionServices = document.getElementById('services');
-    const sectionHubSpot = document.getElementById('hubspot');
-    const sectionData = document.getElementById('Data');
-    const sectionHowWeWork = document.querySelector('.section-how-we-work');
-    const sectionContact = document.getElementById('contact');
-    const sectionFastTrack = document.getElementById('fast-track');
-    const sectionFooter = document.getElementById('footer');
+  const languageToggle = document.getElementById("language-toggle");
+  const navLinks = document.querySelectorAll(".nav-link");
+  const sectionHome = document.getElementById("home");
+  const sectionServices = document.getElementById("services");
+  const sectionHubSpot = document.getElementById("hubspot");
+  const sectionData = document.getElementById("Data");
+  const sectionHowWeWork = document.querySelector(".section-how-we-work");
+  const sectionContact = document.getElementById("contact");
+  const sectionFastTrack = document.getElementById("fast-track");
+  const sectionFooter = document.getElementById("footer");
 
-    if (isSpanish) {
-        // Cambiar a Inglés
-        languageToggle.innerHTML = '<img src="../sources/icons/spain.svg" alt="Bandera de México" class="flag-icon">' + ' Es';
-        navLinks.forEach(link => {
-            switch (link.textContent.trim()) {
-                case 'Inicio':
-                    link.textContent = 'Home';
-                    break;
-                case 'Servicios':
-                    link.textContent = 'Services';
-                    break;
-                case 'Contacto':
-                    link.textContent = 'Contact';
-                    break;
-                case 'Agendar una Llamada':
-                    link.textContent = 'Book A Call';
-                    break;
-            }
-        });
+  if (isSpanish) {
+    // Cambiar a Inglés
+    languageToggle.innerHTML =
+      '<img src="../sources/icons/spain.svg" alt="Bandera de México" class="flag-icon">' +
+      " Es";
+    navLinks.forEach((link) => {
+      switch (link.textContent.trim()) {
+        case "Inicio":
+          link.textContent = "Home";
+          break;
+        case "Servicios":
+          link.textContent = "Services";
+          break;
+        case "Contacto":
+          link.textContent = "Contact";
+          break;
+        case "Agendar una Llamada":
+          link.textContent = "Book A Call";
+          break;
+      }
+    });
 
-        // Cambiar contenido de la sección Home a Inglés
-        sectionHome.innerHTML = `
+    // Cambiar contenido de la sección Home a Inglés
+    sectionHome.innerHTML = `
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-md-6">
@@ -56,51 +58,73 @@ function toggleLanguage() {
             </div>
         `;
 
-        // Cambiar contenido de la sección Services a Inglés
-        sectionServices.innerHTML = `
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-lg-5 text-left">
-                        <h2 style="margin-bottom: 1rem;">Custom Software Development</h2>
-                        <p>We specialize in creating tailored software solutions that meet your specific business needs. Our team ensures high-quality, efficient, and scalable software that enhances your operations and drives growth.</p>
-                        <img src="sources/images/Imagenes Pixiu/Programming-pana.png" alt="Custom Image" class="img-fluid mt-4 mb-4" style="width: 90%;">
-                        <a href="#contact" class="btn btn-custom-orange btn-lg">Contact Us</a>
-                    </div>
-                    <div class="col-lg-7 mt-4 mt-lg-5">
-                        <div class="row">
-                            <div class="col-md-6 mb-5">
-                                <div class="card">
-                                    <div class="card-body text-left">
-                                        <img src="sources/icons/code.svg" alt="Code Icon" class="icon-image">
-                                        <h5 class="card-title">Web Design</h5>
-                                        <p class="card-text">Developing stunning one-of-a-kind digital designs that catch people’s eyes and bring your brand to life online. Our creative team crafts unique visual experiences that resonate with your audience.</p>
+    // Cambiar contenido de la sección Services a Inglés
+    sectionServices.innerHTML = `
+            <section id="services" class="section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 d-flex justify-content-start align-items-center">
+                    <img src="sources/images/Imagenes Pixiu/Programming-pana.png" alt="Descripción de la imagen"
+                        class="img-fluid custom-img">
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Custom Software Development</h2>
+                            <p>We specialize in creating tailored software solutions that meet your specific business
+                                needs. Our
+                                team ensures high-quality, efficient, and scalable software that enhances your
+                                operations and
+                                drives growth.</p>
+                        </div>
+                        <div class="col-md-14 mt-4">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="card border-0">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Custom Web Development</h5>
+                                            <p class="card-text">High-accuracy, technologically competent web
+                                                applications
+                                                that elevate your digital presence.</p>
+                                            <a href="#" style="color: #dd6d2c;">Learn More <img
+                                                    src="sources/icons/arrow.svg" alt="Arrow" class="ml-2"></a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6 mb-5">
-                                <div class="card">
-                                    <div class="card-body text-left">
-                                        <img src="sources/icons/web.svg" alt="Code Icon" class="icon-image">
-                                        <h5 class="card-title">Custom Web Development</h5>
-                                        <p class="card-text">Our customized web development solutions provide high accuracy and technological competence. We deliver fully functional, highly interactive, and dynamic web applications that elevate your digital presence.</p>
+                                <div class="col-md-6 mb-3">
+                                    <div class="card border-0">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Web Development</h5>
+                                            <p class="card-text">Professional website creation based on your vision,
+                                                turning
+                                                ideas into compelling online experiences.</p>
+                                            <a href="#" style="color: #dd6d2c;">Learn More <img
+                                                    src="sources/icons/arrow.svg" alt="Arrow" class="ml-2"></a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6 mb-5">
-                                <div class="card">
-                                    <div class="card-body text-left">
-                                        <img src="sources/icons/mobile.svg" alt="Code Icon" class="icon-image">
-                                        <h5 class="card-title">Mobile Applications</h5>
-                                        <p class="card-text">We develop native, hybrid, and web applications. Our team assists clients in selecting the best technology for their project, ensuring a seamless and efficient development process.</p>
+                                <div class="col-md-6 mb-3">
+                                    <div class="card border-0">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Web Design</h5>
+                                            <p class="card-text">Unique digital designs that bring your brand to life,
+                                                creating
+                                                visual experiences that resonate with your audience.</p>
+                                            <a href="#" style="color: #dd6d2c;">Learn More <img
+                                                    src="sources/icons/arrow.svg" alt="Arrow" class="ml-2"></a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6 mb-5">
-                                <div class="card">
-                                    <div class="card-body text-left">
-                                        <img src="sources/icons/ecommerce.svg" alt="Code Icon" class="icon-image">
-                                        <h5 class="card-title">E-commerce Web Development</h5>
-                                        <p class="card-text">We help you create and launch your own online store easily and quickly. Our solutions streamline the process, allowing you to start selling your products without hassle.</p>
+                                <div class="col-md-6 mb-3">
+                                    <div class="card border-0">
+                                        <div class="card-body">
+                                            <h5 class="card-title">E-commerce Web Development</h5>
+                                            <p class="card-text">Streamlined solutions to create and launch your online
+                                                store
+                                                quickly and easily, enabling hassle-free product sales.</p>
+                                            <a href="#" style="color: #dd6d2c;">Learn More <img
+                                                    src="sources/icons/arrow.svg" alt="Arrow" class="ml-2"></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -108,10 +132,12 @@ function toggleLanguage() {
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
         `;
 
-        // Cambiar contenido de la sección HubSpot a Inglés
-        sectionHubSpot.innerHTML = `
+    // Cambiar contenido de la sección HubSpot a Inglés
+    sectionHubSpot.innerHTML = `
             <div class="container-fluid">
                 <h2 class="responsive-heading mb-4 text-center">HubSpot implementation and consulting</h2>
                 <div class="row align-items-center">
@@ -123,15 +149,15 @@ function toggleLanguage() {
                             <p><strong>HubSpot Implementation: </strong>Maximize HubSpot's potential with tailored onboarding and training, seamlessly integrating it into your ecosystem.</p>
                             <p><strong>HubSpot Optimization: </strong>Address daily challenges, enhance performance with custom reporting, data management, custom objects, workflows, and automations.</p>
                             <p><strong>Personalized HubSpot Consulting: </strong>Certified experts offer one-on-one consultations to optimize infrastructure, resolve issues, and boost your company's use of HubSpot.</p>
-                            <a href="#contact" class="btn btn-custom-orange btn-lg mt-4">Contact Us</a>
+                            <a href="#contact" class="btn btn-custom-orange btn-lg mt-4">Learn More</a>
                         </div>
                     </div>
                 </div>
             </div>
         `;
 
-        // Cambiar contenido de la sección Data a Inglés
-        sectionData.innerHTML = `
+    // Cambiar contenido de la sección Data a Inglés
+    sectionData.innerHTML = `
             <div class="container-fluid">
                 <h2 class="mb-4 text-center" style="font-size: 3rem;">Data Extraction</h2>
                 <div class="row align-items-center">
@@ -151,8 +177,8 @@ function toggleLanguage() {
             </div>
         `;
 
-        // Cambiar contenido de la sección How we work a Inglés
-        sectionHowWeWork.innerHTML = `
+    // Cambiar contenido de la sección How we work a Inglés
+    sectionHowWeWork.innerHTML = `
                 <div class="container-fluid">
                     <h2 style="margin-bottom: 1rem;">How we work</h2>
                     <div class="steps">
@@ -192,8 +218,8 @@ function toggleLanguage() {
                 </div>
             `;
 
-        // Cambiar contenido de la sección Contact Us a Inglés
-        sectionContact.innerHTML = `
+    // Cambiar contenido de la sección Contact Us a Inglés
+    sectionContact.innerHTML = `
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 text-center">
@@ -256,8 +282,8 @@ function toggleLanguage() {
         </div>
     `;
 
-        // Cambiar contenido de la sección Fast-Track Your Development Journey With Pixiu X a Inglés
-        sectionFastTrack.innerHTML = `
+    // Cambiar contenido de la sección Fast-Track Your Development Journey With Pixiu X a Inglés
+    sectionFastTrack.innerHTML = `
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -267,8 +293,8 @@ function toggleLanguage() {
         </div>
     `;
 
-        // Cambiar contenido de la sección Footer a Inglés
-        sectionFooter.innerHTML = `
+    // Cambiar contenido de la sección Footer a Inglés
+    sectionFooter.innerHTML = `
             <div class="container-fluid">
             <div class="row">
                 <!-- Columna 1: Logo, párrafo y redes sociales -->
@@ -365,30 +391,31 @@ function toggleLanguage() {
             </div>
         </div>
         `;
+  } else {
+    // Cambiar a Español
+    languageToggle.innerHTML =
+      '<img src="../sources/icons/USA.svg" alt="Bandera de US" class="flag-icon">' +
+      " En";
 
-    } else {
-        // Cambiar a Español
-        languageToggle.innerHTML = '<img src="../sources/icons/USA.svg" alt="Bandera de US" class="flag-icon">' + ' En';
+    navLinks.forEach((link) => {
+      switch (link.textContent.trim()) {
+        case "Home":
+          link.textContent = "Inicio";
+          break;
+        case "Services":
+          link.textContent = "Servicios";
+          break;
+        case "Contact":
+          link.textContent = "Contacto";
+          break;
+        case "Book A Call":
+          link.textContent = "Agendar una Llamada";
+          break;
+      }
+    });
 
-        navLinks.forEach(link => {
-            switch (link.textContent.trim()) {
-                case 'Home':
-                    link.textContent = 'Inicio';
-                    break;
-                case 'Services':
-                    link.textContent = 'Servicios';
-                    break;
-                case 'Contact':
-                    link.textContent = 'Contacto';
-                    break;
-                case 'Book A Call':
-                    link.textContent = 'Agendar una Llamada';
-                    break;
-            }
-        });
-
-        // Cambiar contenido de la sección Home a Español
-        sectionHome.innerHTML = `
+    // Cambiar contenido de la sección Home a Español
+    sectionHome.innerHTML = `
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-md-6">
@@ -411,51 +438,61 @@ function toggleLanguage() {
             </div>
         `;
 
-        // Cambiar contenido de la sección Services a Español
-        sectionServices.innerHTML = `
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-lg-5 text-left">
-                        <h2 style="margin-bottom: 1rem;">Desarrollo de Software Personalizado</h2>
-                        <p>Nos especializamos en crear soluciones de software a medida que satisfacen las necesidades específicas de tu negocio. Nuestro equipo garantiza un software de alta calidad, eficiente y escalable que mejora tus operaciones e impulsa el crecimiento.</p>
-                        <img src="sources/images/Imagenes Pixiu/Programming-pana.png" alt="Custom Image" class="img-fluid mt-4 mb-4" style="width: 90%;">
-                        <a href="#contact" class="btn btn-custom-orange btn-lg">Contáctanos</a>
-                    </div>
-                    <div class="col-lg-7 mt-4 mt-lg-5">
-                        <div class="row">
-                            <div class="col-md-6 mb-5">
-                                <div class="card">
-                                    <div class="card-body text-left">
-                                        <img src="sources/icons/code.svg" alt="Code Icon" class="icon-image">
-                                        <h5 class="card-title">Diseño Web</h5>
-                                        <p class="card-text">Desarrollamos diseños digitales impresionantes y únicos que captan la atención y dan vida a tu marca en línea. Nuestro equipo creativo crea experiencias visuales que resuenan profundamente con tu audiencia.</p>
+    // Cambiar contenido de la sección Services a Español
+    sectionServices.innerHTML = `
+                <section id="services" class="section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 d-flex justify-content-start align-items-center">
+                    <img src="sources/images/Imagenes Pixiu/Programming-pana.png" alt="Descripción de la imagen"
+                        class="img-fluid custom-img">
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Desarrollo de Software Personalizado</h2>
+                            <p>Nos especializamos en crear soluciones de software personalizadas que satisfacen las necesidades específicas de tu negocio. Nuestro equipo garantiza software de alta calidad, eficiente y escalable que mejora tus operaciones y impulsa el crecimiento.</p>
+                        </div>
+                        <div class="col-md-14 mt-4">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="card border-0">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Desarrollo Web Personalizado</h5>
+                                            <p class="card-text">Aplicaciones web tecnológicamente competentes y de alta precisión que elevan tu presencia digital.</p>
+                                            <a href="#" style="color: #dd6d2c;">Learn More <img
+                                                    src="sources/icons/arrow.svg" alt="Arrow" class="ml-2"></a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6 mb-5">
-                                <div class="card">
-                                    <div class="card-body text-left">
-                                        <img src="sources/icons/web.svg" alt="Code Icon" class="icon-image">
-                                        <h5 class="card-title">Desarrollo Web Personalizado</h5>
-                                        <p class="card-text">Nuestras soluciones de desarrollo web personalizadas ofrecen alta precisión y competencia tecnológica. Creamos aplicaciones web totalmente funcionales, altamente interactivas y dinámicas que elevan tu presencia digital.</p>
+                                <div class="col-md-6 mb-3">
+                                    <div class="card border-0">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Desarrollo Web</h5>
+                                            <p class="card-text">Creación profesional de sitios web basada en tu visión, convirtiendo ideas en experiencias online convincentes.</p>
+                                            <a href="#" style="color: #dd6d2c;">Learn More <img
+                                                    src="sources/icons/arrow.svg" alt="Arrow" class="ml-2"></a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6 mb-5">
-                                <div class="card">
-                                    <div class="card-body text-left">
-                                        <img src="sources/icons/mobile.svg" alt="Code Icon" class="icon-image">
-                                        <h5 class="card-title">Aplicaciones Móviles</h5>
-                                        <p class="card-text">Desarrollamos aplicaciones nativas, híbridas y web. Nuestro equipo te ayuda a seleccionar la mejor tecnología para tu proyecto, garantizando un proceso de desarrollo fluido y eficiente.</p>
+                                <div class="col-md-6 mb-3">
+                                    <div class="card border-0">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Diseño Web</h5>
+                                            <p class="card-text">Diseños digitales únicos que dan vida a tu marca, creando experiencias visuales que resuenan con tu audiencia.</p>
+                                            <a href="#" style="color: #dd6d2c;">Learn More <img
+                                                    src="sources/icons/arrow.svg" alt="Arrow" class="ml-2"></a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6 mb-5">
-                                <div class="card">
-                                    <div class="card-body text-left">
-                                        <img src="sources/icons/ecommerce.svg" alt="Code Icon" class="icon-image">
-                                        <h5 class="card-title">Desarrollo de Comercio Electrónico</h5>
-                                        <p class="card-text">Te ayudamos a crear y lanzar tu propia tienda en línea de manera fácil y rápida. Nuestras soluciones simplifican el proceso, permitiéndote comenzar a vender tus productos sin complicaciones.</p>
+                                <div class="col-md-6 mb-3">
+                                    <div class="card border-0">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Desarrollo de E-commerce</h5>
+                                            <p class="card-text">Soluciones simplificadas para crear y lanzar tu tienda online rápidamente y sin complicaciones, facilitando las ventas de productos.</p>
+                                            <a href="#" style="color: #dd6d2c;">Learn More <img
+                                                    src="sources/icons/arrow.svg" alt="Arrow" class="ml-2"></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -463,10 +500,12 @@ function toggleLanguage() {
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
         `;
 
-        // Cambiar contenido de la sección HubSpot a Español
-        sectionHubSpot.innerHTML = `
+    // Cambiar contenido de la sección HubSpot a Español
+    sectionHubSpot.innerHTML = `
             <div class="container-fluid">
                 <h2 class="responsive-heading mb-4 text-center">Implementación y Consultoría de HubSpot</h2>
                 <div class="row align-items-center">
@@ -478,15 +517,15 @@ function toggleLanguage() {
                             <p><strong>Implementación de HubSpot: </strong>Maximiza el potencial de HubSpot con una Implementación y capacitación personalizadas, integrándose de manera perfecta en tu ecosistema empresarial.</p>
                             <p><strong>Optimización de HubSpot: </strong>Enfrenta los desafíos diarios y mejora el rendimiento de tu sistema con informes personalizados, gestión de datos, creación de objetos personalizados, flujos de trabajo y automatizaciones.</p>
                             <p><strong>Consultoría Personalizada de HubSpot: </strong>Nuestros expertos certificados ofrecen consultas individuales para optimizar la infraestructura de HubSpot, resolver problemas existentes y mejorar el uso de Hubspot en tu empresa.</p>
-                            <a href="#contact" class="btn btn-custom-orange btn-lg mt-4">Contáctanos</a>
+                            <a href="#contact" class="btn btn-custom-orange btn-lg mt-4">Saber Más</a>
                         </div>
                     </div>
                 </div>
             </div>
         `;
 
-        // Cambiar contenido de la sección Data a Español
-        sectionData.innerHTML = `
+    // Cambiar contenido de la sección Data a Español
+    sectionData.innerHTML = `
             <div class="container-fluid">
                 <h2 class="mb-4 text-center" style="font-size: 3rem;">Extracción de Datos (Data Scraping)</h2>
                 <div class="row align-items-center">
@@ -496,7 +535,7 @@ function toggleLanguage() {
                             <p><strong>Extracción de Datos de Prospectos/Leads: </strong>Mejora tus esfuerzos de ventas y marketing identificando y extrayendo información de leads de clientes, proporcionándote listas de prospectos personalizadas.</p>
                             <p><strong>Extracción de Datos de Redes Sociales: </strong>Recopila datos completos de LinkedIn, Facebook, X (anteriormente Twitter) y otras redes sociales utilizando diversos criterios de búsqueda.</p>
                             <p><strong>Investigación de Mercado y Extracción de Datos: </strong>Agiliza tu investigación con datos precisos sobre audiencias objetivo, tendencias de mercado, análisis competitivo e insights de clientes.</p>
-                            <a href="scrap.html" class="btn btn-custom-orange btn-lg mt-4">Saber Mas</a>
+                            <a href="scrap.html" class="btn btn-custom-orange btn-lg mt-4">Saber Más</a>
                         </div>
                     </div>
                     <div class="col-md-6 text-right">
@@ -506,8 +545,8 @@ function toggleLanguage() {
             </div>
         `;
 
-        // Cambiar contenido de la sección How we work a Español
-        sectionHowWeWork.innerHTML = `
+    // Cambiar contenido de la sección How we work a Español
+    sectionHowWeWork.innerHTML = `
                 <div class="container-fluid">
                     <h2 style="margin-bottom: 1rem;">Nuestro Proceso de Trabajo</h2>
                     <div class="steps">
@@ -547,8 +586,8 @@ function toggleLanguage() {
                 </div>
             `;
 
-        // Cambiar contenido de la sección Contact Us a Español
-        sectionContact.innerHTML = `
+    // Cambiar contenido de la sección Contact Us a Español
+    sectionContact.innerHTML = `
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 text-center">
@@ -611,19 +650,19 @@ function toggleLanguage() {
         </div>
     `;
 
-        // Cambiar contenido de la sección Fast-Track Your Development Journey With Pixiu X a Español
-        sectionFastTrack.innerHTML = `
+    // Cambiar contenido de la sección Fast-Track Your Development Journey With Pixiu X a Español
+    sectionFastTrack.innerHTML = `
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h2>Acelera el Éxito de tus Proyectos con Pixiu</h2>
+                    <h2>Acelera el Éxito de tus Proyectos con Pixiu X</h2>
                 </div>
             </div>
         </div>
     `;
 
-        // Cambiar contenido de la sección Footer a Español
-        sectionFooter.innerHTML = `
+    // Cambiar contenido de la sección Footer a Español
+    sectionFooter.innerHTML = `
             <div class="container-fluid">
             <div class="row">
                 <!-- Columna 1: Logo, párrafo y redes sociales -->
@@ -719,8 +758,7 @@ function toggleLanguage() {
             </div>
         </div>
         `;
+  }
 
-    }
-
-    isSpanish = !isSpanish; // Alternar el estado
+  isSpanish = !isSpanish; // Alternar el estado
 }
