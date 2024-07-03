@@ -58,11 +58,10 @@
                                 style="color: #fff;" target="_blank">Book A Call</a>
                         </li>
                         <li class="nav-item">
-                            <a id="language-toggle" class="nav-link flag-spain" href="#" onclick="toggleLanguage()">
+                            <a id="language-toggle" class="nav-link flag-spain" onclick="toggleLanguage()">
                                 <img src="sources/icons/spain.svg" alt="Bandera de México" class="flag-icon"> Es
                             </a>
                         </li>
-
                     </ul>
                 </div>
             </div>
@@ -458,7 +457,7 @@
                                             </path>
                                         </svg>
                                     </span>
-                                    <span><strong>Dedicated  </strong> HubSpot specialist</span>
+                                    <span><strong>Dedicated </strong> HubSpot specialist</span>
                                 </li>
                                 <li>
                                     <span class="icon">
@@ -562,7 +561,8 @@
                                 </span>
                             </span>
                             <p class="title">Hyper Growth</p>
-                            <p class="info">Receive 30 credits per month to use for development, support tickets, or both.</p>
+                            <p class="info">Receive 30 credits per month to use for development, support tickets, or
+                                both.</p>
                             <ul class="features">
                                 <li>
                                     <span class="icon">
@@ -719,36 +719,123 @@
     </section>
 
     <!-- Sección de Preguntas Frecuentes -->
-    <section class="faq-section">
+    <section id="faq" class="faq-section">
         <div class="faq-container">
-            <div class="faq-header">Frequently Asked Questions</div>
+            <div class="faq-header">FAQ</div>
             <div class="faq">
-                <div class="faq-question">What is Pixiu's data extraction service?</div>
-                <div class="faq-answer">Pixiu's data extraction service leverages APIs, scripts, and manual methods to
-                    collect data from various websites, organizing it into a database for easy future retrieval.</div>
-            </div>
-            <div class="faq">
-                <div class="faq-question">How can Pixiu help with prospect/lead data extraction?</div>
-                <div class="faq-answer">We employ a personalized approach to delve into your target audience, identify
-                    permanent data sources, extract customer lead information, and provide you with a tailored list of
-                    potential prospects.</div>
-            </div>
-            <div class="faq">
-                <div class="faq-question">What types of data can be extracted from social media?</div>
-                <div class="faq-answer">We retrieve a comprehensive range of data, including user profiles, posts,
-                    comments, and user information from platforms like LinkedIn, Facebook, X (formerly Twitter), and
-                    others.
+                <div class="faq-question">What is included in the consultation package?</div>
+                <div class="faq-answer">
+                    Our consultation package includes:
+                    <ul>
+                        <li>One-on-one consultations with a certified HubSpot expert, available via video call.</li>
+                        <li>A thorough review of your current HubSpot setup, including integrations, data management,
+                            and workflows.</li>
+                        <li>Recommendations for optimizations, tech improvements, and tailored solutions to address your
+                            unique challenges.</li>
+                        <li>A workshop and discovery phase for larger solutions, analyzing your current setup and
+                            creating a concept for a new one. We are also available to assist with any other needs you
+                            might have!</li>
+                    </ul>
                 </div>
             </div>
             <div class="faq">
-                <div class="faq-question">How does Pixiu support market research data extraction?</div>
-                <div class="faq-answer">We provide accurate and relevant data on your target audience, market trends,
-                    competitive analysis, customer insights, and previous studies to accelerate your research and
-                    analytics.
+                <div class="faq-question">I have an in-house team that uses HubSpot. Can you get on a call with them
+                    and help them solve my problem?</div>
+                <div class="faq-answer">Yes, we can collaborate with your in-house team. We’ll join a call with your
+                    team to help develop or fix your HubSpot-related solutions.</div>
+            </div>
+            <div class="faq">
+                <div class="faq-question">I am having issues with an integration/tool/app that is not closely
+                    connected with HubSpot. Can you still help me with that?</div>
+                <div class="faq-answer">Yes, of course. While many of our clients seek help with HubSpot, we are also
+                    happy to assist with more general software or integration issues, including those that need to
+                    connect with HubSpot.</div>
+            </div>
+            <div class="faq">
+                <div class="faq-question">I have some questions, but I am unsure if you can help me out.</div>
+                <div class="faq-answer">Don’t hesitate to reach out and schedule an introductory call. It is free of
+                    charge, and we will let you know if we can solve your issue with our solutions or through
+                    consultations.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Calendar for scheduling calls/meetings -->
+    <section id="contact" class="section" style="padding-top: calc(5vh + 20px);">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>Contact Us</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 d-flex justify-content-center">
+                    <form class="form">
+                        <div class="flex">
+                            <label>
+                                <input required placeholder="First Name" type="text" class="input">
+                            </label>
+
+                            <label>
+                                <input required placeholder="Last Name" type="text" class="input">
+                            </label>
+                        </div>
+
+                        <label>
+                            <input required placeholder="Email" type="email" class="input">
+                        </label>
+
+                        <label>
+                            <select required class="input" id="service-select">
+                                <option value="" selected disabled>Select a Service</option>
+                                <option value="option1">Custom Software Development</option>
+                                <option value="option2">HubSpot implementation and consulting</option>
+                                <option value="option3">Data Extraction</option>
+                            </select>
+                        </label>
+
+                        <!-- Segundo dropdown que se muestra cuando se selecciona "Custom Software Development" -->
+                        <div class="custom-software-dropdown" style="display: none;">
+                            <label>
+                                <select class="input">
+                                    <option value="" selected disabled>Select an Option</option>
+                                    <option value="optionA">Web Design</option>
+                                    <option value="optionB">Custom Web Development</option>
+                                    <option value="optionC">Mobile Applications</option>
+                                    <option value="optionD">E-Commerce Web Development</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <label>
+                            <textarea required rows="3"
+                                placeholder="Hello, I am interested in hiring your services for....."
+                                class="input01"></textarea>
+                        </label>
+
+                        <button type="submit" class="fancy">
+                            <span class="top-key"></span>
+                            <span class="text">Submit</span>
+                            <span class="bottom-key-1"></span>
+                            <span class="bottom-key-2"></span>
+                        </button>
+                    </form>
+
                 </div>
             </div>
         </div>
     </section>
+
+    <style>
+        .input:focus {
+            border-color: #FEE4D9;
+            /* Cambia el color del borde al hacer clic */
+            outline: none;
+            /* Quita el contorno por defecto */
+            box-shadow: none;
+            /* Quita la sombra por defecto */
+        }
+    </style>
 
     <!-- Footer -->
     <footer id="footer" class="footer bg-dark text-white">
@@ -826,7 +913,7 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- FontAwesome for icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
     <script src="js/scripts_services.js"></script>
     <script src="js/lenguaje-Hs.js"></script>
 

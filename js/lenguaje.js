@@ -60,7 +60,6 @@ function toggleLanguage() {
 
     // Cambiar contenido de la sección Services a Inglés
     sectionServices.innerHTML = `
-            <section id="services" class="section">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 d-flex justify-content-start align-items-center">
@@ -133,7 +132,6 @@ function toggleLanguage() {
                 </div>
             </div>
         </div>
-    </section>
         `;
 
     // Cambiar contenido de la sección HubSpot a Inglés
@@ -149,7 +147,7 @@ function toggleLanguage() {
                             <p><strong>HubSpot Implementation: </strong>Maximize HubSpot's potential with tailored onboarding and training, seamlessly integrating it into your ecosystem.</p>
                             <p><strong>HubSpot Optimization: </strong>Address daily challenges, enhance performance with custom reporting, data management, custom objects, workflows, and automations.</p>
                             <p><strong>Personalized HubSpot Consulting: </strong>Certified experts offer one-on-one consultations to optimize infrastructure, resolve issues, and boost your company's use of HubSpot.</p>
-                            <a href="#contact" class="btn btn-custom-orange btn-lg mt-4">Learn More</a>
+                            <a href="hubspot.html" class="btn btn-custom-orange btn-lg mt-4">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -300,8 +298,9 @@ function toggleLanguage() {
                 <!-- Columna 1: Logo, párrafo y redes sociales -->
                 <div class="col-lg-4 col-md-4 mb-4 mb-lg-0">
                     <img src="sources/images/Logo.webp" alt="Logo" class="img-fluid mb- logo-footer">
-                    <p>At Pixiu, we focus on excellent service and innovation, specializing in custom software development, HubSpot consulting, and data scraping services. We're on a mission to bridge the gap between Marketplace Businesses and custom solutions.
-                        Contact us for inquiries on how we can improve your business.</p>
+                    <p>At Pixiu, we focus on excellent service and innovation, specializing in custom software
+                        development, HubSpot consulting, and data scraping services. Contact us for inquiries on how we
+                        can improve your business.</p>
                     <div class="wrapper">
                         <a href="https://www.linkedin.com/company/pixiu-x" target="_blank">
                             <li class="icon linkedin">
@@ -440,7 +439,6 @@ function toggleLanguage() {
 
     // Cambiar contenido de la sección Services a Español
     sectionServices.innerHTML = `
-                <section id="services" class="section">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 d-flex justify-content-start align-items-center">
@@ -501,7 +499,6 @@ function toggleLanguage() {
                 </div>
             </div>
         </div>
-    </section>
         `;
 
     // Cambiar contenido de la sección HubSpot a Español
@@ -517,7 +514,7 @@ function toggleLanguage() {
                             <p><strong>Implementación de HubSpot: </strong>Maximiza el potencial de HubSpot con una Implementación y capacitación personalizadas, integrándose de manera perfecta en tu ecosistema empresarial.</p>
                             <p><strong>Optimización de HubSpot: </strong>Enfrenta los desafíos diarios y mejora el rendimiento de tu sistema con informes personalizados, gestión de datos, creación de objetos personalizados, flujos de trabajo y automatizaciones.</p>
                             <p><strong>Consultoría Personalizada de HubSpot: </strong>Nuestros expertos certificados ofrecen consultas individuales para optimizar la infraestructura de HubSpot, resolver problemas existentes y mejorar el uso de Hubspot en tu empresa.</p>
-                            <a href="#contact" class="btn btn-custom-orange btn-lg mt-4">Saber Más</a>
+                            <a href="hubspot.html" class="btn btn-custom-orange btn-lg mt-4">Saber Más</a>
                         </div>
                     </div>
                 </div>
@@ -668,7 +665,9 @@ function toggleLanguage() {
                 <!-- Columna 1: Logo, párrafo y redes sociales -->
                 <div class="col-lg-4 col-md-4 mb-4 mb-lg-0">
                     <img src="sources/images/Logo.webp" alt="Logo" class="img-fluid mb- logo-footer">
-            <p>En Pixiu nos dedicamos a proporcionar un servicio excelente e innovador, especializándonos en desarrollo de software personalizado, consultoría de HubSpot y servicios de extracción de datos. Nuestra misión es cerrar la brecha entre las empresas del mercado y las soluciones personalizadas. ¡Contáctanos para obtener más información sobre cómo podemos mejorar tu negocio!</p>
+            <p>En Pixiu, nos enfocamos en ofrecer un servicio excelente e innovación, especializándonos en desarrollo
+                    de software personalizado, consultoría de HubSpot y servicios de extracción de datos. Contáctenos para
+                    consultas sobre cómo podemos mejorar su negocio.</p>
                     <div class="wrapper">
                         <a href="https://www.linkedin.com/company/pixiu-x" target="_blank">
                             <li class="icon linkedin">
@@ -758,6 +757,21 @@ function toggleLanguage() {
             </div>
         </div>
         `;
+  }
+
+  // Intentar obtener el elemento de nuevo después de cambiar el innerHTML
+  const customSoftwareDropdown = document.querySelector(
+    ".custom-software-dropdown"
+  );
+  if (customSoftwareDropdown) {
+    const serviceSelect = document.getElementById("service-select");
+    serviceSelect.addEventListener("change", (event) => {
+      if (event.target.value === "option1") {
+        customSoftwareDropdown.style.display = "block";
+      } else {
+        customSoftwareDropdown.style.display = "none";
+      }
+    });
   }
 
   isSpanish = !isSpanish; // Alternar el estado
