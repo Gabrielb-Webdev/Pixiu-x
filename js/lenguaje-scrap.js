@@ -6,7 +6,6 @@ function toggleLanguage() {
   const welcomeSection = document.getElementById("welcome-section");
   const serviciosHubSpot = document.getElementById("servicios-hubspot");
   const detalleshs = document.getElementById("detalle-servicios-hubspot");
-  const paqueteshs = document.getElementById("paquetes-hubspot");
   const sectionHowWeWork = document.querySelector(".section-how-we-work");
   const faqQuestions = document.querySelectorAll(".faq .faq-question");
   const faqAnswers = document.querySelectorAll(".faq .faq-answer");
@@ -61,60 +60,56 @@ function toggleLanguage() {
     // Cambiar contenido de la sección serviciosHubSpot a Inglés
     serviciosHubSpot.innerHTML = `
                 <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="service-item text-center">
-                        <div class="service-icon"
-                            style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
-                            <img src="sources/icons/web-data.svg" alt="Icono 1" style="max-width: 80px; height: auto;">
-                        </div>
-                        <h4 style="color: #dd6d2c;">Website Data Extraction</h4>
-                        <p>Pixiu extracts web data quickly using APIs, scripts, and manual methods, organizing it into
-                            databases for easy access.</p>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="service-item text-center">
+                    <div class="service-icon"
+                        style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+                        <img src="sources/icons/web-data.svg" alt="Icono 1" style="max-width: 80px; height: auto;">
                     </div>
+                    <h4 style="color: #dd6d2c;">Website Data Extraction</h4>
+                    <p>Pixiu extracts web data using APIs, scripts, organizing into databases.</p>
                 </div>
-                <div class="col-md-3">
-                    <div class="service-item text-center">
-                        <div class="service-icon"
-                            style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
-                            <img src="sources/icons/data.svg" alt="Icono 2" style="max-width: 80px; height: auto;">
-                        </div>
-                        <h4 style="color: #dd6d2c;">Prospect/Lead Data Extraction</h4>
-                        <p>We personalize prospect data extraction, identifying sources, gathering customer information,
-                            and creating tailored lists of potential leads.</p>
+            </div>
+            <div class="col-md-3">
+                <div class="service-item text-center">
+                    <div class="service-icon"
+                        style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+                        <img src="sources/icons/data.svg" alt="Icono 2" style="max-width: 80px; height: auto;">
                     </div>
+                    <h4 style="color: #dd6d2c;">Prospect/Lead Data Extraction</h4>
+                    <p>We personalize prospect data extraction, gathering customer information.</p>
                 </div>
-                <div class="col-md-3">
-                    <div class="service-item text-center">
-                        <div class="service-icon"
-                            style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
-                            <img src="sources/icons/social-media.svg" alt="Icono 3"
-                                style="max-width: 80px; height: auto;">
-                        </div>
-                        <h4 style="color: #dd6d2c;">Social Media Data Extraction</h4>
-                        <p>We collect profiles, posts, comments, and user information from LinkedIn, Facebook, X, using
-                            diverse criteria and keywords.</p>
+            </div>
+            <div class="col-md-3">
+                <div class="service-item text-center">
+                    <div class="service-icon"
+                        style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+                        <img src="sources/icons/social-media.svg" alt="Icono 3"
+                            style="max-width: 80px; height: auto;">
                     </div>
+                    <h4 style="color: #dd6d2c;">Social Media Data Extraction</h4>
+                    <p>We collect profiles, posts, comments from social networks using keywords.</p>
                 </div>
-                <div class="col-md-3">
-                    <div class="service-item text-center">
-                        <div class="service-icon"
-                            style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
-                            <img src="sources/icons/market-research.svg" alt="Icono 3" style="max-width: 80px; height: auto;">
-                        </div>
-                        <h4 style="color: #dd6d2c;">Market Research Data Extraction</h4>
-                        <p>Pixiu accelerates your research with precise data on target audiences, market trends,
-                            competitors, and customer insights.</p>
+            </div>
+            <div class="col-md-3">
+                <div class="service-item text-center">
+                    <div class="service-icon"
+                        style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+                        <img src="sources/icons/market-research.svg" alt="Icono 4" style="max-width: 80px; height: auto;">
                     </div>
+                    <h4 style="color: #dd6d2c;">Market Research Data Extraction</h4>
+                    <p>Pixiu accelerates your research with precise data on target audiences.</p>
                 </div>
             </div>
         </div>
+    </div>
             `;
 
     // Cambiar contenido de la sección detalleshs a Inglés
     detalleshs.innerHTML = `
                     <div class="container-fluid">
-            <div class="row mb-5" style="margin-bottom: -7.5rem !important;">
+            <div class="row mb-5" style="margin-bottom: -4rem !important;">
                 <div class="col-md-6 d-flex align-items-center">
                     <div class="service-detail-item">
                         <h3>Website data extraction</h3>
@@ -122,11 +117,11 @@ function toggleLanguage() {
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <img src="sources/images/Imagenes Pixiu/Operating system-amico.png"
+                    <img src="sources/images/Imagenes Pixiu/Data extraction-amico.png"
                         alt="HubSpot Implementation and Training" class="service-detail-img">
                 </div>
             </div>
-            <div class="row mb-5" style="margin-bottom: -7.5rem !important;">
+            <div class="row mb-5" style="margin-bottom: -1.5rem !important;">
                 <div class="col-md-6 order-md-2 d-flex align-items-center">
                     <div class="service-detail-item">
                         <h3>Prospect/Lead Data Extraction</h3>
@@ -135,7 +130,7 @@ function toggleLanguage() {
                     </div>
                 </div>
                 <div class="col-md-6 order-md-1">
-                    <img src="sources/images/Imagenes Pixiu/Operating system-pana.png" alt="HubSpot Optimization"
+                    <img src="sources/images/Imagenes Pixiu/Data extraction-rafiki.png" alt="HubSpot Optimization"
                         class="service-detail-img">
                 </div>
             </div>
@@ -143,511 +138,25 @@ function toggleLanguage() {
                 <div class="col-md-6 d-flex align-items-center">
                     <div class="service-detail-item">
                         <h3>Social Media Data Extraction</h3>
-                        <p>Pixiu's certified HubSpot experts offer personalized, one-on-one consulting to optimize your
-                            HubSpot infrastructure. We address your unique challenges and goals, whether fixing issues,
-                            enhancing your setup, or exploring new performance
-                            strategies. Our consultations cover troubleshooting, strategic planning, and implementation.
-                            We keep you updated on integrations like Clay, Instantly, and Apollo. Our continuous
-                            improvement strategies ensure your HubSpot environment
-                            aligns with your business objectives and adapts to new opportunities. Partner with Pixiu for
-                            enhanced efficiency, productivity, and growth.</p>
+                        <p>We retrieve a comprehensive range of data, including user profiles, posts, comments, and user information from prominent social media platforms like LinkedIn, Facebook, X (formerly Twitter), and others. Our approach involves using diverse search criteria, keywords, and topics from your key social and professional networks</p>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <img src="sources/images/Imagenes Pixiu/Operating system-rafiki.png"
+                    <img src="sources/images/Imagenes Pixiu/Data extraction-cuate.png"
                         alt="Personalized HubSpot Consulting" class="service-detail-img">
                 </div>
             </div>
-            <div class="row mb-5" style="margin-bottom: -7.5rem !important;">
+            <div class="row mb-5" style="margin-bottom: -2.5rem !important;">
                 <div class="col-md-6 order-md-2 d-flex align-items-center">
                     <div class="service-detail-item">
                         <h3>Market Research Data Extraction</h3>
-                        <p>We retrieve a comprehensive range of data, including user profiles, posts, comments, and user information from prominent social media platforms like LinkedIn, Facebook, X (formerly Twitter), and others. Our approach involves using diverse search criteria, keywords, and topics from your key social and professional networks
+                        <p>Accelerate your research and analytics with accurate and relevant data on your target audience, market trends, competitive analysis, customer insights, and previous studies. Pixiu's data extraction services are tailored to meet your market research needs
                         </p>
                     </div>
                 </div>
                 <div class="col-md-6 order-md-1">
-                    <img src="sources/images/Imagenes Pixiu/Operating system-pana.png" alt="HubSpot Optimization"
+                    <img src="sources/images/Imagenes Pixiu/Telecommuting-rafiki.png" alt="HubSpot Optimization"
                         class="service-detail-img">
-                </div>
-            </div>
-        </div>
-            `;
-    // Cambiar contenido de la sección detalleshs a Inglés
-    paqueteshs.innerHTML = `
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 style="text-align: center; margin-bottom: 50px;">Our HubSpot Service Packages</h2>
-                </div>
-            </div>
-            <div class="row">
-                <!-- Card 1 - Starter Package -->
-                <div class="col-md-3">
-                    <div class="plan">
-                        <div class="inner">
-                            <span class="pricing">
-                                <span>
-                                    Talk to sales<small></small>
-                                </span>
-                            </span>
-                            <p class="title">Implementation Package</p>
-                            <p class="info">We'll work together to define objectives for your team, ensuring HubSpot
-                                aligns perfectly with your business goals.</p>
-                            <ul class="features">
-                                <li>
-                                    <span class="icon">
-                                        <svg height="24" width="24" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 0h24v24H0z" fill="none"></path>
-                                            <path fill="currentColor"
-                                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span><strong>Data </strong>mapping</span>
-                                </li>
-                                <li>
-                                    <span class="icon">
-                                        <svg height="24" width="24" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 0h24v24H0z" fill="none"></path>
-                                            <path fill="currentColor"
-                                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span>Data <strong>migration</strong></span>
-                                </li>
-                                <li>
-                                    <span class="icon">
-                                        <svg height="24" width="24" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 0h24v24H0z" fill="none"></path>
-                                            <path fill="currentColor"
-                                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span><strong>Training</strong>, Team workshops</span>
-                                </li>
-                                <li>
-                                    <span class="icon">
-                                        <svg height="24" width="24" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 0h24v24H0z" fill="none"></path>
-                                            <path fill="currentColor"
-                                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span><strong>CRM </strong>configuration </span>
-                                </li>
-                                <li>
-                                    <span class="icon">
-                                        <svg height="24" width="24" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 0h24v24H0z" fill="none"></path>
-                                            <path fill="currentColor"
-                                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span>Email <strong>templates</strong></span>
-                                </li>
-                                <li>
-                                    <span class="icon">
-                                        <svg height="24" width="24" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 0h24v24H0z" fill="none"></path>
-                                            <path fill="currentColor"
-                                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span>Email <strong>sequences</strong></span>
-                                </li>
-                                <li>
-                                    <span class="icon">
-                                        <svg height="24" width="24" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 0h24v24H0z" fill="none"></path>
-                                            <path fill="currentColor"
-                                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span><strong>Data </strong>automations</span>
-                                </li>
-                                <li>
-                                    <span class="icon">
-                                        <svg height="24" width="24" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 0h24v24H0z" fill="none"></path>
-                                            <path fill="currentColor"
-                                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span><strong>Reporting</strong></span>
-                                </li>
-                            </ul>
-                            <div class="action">
-                                <a class="button" href="https://meetings.hubspot.com/pixiu" style="color: #fff;"
-                                    target="_blank">Book A Call</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 2 - Growth Package -->
-                <div class="col-md-3">
-                    <div class="plan">
-                        <div class="inner">
-                            <span class="pricing">
-                                <span>
-                                    $1399 <small>/ m</small>
-                                </span>
-                            </span>
-                            <p class="title">Starter</p>
-                            <p class="info">This service is tailored to address potential issues and challenges you may
-                                encounter daily.</p>
-                            <ul class="features">
-                                <li>
-                                    <span class="icon">
-                                        <svg height="24" width="24" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 0h24v24H0z" fill="none"></path>
-                                            <path fill="currentColor"
-                                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span><strong>Daily </strong>issue resolution</span>
-                                </li>
-                                <li>
-                                    <span class="icon">
-                                        <svg height="24" width="24" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 0h24v24H0z" fill="none"></path>
-                                            <path fill="currentColor"
-                                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span>8 hours/month <strong>support</strong></span>
-                                </li>
-                                <li>
-                                    <span class="icon">
-                                        <svg height="24" width="24" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 0h24v24H0z" fill="none"></path>
-                                            <path fill="currentColor"
-                                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span>Weekday ticket response</span>
-                                </li>
-                                <li>
-                                    <span class="icon">
-                                        <svg height="24" width="24" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 0h24v24H0z" fill="none"></path>
-                                            <path fill="currentColor"
-                                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span><strong>Prioritized </strong>ticket handling</span>
-                                </li>
-                                <li>
-                                    <span class="icon">
-                                        <svg height="24" width="24" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 0h24v24H0z" fill="none"></path>
-                                            <path fill="currentColor"
-                                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span><strong>Troubleshooting</strong></span>
-                                </li>
-                                <li>
-                                    <span class="icon">
-                                        <svg height="24" width="24" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 0h24v24H0z" fill="none"></path>
-                                            <path fill="currentColor"
-                                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span>Error <strong>resolution</strong></span>
-                                </li>
-                                <li>
-                                    <span class="icon">
-                                        <svg height="24" width="24" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 0h24v24H0z" fill="none"></path>
-                                            <path fill="currentColor"
-                                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span><strong>Support </strong>tickets</span>
-                                </li>
-                                <li>
-                                    <span class="icon">
-                                        <svg height="24" width="24" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 0h24v24H0z" fill="none"></path>
-                                            <path fill="currentColor"
-                                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span>Technical guidance</span>
-                                </li>
-                            </ul>
-                            <div class="action">
-                                <a class="button" href="https://meetings.hubspot.com/pixiu" style="color: #fff;"
-                                    target="_blank">Book A Call</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 3 - Hyper Growth Package -->
-                <div class="col-md-3">
-                    <div class="plan">
-                        <div class="inner">
-                            <span class="pricing">
-                                <span>
-                                    $2900 <small>/ m</small>
-                                </span>
-                            </span>
-                            <p class="title">Growth</p>
-                            <p class="info">Receive 20 credits per month to use for development, support tickets, or a
-                                combination of both. </p>
-                            <ul class="features">
-                                <li>
-                                    <span class="icon">
-                                        <svg height="24" width="24" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 0h24v24H0z" fill="none"></path>
-                                            <path fill="currentColor"
-                                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span><strong>Dedicated  </strong> HubSpot specialist</span>
-                                </li>
-                                <li>
-                                    <span class="icon">
-                                        <svg height="24" width="24" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 0h24v24H0z" fill="none"></path>
-                                            <path fill="currentColor"
-                                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span>Full <strong>HubSpot support</strong></span>
-                                </li>
-                                <li>
-                                    <span class="icon">
-                                        <svg height="24" width="24" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 0h24v24H0z" fill="none"></path>
-                                            <path fill="currentColor"
-                                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span><strong>Proactive </strong>planning</span>
-                                </li>
-                                <li>
-                                    <span class="icon">
-                                        <svg height="24" width="24" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 0h24v24H0z" fill="none"></path>
-                                            <path fill="currentColor"
-                                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span>Monthly <strong>reporting</strong></span>
-                                </li>
-                                <li>
-                                    <span class="icon">
-                                        <svg height="24" width="24" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 0h24v24H0z" fill="none"></path>
-                                            <path fill="currentColor"
-                                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span><strong>Issue </strong>resolution</span>
-                                </li>
-                                <li>
-                                    <span class="icon">
-                                        <svg height="24" width="24" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 0h24v24H0z" fill="none"></path>
-                                            <path fill="currentColor"
-                                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span><strong>20 </strong>credits/month</span>
-                                </li>
-                                <li>
-                                    <span class="icon">
-                                        <svg height="24" width="24" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 0h24v24H0z" fill="none"></path>
-                                            <path fill="currentColor"
-                                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span><strong>Development </strong>support</span>
-                                </li>
-                                <li>
-                                    <span class="icon">
-                                        <svg height="24" width="24" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 0h24v24H0z" fill="none"></path>
-                                            <path fill="currentColor"
-                                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span>Long-term <strong>optimization</strong></span>
-                                </li>
-                            </ul>
-                            <div class="action">
-                                <a class="button" href="https://meetings.hubspot.com/pixiu" style="color: #fff;"
-                                    target="_blank">Book A Call</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 4 - Hyper Growth Package -->
-                <div class="col-md-3">
-                    <div class="plan">
-                        <div class="inner">
-                            <span class="pricing">
-                                <span>
-                                    $3900 <small>/ m</small>
-                                </span>
-                            </span>
-                            <p class="title">Hyper Growth</p>
-                            <p class="info">Receive 30 credits per month to use for development, support tickets, or both.</p>
-                            <ul class="features">
-                                <li>
-                                    <span class="icon">
-                                        <svg height="24" width="24" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 0h24v24H0z" fill="none"></path>
-                                            <path fill="currentColor"
-                                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span><strong>Dedicated </strong>HubSpot specialist</span>
-                                </li>
-                                <li>
-                                    <span class="icon">
-                                        <svg height="24" width="24" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 0h24v24H0z" fill="none"></path>
-                                            <path fill="currentColor"
-                                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span>Full <strong>HubSpot support</strong></span>
-                                </li>
-                                <li>
-                                    <span class="icon">
-                                        <svg height="24" width="24" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 0h24v24H0z" fill="none"></path>
-                                            <path fill="currentColor"
-                                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span><strong>Monthly </strong>planning & reporting</span>
-                                </li>
-                                <li>
-                                    <span class="icon">
-                                        <svg height="24" width="24" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 0h24v24H0z" fill="none"></path>
-                                            <path fill="currentColor"
-                                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span>Issue <strong>resolution</strong></span>
-                                </li>
-                                <li>
-                                    <span class="icon">
-                                        <svg height="24" width="24" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 0h24v24H0z" fill="none"></path>
-                                            <path fill="currentColor"
-                                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span><strong>30 </strong>credits/month</span>
-                                </li>
-                                <li>
-                                    <span class="icon">
-                                        <svg height="24" width="24" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 0h24v24H0z" fill="none"></path>
-                                            <path fill="currentColor"
-                                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span>Development <strong>support</strong></span>
-                                </li>
-                                <li>
-                                    <span class="icon">
-                                        <svg height="24" width="24" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 0h24v24H0z" fill="none"></path>
-                                            <path fill="currentColor"
-                                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span>Long-term <strong>HubSpot optimization</strong></span>
-                                </li>
-                                <li>
-                                    <span class="icon">
-                                        <svg height="24" width="24" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 0h24v24H0z" fill="none"></path>
-                                            <path fill="currentColor"
-                                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span>License tier management</span>
-                                </li>
-                            </ul>
-                            <div class="action">
-                                <a class="button" href="https://meetings.hubspot.com/pixiu" style="color: #fff;"
-                                    target="_blank">Book A Call</a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -724,7 +233,7 @@ function toggleLanguage() {
                 <div class="row">
                     <!-- Columna 1: Logo, párrafo y redes sociales -->
                     <div class="col-lg-4 col-md-4 mb-4 mb-lg-0">
-                        <img src="sources/images/Logo.webp" alt="Logo" class="img-fluid mb- logo-footer">
+                        <img src="sources/images/logo.png" alt="Logo" class="img-fluid mb- logo-footer">
                         <p>At Pixiu, we focus on excellent service and innovation, specializing in custom software development, HubSpot consulting, and data scraping services. We're on a mission to bridge the gap between Marketplace Businesses and custom solutions.
                             Contact us for inquiries on how we can improve your business.</p>
                         <div class="wrapper">
@@ -877,14 +386,15 @@ function toggleLanguage() {
     <div class="row h-100 align-items-center">
         <div class="col-md-6">
             <div class="welcome-content text-left">
-                <h2 style="font-size: 4rem;">Crea herramientas potentes de extracción de datos rápidamente</h2>
-                <p>Pixiu se especializa en crear robustos scrapers web y automatizar procesos de extracción de datos para mejorar la eficiencia de tu negocio.</p>
-                <a href="https://meetings.hubspot.com/pixiu" class="btn mt-5 custom-btn" target="_blank">Reserva una llamada</a>
+                <h2 style="font-size: 3.5rem;">Crea scrapers web eficientes</h2>
+                <p>Pixiu automatiza la extracción de datos para mejorar tu negocio.</p>
+                <a href="https://meetings.hubspot.com/pixiu" class="btn mt-5 custom-btn" target="_blank">Agenda una llamada</a>
             </div>
         </div>
         <div class="col-md-6">
             <div class="welcome-image floating-image">
-                <img src="sources/images/Imagenes Pixiu/Data extraction-cuate.png" alt="Imagen de bienvenida" style="max-width: 100%; height: auto;">
+                <img src="sources/images/Imagenes Pixiu/Data extraction-cuate.png" alt="Imagen de bienvenida"
+                    style="max-width: 100%; height: auto;">
             </div>
         </div>
     </div>
@@ -892,546 +402,107 @@ function toggleLanguage() {
             `;
 
     serviciosHubSpot.innerHTML = `
-                <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-3">
-            <div class="service-item text-center">
-                <div class="service-icon"
-                    style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
-                    <img src="sources/icons/web-data.svg" alt="Icono 1" style="max-width: 80px; height: auto;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="service-item text-center">
+                    <div class="service-icon"
+                        style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+                        <img src="sources/icons/web-data.svg" alt="Icono 1" style="max-width: 80px; height: auto;">
+                    </div>
+                    <h4 style="color: #dd6d2c;">Extracción de Datos Web</h4>
+                    <p>Pixiu extrae datos web usando APIs, scripts, organizándolos en bases de datos.</p>
                 </div>
-                <h4 style="color: #dd6d2c;">Extracción de Datos de Sitios Web</h4>
-                <p>Pixiu extrae datos web rápidamente utilizando APIs, scripts y métodos manuales, organizándolos en
-                    bases de datos para un acceso fácil.</p>
             </div>
-        </div>
-        <div class="col-md-3">
-            <div class="service-item text-center">
-                <div class="service-icon"
-                    style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
-                    <img src="sources/icons/data.svg" alt="Icono 2" style="max-width: 80px; height: auto;">
+            <div class="col-md-3">
+                <div class="service-item text-center">
+                    <div class="service-icon"
+                        style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+                        <img src="sources/icons/data.svg" alt="Icono 2" style="max-width: 80px; height: auto;">
+                    </div>
+                    <h4 style="color: #dd6d2c;">Extracción de Prospectos/Leads</h4>
+                    <p>Personalizamos la extracción de datos de prospectos, recolectando información de clientes.</p>
                 </div>
-                <h4 style="color: #dd6d2c;">Extracción de Datos de Prospectos/Leads</h4>
-                <p>Personalizamos la extracción de datos de prospectos, identificando fuentes, recopilando información
-                    de clientes y creando listas adaptadas de posibles leads.</p>
             </div>
-        </div>
-        <div class="col-md-3">
-            <div class="service-item text-center">
-                <div class="service-icon"
-                    style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
-                    <img src="sources/icons/social-media.svg" alt="Icono 3"
-                        style="max-width: 80px; height: auto;">
+            <div class="col-md-3">
+                <div class="service-item text-center">
+                    <div class="service-icon"
+                        style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+                        <img src="sources/icons/social-media.svg" alt="Icono 3"
+                            style="max-width: 80px; height: auto;">
+                    </div>
+                    <h4 style="color: #dd6d2c;">Extracción de Datos de Redes Sociales</h4>
+                    <p>Recopilamos perfiles, publicaciones y comentarios de redes sociales usando palabras clave.</p>
                 </div>
-                <h4 style="color: #dd6d2c;">Extracción de Datos de Redes Sociales</h4>
-                <p>Recopilamos perfiles, publicaciones, comentarios e información de usuarios de LinkedIn, Facebook,
-                    X, utilizando diversos criterios y palabras clave.</p>
             </div>
-        </div>
-        <div class="col-md-3">
-            <div class="service-item text-center">
-                <div class="service-icon"
-                    style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
-                    <img src="sources/icons/market-research.svg" alt="Icono 3" style="max-width: 80px; height: auto;">
+            <div class="col-md-3">
+                <div class="service-item text-center">
+                    <div class="service-icon"
+                        style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+                        <img src="sources/icons/market-research.svg" alt="Icono 4" style="max-width: 80px; height: auto;">
+                    </div>
+                    <h4 style="color: #dd6d2c;">Extracción de Datos de Investigación de Mercado</h4>
+                    <p>Pixiu acelera tu investigación con datos precisos sobre audiencias objetivo.</p>
                 </div>
-                <h4 style="color: #dd6d2c;">Extracción de Datos de Investigación de Mercado</h4>
-                <p>Pixiu acelera tu investigación con datos precisos sobre audiencias objetivo, tendencias de mercado,
-                    competidores y percepciones de clientes.</p>
             </div>
         </div>
     </div>
-</div>
-
             `;
 
     // Cambiar contenido de la sección detalleshs a español
     detalleshs.innerHTML = `
-                    <div class="container-fluid">
-    <div class="row mb-5" style="margin-bottom: -7.5rem !important;">
+                   <div class="container-fluid">
+    <div class="row mb-5" style="margin-bottom: -4rem !important;">
         <div class="col-md-6 d-flex align-items-center">
             <div class="service-detail-item">
-                <h3>Extracción de datos de sitios web</h3>
-                <p>Aprovecha los servicios de extracción de datos de Pixiu para obtener datos web precisos de manera
-                    rápida. Nuestro equipo de especialistas utiliza APIs, scripts y métodos manuales para recolectar
-                    datos de diversos sitios web, organizándolos meticulosamente en una base de datos para un fácil
-                    acceso futuro.</p>
+                <h3>Extracción de Datos de Sitios Web</h3>
+                <p>Aproveche nuestros servicios de extracción de datos de Pixiu para obtener información precisa de la web de manera eficiente. Nuestro equipo utiliza APIs, scripts y métodos manuales para recopilar datos de diversos sitios web, organizándolos meticulosamente en una base de datos para su fácil acceso futuro.</p>
             </div>
         </div>
         <div class="col-md-6">
-            <img src="sources/images/Imagenes Pixiu/Operating system-amico.png"
-                alt="Implementación y entrenamiento de HubSpot" class="service-detail-img">
+            <img src="sources/images/Imagenes Pixiu/Data extraction-amico.png"
+                alt="Implementación y Entrenamiento de HubSpot" class="service-detail-img">
         </div>
     </div>
-    <div class="row mb-5" style="margin-bottom: -7.5rem !important;">
+    <div class="row mb-5" style="margin-bottom: -1.5rem !important;">
         <div class="col-md-6 order-md-2 d-flex align-items-center">
             <div class="service-detail-item">
-                <h3>Extracción de datos de prospectos/leads</h3>
-                <p>Eleva tus esfuerzos de ventas y marketing con nuestros servicios de extracción de datos de
-                    prospectos y leads. Empleamos un enfoque personalizado para explorar tu audiencia objetivo,
-                    identificar fuentes de datos permanentes, extraer información de leads de clientes y proporcionarte
-                    una lista adaptada de posibles prospectos.</p>
+                <h3>Extracción de Prospectos y Leads</h3>
+                <p>Mejore sus estrategias de ventas y marketing con nuestros servicios de extracción de prospectos y leads. Adoptamos un enfoque personalizado para profundizar en su audiencia objetivo, identificar fuentes de datos confiables, extraer información de leads y proporcionarle una lista personalizada de prospectos potenciales.</p>
             </div>
         </div>
         <div class="col-md-6 order-md-1">
-            <img src="sources/images/Imagenes Pixiu/Operating system-pana.png" alt="Optimización de HubSpot"
+            <img src="sources/images/Imagenes Pixiu/Data extraction-rafiki.png" alt="Optimización de HubSpot"
                 class="service-detail-img">
         </div>
     </div>
     <div class="row mb-5" style="margin-bottom: -2.5rem !important;">
         <div class="col-md-6 d-flex align-items-center">
             <div class="service-detail-item">
-                <h3>Extracción de datos de redes sociales</h3>
-                <p>Los expertos certificados de HubSpot en Pixiu ofrecen consultoría personalizada uno a uno para
-                    optimizar tu infraestructura de HubSpot. Abordamos tus desafíos y metas únicas, ya sea
-                    resolviendo problemas, mejorando tu configuración o explorando nuevas estrategias de
-                    rendimiento. Nuestras consultas abarcan la resolución de problemas, la planificación estratégica y
-                    la implementación. Te mantenemos actualizado sobre integraciones como Clay, Instantly y Apollo.
-                    Nuestras estrategias de mejora continua aseguran que tu entorno HubSpot se alinee con tus objetivos
-                    empresariales y se adapte a nuevas oportunidades. Asóciate con Pixiu para obtener una eficiencia,
-                    productividad y crecimiento mejorados.</p>
+                <h3>Extracción de Datos de Redes Sociales</h3>
+                <p>Recopilamos una amplia variedad de datos, como perfiles de usuario, publicaciones, comentarios e información de usuarios de plataformas sociales destacadas como LinkedIn, Facebook, X (anteriormente Twitter) y otras más. Nuestro método incluye el uso de diversos criterios de búsqueda, palabras clave y temas relevantes para sus redes sociales clave.</p>
             </div>
         </div>
         <div class="col-md-6">
-            <img src="sources/images/Imagenes Pixiu/Operating system-rafiki.png"
-                alt="Consultoría personalizada de HubSpot" class="service-detail-img">
+            <img src="sources/images/Imagenes Pixiu/Data extraction-cuate.png"
+                alt="Consultoría Personalizada de HubSpot" class="service-detail-img">
         </div>
     </div>
-    <div class="row mb-5" style="margin-bottom: -7.5rem !important;">
+    <div class="row mb-5" style="margin-bottom: -2.5rem !important;">
         <div class="col-md-6 order-md-2 d-flex align-items-center">
             <div class="service-detail-item">
-                <h3>Extracción de datos de investigación de mercado</h3>
-                <p>Recopilamos una amplia gama de datos, incluidos perfiles de usuario, publicaciones, comentarios e
-                    información de usuario de plataformas sociales prominentes como LinkedIn, Facebook, X (anteriormente
-                    Twitter) y otros. Nuestro enfoque involucra el uso de diversos criterios de búsqueda, palabras clave
-                    y temas de tus redes sociales y profesionales clave.</p>
+                <h3>Extracción de Datos para Investigación de Mercado</h3>
+                <p>Impulse su investigación y análisis con datos precisos y relevantes sobre su audiencia objetivo, tendencias de mercado, análisis competitivo, insights de clientes y estudios anteriores. Nuestros servicios de extracción de datos están diseñados a medida para satisfacer sus necesidades específicas de investigación de mercado.</p>
             </div>
         </div>
         <div class="col-md-6 order-md-1">
-            <img src="sources/images/Imagenes Pixiu/Operating system-pana.png" alt="Optimización de HubSpot"
+            <img src="sources/images/Imagenes Pixiu/Telecommuting-rafiki.png" alt="Optimización de HubSpot"
                 class="service-detail-img">
         </div>
     </div>
 </div>
             `;
 
-    // Cambiar contenido de la sección detalleshs a Inglés
-    paqueteshs.innerHTML = `
-<div class="container-fluid">
-<div class="row">
-<div class="col-md-12">
-<h2 style="text-align: center; margin-bottom: 50px;">Nuestros Paquetes de Servicios HubSpot</h2>
-</div>
-</div>
-<div class="row">
-<!-- Card 1 - Starter Package -->
-<div class="col-md-3">
-    <div class="plan">
-        <div class="inner">
-            <span class="pricing">
-                <span>
-                    Habla con ventas<small></small>
-                </span>
-            </span>
-            <p class="title">Paquete de Implementación</p>
-            <p class="info">Trabajaremos juntos para definir objetivos para tu equipo, asegurando que HubSpot se alinee perfectamente con los objetivos de tu negocio.</p>
-            <ul class="features">
-                <li>
-                    <span class="icon">
-                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
-                        </svg>
-                    </span>
-                    <span><strong>Mapeo de </strong>datos</span>
-                </li>
-                <li>
-                    <span class="icon">
-                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
-                        </svg>
-                    </span>
-                    <span><strong>Migración de </strong>datos</span>
-                </li>
-                <li>
-                    <span class="icon">
-                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
-                        </svg>
-                    </span>
-                    <span><strong>Capacitación</strong>, Talleres en equipo</span>
-                </li>
-                <li>
-                    <span class="icon">
-                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
-                        </svg>
-                    </span>
-                    <span><strong>Configuración de </strong>CRM</span>
-                </li>
-                <li>
-                    <span class="icon">
-                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
-                        </svg>
-                    </span>
-                    <span>Plantillas de <strong>correo electrónico</strong></span>
-                </li>
-                <li>
-                    <span class="icon">
-                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
-                        </svg>
-                    </span>
-                    <span>Secuencias de <strong>correo electrónico</strong></span>
-                </li>
-                <li>
-                    <span class="icon">
-                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
-                        </svg>
-                    </span>
-                    <span><strong>Automatizaciones de </strong>datos</span>
-                </li>
-                <li>
-                    <span class="icon">
-                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
-                        </svg>
-                    </span>
-                    <span><strong>Reportes</strong></span>
-                </li>
-            </ul>
-            <div class="action">
-                <a class="button" href="https://meetings.hubspot.com/pixiu" style="color: #fff;"
-                    target="_blank">Agendar una llamada</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Card 2 - Paquete de Crecimiento -->
-<div class="col-md-3">
-    <div class="plan">
-        <div class="inner">
-            <span class="pricing">
-                <span>
-                    $1399 <small>/ mes</small>
-                </span>
-            </span>
-            <p class="title">Starter</p>
-            <p class="info">Este servicio está diseñado para abordar problemas potenciales y desafíos que puedas enfrentar diariamente.</p>
-            <ul class="features">
-                <li>
-                    <span class="icon">
-                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
-                        </svg>
-                    </span>
-                    <span><strong>Resolución </strong>diaria de problemas</span>
-                </li>
-                <li>
-                    <span class="icon">
-                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
-                        </svg>
-                    </span>
-                    <span>8 horas/mes de <strong>soporte</strong></span>
-                </li>
-                <li>
-                    <span class="icon">
-                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
-                        </svg>
-                    </span>
-                    <span>Respuesta a tickets de lunes a viernes</span>
-                </li>
-                <li>
-                    <span class="icon">
-                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
-                        </svg>
-                    </span>
-                    <span>Manejo <strong>priorizado</strong> de tickets</span>
-                </li>
-                <li>
-                    <span class="icon">
-                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
-                        </svg>
-                    </span>
-                    <span><strong>Resolución </strong>de errores</span>
-                </li>
-                <li>
-                    <span class="icon">
-                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
-                        </svg>
-                    </span>
-                    <span><strong>Soporte </strong>de tickets</span>
-                </li>
-                <li>
-                    <span class="icon">
-                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
-                        </svg>
-                    </span>
-                    <span>Guía <strong>técnica</strong></span>
-                </li>
-            </ul>
-            <div class="action">
-                <a class="button" href="https://meetings.hubspot.com/pixiu" style="color: #fff;" target="_blank">Agendar una llamada</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Card 3 - Paquete de Crecimiento Hiperactivo -->
-<div class="col-md-3">
-    <div class="plan">
-        <div class="inner">
-            <span class="pricing">
-                <span>
-                    $2900 <small>/ mes</small>
-                </span>
-            </span>
-            <p class="title">Crecimiento</p>
-            <p class="info">Reciba 20 créditos por mes para usar en desarrollo, tickets de soporte, o una combinación de ambos.</p>
-            <ul class="features">
-                <li>
-                    <span class="icon">
-                        <svg height="24" width="24" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="currentColor"
-                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                            </path>
-                        </svg>
-                    </span>
-                    <span><strong>Especialista dedicado</strong> en HubSpot</span>
-                </li>
-                <li>
-                    <span class="icon">
-                        <svg height="24" width="24" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="currentColor"
-                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                            </path>
-                        </svg>
-                    </span>
-                    <span><strong>Soporte completo</strong> de HubSpot</span>
-                </li>
-                <li>
-                    <span class="icon">
-                        <svg height="24" width="24" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="currentColor"
-                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                            </path>
-                        </svg>
-                    </span>
-                    <span><strong>Planificación proactiva</strong></span>
-                </li>
-                <li>
-                    <span class="icon">
-                        <svg height="24" width="24" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="currentColor"
-                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                            </path>
-                        </svg>
-                    </span>
-                    <span><strong>Reportes mensuales</strong></span>
-                </li>
-                <li>
-                    <span class="icon">
-                        <svg height="24" width="24" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="currentColor"
-                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                            </path>
-                        </svg>
-                    </span>
-                    <span><strong>Resolución de problemas</strong></span>
-                </li>
-                <li>
-                    <span class="icon">
-                        <svg height="24" width="24" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="currentColor"
-                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                            </path>
-                        </svg>
-                    </span>
-                    <span><strong>20 </strong>créditos/mes</span>
-                </li>
-                <li>
-                    <span class="icon">
-                        <svg height="24" width="24" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="currentColor"
-                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                            </path>
-                        </svg>
-                    </span>
-                    <span><strong>Soporte de desarrollo</strong></span>
-                </li>
-                <li>
-                    <span class="icon">
-                        <svg height="24" width="24" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="currentColor"
-                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                            </path>
-                        </svg>
-                    </span>
-                    <span><strong>Optimización a largo plazo</strong></span>
-                </li>
-            </ul>
-            <div class="action">
-                <a class="button" href="https://meetings.hubspot.com/pixiu" style="color: #fff;"
-                    target="_blank">Reservar una Llamada</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Card 4 - Paquete de Crecimiento Hiperactivo -->
-<div class="col-md-3">
-    <div class="plan">
-        <div class="inner">
-            <span class="pricing">
-                <span>
-                    $3900 <small>/ mes</small>
-                </span>
-            </span>
-            <p class="title">Crecimiento Hiperactivo</p>
-            <p class="info">Recibe 30 créditos por mes para usar en desarrollo, tickets de soporte, o ambos.</p>
-            <ul class="features">
-                <li>
-                    <span class="icon">
-                        <svg height="24" width="24" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="currentColor"
-                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                            </path>
-                        </svg>
-                    </span>
-                    <span><strong>Especialista </strong>dedicado de HubSpot</span>
-                </li>
-                <li>
-                    <span class="icon">
-                        <svg height="24" width="24" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="currentColor"
-                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                            </path>
-                        </svg>
-                    </span>
-                    <span>Soporte completo de <strong>HubSpot</strong></span>
-                </li>
-                <li>
-                    <span class="icon">
-                        <svg height="24" width="24" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="currentColor"
-                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                            </path>
-                        </svg>
-                    </span>
-                    <span><strong>Planificación </strong>y reporte mensual</span>
-                </li>
-                <li>
-                    <span class="icon">
-                        <svg height="24" width="24" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="currentColor"
-                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                            </path>
-                        </svg>
-                    </span>
-                    <span><strong>Resolución </strong>de problemas</span>
-                </li>
-                <li>
-                    <span class="icon">
-                        <svg height="24" width="24" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="currentColor"
-                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                            </path>
-                        </svg>
-                    </span>
-                    <span><strong>30 </strong>créditos/mes</span>
-                </li>
-                <li>
-                    <span class="icon">
-                        <svg height="24" width="24" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="currentColor"
-                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                            </path>
-                        </svg>
-                    </span>
-                    <span>Soporte de <strong>desarrollo</strong></span>
-                </li>
-                <li>
-                    <span class="icon">
-                        <svg height="24" width="24" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="currentColor"
-                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                            </path>
-                        </svg>
-                    </span>
-                    <span>Optimización a largo plazo de <strong>HubSpot</strong></span>
-                </li>
-                <li>
-                    <span class="icon">
-                        <svg height="24" width="24" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="currentColor"
-                                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z">
-                            </path>
-                        </svg>
-                    </span>
-                    <span>Administración de niveles de licencia</span>
-                </li>
-            </ul>
-            <div class="action">
-                <a class="button" href="https://meetings.hubspot.com/pixiu" style="color: #fff;"
-                    target="_blank">Reservar una llamada</a>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-</div>
-`;
 
     // Cambiar contenido de la sección How we work a Español
     sectionHowWeWork.innerHTML = `
@@ -1568,7 +639,7 @@ function toggleLanguage() {
             <div class="row">
                 <!-- Columna 1: Logo, párrafo y redes sociales -->
                 <div class="col-lg-4 col-md-4 mb-4 mb-lg-0">
-                    <img src="sources/images/Logo.webp" alt="Logo" class="img-fluid mb- logo-footer">
+                    <img src="sources/images/logo.png" alt="Logo" class="img-fluid mb- logo-footer">
             <p>En Pixiu nos dedicamos a proporcionar un servicio excelente e innovador, especializándonos en desarrollo de software personalizado, consultoría de HubSpot y servicios de extracción de datos. Nuestra misión es cerrar la brecha entre las empresas del mercado y las soluciones personalizadas. ¡Contáctanos para obtener más información sobre cómo podemos mejorar tu negocio!</p>
                     <div class="wrapper">
                         <a href="https://www.linkedin.com/company/pixiu-x" target="_blank">

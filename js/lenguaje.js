@@ -297,7 +297,7 @@ function toggleLanguage() {
             <div class="row">
                 <!-- Columna 1: Logo, párrafo y redes sociales -->
                 <div class="col-lg-4 col-md-4 mb-4 mb-lg-0">
-                    <img src="sources/images/Logo.webp" alt="Logo" class="img-fluid mb- logo-footer">
+                    <img src="sources/images/logo.png" alt="Logo" class="img-fluid mb- logo-footer">
                     <p>At Pixiu, we focus on excellent service and innovation, specializing in custom software
                         development, HubSpot consulting, and data scraping services. Contact us for inquiries on how we
                         can improve your business.</p>
@@ -664,7 +664,7 @@ function toggleLanguage() {
             <div class="row">
                 <!-- Columna 1: Logo, párrafo y redes sociales -->
                 <div class="col-lg-4 col-md-4 mb-4 mb-lg-0">
-                    <img src="sources/images/Logo.webp" alt="Logo" class="img-fluid mb- logo-footer">
+                    <img src="sources/images/logo.png" alt="Logo" class="img-fluid mb- logo-footer">
             <p>En Pixiu, nos enfocamos en ofrecer un servicio excelente e innovación, especializándonos en desarrollo
                     de software personalizado, consultoría de HubSpot y servicios de extracción de datos. Contáctenos para
                     consultas sobre cómo podemos mejorar su negocio.</p>

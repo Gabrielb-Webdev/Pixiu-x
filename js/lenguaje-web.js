@@ -6,7 +6,6 @@ function toggleLanguage() {
   const welcomeSection = document.getElementById("welcome-section");
   const serviciosHubSpot = document.getElementById("servicios-hubspot");
   const detalleshs = document.getElementById("detalle-servicios-hubspot");
-  const paqueteshs = document.getElementById("paquetes-hubspot");
   const sectionHowWeWork = document.querySelector(".section-how-we-work");
   const faqQuestions = document.querySelectorAll(".faq .faq-question");
   const faqAnswers = document.querySelectorAll(".faq .faq-answer");
@@ -37,15 +36,12 @@ function toggleLanguage() {
 
     // Cambiar contenido de la sección Footer a Inglés
     welcomeSection.innerHTML = `
-                <section id="welcome-section" style="height: 75vh; background: linear-gradient(to bottom, #FEE4D9, #dd6d2c);">
-        <div class="container-fluid h-100">
+                <div class="container-fluid h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-md-6">
                     <div class="welcome-content text-left">
-                        <h2 style="font-size: 4rem;">Unlock HubSpot's Full Potential</h2>
-                        <p>At Pixiu, we specialize in seamless HubSpot onboarding and training tailored to your team's
-                            needs. Integrate HubSpot effortlessly into your company's ecosystem for smooth and effective
-                            implementation.
+                        <h2 style="font-size: 4rem;">Tailored Software Solutions</h2>
+                        <p>Crafting bespoke software solutions that precisely align with your business requirements. Pixiu specializes in delivering high-quality, efficient, and scalable software that optimizes your operations and fuels business growth
                         </p>
                         <a href="https://meetings.hubspot.com/pixiu" class="btn mt-5 custom-btn" target="_blank">Book A
                             Call</a>
@@ -53,13 +49,12 @@ function toggleLanguage() {
                 </div>
                 <div class="col-md-6">
                     <div class="welcome-image floating-image">
-                        <img src="sources/images/Imagenes Pixiu/Operating system-pana.png" alt="Imagen de bienvenida"
+                        <img src="sources/images/Imagenes Pixiu/Hand coding-pana.png" alt="Imagen de bienvenida"
                             style="max-width: 100%; height: auto;">
                     </div>
                 </div>
             </div>
         </div>
-    </section>
             `;
 
     // Cambiar contenido de la sección serviciosHubSpot a Inglés
@@ -863,27 +858,22 @@ function toggleLanguage() {
 
     // Cambiar contenido de la sección welcome a español
     welcomeSection.innerHTML = `
-                <section id="welcome-section" style="height: 75vh; background: linear-gradient(to bottom, #FEE4D9, #dd6d2c);">
-        <div class="container-fluid h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-md-6">
-                    <div class="welcome-content text-left">
-                        <h2 style="font-size: 4rem;">Desbloquea todo el Potencial de HubSpot</h2>
-                        <p>En Pixiu, nos especializamos en la integración y capacitación fluida de HubSpot adaptada a las
-                        necesidades de tu equipo. Integra HubSpot sin esfuerzo en el ecosistema de tu empresa para una
-                        implementación efectiva y sin complicaciones.</p>
-                        <a href="https://meetings.hubspot.com/pixiu" class="btn mt-5 custom-btn" target="_blank">Agenda una Llamada</a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="welcome-image floating-image">
-                        <img src="sources/images/Imagenes Pixiu/Operating system-pana.png" alt="Imagen de bienvenida"
-                            style="max-width: 100%; height: auto;">
-                    </div>
-                </div>
+                <div class="container-fluid h-100">
+    <div class="row h-100 align-items-center">
+        <div class="col-md-6">
+            <div class="welcome-content text-left">
+                <h2 style="font-size: 4rem;">Soluciones de Software a Medida</h2>
+                <p>Desarrollamos soluciones de software personalizadas que se alinean perfectamente con los requisitos de tu negocio. Pixiu se especializa en ofrecer software de alta calidad, eficiente y escalable que optimiza tus operaciones y impulsa el crecimiento empresarial.</p>
+                <a href="https://meetings.hubspot.com/pixiu" class="btn mt-5 custom-btn" target="_blank">Agenda una Llamada</a>
             </div>
         </div>
-    </section>
+        <div class="col-md-6">
+            <div class="welcome-image floating-image">
+                <img src="sources/images/Imagenes Pixiu/Hand coding-pana.png" alt="Imagen de bienvenida" style="max-width: 100%; height: auto;">
+            </div>
+        </div>
+    </div>
+</div>
             `;
 
     serviciosHubSpot.innerHTML = `
