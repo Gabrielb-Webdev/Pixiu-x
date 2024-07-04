@@ -724,7 +724,7 @@ function toggleLanguage() {
                 <div class="row">
                     <!-- Columna 1: Logo, párrafo y redes sociales -->
                     <div class="col-lg-4 col-md-4 mb-4 mb-lg-0">
-                        <img src="sources/images/logo.webp" alt="Logo" class="img-fluid mb- logo-footer">
+                        <img src="sources/images/Logo.webp" alt="Logo" class="img-fluid mb- logo-footer">
                         <p>At Pixiu, we focus on excellent service and innovation, specializing in custom software development, HubSpot consulting, and data scraping services. We're on a mission to bridge the gap between Marketplace Businesses and custom solutions.
                             Contact us for inquiries on how we can improve your business.</p>
                         <div class="wrapper">
@@ -1568,7 +1568,7 @@ function toggleLanguage() {
             <div class="row">
                 <!-- Columna 1: Logo, párrafo y redes sociales -->
                 <div class="col-lg-4 col-md-4 mb-4 mb-lg-0">
-                    <img src="sources/images/logo.webp" alt="Logo" class="img-fluid mb- logo-footer">
+                    <img src="sources/images/Logo.webp" alt="Logo" class="img-fluid mb- logo-footer">
             <p>En Pixiu nos dedicamos a proporcionar un servicio excelente e innovador, especializándonos en desarrollo de software personalizado, consultoría de HubSpot y servicios de extracción de datos. Nuestra misión es cerrar la brecha entre las empresas del mercado y las soluciones personalizadas. ¡Contáctanos para obtener más información sobre cómo podemos mejorar tu negocio!</p>
                     <div class="wrapper">
                         <a href="https://www.linkedin.com/company/pixiu-x" target="_blank">
