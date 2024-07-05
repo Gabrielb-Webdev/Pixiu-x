@@ -948,3 +948,7 @@ p {
 #detalle-servicios-hubspot .service-detail-img:hover {
     transform: scale(1.05);
 }
+
+button:focus {
+    outline: none;
+}

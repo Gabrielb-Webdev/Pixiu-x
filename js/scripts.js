@@ -3,43 +3,43 @@ const stepsVisible = 1; // Number of steps visible at a time
 const totalSteps = document.querySelectorAll(".step").length;
 
 document.addEventListener("DOMContentLoaded", () => {
-    updateView();
-    updateButtons();
+  updateView();
+  updateButtons();
 });
 
 function updateView() {
-    const stepsElement = document.querySelector(".steps");
-    const stepWidth = stepsElement.querySelector(".step").offsetWidth;
-    stepsElement.style.transform = `translateX(-${currentStep * stepWidth}px)`;
+  const stepsElement = document.querySelector(".steps");
+  const stepWidth = stepsElement.querySelector(".step").offsetWidth;
+  stepsElement.style.transform = `translateX(-${currentStep * stepWidth}px)`;
 }
 
 function updateButtons() {
-    document.getElementById("prev").disabled = currentStep === 0;
-    document.getElementById("next").disabled =
-        currentStep >= totalSteps - stepsVisible;
+  document.getElementById("prev").disabled = currentStep === 0;
+  document.getElementById("next").disabled =
+    currentStep >= totalSteps - stepsVisible;
 }
 
 function prevStep() {
-    if (currentStep > 0) {
-        currentStep--;
-        updateView();
-        updateButtons();
-    }
+  if (currentStep > 0) {
+    currentStep--;
+    updateView();
+    updateButtons();
+  }
 }
 
 function nextStep() {
-    if (currentStep < totalSteps - stepsVisible) {
-        currentStep++;
-        updateView();
-        updateButtons();
-    }
+  if (currentStep < totalSteps - stepsVisible) {
+    currentStep++;
+    updateView();
+    updateButtons();
+  }
 }
 
-document.querySelectorAll('.faq-question').forEach(item => {
-    item.addEventListener('click', event => {
-        const faq = item.parentElement;
-        faq.classList.toggle('open');
-    });
+document.querySelectorAll(".faq-question").forEach((item) => {
+  item.addEventListener("click", (event) => {
+    const faq = item.parentElement;
+    faq.classList.toggle("open");
+  });
 });
 
 const inputs = document.querySelectorAll(".form .input, .form .input01");
@@ -63,7 +63,8 @@ if (serviceSelect) {
     const serviceValue = this.value;
     const dropdown = document.querySelector(".custom-software-dropdown");
     if (dropdown) {
-      dropdown.style.display = serviceValue === "option1" ? "block" : "none";
+      dropdown.style.display =
+        serviceValue === "Custom Software Development" ? "block" : "none";
     }
   });
 }
@@ -76,3 +77,30 @@ $(document).ready(function () {
     format: "yyyy-mm-dd",
   });
 });
+
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevenir el envío por defecto del formulario
+
+    // Obtener los datos del formulario
+    const formData = new FormData(this);
+
+    // Enviar los datos a través de fetch
+    fetch(this.action, {
+      method: this.method,
+      body: formData,
+    })
+      .then((response) => {
+        if (response.ok) {
+          // Recargar la página después de un envío exitoso
+          location.reload();
+        } else {
+          // Manejar errores si es necesario
+          console.error("Error al enviar el formulario");
+        }
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  });
