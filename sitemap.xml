@@ -3,7 +3,7 @@
 
   <!-- Archivos HTML en inglés -->
   <url>
-    <loc>https://pixiux.com/index</loc>
+    <loc>https://pixiux.com/</loc>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -21,7 +21,7 @@
 
   <!-- Archivos HTML en español -->
   <url>
-    <loc>https://pixiux.com/index-es</loc>
+    <loc>https://pixiux.com/es</loc>
     <changefreq>weekly</changefreq>
   </url>
   <url>
