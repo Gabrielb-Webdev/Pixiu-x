@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+
+# Permitir el rastreo de todo lo demás
+Allow: /
+
+# Especificar la ubicación del sitemap
+Sitemap: https://pixiux.com/sitemap.xml

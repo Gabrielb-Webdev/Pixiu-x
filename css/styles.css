@@ -1011,13 +1011,9 @@ button:focus {
 }
 
 #accept-button {
-    background-color: #4CAF50;
+    background-color: #dd6d2c;
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-}
-
-#accept-button:hover {
-    background-color: #45a049;
 }

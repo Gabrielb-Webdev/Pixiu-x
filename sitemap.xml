@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Archivos HTML en inglés -->
+  <url>
+    <loc>https://pixiux.com/index</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pixiux.com/hubspot</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pixiux.com/scrap</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pixiux.com/web</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Archivos HTML en español -->
+  <url>
+    <loc>https://pixiux.com/index-es</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pixiux.com/hubspot-es</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pixiux.com/scrap-es</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pixiux.com/web-es</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+
+</urlset>

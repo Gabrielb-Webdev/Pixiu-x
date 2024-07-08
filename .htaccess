@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Redireccionar URLs terminadas en .html a sus equivalentes sin .html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)$ $1.html [L]
+
+# Redireccionar URLs sin .html a sus equivalentes con .html internamente
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]
