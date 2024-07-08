@@ -49,21 +49,37 @@
     <meta name="msapplication-config" content="Logos/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
 
-    <!-- Google tag (gtag.js)
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16633775810"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-16633775810"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
-
-        gtag("config", "AW-16633775810");
-    </script> -->
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "AW-16633775810");
+    </script>
+    <!-- Event snippet for Web Form conversion page -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-16633775810/IXCmCKqYisEZEMKNzfs9",
+          event_callback: callback,
+        });
+        return false;
+      }
+    </script>
 
     <title>Pixiu X - Inicio</title>
-  </head> 
+  </head>
 
   <body>
     <!-- Page Content -->
@@ -89,7 +105,7 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-    
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
@@ -108,9 +124,15 @@
                   Servicios
                 </a>
                 <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-                  <a class="dropdown-item" href="web-es.html">Desarrollo de Software Personalizado</a>
-                  <a class="dropdown-item" href="hubspot-es.html">Implementación y Consultoría de HubSpot</a>
-                  <a class="dropdown-item" href="scrap-es.html">Extracción de Datos</a>
+                  <a class="dropdown-item" href="web-es.html"
+                    >Desarrollo de Software Personalizado</a
+                  >
+                  <a class="dropdown-item" href="hubspot-es.html"
+                    >Implementación y Consultoría de HubSpot</a
+                  >
+                  <a class="dropdown-item" href="scrap-es.html"
+                    >Extracción de Datos</a
+                  >
                 </div>
               </li>
               <li class="nav-item">
@@ -144,7 +166,6 @@
         </div>
       </nav>
     </header>
-    
 
     <section id="home" class="section">
       <div class="container-fluid">
@@ -457,6 +478,7 @@
               class="form"
               action="https://hooks.zapier.com/hooks/catch/19364540/23ky1q3/"
               method="post"
+              onsubmit="gtag_report_conversion(); return true;"
             >
               <div class="flex">
                 <label>

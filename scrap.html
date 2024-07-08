@@ -54,6 +54,35 @@
     <meta name="msapplication-config" content="Logos/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
 
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-16633775810"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "AW-16633775810");
+    </script>
+    <!-- Event snippet for Web Form conversion page -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-16633775810/IXCmCKqYisEZEMKNzfs9",
+          event_callback: callback,
+        });
+        return false;
+      }
+    </script>
+
     <title>Data Extraction</title>
   </head>
 
@@ -105,9 +134,7 @@
                   <a class="dropdown-item" href="hubspot.html"
                     >HubSpot implementation and consulting</a
                   >
-                  <a class="dropdown-item" href="scrap.html"
-                    >Data Extraction</a
-                  >
+                  <a class="dropdown-item" href="scrap.html">Data Extraction</a>
                 </div>
               </li>
               <li class="nav-item">
@@ -509,6 +536,7 @@
               class="form"
               action="https://hooks.zapier.com/hooks/catch/19364540/23ky1q3/"
               method="post"
+              onsubmit="gtag_report_conversion(); return true;"
             >
               <div class="flex">
                 <label>
