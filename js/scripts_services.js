@@ -41,3 +41,15 @@ document.querySelectorAll('.faq-question').forEach(item => {
         faq.classList.toggle('open');
     });
 });
+
+const serviceSelect = document.getElementById("service-select");
+if (serviceSelect) {
+    serviceSelect.addEventListener("change", function() {
+        const serviceValue = this.value;
+        const dropdown = document.querySelector(".custom-software-dropdown");
+        if (dropdown) {
+            dropdown.style.display =
+                serviceValue === "Custom Software Development" ? "block" : "none";
+        }
+    });
+}

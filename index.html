@@ -23,7 +23,7 @@
     <meta name="theme-color" content="#ffffff" />
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16633775810"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16633775810"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -31,9 +31,8 @@
             dataLayer.push(arguments);
         }
         gtag("js", new Date());
-
         gtag("config", "AW-16633775810");
-    </script>
+    </script> -->
 
     <title>Pixiu X</title>
 </head>
@@ -47,8 +46,8 @@
                     <img src="sources/images/logo.png" alt="Pixiu X Logo" width="100" height="auto" />
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
@@ -65,7 +64,7 @@
                             <a class="nav-link custom-btn" href="https://meetings.hubspot.com/pixiu" style="color: #fff" target="_blank">Book A Call</a>
                         </li>
                         <li class="nav-item">
-                            <a id="language-toggle" class="nav-link flag-spain" onclick="toggleLanguage()">
+                            <a id="language-toggle" class="nav-link flag-spain" href="index-es.html">
                                 <img src="sources/icons/spain.svg" alt="Bandera de México" class="flag-icon" /> Es
                             </a>
                         </li>
@@ -127,7 +126,7 @@
                                                 High-accuracy, technologically competent web applications that elevate your digital presence.
                                             </p>
                                             <a href="web.html" style="color: #dd6d2c">Learn More
-                        <img src="sources/icons/arrow.svg" alt="Arrow" class="ml-2" /></a>
+                                                <img src="sources/icons/arrow.svg" alt="Arrow" class="ml-2" /></a>
                                         </div>
                                     </div>
                                 </div>
@@ -139,7 +138,7 @@
                                                 Professional website creation based on your vision, turning ideas into compelling online experiences.
                                             </p>
                                             <a href="web.html" style="color: #dd6d2c">Learn More
-                        <img src="sources/icons/arrow.svg" alt="Arrow" class="ml-2" /></a>
+                                                <img src="sources/icons/arrow.svg" alt="Arrow" class="ml-2" /></a>
                                         </div>
                                     </div>
                                 </div>
@@ -151,7 +150,7 @@
                                                 Unique digital designs that bring your brand to life, creating visual experiences that resonate with your audience.
                                             </p>
                                             <a href="web.html" style="color: #dd6d2c">Learn More
-                        <img src="sources/icons/arrow.svg" alt="Arrow" class="ml-2" /></a>
+                                                <img src="sources/icons/arrow.svg" alt="Arrow" class="ml-2" /></a>
                                         </div>
                                     </div>
                                 </div>
@@ -163,7 +162,7 @@
                                                 Streamlined solutions to create and launch your online store quickly and easily, enabling hassle-free product sales.
                                             </p>
                                             <a href="web.html" style="color: #dd6d2c">Learn More
-                        <img src="sources/icons/arrow.svg" alt="Arrow" class="ml-2" /></a>
+                                                <img src="sources/icons/arrow.svg" alt="Arrow" class="ml-2" /></a>
                                         </div>
                                     </div>
                                 </div>
@@ -296,53 +295,54 @@
                     <form id="contact-form" class="form" action="https://hooks.zapier.com/hooks/catch/19364540/23rtlbr/" method="post">
                         <div class="flex">
                             <label>
-                <input required placeholder="First Name" type="text" class="input" name="firstName" />
-              </label>
+                                <input required placeholder="First Name" type="text" class="input" name="firstName" />
+                            </label>
 
                             <label>
-                <input required placeholder="Last Name" type="text" class="input" name="lastName" />
-              </label>
+                                <input required placeholder="Last Name" type="text" class="input" name="lastName" />
+                            </label>
                         </div>
 
                         <label>
-              <input required placeholder="Email" type="email" class="input" name="email" />
-            </label>
+                            <input required placeholder="Email" type="email" class="input" name="email" />
+                        </label>
 
                         <label>
-              <select required class="input" id="service-select" name="service">
-                <option value="" selected disabled>Select a Service</option>
-                <option value="Custom Software Development">Custom Software Development</option>
-                <option value="HubSpot implementation and consulting">
-                  HubSpot implementation and consulting
-                </option>
-                <option value="Data Extraction">Data Extraction</option>
-              </select>
-            </label>
+                            <select required class="input" id="service-select" name="service">
+                                <option value="" selected disabled>Select a Service</option>
+                                <option value="Custom Software Development">Custom Software Development</option>
+                                <option value="HubSpot implementation and consulting">
+                                    HubSpot implementation and consulting
+                                </option>
+                                <option value="Data Extraction">Data Extraction</option>
+                            </select>
+                        </label>
 
                         <!-- Segundo dropdown que se muestra cuando se selecciona "Custom Software Development" -->
                         <div class="custom-software-dropdown" style="display: none">
                             <label>
-                <select class="input" name="customOption">
-                  <option value="" selected disabled>Select an Option</option>
-                  <option value="Web Design">Web Design</option>
-                  <option value="Custom Web Development">Custom Web Development</option>
-                  <option value="Mobile Applications">Mobile Applications</option>
-                  <option value="E-Commerce Web Development">E-Commerce Web Development</option>
-                </select>
-              </label>
+                                <select class="input" name="customOption">
+                                    <option value="" selected disabled>Select an Option</option>
+                                    <option value="Web Design">Web Design</option>
+                                    <option value="Custom Web Development">Custom Web Development</option>
+                                    <option value="Mobile Applications">Mobile Applications</option>
+                                    <option value="E-Commerce Web Development">E-Commerce Web Development</option>
+                                </select>
+                            </label>
                         </div>
 
                         <label>
-              <textarea required rows="3" placeholder="Hello, I am interested in hiring your services for....."
-                class="input01" name="message"></textarea>
-            </label>
+                            <textarea required rows="3"
+                                placeholder="Hello, I am interested in hiring your services for....." class="input01"
+                                name="Message"></textarea>
+                        </label>
 
                         <button type="submit" class="fancy">
-              <span class="top-key"></span>
-              <span class="text">Submit</span>
-              <span class="bottom-key-1"></span>
-              <span class="bottom-key-2"></span>
-            </button>
+                            <span class="top-key"></span>
+                            <span class="text">Submit</span>
+                            <span class="bottom-key-1"></span>
+                            <span class="bottom-key-2"></span>
+                        </button>
                     </form>
                 </div>
             </div>

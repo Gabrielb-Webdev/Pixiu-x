@@ -1,41 +1,41 @@
 let isSpanish = false; // Estado inicial: Inglés
 
 function toggleLanguage() {
-  const languageToggle = document.getElementById("language-toggle");
-  const navLinks = document.querySelectorAll(".nav-link");
-  const sectionHome = document.getElementById("home");
-  const sectionServices = document.getElementById("services");
-  const sectionHubSpot = document.getElementById("hubspot");
-  const sectionData = document.getElementById("Data");
-  const sectionHowWeWork = document.querySelector(".section-how-we-work");
-  const sectionContact = document.getElementById("contact");
-  const sectionFastTrack = document.getElementById("fast-track");
-  const sectionFooter = document.getElementById("footer");
+    const languageToggle = document.getElementById("language-toggle");
+    const navLinks = document.querySelectorAll(".nav-link");
+    const sectionHome = document.getElementById("home");
+    const sectionServices = document.getElementById("services");
+    const sectionHubSpot = document.getElementById("hubspot");
+    const sectionData = document.getElementById("Data");
+    const sectionHowWeWork = document.querySelector(".section-how-we-work");
+    const sectionContact = document.getElementById("contact");
+    const sectionFastTrack = document.getElementById("fast-track");
+    const sectionFooter = document.getElementById("footer");
 
-  if (isSpanish) {
-    // Cambiar a Inglés
-    languageToggle.innerHTML =
-      '<img src="../sources/icons/spain.svg" alt="Bandera de México" class="flag-icon">' +
-      " Es";
-    navLinks.forEach((link) => {
-      switch (link.textContent.trim()) {
-        case "Inicio":
-          link.textContent = "Home";
-          break;
-        case "Servicios":
-          link.textContent = "Services";
-          break;
-        case "Contacto":
-          link.textContent = "Contact";
-          break;
-        case "Agendar una Llamada":
-          link.textContent = "Book A Call";
-          break;
-      }
-    });
+    if (isSpanish) {
+        // Cambiar a Inglés
+        languageToggle.innerHTML =
+            '<img src="../sources/icons/spain.svg" alt="Bandera de México" class="flag-icon">' +
+            " Es";
+        navLinks.forEach((link) => {
+            switch (link.textContent.trim()) {
+                case "Inicio":
+                    link.textContent = "Home";
+                    break;
+                case "Servicios":
+                    link.textContent = "Services";
+                    break;
+                case "Contacto":
+                    link.textContent = "Contact";
+                    break;
+                case "Agendar una Llamada":
+                    link.textContent = "Book A Call";
+                    break;
+            }
+        });
 
-    // Cambiar contenido de la sección Home a Inglés
-    sectionHome.innerHTML = `
+        // Cambiar contenido de la sección Home a Inglés
+        sectionHome.innerHTML = `
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-md-6">
@@ -58,8 +58,8 @@ function toggleLanguage() {
             </div>
         `;
 
-    // Cambiar contenido de la sección Services a Inglés
-    sectionServices.innerHTML = `
+        // Cambiar contenido de la sección Services a Inglés
+        sectionServices.innerHTML = `
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 d-flex justify-content-start align-items-center">
@@ -134,8 +134,8 @@ function toggleLanguage() {
         </div>
         `;
 
-    // Cambiar contenido de la sección HubSpot a Inglés
-    sectionHubSpot.innerHTML = `
+        // Cambiar contenido de la sección HubSpot a Inglés
+        sectionHubSpot.innerHTML = `
             <div class="container-fluid">
                 <h2 class="responsive-heading mb-4 text-center">HubSpot implementation and consulting</h2>
                 <div class="row align-items-center">
@@ -154,8 +154,8 @@ function toggleLanguage() {
             </div>
         `;
 
-    // Cambiar contenido de la sección Data a Inglés
-    sectionData.innerHTML = `
+        // Cambiar contenido de la sección Data a Inglés
+        sectionData.innerHTML = `
             <div class="container-fluid">
                 <h2 class="mb-4 text-center" style="font-size: 3rem;">Data Extraction</h2>
                 <div class="row align-items-center">
@@ -175,8 +175,8 @@ function toggleLanguage() {
             </div>
         `;
 
-    // Cambiar contenido de la sección How we work a Inglés
-    sectionHowWeWork.innerHTML = `
+        // Cambiar contenido de la sección How we work a Inglés
+        sectionHowWeWork.innerHTML = `
                 <div class="container-fluid">
                     <h2 style="margin-bottom: 1rem;">How we work</h2>
                     <div class="steps">
@@ -216,8 +216,8 @@ function toggleLanguage() {
                 </div>
             `;
 
-    // Cambiar contenido de la sección Contact Us a Inglés
-    sectionContact.innerHTML = `
+        // Cambiar contenido de la sección Contact Us a Inglés
+        sectionContact.innerHTML = `
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 text-center">
@@ -280,8 +280,8 @@ function toggleLanguage() {
         </div>
     `;
 
-    // Cambiar contenido de la sección Fast-Track Your Development Journey With Pixiu X a Inglés
-    sectionFastTrack.innerHTML = `
+        // Cambiar contenido de la sección Fast-Track Your Development Journey With Pixiu X a Inglés
+        sectionFastTrack.innerHTML = `
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -291,8 +291,8 @@ function toggleLanguage() {
         </div>
     `;
 
-    // Cambiar contenido de la sección Footer a Inglés
-    sectionFooter.innerHTML = `
+        // Cambiar contenido de la sección Footer a Inglés
+        sectionFooter.innerHTML = `
             <div class="container-fluid">
             <div class="row">
                 <!-- Columna 1: Logo, párrafo y redes sociales -->
@@ -390,31 +390,31 @@ function toggleLanguage() {
             </div>
         </div>
         `;
-  } else {
-    // Cambiar a Español
-    languageToggle.innerHTML =
-      '<img src="../sources/icons/USA.svg" alt="Bandera de US" class="flag-icon">' +
-      " En";
+    } else {
+        // Cambiar a Español
+        languageToggle.innerHTML =
+            '<img src="../sources/icons/USA.svg" alt="Bandera de US" class="flag-icon">' +
+            " En";
 
-    navLinks.forEach((link) => {
-      switch (link.textContent.trim()) {
-        case "Home":
-          link.textContent = "Inicio";
-          break;
-        case "Services":
-          link.textContent = "Servicios";
-          break;
-        case "Contact":
-          link.textContent = "Contacto";
-          break;
-        case "Book A Call":
-          link.textContent = "Agendar una Llamada";
-          break;
-      }
-    });
+        navLinks.forEach((link) => {
+            switch (link.textContent.trim()) {
+                case "Home":
+                    link.textContent = "Inicio";
+                    break;
+                case "Services":
+                    link.textContent = "Servicios";
+                    break;
+                case "Contact":
+                    link.textContent = "Contacto";
+                    break;
+                case "Book A Call":
+                    link.textContent = "Agendar una Llamada";
+                    break;
+            }
+        });
 
-    // Cambiar contenido de la sección Home a Español
-    sectionHome.innerHTML = `
+        // Cambiar contenido de la sección Home a Español
+        sectionHome.innerHTML = `
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-md-6">
@@ -437,8 +437,8 @@ function toggleLanguage() {
             </div>
         `;
 
-    // Cambiar contenido de la sección Services a Español
-    sectionServices.innerHTML = `
+        // Cambiar contenido de la sección Services a Español
+        sectionServices.innerHTML = `
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 d-flex justify-content-start align-items-center">
@@ -501,8 +501,8 @@ function toggleLanguage() {
         </div>
         `;
 
-    // Cambiar contenido de la sección HubSpot a Español
-    sectionHubSpot.innerHTML = `
+        // Cambiar contenido de la sección HubSpot a Español
+        sectionHubSpot.innerHTML = `
             <div class="container-fluid">
                 <h2 class="responsive-heading mb-4 text-center">Implementación y Consultoría de HubSpot</h2>
                 <div class="row align-items-center">
@@ -521,8 +521,8 @@ function toggleLanguage() {
             </div>
         `;
 
-    // Cambiar contenido de la sección Data a Español
-    sectionData.innerHTML = `
+        // Cambiar contenido de la sección Data a Español
+        sectionData.innerHTML = `
             <div class="container-fluid">
                 <h2 class="mb-4 text-center" style="font-size: 3rem;">Extracción de Datos (Data Scraping)</h2>
                 <div class="row align-items-center">
@@ -542,8 +542,8 @@ function toggleLanguage() {
             </div>
         `;
 
-    // Cambiar contenido de la sección How we work a Español
-    sectionHowWeWork.innerHTML = `
+        // Cambiar contenido de la sección How we work a Español
+        sectionHowWeWork.innerHTML = `
                 <div class="container-fluid">
                     <h2 style="margin-bottom: 1rem;">Nuestro Proceso de Trabajo</h2>
                     <div class="steps">
@@ -583,8 +583,8 @@ function toggleLanguage() {
                 </div>
             `;
 
-    // Cambiar contenido de la sección Contact Us a Español
-    sectionContact.innerHTML = `
+        // Cambiar contenido de la sección Contact Us a Español
+        sectionContact.innerHTML = `
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 text-center">
@@ -647,8 +647,8 @@ function toggleLanguage() {
         </div>
     `;
 
-    // Cambiar contenido de la sección Fast-Track Your Development Journey With Pixiu X a Español
-    sectionFastTrack.innerHTML = `
+        // Cambiar contenido de la sección Fast-Track Your Development Journey With Pixiu X a Español
+        sectionFastTrack.innerHTML = `
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -658,8 +658,8 @@ function toggleLanguage() {
         </div>
     `;
 
-    // Cambiar contenido de la sección Footer a Español
-    sectionFooter.innerHTML = `
+        // Cambiar contenido de la sección Footer a Español
+        sectionFooter.innerHTML = `
             <div class="container-fluid">
             <div class="row">
                 <!-- Columna 1: Logo, párrafo y redes sociales -->
@@ -757,22 +757,22 @@ function toggleLanguage() {
             </div>
         </div>
         `;
-  }
+    }
 
-  // Intentar obtener el elemento de nuevo después de cambiar el innerHTML
-  const customSoftwareDropdown = document.querySelector(
-    ".custom-software-dropdown"
-  );
-  if (customSoftwareDropdown) {
-    const serviceSelect = document.getElementById("service-select");
-    serviceSelect.addEventListener("change", (event) => {
-      if (event.target.value === "option1") {
-        customSoftwareDropdown.style.display = "block";
-      } else {
-        customSoftwareDropdown.style.display = "none";
-      }
-    });
-  }
+    // Intentar obtener el elemento de nuevo después de cambiar el innerHTML
+    const customSoftwareDropdown = document.querySelector(
+        ".custom-software-dropdown"
+    );
+    if (customSoftwareDropdown) {
+        const serviceSelect = document.getElementById("service-select");
+        serviceSelect.addEventListener("change", (event) => {
+            if (event.target.value === "option1") {
+                customSoftwareDropdown.style.display = "block";
+            } else {
+                customSoftwareDropdown.style.display = "none";
+            }
+        });
+    }
 
-  isSpanish = !isSpanish; // Alternar el estado
+    isSpanish = !isSpanish; // Alternar el estado
 }
