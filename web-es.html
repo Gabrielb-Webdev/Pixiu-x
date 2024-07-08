@@ -80,14 +80,29 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-
+    
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
                 <a class="nav-link" href="#home">Inicio</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">Servicios</a>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="servicesDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Servicios
+                </a>
+                <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                  <a class="dropdown-item" href="web-es.html">Desarrollo de Software Personalizado</a>
+                  <a class="dropdown-item" href="hubspot-es.html">Implementación y Consultoría de HubSpot</a>
+                  <a class="dropdown-item" href="scrap-es.html">Extracción de Datos</a>
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contacto</a>
@@ -503,91 +518,93 @@
               action="https://hooks.zapier.com/hooks/catch/19364540/23ky1q3/"
               method="post"
             >
-            <div class="flex">
-              <label>
-                <input
-                  required
-                  placeholder="Nombre"
-                  type="text"
-                  class="input"
-                  name="firstName"
-                />
-              </label>
+              <div class="flex">
+                <label>
+                  <input
+                    required
+                    placeholder="Nombre"
+                    type="text"
+                    class="input"
+                    name="firstName"
+                  />
+                </label>
+
+                <label>
+                  <input
+                    required
+                    placeholder="Apellido"
+                    type="text"
+                    class="input"
+                    name="lastName"
+                  />
+                </label>
+              </div>
 
               <label>
                 <input
                   required
-                  placeholder="Apellido"
-                  type="text"
+                  placeholder="Correo"
+                  type="email"
                   class="input"
-                  name="lastName"
+                  name="email"
                 />
               </label>
-            </div>
 
-            <label>
-              <input
-                required
-                placeholder="Correo"
-                type="email"
-                class="input"
-                name="email"
-              />
-            </label>
-
-            <label>
-              <select
-                required
-                class="input"
-                id="service-select"
-                name="service"
-              >
-                <option value="" selected disabled>Selecciona Un Servicio</option>
-                <option value="Custom Software Development">
+              <label>
+                <select
+                  required
+                  class="input"
+                  id="service-select"
+                  name="service"
+                >
+                  <option value="" selected disabled>
+                    Selecciona Un Servicio
+                  </option>
+                  <option value="Custom Software Development">
                     Desarrollo de software a medida
-                </option>
-                <option value="HubSpot implementation and consulting">
+                  </option>
+                  <option value="HubSpot implementation and consulting">
                     Implementación y consultoría de HubSpot
-                </option>
-                <option value="Data Extraction">Extracción de datos</option>
-              </select>
-            </label>
-
-            <!-- Segundo dropdown que se muestra cuando se selecciona "Custom Software Development" -->
-            <div class="custom-software-dropdown" style="display: none">
-              <label>
-                <select class="input" name="customOption">
-                  <option value="" selected disabled>Select a Service</option>
-                  <option value="Web Design">Diseño web</option>
-                  <option value="Custom Web Development">
-                    Desarrollo web a medida
                   </option>
-                  <option value="Mobile Applications">
-                    Aplicaciones móviles
-                  </option>
-                  <option value="E-Commerce Web Development">
-                    Desarrollo web de comercio electrónico
-                  </option>
+                  <option value="Data Extraction">Extracción de datos</option>
                 </select>
               </label>
-            </div>
 
-            <label>
-              <textarea
-                required
-                rows="3"
-                placeholder="Hola, estoy interesado en contratar sus servicios para....."
-                class="input01"
-                name="Message"
-              ></textarea>
-            </label>
+              <!-- Segundo dropdown que se muestra cuando se selecciona "Custom Software Development" -->
+              <div class="custom-software-dropdown" style="display: none">
+                <label>
+                  <select class="input" name="customOption">
+                    <option value="" selected disabled>Select a Service</option>
+                    <option value="Web Design">Diseño web</option>
+                    <option value="Custom Web Development">
+                      Desarrollo web a medida
+                    </option>
+                    <option value="Mobile Applications">
+                      Aplicaciones móviles
+                    </option>
+                    <option value="E-Commerce Web Development">
+                      Desarrollo web de comercio electrónico
+                    </option>
+                  </select>
+                </label>
+              </div>
 
-            <button type="submit" class="fancy">
-              <span class="top-key"></span>
-              <span class="text">Enviar</span>
-              <span class="bottom-key-1"></span>
-              <span class="bottom-key-2"></span>
-            </button>
+              <label>
+                <textarea
+                  required
+                  rows="3"
+                  placeholder="Hola, estoy interesado en contratar sus servicios para....."
+                  class="input01"
+                  name="Message"
+                ></textarea>
+              </label>
+
+              <button type="submit" class="fancy">
+                <span class="top-key"></span>
+                <span class="text">Enviar</span>
+                <span class="bottom-key-1"></span>
+                <span class="bottom-key-2"></span>
+              </button>
             </form>
           </div>
         </div>
@@ -596,11 +613,14 @@
 
     <!-- Modal de alerta -->
     <div id="success-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-button">×</span>
-            <p>Formulario completado correctamente. Nos estaremos contactando con usted en breve.</p>
-            <button id="accept-button">Aceptar</button>
-        </div>
+      <div class="modal-content">
+        <span class="close-button">×</span>
+        <p>
+          Formulario completado correctamente. Nos estaremos contactando con
+          usted en breve.
+        </p>
+        <button id="accept-button">Aceptar</button>
+      </div>
     </div>
 
     <style>

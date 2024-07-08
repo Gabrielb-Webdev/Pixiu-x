@@ -86,8 +86,29 @@
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">Services</a>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="servicesDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                  <a class="dropdown-item" href="web.html"
+                    >Custom Software Development</a
+                  >
+                  <a class="dropdown-item" href="hubspot.html"
+                    >HubSpot implementation and consulting</a
+                  >
+                  <a class="dropdown-item" href="scrap.html"
+                    >Data Extraction</a
+                  >
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
@@ -98,8 +119,9 @@
                   href="https://meetings.hubspot.com/pixiu"
                   style="color: #fff"
                   target="_blank"
-                  >Book A Call</a
                 >
+                  Book A Call
+                </a>
               </li>
               <li class="nav-item">
                 <a
