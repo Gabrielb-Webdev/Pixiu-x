@@ -68,3 +68,30 @@ if (serviceSelect) {
         }
     });
 }
+
+document
+    .getElementById("contact-form")
+    .addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevenir el envío por defecto del formulario
+
+        // Obtener los datos del formulario
+        const formData = new FormData(this);
+
+        // Enviar los datos a través de fetch
+        fetch(this.action, {
+                method: this.method,
+                body: formData,
+            })
+            .then((response) => {
+                if (response.ok) {
+                    // Recargar la página después de un envío exitoso
+                    location.reload();
+                } else {
+                    // Manejar errores si es necesario
+                    console.error("Error al enviar el formulario");
+                }
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+            });
+    });
