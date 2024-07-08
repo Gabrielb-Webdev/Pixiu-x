@@ -42,6 +42,21 @@ document.querySelectorAll('.faq-question').forEach(item => {
     });
 });
 
+const inputs = document.querySelectorAll(".form .input, .form .input01");
+
+inputs.forEach(function(input) {
+    input.addEventListener("input", function() {
+        const label = input.parentElement.querySelector("span");
+        if (label) {
+            if (input.value.trim() !== "") {
+                label.style.display = "none";
+            } else {
+                label.style.display = "block";
+            }
+        }
+    });
+});
+
 const serviceSelect = document.getElementById("service-select");
 if (serviceSelect) {
     serviceSelect.addEventListener("change", function() {
@@ -52,4 +67,3 @@ if (serviceSelect) {
                 serviceValue === "Custom Software Development" ? "block" : "none";
         }
     });
-}

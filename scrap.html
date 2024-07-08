@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/card.css">
@@ -36,9 +35,7 @@
                 <a class="navbar-brand" href="index.html">
                     <img src="sources/images/logo.png" alt="Pixiu X Logo" width="100" height="auto">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -54,11 +51,10 @@
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link custom-btn" href="https://meetings.hubspot.com/pixiu"
-                                style="color: #fff;" target="_blank">Book A Call</a>
+                            <a class="nav-link custom-btn" href="https://meetings.hubspot.com/pixiu" style="color: #fff;" target="_blank">Book A Call</a>
                         </li>
                         <li class="nav-item">
-                            <a id="language-toggle" class="nav-link flag-spain" onclick="toggleLanguage()">
+                            <a id="language-toggle" class="nav-link flag-spain" href="scrap-es.html">
                                 <img src="sources/icons/spain.svg" alt="Bandera de México" class="flag-icon"> Es
                             </a>
                         </li>
@@ -69,76 +65,69 @@
     </header>
 
     <!-- Sección de Bienvenidos -->
-    <section id="welcome-section" style="height: calc(90vh - 20px); background: linear-gradient(to bottom, #FEE4D9, #dd6d2c);">
+    <section id="welcome-section" style="background: linear-gradient(to bottom, #FEE4D9, #dd6d2c);" class="section">
         <div class="container-fluid h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-md-6">
                     <div class="welcome-content text-left">
                         <h2 style="font-size: 4rem;">Craft powerful data extraction tools swiftly</h2>
-                        <p>Pixiu specializes in creating robust web scrapers and automating data extraction processes to
-                            enhance your business's efficiency.</p>
+                        <p>Pixiu specializes in creating robust web scrapers and automating data extraction processes to enhance your business's efficiency.</p>
                         <a href="https://meetings.hubspot.com/pixiu" class="btn mt-5 custom-btn" target="_blank">Book A
                             Call</a>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="welcome-image floating-image">
-                        <img src="sources/images/Imagenes Pixiu/Data extraction-cuate.png" alt="Imagen de bienvenida"
-                            style="max-width: 100%; height: auto;">
+                        <img src="sources/images/Imagenes Pixiu/Data extraction-cuate.png" alt="Imagen de bienvenida" style="max-width: 100%; height: auto;">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-<!-- Sección de Servicios de HubSpot -->
-<section id="servicios-hubspot" style="padding: 50px;">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="service-item text-center">
-                    <div class="service-icon"
-                        style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
-                        <img src="sources/icons/web-data.svg" alt="Icono 1" style="max-width: 80px; height: auto;">
+    <!-- Sección de Servicios de HubSpot -->
+    <section id="servicios-hubspot" style="padding-top: 50px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="service-item text-center">
+                        <div class="service-icon" style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+                            <img src="sources/icons/web-data.svg" alt="Icono 1" style="max-width: 80px; height: auto;">
+                        </div>
+                        <h4 style="color: #dd6d2c;">Website Data Extraction</h4>
+                        <p>Pixiu extracts web data using APIs, scripts, organizing into databases.</p>
                     </div>
-                    <h4 style="color: #dd6d2c;">Website Data Extraction</h4>
-                    <p>Pixiu extracts web data using APIs, scripts, organizing into databases.</p>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="service-item text-center">
-                    <div class="service-icon"
-                        style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
-                        <img src="sources/icons/data.svg" alt="Icono 2" style="max-width: 80px; height: auto;">
+                <div class="col-md-3">
+                    <div class="service-item text-center">
+                        <div class="service-icon" style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+                            <img src="sources/icons/data.svg" alt="Icono 2" style="max-width: 80px; height: auto;">
+                        </div>
+                        <h4 style="color: #dd6d2c;">Prospect/Lead Data Extraction</h4>
+                        <p>We personalize prospect data extraction, gathering customer information.</p>
                     </div>
-                    <h4 style="color: #dd6d2c;">Prospect/Lead Data Extraction</h4>
-                    <p>We personalize prospect data extraction, gathering customer information.</p>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="service-item text-center">
-                    <div class="service-icon"
-                        style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
-                        <img src="sources/icons/social-media.svg" alt="Icono 3"
-                            style="max-width: 80px; height: auto;">
+                <div class="col-md-3">
+                    <div class="service-item text-center">
+                        <div class="service-icon" style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+                            <img src="sources/icons/social-media.svg" alt="Icono 3" style="max-width: 80px; height: auto;">
+                        </div>
+                        <h4 style="color: #dd6d2c;">Social Media Data Extraction</h4>
+                        <p>We collect profiles, posts, comments from social networks using keywords.</p>
                     </div>
-                    <h4 style="color: #dd6d2c;">Social Media Data Extraction</h4>
-                    <p>We collect profiles, posts, comments from social networks using keywords.</p>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="service-item text-center">
-                    <div class="service-icon"
-                        style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
-                        <img src="sources/icons/market-research.svg" alt="Icono 4" style="max-width: 80px; height: auto;">
+                <div class="col-md-3">
+                    <div class="service-item text-center">
+                        <div class="service-icon" style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+                            <img src="sources/icons/market-research.svg" alt="Icono 4" style="max-width: 80px; height: auto;">
+                        </div>
+                        <h4 style="color: #dd6d2c;">Market Research Data Extraction</h4>
+                        <p>Pixiu accelerates your research with precise data on target audiences.</p>
                     </div>
-                    <h4 style="color: #dd6d2c;">Market Research Data Extraction</h4>
-                    <p>Pixiu accelerates your research with precise data on target audiences.</p>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Sección de Detalles de Servicios de HubSpot -->
     <section id="detalle-servicios-hubspot" style="padding: 50px;">
@@ -147,50 +136,50 @@
                 <div class="col-md-6 d-flex align-items-center">
                     <div class="service-detail-item">
                         <h3>Website data extraction</h3>
-                        <p>Leverage Pixiu's data extraction services to obtain precise web data promptly. Our team of specialists utilizes APIs, scripts, and manual methods to collect data from various websites, meticulously organizing it into a database for easy future retrieval</p>
+                        <p>Leverage Pixiu's data extraction services to obtain precise web data promptly. Our team of specialists utilizes APIs, scripts, and manual methods to collect data from various websites, meticulously organizing it into a database
+                            for easy future retrieval</p>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <img src="sources/images/Imagenes Pixiu/Data extraction-amico.png"
-                        alt="HubSpot Implementation and Training" class="service-detail-img">
+                    <img src="sources/images/Imagenes Pixiu/Data extraction-amico.png" alt="HubSpot Implementation and Training" class="service-detail-img">
                 </div>
             </div>
             <div class="row mb-5" style="margin-bottom: -1.5rem !important;">
                 <div class="col-md-6 order-md-2 d-flex align-items-center">
                     <div class="service-detail-item">
                         <h3>Prospect/Lead Data Extraction</h3>
-                        <p>Elevate your sales and marketing efforts with our prospect and lead data extraction services. We employ a personalized approach to delve into your target audience, identify permanent data sources, extract customer lead information, and provide you with a tailored list of potential prospects
+                        <p>Elevate your sales and marketing efforts with our prospect and lead data extraction services. We employ a personalized approach to delve into your target audience, identify permanent data sources, extract customer lead information,
+                            and provide you with a tailored list of potential prospects
                         </p>
                     </div>
                 </div>
                 <div class="col-md-6 order-md-1">
-                    <img src="sources/images/Imagenes Pixiu/Data extraction-rafiki.png" alt="HubSpot Optimization"
-                        class="service-detail-img">
+                    <img src="sources/images/Imagenes Pixiu/Data extraction-rafiki.png" alt="HubSpot Optimization" class="service-detail-img">
                 </div>
             </div>
             <div class="row mb-5" style="margin-bottom: -2.5rem !important;">
                 <div class="col-md-6 d-flex align-items-center">
                     <div class="service-detail-item">
                         <h3>Social Media Data Extraction</h3>
-                        <p>We retrieve a comprehensive range of data, including user profiles, posts, comments, and user information from prominent social media platforms like LinkedIn, Facebook, X (formerly Twitter), and others. Our approach involves using diverse search criteria, keywords, and topics from your key social and professional networks</p>
+                        <p>We retrieve a comprehensive range of data, including user profiles, posts, comments, and user information from prominent social media platforms like LinkedIn, Facebook, X (formerly Twitter), and others. Our approach involves using
+                            diverse search criteria, keywords, and topics from your key social and professional networks</p>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <img src="sources/images/Imagenes Pixiu/Data extraction-cuate.png"
-                        alt="Personalized HubSpot Consulting" class="service-detail-img">
+                    <img src="sources/images/Imagenes Pixiu/Data extraction-cuate.png" alt="Personalized HubSpot Consulting" class="service-detail-img">
                 </div>
             </div>
             <div class="row mb-5" style="margin-bottom: -2.5rem !important;">
                 <div class="col-md-6 order-md-2 d-flex align-items-center">
                     <div class="service-detail-item">
                         <h3>Market Research Data Extraction</h3>
-                        <p>Accelerate your research and analytics with accurate and relevant data on your target audience, market trends, competitive analysis, customer insights, and previous studies. Pixiu's data extraction services are tailored to meet your market research needs
+                        <p>Accelerate your research and analytics with accurate and relevant data on your target audience, market trends, competitive analysis, customer insights, and previous studies. Pixiu's data extraction services are tailored to meet
+                            your market research needs
                         </p>
                     </div>
                 </div>
                 <div class="col-md-6 order-md-1">
-                    <img src="sources/images/Imagenes Pixiu/Telecommuting-rafiki.png" alt="HubSpot Optimization"
-                        class="service-detail-img">
+                    <img src="sources/images/Imagenes Pixiu/Telecommuting-rafiki.png" alt="HubSpot Optimization" class="service-detail-img">
                 </div>
             </div>
         </div>
@@ -205,33 +194,28 @@
                     <div class="step-title">1st Step</div>
                     <div class="step-content">
                         <h3>Initial Consultation</h3>
-                        <p>Our first interaction begins with understanding your requirements, industry, tech stacks,
-                            architecture, deadlines, and budget for custom software development, HubSpot consulting, or
-                            data scraping services.</p>
+                        <p>Our first interaction begins with understanding your requirements, industry, tech stacks, architecture, deadlines, and budget for custom software development, HubSpot consulting, or data scraping services.</p>
                     </div>
                 </div>
                 <div class="step" id="step2">
                     <div class="step-title">2nd Step</div>
                     <div class="step-content">
                         <h3>Requirement Analysis</h3>
-                        <p>Next, you connect with our tech team to simplify your project and explore technical
-                            possibilities tailored to your needs.</p>
+                        <p>Next, you connect with our tech team to simplify your project and explore technical possibilities tailored to your needs.</p>
                     </div>
                 </div>
                 <div class="step" id="step3">
                     <div class="step-title">3rd Step</div>
                     <div class="step-content">
                         <h3>Final Project Estimation</h3>
-                        <p>We’ll prepare an estimation with scope and objectives and share it with you for review. Once
-                            agreed, we can proceed with signing the NDA.</p>
+                        <p>We’ll prepare an estimation with scope and objectives and share it with you for review. Once agreed, we can proceed with signing the NDA.</p>
                     </div>
                 </div>
                 <div class="step" id="step4">
                     <div class="step-title">4th Step</div>
                     <div class="step-content">
                         <h3>Project Kickoff</h3>
-                        <p>After you sign off on the project, we will immediately begin. Our team will work closely with
-                            you, functioning as an extension of your in-house team.</p>
+                        <p>After you sign off on the project, we will immediately begin. Our team will work closely with you, functioning as an extension of your in-house team.</p>
                     </div>
                 </div>
             </div>
@@ -252,40 +236,30 @@
                     Our consultation package includes:
                     <ul>
                         <li>One-on-one consultations with a certified HubSpot expert, available via video call.</li>
-                        <li>A thorough review of your current HubSpot setup, including integrations, data management,
-                            and workflows.</li>
-                        <li>Recommendations for optimizations, tech improvements, and tailored solutions to address your
-                            unique challenges.</li>
-                        <li>A workshop and discovery phase for larger solutions, analyzing your current setup and
-                            creating a concept for a new one. We are also available to assist with any other needs you
-                            might have!</li>
+                        <li>A thorough review of your current HubSpot setup, including integrations, data management, and workflows.</li>
+                        <li>Recommendations for optimizations, tech improvements, and tailored solutions to address your unique challenges.</li>
+                        <li>A workshop and discovery phase for larger solutions, analyzing your current setup and creating a concept for a new one. We are also available to assist with any other needs you might have!</li>
                     </ul>
                 </div>
             </div>
             <div class="faq">
-                <div class="faq-question">I have an in-house team that uses HubSpot. Can you get on a call with them
-                    and help them solve my problem?</div>
-                <div class="faq-answer">Yes, we can collaborate with your in-house team. We’ll join a call with your
-                    team to help develop or fix your HubSpot-related solutions.</div>
+                <div class="faq-question">I have an in-house team that uses HubSpot. Can you get on a call with them and help them solve my problem?</div>
+                <div class="faq-answer">Yes, we can collaborate with your in-house team. We’ll join a call with your team to help develop or fix your HubSpot-related solutions.</div>
             </div>
             <div class="faq">
-                <div class="faq-question">I am having issues with an integration/tool/app that is not closely
-                    connected with HubSpot. Can you still help me with that?</div>
-                <div class="faq-answer">Yes, of course. While many of our clients seek help with HubSpot, we are also
-                    happy to assist with more general software or integration issues, including those that need to
-                    connect with HubSpot.</div>
+                <div class="faq-question">I am having issues with an integration/tool/app that is not closely connected with HubSpot. Can you still help me with that?</div>
+                <div class="faq-answer">Yes, of course. While many of our clients seek help with HubSpot, we are also happy to assist with more general software or integration issues, including those that need to connect with HubSpot.</div>
             </div>
             <div class="faq">
                 <div class="faq-question">I have some questions, but I am unsure if you can help me out.</div>
-                <div class="faq-answer">Don’t hesitate to reach out and schedule an introductory call. It is free of
-                    charge, and we will let you know if we can solve your issue with our solutions or through
-                    consultations.</div>
+                <div class="faq-answer">Don’t hesitate to reach out and schedule an introductory call. It is free of charge, and we will let you know if we can solve your issue with our solutions or through consultations.
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Section 6: Calendar for scheduling calls/meetings -->
-    <section id="contact" class="section" style="padding-top: calc(5vh + 20px);">
+    <section id="contact" class="section" style="padding-top: calc(5vh + 20px)">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 text-center">
@@ -294,47 +268,49 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8 d-flex justify-content-center">
-                    <form class="form">
+                    <form id="contact-form" class="form" action="https://hooks.zapier.com/hooks/catch/19364540/23rtlbr/" method="post">
                         <div class="flex">
                             <label>
-                                <input required placeholder="First Name" type="text" class="input">
+                                <input required placeholder="First Name" type="text" class="input" name="firstName" />
                             </label>
 
                             <label>
-                                <input required placeholder="Last Name" type="text" class="input">
+                                <input required placeholder="Last Name" type="text" class="input" name="lastName" />
                             </label>
                         </div>
 
                         <label>
-                            <input required placeholder="Email" type="email" class="input">
+                            <input required placeholder="Email" type="email" class="input" name="email" />
                         </label>
 
                         <label>
-                            <select required class="input" id="service-select">
+                            <select required class="input" id="service-select" name="service">
                                 <option value="" selected disabled>Select a Service</option>
-                                <option value="option1">Custom Software Development</option>
-                                <option value="option2">HubSpot implementation and consulting</option>
-                                <option value="option3">Data Extraction</option>
+                                <option value="Custom Software Development">Custom Software Development</option>
+                                <option value="HubSpot implementation and consulting">
+                                    HubSpot implementation and consulting
+                                </option>
+                                <option value="Data Extraction">Data Extraction</option>
                             </select>
                         </label>
 
                         <!-- Segundo dropdown que se muestra cuando se selecciona "Custom Software Development" -->
-                        <div class="custom-software-dropdown" style="display: none;">
+                        <div class="custom-software-dropdown" style="display: none">
                             <label>
-                                <select class="input">
+                                <select class="input" name="customOption">
                                     <option value="" selected disabled>Select an Option</option>
-                                    <option value="optionA">Web Design</option>
-                                    <option value="optionB">Custom Web Development</option>
-                                    <option value="optionC">Mobile Applications</option>
-                                    <option value="optionD">E-Commerce Web Development</option>
+                                    <option value="Web Design">Web Design</option>
+                                    <option value="Custom Web Development">Custom Web Development</option>
+                                    <option value="Mobile Applications">Mobile Applications</option>
+                                    <option value="E-Commerce Web Development">E-Commerce Web Development</option>
                                 </select>
                             </label>
                         </div>
 
                         <label>
                             <textarea required rows="3"
-                                placeholder="Hello, I am interested in hiring your services for....."
-                                class="input01"></textarea>
+                                placeholder="Hello, I am interested in hiring your services for....." class="input01"
+                                name="Message"></textarea>
                         </label>
 
                         <button type="submit" class="fancy">
@@ -344,7 +320,6 @@
                             <span class="bottom-key-2"></span>
                         </button>
                     </form>
-
                 </div>
             </div>
         </div>
@@ -368,9 +343,7 @@
                 <!-- Columna 1: Logo, párrafo y redes sociales -->
                 <div class="col-lg-4 col-md-4 mb-4 mb-lg-0">
                     <img src="sources/images/logo.png" alt="Logo" class="img-fluid mb- logo-footer">
-                    <p>At Pixiu, we focus on excellent service and innovation, specializing in custom software
-                        development, HubSpot consulting, and data scraping services. Contact us for inquiries on how we
-                        can improve your business.</p>
+                    <p>At Pixiu, we focus on excellent service and innovation, specializing in custom software development, HubSpot consulting, and data scraping services. Contact us for inquiries on how we can improve your business.</p>
                     <div class="wrapper">
                         <a href="https://www.linkedin.com/company/pixiu-x" target="_blank">
                             <li class="icon linkedin">
@@ -433,13 +406,11 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- FontAwesome for icons -->
     <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
     <script src="js/scripts_services.js"></script>
-    <script src="js/lenguaje-scrap.js"></script>
 
 </body>
 

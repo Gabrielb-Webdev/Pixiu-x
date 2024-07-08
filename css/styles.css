@@ -922,7 +922,6 @@ p {
 }
 
 #detalle-servicios-hubspot .service-detail-item {
-    padding: 30px;
     transition: transform 0.3s ease;
 }
 
@@ -952,3 +951,13 @@ p {
 button:focus {
     outline: none;
 }
+
+
+/* @media (max-width: 768px) {
+    .welcome-content.text-left {
+        margin-top: calc(15vh - 20px);
+    }
+    #welcome-section {
+        height: calc(150vh - 20px) !;
+    }
+} */

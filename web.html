@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/card.css">
@@ -36,9 +35,7 @@
                 <a class="navbar-brand" href="index.html">
                     <img src="sources/images/logo.png" alt="Pixiu X Logo" width="100" height="auto">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -54,11 +51,10 @@
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link custom-btn" href="https://meetings.hubspot.com/pixiu"
-                                style="color: #fff;" target="_blank">Book A Call</a>
+                            <a class="nav-link custom-btn" href="https://meetings.hubspot.com/pixiu" style="color: #fff;" target="_blank">Book A Call</a>
                         </li>
                         <li class="nav-item">
-                            <a id="language-toggle" class="nav-link flag-spain" onclick="toggleLanguage()">
+                            <a id="language-toggle" class="nav-link flag-spain" href="web-es.html">
                                 <img src="sources/icons/spain.svg" alt="Bandera de México" class="flag-icon"> Es
                             </a>
                         </li>
@@ -69,7 +65,7 @@
     </header>
 
     <!-- Sección de Bienvenidos -->
-    <section id="welcome-section" style="height: calc(90vh - 20px); background: linear-gradient(to bottom, #FEE4D9, #dd6d2c);">
+    <section id="welcome-section" style="background: linear-gradient(to bottom, #FEE4D9, #dd6d2c);" class="section">
         <div class="container-fluid h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-md-6">
@@ -83,198 +79,193 @@
                 </div>
                 <div class="col-md-6">
                     <div class="welcome-image floating-image">
-                        <img src="sources/images/Imagenes Pixiu/Hand coding-pana.png" alt="Imagen de bienvenida"
-                            style="max-width: 100%; height: auto;">
+                        <img src="sources/images/Imagenes Pixiu/Hand coding-pana.png" alt="Imagen de bienvenida" style="max-width: 100%; height: auto;">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-<!-- Services Section -->
-<section id="servicios-hubspot" style="padding: 50px;">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="service-item text-center">
-                    <div class="service-icon"
-                        style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
-                        <img src="sources/icons/web-design.svg" alt="Icon 1" style="max-width: 80px; height: auto;">
+    <!-- Services Section -->
+    <section id="servicios-hubspot" style="padding-top: 50px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="service-item text-center">
+                        <div class="service-icon" style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+                            <img src="sources/icons/web-design.svg" alt="Icon 1" style="max-width: 80px; height: auto;">
+                        </div>
+                        <h4 style="color: #dd6d2c;">Web Design</h4>
+                        <p>Creating unique digital designs that capture attention and reflect your brand online.</p>
                     </div>
-                    <h4 style="color: #dd6d2c;">Web Design</h4>
-                    <p>Creating unique digital designs that capture attention and reflect your brand online.</p>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="service-item text-center">
-                    <div class="service-icon"
-                        style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
-                        <img src="sources/icons/custom-coding.svg" alt="Icon 2" style="max-width: 80px; height: auto;">
+                <div class="col-md-3">
+                    <div class="service-item text-center">
+                        <div class="service-icon" style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+                            <img src="sources/icons/custom-coding.svg" alt="Icon 2" style="max-width: 80px; height: auto;">
+                        </div>
+                        <h4 style="color: #dd6d2c;">Custom Web Development</h4>
+                        <p>Precise and advanced web development solutions for dynamic and interactive applications.</p>
                     </div>
-                    <h4 style="color: #dd6d2c;">Custom Web Development</h4>
-                    <p>Precise and advanced web development solutions for dynamic and interactive applications.</p>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="service-item text-center">
-                    <div class="service-icon"
-                        style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
-                        <img src="sources/icons/online-shop.svg" alt="Icon 3" style="max-width: 80px; height: auto;">
+                <div class="col-md-3">
+                    <div class="service-item text-center">
+                        <div class="service-icon" style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+                            <img src="sources/icons/online-shop.svg" alt="Icon 3" style="max-width: 80px; height: auto;">
+                        </div>
+                        <h4 style="color: #dd6d2c;">E-commerce Development</h4>
+                        <p>We create and launch your online store quickly and easily to start selling.</p>
                     </div>
-                    <h4 style="color: #dd6d2c;">E-commerce Development</h4>
-                    <p>We create and launch your online store quickly and easily to start selling.</p>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="service-item text-center">
-                    <div class="service-icon"
-                        style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
-                        <img src="sources/icons/mobile-code.svg" alt="Icon 4" style="max-width: 80px; height: auto;">
+                <div class="col-md-3">
+                    <div class="service-item text-center">
+                        <div class="service-icon" style="background-color: #dd6d2c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+                            <img src="sources/icons/mobile-code.svg" alt="Icon 4" style="max-width: 80px; height: auto;">
+                        </div>
+                        <h4 style="color: #dd6d2c;">Mobile Applications</h4>
+                        <p>Developing native, hybrid, and web applications with optimal technology for each project.</p>
                     </div>
-                    <h4 style="color: #dd6d2c;">Mobile Applications</h4>
-                    <p>Developing native, hybrid, and web applications with optimal technology for each project.</p>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Sección de Detalles de Servicios -->
-<section id="detalle-servicios-hubspot" style="padding: 50px;">
-    <div class="container-fluid">
-        <div class="row mb-5" style="margin-bottom: -2.5rem !important;">
-            <div class="col-md-6 d-flex align-items-center">
-                <div class="service-detail-item">
-                    <h3>Web Design</h3>
-                    <p>Developing stunning one-of-a-kind digital designs that catch people’s eyes and bring your brand to life online. Our creative team crafts unique visual experiences that resonate with your audience</p>
+    <!-- Sección de Detalles de Servicios -->
+    <section id="detalle-servicios-hubspot" style="padding: 50px;">
+        <div class="container-fluid">
+            <div class="row mb-5" style="margin-bottom: -2.5rem !important;">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="service-detail-item">
+                        <h3>Web Design</h3>
+                        <p>Developing stunning one-of-a-kind digital designs that catch people’s eyes and bring your brand to life online. Our creative team crafts unique visual experiences that resonate with your audience</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="sources/images/Imagenes Pixiu/Website Creator-bro.png" alt="Web Design" class="service-detail-img">
                 </div>
             </div>
-            <div class="col-md-6">
-                <img src="sources/images/Imagenes Pixiu/Website Creator-bro.png"
-                    alt="Web Design" class="service-detail-img">
-            </div>
-        </div>
-        <div class="row mb-5" style="margin-bottom: -5rem !important;">
-            <div class="col-md-6 order-md-2 d-flex align-items-center">
-                <div class="service-detail-item">
-                    <h3>Custom Web Development</h3>
-                    <p>Our customized web development solutions provide high accuracy and technological competence. We deliver fully functional, highly interactive, and dynamic web applications that elevate your digital presence</p>
+            <div class="row mb-5" style="margin-bottom: -5rem !important;">
+                <div class="col-md-6 order-md-2 d-flex align-items-center">
+                    <div class="service-detail-item">
+                        <h3>Custom Web Development</h3>
+                        <p>Our customized web development solutions provide high accuracy and technological competence. We deliver fully functional, highly interactive, and dynamic web applications that elevate your digital presence</p>
+                    </div>
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <img src="sources/images/Imagenes Pixiu/Website Creator-pana.png" alt="Custom Web Development" class="service-detail-img">
                 </div>
             </div>
-            <div class="col-md-6 order-md-1">
-                <img src="sources/images/Imagenes Pixiu/Website Creator-pana.png" alt="Custom Web Development"
-                    class="service-detail-img">
-            </div>
-        </div>
-        <div class="row mb-5" style="margin-bottom: -2.5rem !important;">
-            <div class="col-md-6 d-flex align-items-center">
-                <div class="service-detail-item">
-                    <h3>E-commerce Web Development</h3>
-                    <p>We help you create and launch your own online store easily and quickly. Our solutions streamline the process, allowing you to start selling your products without hassle</p>
+            <div class="row mb-5" style="margin-bottom: -2.5rem !important;">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="service-detail-item">
+                        <h3>E-commerce Web Development</h3>
+                        <p>We help you create and launch your own online store easily and quickly. Our solutions streamline the process, allowing you to start selling your products without hassle</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="sources/images/Imagenes Pixiu/Website Creator-rafiki.png" alt="E-commerce Web Development" class="service-detail-img">
                 </div>
             </div>
-            <div class="col-md-6">
-                <img src="sources/images/Imagenes Pixiu/Website Creator-rafiki.png"
-                    alt="E-commerce Web Development" class="service-detail-img">
-            </div>
-        </div>
-        <div class="row mb-5" style="margin-bottom: -2.5rem !important;">
-            <div class="col-md-6">
-                <img src="sources/images/Imagenes Pixiu/Hand coding-cuate.png"
-                    alt="Mobile Applications" class="service-detail-img">
-            </div>
-            <div class="col-md-6 d-flex align-items-center">
-                <div class="service-detail-item">
-                    <h3>Mobile Applications</h3>
-                    <p>We develop native, hybrid, and web applications. Our team assists clients in selecting the best technology for their project, ensuring a seamless and efficient development process</p>
+            <div class="row mb-5" style="margin-bottom: -2.5rem !important;">
+                <div class="col-md-6">
+                    <img src="sources/images/Imagenes Pixiu/Hand coding-cuate.png" alt="Mobile Applications" class="service-detail-img">
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="service-detail-item">
+                        <h3>Mobile Applications</h3>
+                        <p>We develop native, hybrid, and web applications. Our team assists clients in selecting the best technology for their project, ensuring a seamless and efficient development process</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Stepline -->
-<section class="section section-how-we-work" style="background-color: #FEE4D9;">
-    <div class="container-fluid">
-        <h2 style="margin-bottom: 1rem;">How we work</h2>
-        <div class="steps">
-            <div class="step" id="step1">
-                <div class="step-title">1st Step</div>
-                <div class="step-content">
-                    <h3>Discovery</h3>
-                    <p>We begin by evaluating the fit of your custom software project, discussing details, and making an informed decision together.</p>
+    <!-- Stepline -->
+    <section class="section section-how-we-work" style="background-color: #FEE4D9;">
+        <div class="container-fluid">
+            <h2 style="margin-bottom: 1rem;">How we work</h2>
+            <div class="steps">
+                <div class="step" id="step1">
+                    <div class="step-title">1st Step</div>
+                    <div class="step-content">
+                        <h3>Discovery</h3>
+                        <p>We begin by evaluating the fit of your custom software project, discussing details, and making an informed decision together.</p>
+                    </div>
+                </div>
+                <div class="step" id="step2">
+                    <div class="step-title">2nd Step</div>
+                    <div class="step-content">
+                        <h3>Design</h3>
+                        <p>Collaborate with our project manager to align strategies and clarify product specifications, ensuring a comprehensive design plan.</p>
+                    </div>
+                </div>
+                <div class="step" id="step3">
+                    <div class="step-title">3rd Step</div>
+                    <div class="step-content">
+                        <h3>Development</h3>
+                        <p>Our expert developers transform the design into a functional digital solution, crafting custom software tailored to your business needs.</p>
+                    </div>
+                </div>
+                <div class="step" id="step4">
+                    <div class="step-title">4th Step</div>
+                    <div class="step-content">
+                        <h3>Review</h3>
+                        <p>We test the software in real-world scenarios, confirming its reliability and performance under various conditions.</p>
+                    </div>
+                </div>
+                <div class="step" id="step5">
+                    <div class="step-title">5th Step</div>
+                    <div class="step-content">
+                        <h3>Maintenance</h3>
+                        <p>Our team continuously evolves the software alongside your business, ensuring it stays in sync with changing requirements and technological advancements.</p>
+                    </div>
                 </div>
             </div>
-            <div class="step" id="step2">
-                <div class="step-title">2nd Step</div>
-                <div class="step-content">
-                    <h3>Design</h3>
-                    <p>Collaborate with our project manager to align strategies and clarify product specifications, ensuring a comprehensive design plan.</p>
-                </div>
-            </div>
-            <div class="step" id="step3">
-                <div class="step-title">3rd Step</div>
-                <div class="step-content">
-                    <h3>Development</h3>
-                    <p>Our expert developers transform the design into a functional digital solution, crafting custom software tailored to your business needs.</p>
-                </div>
-            </div>
-            <div class="step" id="step4">
-                <div class="step-title">4th Step</div>
-                <div class="step-content">
-                    <h3>Review</h3>
-                    <p>We test the software in real-world scenarios, confirming its reliability and performance under various conditions.</p>
-                </div>
-            </div>
-            <div class="step" id="step5">
-                <div class="step-title">5th Step</div>
-                <div class="step-content">
-                    <h3>Maintenance</h3>
-                    <p>Our team continuously evolves the software alongside your business, ensuring it stays in sync with changing requirements and technological advancements.</p>
-                </div>
+            <div class="navigation">
+                <button id="prev" onclick="prevStep()">←</button>
+                <button id="next" onclick="nextStep()">→</button>
             </div>
         </div>
-        <div class="navigation">
-            <button id="prev" onclick="prevStep()">←</button>
-            <button id="next" onclick="nextStep()">→</button>
-        </div>
-    </div>
-</section>
+    </section>
 
-<section id="faq" class="faq-section">
-    <div class="faq-container">
-        <div class="faq-header">FAQ</div>
-        
-        <div class="faq">
-            <div class="faq-question">I have a software idea, but I am not sure about all its features. Can you help me to validate it?</div>
-            <div class="faq-answer">Yes, we hold workshops with clients as part of our services. They usually last from 16 hours to 80 hours, during which we deep dive into the software's functionality and help you design the concept.</div>
+    <section id="faq" class="faq-section">
+        <div class="faq-container">
+            <div class="faq-header">FAQ</div>
+
+            <div class="faq">
+                <div class="faq-question">I have a software idea, but I am not sure about all its features. Can you help me to validate it?</div>
+                <div class="faq-answer">Yes, we hold workshops with clients as part of our services. They usually last from 16 hours to 80 hours, during which we deep dive into the software's functionality and help you design the concept.</div>
+            </div>
+
+            <div class="faq">
+                <div class="faq-question">I am worried about the support of my app or website. Are you also maintaining the software after its implementation?</div>
+                <div class="faq-answer">Yes, we provide ongoing support and offer flexible maintenance packages. Surely we will be able to find a support plan that works for you. Yet, if you choose that you don't need any support, that's also okay! Since the solution is entirely
+                    yours, in the end, it's for you to decide.</div>
+            </div>
+
+            <div class="faq">
+                <div class="faq-question">How do you handle revisions and feedback during the design process?</div>
+                <div class="faq-answer">At Pixiu, your feedback is integral to our design process. We value your thoughts, tweaks, and "aha" moments, incorporating them into each iteration to ensure the final product meets your expectations of perfection. Our collaborative approach
+                    ensures that your voice is heard clearly throughout the entire process, ensuring we deliver a product that exceeds your expectations.</div>
+            </div>
+
+            <div class="faq">
+                <div class="faq-question">How much does web design and development typically cost?</div>
+                <div class="faq-answer">At Pixiu, the majority of our web design and development projects range from 500$. However, the final cost depends on the specific scope of work for each project. We generally have a minimum project size and prefer to agree on a fixed
+                    cost with milestone payments to ensure clarity and satisfaction throughout the development process.
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="faq-question">Who owns the software or website after you build it?</div>
+                <div class="faq-answer">Once the project is completed and implemented, you legally own everything necessary to build, maintain, or extend the software in the future, such as "executable" files, scripts, project files, source code, etc.</div>
+            </div>
+
         </div>
-        
-        <div class="faq">
-            <div class="faq-question">I am worried about the support of my app or website. Are you also maintaining the software after its implementation?</div>
-            <div class="faq-answer">Yes, we provide ongoing support and offer flexible maintenance packages. Surely we will be able to find a support plan that works for you. Yet, if you choose that you don't need any support, that's also okay! Since the solution is entirely yours, in the end, it's for you to decide.</div>
-        </div>
-        
-        <div class="faq">
-            <div class="faq-question">How do you handle revisions and feedback during the design process?</div>
-            <div class="faq-answer">At Pixiu, your feedback is integral to our design process. We value your thoughts, tweaks, and "aha" moments, incorporating them into each iteration to ensure the final product meets your expectations of perfection. Our collaborative approach ensures that your voice is heard clearly throughout the entire process, ensuring we deliver a product that exceeds your expectations.</div>
-        </div>
-        
-        <div class="faq">
-            <div class="faq-question">How much does web design and development typically cost?</div>
-            <div class="faq-answer">At Pixiu, the majority of our web design and development projects range from 500$. However, the final cost depends on the specific scope of work for each project. We generally have a minimum project size and prefer to agree on a fixed cost with milestone payments to ensure clarity and satisfaction throughout the development process.</div>
-        </div>
-        
-        <div class="faq">
-            <div class="faq-question">Who owns the software or website after you build it?</div>
-            <div class="faq-answer">Once the project is completed and implemented, you legally own everything necessary to build, maintain, or extend the software in the future, such as "executable" files, scripts, project files, source code, etc.</div>
-        </div>
-        
-    </div>
-</section>
+    </section>
 
     <!-- Section 6: Calendar for scheduling calls/meetings -->
-    <section id="contact" class="section" style="padding-top: calc(5vh + 20px);">
+    <section id="contact" class="section" style="padding-top: calc(5vh + 20px)">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 text-center">
@@ -283,47 +274,49 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8 d-flex justify-content-center">
-                    <form class="form">
+                    <form id="contact-form" class="form" action="https://hooks.zapier.com/hooks/catch/19364540/23rtlbr/" method="post">
                         <div class="flex">
                             <label>
-                                <input required placeholder="First Name" type="text" class="input">
+                                <input required placeholder="First Name" type="text" class="input" name="firstName" />
                             </label>
 
                             <label>
-                                <input required placeholder="Last Name" type="text" class="input">
+                                <input required placeholder="Last Name" type="text" class="input" name="lastName" />
                             </label>
                         </div>
 
                         <label>
-                            <input required placeholder="Email" type="email" class="input">
+                            <input required placeholder="Email" type="email" class="input" name="email" />
                         </label>
 
                         <label>
-                            <select required class="input" id="service-select">
+                            <select required class="input" id="service-select" name="service">
                                 <option value="" selected disabled>Select a Service</option>
-                                <option value="option1">Custom Software Development</option>
-                                <option value="option2">HubSpot implementation and consulting</option>
-                                <option value="option3">Data Extraction</option>
+                                <option value="Custom Software Development">Custom Software Development</option>
+                                <option value="HubSpot implementation and consulting">
+                                    HubSpot implementation and consulting
+                                </option>
+                                <option value="Data Extraction">Data Extraction</option>
                             </select>
                         </label>
 
                         <!-- Segundo dropdown que se muestra cuando se selecciona "Custom Software Development" -->
-                        <div class="custom-software-dropdown" style="display: none;">
+                        <div class="custom-software-dropdown" style="display: none">
                             <label>
-                                <select class="input">
+                                <select class="input" name="customOption">
                                     <option value="" selected disabled>Select an Option</option>
-                                    <option value="optionA">Web Design</option>
-                                    <option value="optionB">Custom Web Development</option>
-                                    <option value="optionC">Mobile Applications</option>
-                                    <option value="optionD">E-Commerce Web Development</option>
+                                    <option value="Web Design">Web Design</option>
+                                    <option value="Custom Web Development">Custom Web Development</option>
+                                    <option value="Mobile Applications">Mobile Applications</option>
+                                    <option value="E-Commerce Web Development">E-Commerce Web Development</option>
                                 </select>
                             </label>
                         </div>
 
                         <label>
                             <textarea required rows="3"
-                                placeholder="Hello, I am interested in hiring your services for....."
-                                class="input01"></textarea>
+                                placeholder="Hello, I am interested in hiring your services for....." class="input01"
+                                name="Message"></textarea>
                         </label>
 
                         <button type="submit" class="fancy">
@@ -333,7 +326,6 @@
                             <span class="bottom-key-2"></span>
                         </button>
                     </form>
-
                 </div>
             </div>
         </div>
@@ -357,9 +349,7 @@
                 <!-- Columna 1: Logo, párrafo y redes sociales -->
                 <div class="col-lg-4 col-md-4 mb-4 mb-lg-0">
                     <img src="sources/images/logo.png" alt="Logo" class="img-fluid mb- logo-footer">
-                    <p>At Pixiu, we focus on excellent service and innovation, specializing in custom software
-                        development, HubSpot consulting, and data scraping services. Contact us for inquiries on how we
-                        can improve your business.</p>
+                    <p>At Pixiu, we focus on excellent service and innovation, specializing in custom software development, HubSpot consulting, and data scraping services. Contact us for inquiries on how we can improve your business.</p>
                     <div class="wrapper">
                         <a href="https://www.linkedin.com/company/pixiu-x" target="_blank">
                             <li class="icon linkedin">
@@ -422,13 +412,11 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- FontAwesome for icons -->
     <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
     <script src="js/scripts_services.js"></script>
-    <script src="js/lenguaje-web.js"></script>
 
 </body>
 
