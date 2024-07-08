@@ -69,29 +69,48 @@ if (serviceSelect) {
     });
 }
 
-document
-    .getElementById("contact-form")
-    .addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevenir el envío por defecto del formulario
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevenir el envío por defecto del formulario
 
-        // Obtener los datos del formulario
-        const formData = new FormData(this);
+    // Obtener los datos del formulario
+    const formData = new FormData(this);
 
-        // Enviar los datos a través de fetch
-        fetch(this.action, {
-                method: this.method,
-                body: formData,
-            })
-            .then((response) => {
-                if (response.ok) {
-                    // Recargar la página después de un envío exitoso
+    // Enviar los datos a través de fetch
+    fetch(this.action, {
+            method: this.method,
+            body: formData,
+        })
+        .then((response) => {
+            if (response.ok) {
+                // Mostrar el modal
+                const modal = document.getElementById("success-modal");
+                modal.style.display = "block";
+
+                // Manejar el clic en el botón de cerrar
+                document.querySelector(".close-button").onclick = function() {
+                    modal.style.display = "none";
                     location.reload();
-                } else {
-                    // Manejar errores si es necesario
-                    console.error("Error al enviar el formulario");
-                }
-            })
-            .catch((error) => {
-                console.error("Error:", error);
-            });
-    });
+                };
+
+                // Manejar el clic en el botón de aceptar
+                document.getElementById("accept-button").onclick = function() {
+                    modal.style.display = "none";
+                    location.reload();
+                };
+
+                // Cerrar el modal al hacer clic fuera de él
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                        location.reload();
+                    }
+                };
+            } else {
+                // Manejar errores si es necesario
+                console.error("Error al enviar el formulario");
+            }
+        })
+        .catch((error) => {
+            console.error("Error:", error);
+        });
+});

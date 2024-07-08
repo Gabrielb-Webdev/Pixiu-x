@@ -252,66 +252,109 @@
     <!-- Section 6: Calendar for scheduling calls/meetings -->
     <section id="contact" class="section" style="padding-top: calc(5vh + 20px)">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h2>Contacto</h2>
-                </div>
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2>Contact Us</h2>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8 d-flex justify-content-center">
-                    <form id="contact-form" class="form" action="https://hooks.zapier.com/hooks/catch/19364540/23877qa/" method="post">
-                        <div class="flex">
-                            <label>
-                                <input required placeholder="Nombre" type="text" class="input">
-                            </label>
-
-                            <label>
-                                <input required placeholder="Apellido" type="text" class="input">
-                            </label>
-                        </div>
-
-                        <label>
-                            <input required placeholder="Correo electrónico" type="email" class="input">
-                        </label>
-
-                        <label>
-                            <select required class="input" id="service-select">
-                                <option value="" selected disabled>Selecciona un Servicio</option>
-                                <option value="Custom Software Development">Desarrollo de Software Personalizado</option>
-                                <option value="HubSpot implementation and consulting">Implementación y Consultoría de HubSpot</option>
-                                <option value="Data Extraction">Extracción de Datos</option>
-                            </select>
-                        </label>
-
-                        <!-- Segundo dropdown que se muestra cuando se selecciona "Custom Software Development" -->
-                        <div class="custom-software-dropdown" style="display: none;">
-                            <label>
-                                <select class="input" name="customOption">
-                                    <option value="" selected disabled>Selecciona una opción</option>
-                                    <option value="Web Design">Diseño Web</option>
-                                    <option value="Custom Web Development">Desarrollo Web Personalizado</option>
-                                    <option value="Mobile Applications">Aplicaciones Móviles</option>
-                                    <option value="E-Commerce Web Development">Desarrollo de Comercio Electrónico</option>
-                                </select>
-                            </label>
-                        </div>
-
-                        <label>
-                            <textarea required rows="3" placeholder="Hola, estoy interesado en contratar sus servicios para....."
-                                class="input01"></textarea>
-                        </label>
-
-                        <button type="submit" class="fancy">
-                            <span class="top-key"></span>
-                            <span class="text">Enviar</span>
-                            <span class="bottom-key-1"></span>
-                            <span class="bottom-key-2"></span>
-                        </button>
-                    </form>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-8 d-flex justify-content-center">
+              <form
+                id="contact-form"
+                class="form"
+                action="https://hooks.zapier.com/hooks/catch/19364540/23k2m4f/"
+                method="post"
+              >
+                <div class="flex">
+                  <label>
+                    <input
+                      required
+                      placeholder="Nombre"
+                      type="text"
+                      class="input"
+                      name="firstName"
+                    />
+                  </label>
+  
+                  <label>
+                    <input
+                      required
+                      placeholder="Apellido"
+                      type="text"
+                      class="input"
+                      name="lastName"
+                    />
+                  </label>
                 </div>
+  
+                <label>
+                  <input
+                    required
+                    placeholder="Correo"
+                    type="email"
+                    class="input"
+                    name="email"
+                  />
+                </label>
+  
+                <label>
+                  <select
+                    required
+                    class="input"
+                    id="service-select"
+                    name="service"
+                  >
+                    <option value="" selected disabled>Selecciona Un Servicio</option>
+                    <option value="Custom Software Development">
+                        Desarrollo de software a medida
+                    </option>
+                    <option value="HubSpot implementation and consulting">
+                        Implementación y consultoría de HubSpot
+                    </option>
+                    <option value="Data Extraction">Extracción de datos</option>
+                  </select>
+                </label>
+  
+                <!-- Segundo dropdown que se muestra cuando se selecciona "Custom Software Development" -->
+                <div class="custom-software-dropdown" style="display: none">
+                  <label>
+                    <select class="input" name="customOption">
+                      <option value="" selected disabled>Select a Service</option>
+                      <option value="Web Design">Diseño web</option>
+                      <option value="Custom Web Development">
+                        Desarrollo web a medida
+                      </option>
+                      <option value="Mobile Applications">
+                        Aplicaciones móviles
+                      </option>
+                      <option value="E-Commerce Web Development">
+                        Desarrollo web de comercio electrónico
+                      </option>
+                    </select>
+                  </label>
+                </div>
+  
+                <label>
+                  <textarea
+                    required
+                    rows="3"
+                    placeholder="Hola, estoy interesado en contratar sus servicios para....."
+                    class="input01"
+                    name="Message"
+                  ></textarea>
+                </label>
+  
+                <button type="submit" class="fancy">
+                  <span class="top-key"></span>
+                  <span class="text">Enviar</span>
+                  <span class="bottom-key-1"></span>
+                  <span class="bottom-key-2"></span>
+                </button>
+              </form>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
 
     <!-- Modal de alerta -->
     <div id="success-modal" class="modal">
