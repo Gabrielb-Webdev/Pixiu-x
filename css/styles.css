@@ -1017,3 +1017,7 @@ button:focus {
     padding: 10px 20px;
     cursor: pointer;
 }
+
+#welcome-section {
+    min-height: calc(25vh + 100px);
+}
