@@ -60,9 +60,12 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
+
       gtag("config", "AW-16633775810");
     </script>
-    <!-- Event snippet for Web Form conversion page -->
+
+    <!-- Event snippet for Web Form conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
     <script>
       function gtag_report_conversion(url) {
         var callback = function () {
