@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/blog.css" />
 
   <!-- Logos -->
   <link rel="apple-touch-icon" sizes="180x180" href="Logos/apple-touch-icon.png" />
@@ -115,6 +116,67 @@
   </div>
 </section>
 
+<!-- Sección del Buscador -->
+<section id="search-section" class="section" style="padding: 20px 0;">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 text-center">
+        <form action="search.php" method="GET">
+          <div class="input-group">
+            <input type="text" class="form-control rounded-pill" placeholder="Search..." aria-label="Search" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary rounded-pill" type="submit" id="button-addon2"><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+<!-- Tarjetas debajo del buscador -->
+<div class="row mt-4">
+  <div class="col-12 col-md-3 mb-4">
+    <div class="card border-0 rounded-lg">
+      <img src="sources/images/blog_01.jpeg" class="card-img-top rounded-lg-top" alt="Imagen de la tarjeta">
+      <div class="card-body">
+        <h5 class="card-title">Título de la tarjeta 1</h5>
+        <p class="card-text">Breve descripción o contenido de la tarjeta 1.</p>
+        <a href="#" class="btn btn-primary" style="background-color: #dd6d2c; border-color: #dd6d2c;">Read more</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-3 mb-4">
+    <div class="card border-0 rounded-lg">
+      <img src="sources/images/blog_01.jpeg" class="card-img-top rounded-lg-top" alt="Imagen de la tarjeta">
+      <div class="card-body">
+        <h5 class="card-title">Título de la tarjeta 2</h5>
+        <p class="card-text">Breve descripción o contenido de la tarjeta 2.</p>
+        <a href="#" class="btn btn-primary" style="background-color: #dd6d2c; border-color: #dd6d2c;">Read more</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-3 mb-4">
+    <div class="card border-0 rounded-lg">
+      <img src="sources/images/blog_01.jpeg" class="card-img-top rounded-lg-top" alt="Imagen de la tarjeta">
+      <div class="card-body">
+        <h5 class="card-title">Título de la tarjeta 3</h5>
+        <p class="card-text">Breve descripción o contenido de la tarjeta 3.</p>
+        <a href="#" class="btn btn-primary" style="background-color: #dd6d2c; border-color: #dd6d2c;">Read more</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-3 mb-4">
+    <div class="card border-0 rounded-lg">
+      <img src="sources/images/blog_01.jpeg" class="card-img-top rounded-lg-top" alt="Imagen de la tarjeta">
+      <div class="card-body">
+        <h5 class="card-title">Título de la tarjeta 4</h5>
+        <p class="card-text">Breve descripción o contenido de la tarjeta 4.</p>
+        <a href="#" class="btn btn-primary" style="background-color: #dd6d2c; border-color: #dd6d2c;">Read more</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fin de las tarjetas -->
+  </div>
+</section>
 
   <!-- Footer -->
   <footer id="footer" class="footer text-white" style="background-color: black">
