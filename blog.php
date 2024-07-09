@@ -49,7 +49,7 @@
     }
   </script>
 
-  <title>Blog | Pixiu X</title>
+  <title>Pixiu X | Blog | Pixiu X</title>
 </head>
 
 <body>
@@ -105,7 +105,7 @@
     <div class="row h-100 align-items-center">
       <div class="col-12">
         <div class="welcome-content text-center">
-          <h2 style="font-size: 4rem">Blog</h2>
+          <h1 style="font-size: 4rem">Blog</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
           </p>
