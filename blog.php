@@ -88,10 +88,172 @@
           </form>
         </div>
       </div>
+
+<!-- Row with 3 Cards -->
+<div class="row mt-4">
+  <div class="col-md-4">
+    <div class="card card-custom">
+      <div class="card-img-container">
+        <img src="sources/images/blog_01.jpeg" class="card-img-top" alt="Card Image 1">
+      </div>
+      <div class="card-body card-body-custom">
+        <h5 class="card-title">Card Title 1</h5>
+        <div class="card-space"></div>
+        <a href="#" class="card-link">Read more</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card card-custom">
+      <div class="card-img-container">
+        <img src="sources/images/blog_01.jpeg" class="card-img-top" alt="Card Image 2">
+      </div>
+      <div class="card-body card-body-custom">
+        <h5 class="card-title">Card Title 2</h5>
+        <div class="card-space"></div>
+        <a href="#" class="card-link">Read more</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card card-custom">
+      <div class="card-img-container">
+        <img src="sources/images/blog_01.jpeg" class="card-img-top" alt="Card Image 3">
+      </div>
+      <div class="card-body card-body-custom">
+        <h5 class="card-title">Card Title 3</h5>
+        <div class="card-space"></div>
+        <a href="#" class="card-link">Read more</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Row with 3 Cards -->
+<!-- Row with 3 Cards -->
+<div class="row mt-4">
+  <div class="col-md-4">
+    <div class="card card-custom">
+      <div class="card-img-container">
+        <img src="sources/images/blog_01.jpeg" class="card-img-top" alt="Card Image 1">
+      </div>
+      <div class="card-body card-body-custom">
+        <h5 class="card-title">Card Title 1</h5>
+        <div class="card-space"></div>
+        <a href="#" class="card-link">Read more</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card card-custom">
+      <div class="card-img-container">
+        <img src="sources/images/blog_01.jpeg" class="card-img-top" alt="Card Image 2">
+      </div>
+      <div class="card-body card-body-custom">
+        <h5 class="card-title">Card Title 2</h5>
+        <div class="card-space"></div>
+        <a href="#" class="card-link">Read more</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card card-custom">
+      <div class="card-img-container">
+        <img src="sources/images/blog_01.jpeg" class="card-img-top" alt="Card Image 3">
+      </div>
+      <div class="card-body card-body-custom">
+        <h5 class="card-title">Card Title 3</h5>
+        <div class="card-space"></div>
+        <a href="#" class="card-link">Read more</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Row with 3 Cards -->
+<!-- Row with 3 Cards -->
+<div class="row mt-4">
+  <div class="col-md-4">
+    <div class="card card-custom">
+      <div class="card-img-container">
+        <img src="sources/images/blog_01.jpeg" class="card-img-top" alt="Card Image 1">
+      </div>
+      <div class="card-body card-body-custom">
+        <h5 class="card-title">Card Title 1</h5>
+        <div class="card-space"></div>
+        <a href="#" class="card-link">Read more</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card card-custom">
+      <div class="card-img-container">
+        <img src="sources/images/blog_01.jpeg" class="card-img-top" alt="Card Image 2">
+      </div>
+      <div class="card-body card-body-custom">
+        <h5 class="card-title">Card Title 2</h5>
+        <div class="card-space"></div>
+        <a href="#" class="card-link">Read more</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card card-custom">
+      <div class="card-img-container">
+        <img src="sources/images/blog_01.jpeg" class="card-img-top" alt="Card Image 3">
+      </div>
+      <div class="card-body card-body-custom">
+        <h5 class="card-title">Card Title 3</h5>
+        <div class="card-space"></div>
+        <a href="#" class="card-link">Read more</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Row with 3 Cards -->
+<!-- Row with 3 Cards -->
+<div class="row mt-4">
+  <div class="col-md-4">
+    <div class="card card-custom">
+      <div class="card-img-container">
+        <img src="sources/images/blog_01.jpeg" class="card-img-top" alt="Card Image 1">
+      </div>
+      <div class="card-body card-body-custom">
+        <h5 class="card-title">Card Title 1</h5>
+        <div class="card-space"></div>
+        <a href="#" class="card-link">Read more</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card card-custom">
+      <div class="card-img-container">
+        <img src="sources/images/blog_01.jpeg" class="card-img-top" alt="Card Image 2">
+      </div>
+      <div class="card-body card-body-custom">
+        <h5 class="card-title">Card Title 2</h5>
+        <div class="card-space"></div>
+        <a href="#" class="card-link">Read more</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card card-custom">
+      <div class="card-img-container">
+        <img src="sources/images/blog_01.jpeg" class="card-img-top" alt="Card Image 3">
+      </div>
+      <div class="card-body card-body-custom">
+        <h5 class="card-title">Card Title 3</h5>
+        <div class="card-space"></div>
+        <a href="#" class="card-link">Read more</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Row with 3 Cards -->
+      
     </div>
   </section>
 
-    <?php include 'components/footer.php'; ?>
+  <?php include 'components/footer.php'; ?>
 
   <!-- Scripts at the end of the body -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

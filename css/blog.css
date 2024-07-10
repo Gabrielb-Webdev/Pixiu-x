@@ -10,3 +10,48 @@
 .btn-outline-secondary:hover {
     background-color: #dd6d2c;
 }
+
+.card-custom {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 400px; /* Height of the card */
+  }
+  
+  .card-img-container {
+    height: 40%; /* Height for the image section */
+    overflow: hidden;
+  }
+  
+  .card-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the space without stretching */
+  }
+  
+  .card-body-custom {
+    padding: 15px;
+    height: 60%; /* Remaining height for the body section */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card-title {
+    height: 20%; /* Height for the title */
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .card-space {
+    height: 20%; /* Height for the blank space */
+  }
+  
+  .card-link {
+    text-decoration: none;
+    color: #007bff; /* Bootstrap primary color */
+    height: 20%; /* Height for the link */
+    display: flex;
+    align-items: center;
+  }
+  
