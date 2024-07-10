@@ -524,6 +524,11 @@ h2 {
 @media (max-width: 720px) {
     .step {
         flex: 0 0 50%;
+        width: 550px;
+    }
+
+    .steps {
+        width: 175%;
     }
 }
 

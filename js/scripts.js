@@ -10,7 +10,7 @@
 // function updateView() {
 //     const stepsElement = document.querySelector(".steps");
 //     const stepWidth = stepsElement.querySelector(".step").offsetWidth;
-//     stepsElement.style.transform = `translateX(-${currentStep * stepWidth}px)`;
+//     stepsElement.style.transform = `translateX(-${          currentStep * stepWidth * 1.1}px)`;
 // }
 
 // function updateButtons() {

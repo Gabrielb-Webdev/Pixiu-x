@@ -751,7 +751,7 @@ function gtag_report_conversion(url) {
         const stepsElement = document.querySelector(".steps");
         const stepWidth = stepsElement.querySelector(".step").offsetWidth;
         stepsElement.style.transform = `translateX(-${
-          currentStep * stepWidth
+                    currentStep * stepWidth * 1.1
         }px)`;
       }
 
