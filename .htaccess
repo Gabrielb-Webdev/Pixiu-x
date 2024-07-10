@@ -1,10 +1,10 @@
 RewriteEngine On
 
-# Redireccionar URLs terminadas en .html a sus equivalentes sin .html
+# Redireccionar URLs terminadas en .php a sus equivalentes sin .php
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([^/]+)$ $1.html [L]
+RewriteRule ^([^/]+)\.php$ /$1 [L,R=301]
 
-# Redireccionar URLs sin .html a sus equivalentes con .html internamente
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^([^/]+)/?$ $1.html [L]
+# Redireccionar URLs sin .php a sus equivalentes con .php internamente
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^/]+)/?$ /$1.php [L]

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -50,38 +50,35 @@
     <meta name="theme-color" content="#ffffff" />
 
     <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=AW-16633775810"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16633775810"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-      gtag("config", "AW-16633775810");
-    </script>
+  gtag('config', 'AW-16633775810');
+</script>
 
-    <!-- Event snippet for Web Form conversion page
+
+  <!-- Event snippet for Web Form conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-    <script>
-      function gtag_report_conversion(url) {
-        var callback = function () {
-          if (typeof url != "undefined") {
-            window.location = url;
-          }
-        };
-        gtag("event", "conversion", {
-          send_to: "AW-16633775810/IXCmCKqYisEZEMKNzfs9",
-          event_callback: callback,
-        });
-        return false;
-      }
-    </script>
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16633775810/IXCmCKqYisEZEMKNzfs9',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
 
-    <title>Pixiu X - Home</title>
+
+    <title>Pixiu X - Inicio</title>
   </head>
 
   <body>
@@ -89,7 +86,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
         <div class="container">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index-es.php">
             <img
               src="sources/images/logo.png"
               alt="Pixiu X Logo"
@@ -112,7 +109,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="index-es.php">Inicio</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -124,20 +121,22 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  Services
+                  Servicios
                 </a>
                 <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-                  <a class="dropdown-item" href="web.html"
-                    >Custom Software Development</a
+                  <a class="dropdown-item" href="web-es.php"
+                    >Desarrollo de Software Personalizado</a
                   >
-                  <a class="dropdown-item" href="hubspot.html"
-                    >HubSpot implementation and consulting</a
+                  <a class="dropdown-item" href="hubspot-es.php"
+                    >Implementación y Consultoría de HubSpot</a
                   >
-                  <a class="dropdown-item" href="scrap.html">Data Extraction</a>
+                  <a class="dropdown-item" href="scrap-es.php"
+                    >Extracción de Datos</a
+                  >
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="#contact">Contacto</a>
               </li>
               <li class="nav-item">
                 <a
@@ -145,22 +144,21 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                   href="https://meetings.hubspot.com/pixiu"
                   style="color: #fff"
                   target="_blank"
+                  >Agendar una Llamada</a
                 >
-                  Book A Call
-                </a>
               </li>
               <li class="nav-item">
                 <a
                   id="language-toggle"
                   class="nav-link flag-spain"
-                  href="index-es.html"
+                  href="index.php"
                 >
                   <img
-                    src="sources/icons/spain.svg"
-                    alt="Bandera de México"
+                    src="../sources/icons/USA.svg"
+                    alt="Bandera de US"
                     class="flag-icon"
                   />
-                  Es
+                  En
                 </a>
               </li>
             </ul>
@@ -172,25 +170,23 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     <section id="home" class="section">
       <div class="container-fluid">
         <div class="row align-items-center">
-          <!-- Column for text content -->
           <div class="col-md-6">
             <div>
               <h1 class="responsive-heading">
-                Accelerate Your Project With Pixiu X
+                Impulsa tus Proyectos con Pixiu X
               </h1>
-              <p>Discover how Pixiu can elevate your business today</p>
+              <p>Descubre cómo Pixiu puede elevar tu negocio hoy</p>
             </div>
             <div class="row">
               <div class="col-md-6">
                 <a
                   href="#contact"
                   class="btn btn-custom-orange btn-lg btn-block"
-                  >Contact us</a
+                  >Contáctanos</a
                 >
               </div>
             </div>
           </div>
-          <!-- Column for image -->
           <div class="col-md-6 mt-4 mt-md-0">
             <div class="text-center">
               <img
@@ -219,12 +215,13 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           <div class="col-md-6">
             <div class="row">
               <div class="col-md-12">
-                <h2>Custom Software Development</h2>
+                <h2>Desarrollo de Software Personalizado</h2>
                 <p>
-                  We specialize in creating tailored software solutions that
-                  meet your specific business needs. Our team ensures
-                  high-quality, efficient, and scalable software that enhances
-                  your operations and drives growth.
+                  Nos especializamos en crear soluciones de software
+                  personalizadas que satisfacen las necesidades específicas de
+                  tu negocio. Nuestro equipo garantiza software de alta calidad,
+                  eficiente y escalable que mejora tus operaciones y impulsa el
+                  crecimiento.
                 </p>
               </div>
               <div class="col-md-14 mt-4">
@@ -232,14 +229,13 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                   <div class="col-md-6 mb-3">
                     <div class="card border-0">
                       <div class="card-body">
-                        <h5 class="card-title">Custom Web Development</h5>
+                        <h5 class="card-title">Desarrollo Web Personalizado</h5>
                         <p class="card-text">
-                          High-accuracy, technologically competent web
-                          applications that elevate your digital presence.
+                          Aplicaciones web tecnológicamente competentes y de
+                          alta precisión que elevan tu presencia digital.
                         </p>
-                        <a href="web.html" style="color: #dd6d2c"
-                          >Learn More
-                          <img
+                        <a href="web-es.php" style="color: #dd6d2c"
+                          >Saber Más<img
                             src="sources/icons/arrow.svg"
                             alt="Arrow"
                             class="ml-2"
@@ -250,14 +246,14 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                   <div class="col-md-6 mb-3">
                     <div class="card border-0">
                       <div class="card-body">
-                        <h5 class="card-title">Web Development</h5>
+                        <h5 class="card-title">Desarrollo Web</h5>
                         <p class="card-text">
-                          Professional website creation based on your vision,
-                          turning ideas into compelling online experiences.
+                          Creación profesional de sitios web basada en tu
+                          visión, convirtiendo ideas en experiencias online
+                          convincentes.
                         </p>
-                        <a href="web.html" style="color: #dd6d2c"
-                          >Learn More
-                          <img
+                        <a href="web-es.php" style="color: #dd6d2c"
+                          >Saber Más<img
                             src="sources/icons/arrow.svg"
                             alt="Arrow"
                             class="ml-2"
@@ -268,15 +264,14 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                   <div class="col-md-6 mb-3">
                     <div class="card border-0">
                       <div class="card-body">
-                        <h5 class="card-title">Web Design</h5>
+                        <h5 class="card-title">Diseño Web</h5>
                         <p class="card-text">
-                          Unique digital designs that bring your brand to life,
-                          creating visual experiences that resonate with your
-                          audience.
+                          Diseños digitales únicos que dan vida a tu marca,
+                          creando experiencias visuales que resuenan con tu
+                          audiencia.
                         </p>
-                        <a href="web.html" style="color: #dd6d2c"
-                          >Learn More
-                          <img
+                        <a href="web-es.php" style="color: #dd6d2c"
+                          >Saber Más<img
                             src="sources/icons/arrow.svg"
                             alt="Arrow"
                             class="ml-2"
@@ -287,15 +282,14 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                   <div class="col-md-6 mb-3">
                     <div class="card border-0">
                       <div class="card-body">
-                        <h5 class="card-title">E-commerce Web Development</h5>
+                        <h5 class="card-title">Desarrollo de E-commerce</h5>
                         <p class="card-text">
-                          Streamlined solutions to create and launch your online
-                          store quickly and easily, enabling hassle-free product
-                          sales.
+                          Soluciones simplificadas para crear y lanzar tu tienda
+                          online rápidamente y sin complicaciones, facilitando
+                          las ventas de productos.
                         </p>
-                        <a href="web.html" style="color: #dd6d2c"
-                          >Learn More
-                          <img
+                        <a href="web-es.php" style="color: #dd6d2c"
+                          >Saber Más<img
                             src="sources/icons/arrow.svg"
                             alt="Arrow"
                             class="ml-2"
@@ -315,36 +309,40 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     <section class="section" id="hubspot">
       <div class="container-fluid">
         <h2 class="responsive-heading mb-4 text-center">
-          HubSpot implementation and consulting
+          Implementación y Consultoría de HubSpot
         </h2>
         <div class="row align-items-center">
           <div class="col-md-6 text-left">
             <img
               src="sources/images/hubspot.webp"
-              alt="Wireframe Example"
+              alt="Ejemplo de Wireframe"
               class="img-fluid mb-4"
             />
           </div>
           <div class="col-md-6 d-flex align-items-end justify-content-center">
             <div class="text-justify">
               <p>
-                <strong>HubSpot Implementation: </strong>Maximize HubSpot's
-                potential with tailored onboarding and training, seamlessly
-                integrating it into your ecosystem.
+                <strong>Implementación de HubSpot: </strong>Maximiza el
+                potencial de HubSpot con una Implementación y capacitación
+                personalizadas, integrándose de manera perfecta en tu ecosistema
+                empresarial.
               </p>
               <p>
-                <strong>HubSpot Optimization: </strong>Address daily challenges,
-                enhance performance with custom reporting, data management,
-                custom objects, workflows, and automations.
+                <strong>Optimización de HubSpot: </strong>Enfrenta los desafíos
+                diarios y mejora el rendimiento de tu sistema con informes
+                personalizados, gestión de datos, creación de objetos
+                personalizados, flujos de trabajo y automatizaciones.
               </p>
               <p>
-                <strong>Personalized HubSpot Consulting: </strong>Certified
-                experts offer one-on-one consultations to optimize
-                infrastructure, resolve issues, and boost your company's use of
-                HubSpot.
+                <strong>Consultoría Personalizada de HubSpot: </strong>Nuestros
+                expertos certificados ofrecen consultas individuales para
+                optimizar la infraestructura de HubSpot, resolver problemas
+                existentes y mejorar el uso de Hubspot en tu empresa.
               </p>
-              <a href="hubspot.html" class="btn btn-custom-orange btn-lg mt-4"
-                >Learn More</a
+              <a
+                href="hubspot-es.php"
+                class="btn btn-custom-orange btn-lg mt-4"
+                >Saber Más</a
               >
             </div>
           </div>
@@ -356,40 +354,44 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     <section class="section" id="Data">
       <div class="container-fluid">
         <h2 class="mb-4 text-center" style="font-size: 3rem">
-          Data Extraction
+          Extracción de Datos (Data Scraping)
         </h2>
         <div class="row align-items-center">
           <div class="col-md-6 d-flex align-items-end justify-content-center">
             <div class="text-justify">
               <p>
-                <strong>Website data extraction: </strong>Obtain precise web
-                data promptly using APIs, scripts, and manual methods, organized
-                into a database for easy retrieval.
+                <strong>Extracción de datos del sitio web: </strong>Obtén datos
+                web precisos de manera rápida mediante APIs, scripts y métodos
+                manuales. Organizamos estos datos en una base de datos para
+                facilitar su recuperación.
               </p>
               <p>
-                <strong>Prospect/Lead Data Extraction: </strong>Enhance sales
-                and marketing by identifying and extracting customer lead
-                information, providing tailored prospect lists.
+                <strong>Extracción de Datos de Prospectos/Leads: </strong>Mejora
+                tus esfuerzos de ventas y marketing identificando y extrayendo
+                información de leads de clientes, proporcionándote listas de
+                prospectos personalizadas.
               </p>
               <p>
-                <strong>Social Media Data Extraction: </strong>Gather
-                comprehensive data from LinkedIn, Facebook, X (formerly
-                Twitter), and more, using diverse search criteria.
+                <strong>Extracción de Datos de Redes Sociales: </strong>Recopila
+                datos completos de LinkedIn, Facebook, X (anteriormente Twitter)
+                y otras redes sociales utilizando diversos criterios de
+                búsqueda.
               </p>
               <p>
-                <strong>Market Research Data Extraction: </strong>Accelerate
-                research with accurate data on target audiences, market trends,
-                competitive analysis, and customer insights.
+                <strong>Investigación de Mercado y Extracción de Datos: </strong
+                >Agiliza tu investigación con datos precisos sobre audiencias
+                objetivo, tendencias de mercado, análisis competitivo e insights
+                de clientes.
               </p>
-              <a href="scrap.html" class="btn btn-custom-orange btn-lg mt-4"
-                >Lear More</a
+              <a href="scrap-es.php" class="btn btn-custom-orange btn-lg mt-4"
+                >Saber Más</a
               >
             </div>
           </div>
           <div class="col-md-6 text-right">
             <img
               src="sources/images/Data.webp"
-              alt="Wireframe Example"
+              alt="Ejemplo de Wireframe"
               class="img-fluid mb-4"
               style="width: 85%"
             />
@@ -404,49 +406,52 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       style="background-color: #fee4d9"
     >
       <div class="container-fluid">
-        <h2 style="margin-bottom: 1rem">How we work</h2>
+        <h2 style="margin-bottom: 1rem">Nuestro Proceso de Trabajo</h2>
         <div class="steps">
           <div class="step" id="step1">
-            <div class="step-title">1st Step</div>
+            <div class="step-title">1er Paso</div>
             <div class="step-content">
-              <h3>Initial Consultation</h3>
+              <h3>Consulta Inicial</h3>
               <p>
-                Our first interaction begins with understanding your
-                requirements, industry, tech stacks, architecture, deadlines,
-                and budget for custom software development, HubSpot consulting,
-                or data scraping services.
+                Nuestra primera interacción comienza con la comprensión de tus
+                requisitos, industria, pilas tecnológicas, arquitectura, plazos
+                y presupuesto para desarrollo de software personalizado,
+                consultoría de HubSpot o servicios de extracción de datos.
               </p>
             </div>
           </div>
           <div class="step" id="step2">
-            <div class="step-title">2nd Step</div>
+            <div class="step-title">2do Paso</div>
             <div class="step-content">
-              <h3>Requirement Analysis</h3>
+              <h3>Análisis de Requisitos</h3>
               <p>
-                Next, you connect with our tech team to simplify your project
-                and explore technical possibilities tailored to your needs.
+                Luego, te conectarás con nuestro equipo técnico para simplificar
+                tu proyecto y explorar posibilidades técnicas adaptadas a tus
+                necesidades.
               </p>
             </div>
           </div>
           <div class="step" id="step3">
-            <div class="step-title">3rd Step</div>
+            <div class="step-title">3er Paso</div>
             <div class="step-content">
-              <h3>Final Project Estimation</h3>
+              <h3>Estimación Final del Proyecto</h3>
               <p>
-                We’ll prepare an estimation with scope and objectives and share
-                it with you for review. Once agreed, we can proceed with signing
-                the NDA.
+                Prepararemos una estimación detallada con el alcance y los
+                objetivos del proyecto. Te la compartiremos para su revisión y,
+                una vez acordada, procederemos con la firma del acuerdo de
+                confidencialidad (NDA).
               </p>
             </div>
           </div>
           <div class="step" id="step4">
-            <div class="step-title">4th Step</div>
+            <div class="step-title">4to Paso</div>
             <div class="step-content">
-              <h3>Project Kickoff</h3>
+              <h3>Inicio del Proyecto</h3>
               <p>
-                After you sign off on the project, we will immediately begin.
-                Our team will work closely with you, functioning as an extension
-                of your in-house team.
+                Una vez aprobado el proyecto, comenzaremos de inmediato. Nuestro
+                equipo trabajará estrechamente contigo, funcionando como una
+                extensión de tu equipo interno para asegurar una colaboración
+                fluida y exitosa.
               </p>
             </div>
           </div>
@@ -457,6 +462,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         </div>
       </div>
     </section>
+
+    <?php include 'components/slider.php'; ?>
 
     <!-- Section 6: Calendar for scheduling calls/meetings -->
     <section id="contact" class="section" style="padding-top: calc(5vh + 20px)">
@@ -479,7 +486,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 <label>
                   <input
                     required
-                    placeholder="First Name"
+                    placeholder="Nombre"
                     type="text"
                     class="input"
                     name="firstName"
@@ -489,7 +496,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 <label>
                   <input
                     required
-                    placeholder="Last Name"
+                    placeholder="Apellido"
                     type="text"
                     class="input"
                     name="lastName"
@@ -500,7 +507,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
               <label>
                 <input
                   required
-                  placeholder="Email"
+                  placeholder="Correo"
                   type="email"
                   class="input"
                   name="email"
@@ -514,14 +521,16 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                   id="service-select"
                   name="service"
                 >
-                  <option value="" selected disabled>Select a Service</option>
+                  <option value="" selected disabled>
+                    Selecciona Un Servicio
+                  </option>
                   <option value="Custom Software Development">
-                    Custom Software Development
+                    Desarrollo de Software Personalizado
                   </option>
                   <option value="HubSpot implementation and consulting">
-                    HubSpot implementation and consulting
+                    Implementación y consultoría de HubSpot
                   </option>
-                  <option value="Data Extraction">Data Extraction</option>
+                  <option value="Data Extraction">Extracción de datos</option>
                 </select>
               </label>
 
@@ -529,16 +538,16 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
               <div class="custom-software-dropdown" style="display: none">
                 <label>
                   <select class="input" name="customOption">
-                    <option value="" selected disabled>Select an Option</option>
-                    <option value="Web Design">Web Design</option>
+                    <option value="" selected disabled>Select a Service</option>
+                    <option value="Web Design">Diseño web</option>
                     <option value="Custom Web Development">
-                      Custom Web Development
+                      Desarrollo web a medida
                     </option>
                     <option value="Mobile Applications">
-                      Mobile Applications
+                      Aplicaciones móviles
                     </option>
                     <option value="E-Commerce Web Development">
-                      E-Commerce Web Development
+                      Desarrollo web de comercio electrónico
                     </option>
                   </select>
                 </label>
@@ -548,7 +557,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 <textarea
                   required
                   rows="3"
-                  placeholder="Hello, I am interested in hiring your services for....."
+                  placeholder="Hola, estoy interesado en contratar sus servicios para....."
                   class="input01"
                   name="Message"
                 ></textarea>
@@ -556,7 +565,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 
               <button type="submit" class="fancy">
                 <span class="top-key"></span>
-                <span class="text">Submit</span>
+                <span class="text">Enviar</span>
                 <span class="bottom-key-1"></span>
                 <span class="bottom-key-2"></span>
               </button>
@@ -566,14 +575,15 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       </div>
     </section>
 
-    <!-- Success Modal -->
+    <!-- Modal de alerta -->
     <div id="success-modal" class="modal">
       <div class="modal-content">
-        <span class="close-button">&times;</span>
+        <span class="close-button">×</span>
         <p>
-          Form successfully completed. We will be in touch with you shortly.
+          Formulario completado correctamente. Nos estaremos contactando con
+          usted en breve.
         </p>
-        <button id="accept-button">Accept</button>
+        <button id="accept-button">Aceptar</button>
       </div>
     </div>
 
@@ -597,7 +607,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h2>Discover how Pixiu can elevate your business today</h2>
+            <h2>Acelera el Éxito de tus Proyectos con Pixiu X</h2>
           </div>
         </div>
       </div>
@@ -619,10 +629,11 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
               class="img-fluid mb- logo-footer"
             />
             <p>
-              At Pixiu, we focus on excellent service and innovation,
-              specializing in custom software development, HubSpot consulting,
-              and data scraping services. Contact us for inquiries on how we can
-              improve your business.
+              En Pixiu, nos enfocamos en ofrecer un servicio excelente e
+              innovación, especializándonos en desarrollo de software
+              personalizado, consultoría de HubSpot y servicios de extracción de
+              datos. Contáctenos para consultas sobre cómo podemos mejorar su
+              negocio
             </p>
             <div class="wrapper">
               <a
@@ -657,16 +668,18 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           <div class="col-lg-4 col-md-4 mb-4 mb-lg-0"></div>
           <!-- Columna 2: Servicios -->
           <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
-            <h5>Services</h5>
+            <h5>Servicios</h5>
             <ul class="list-unstyled">
-              <li><a href="web.html">Custom Web Development</a></li>
-              <li><a href="hubspot.html">HubSpot Consulting</a></li>
-              <li><a href="scrap.html">Data Extraction</a></li>
+              <li>
+                <a href="web-es.php">Desarrollo de Software Personalizado</a>
+              </li>
+              <li><a href="hubspot-es.php">Consultoría de HubSpot</a></li>
+              <li><a href="scrap-es.php">Extracción de Datos</a></li>
             </ul>
           </div>
           <!-- Columna 3: Oficina en EE.UU. -->
           <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
-            <h5>Office Locations</h5>
+            <h5>Oficinas</h5>
             <ul class="list-unstyled">
               <li>Miami Beach, FL, US</li>
               <li>+1 (786) 798-8207</li>
@@ -690,7 +703,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-
+    <!-- <script src="js/scripts.js"></script> -->
     <script>
       let currentStep = 0;
       const stepsVisible = 1; // Number of steps visible at a time
@@ -821,39 +834,6 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
               console.error("Error:", error);
             });
         });
-    </script>
-    <script>
-      !(function () {
-        var reb2b = (window.reb2b = window.reb2b || []);
-        if (reb2b.invoked) return;
-        reb2b.invoked = true;
-        reb2b.methods = ["identify", "collect"];
-        reb2b.factory = function (method) {
-          return function () {
-            var args = Array.prototype.slice.call(arguments);
-            args.unshift(method);
-            reb2b.push(args);
-            return reb2b;
-          };
-        };
-        for (var i = 0; i < reb2b.methods.length; i++) {
-          var key = reb2b.methods[i];
-          reb2b[key] = reb2b.factory(key);
-        }
-        reb2b.load = function (key) {
-          var script = document.createElement("script");
-          script.type = "text/javascript";
-          script.async = true;
-          script.src =
-            "https://s3-us-west-2.amazonaws.com/b2bjsstore/b/" +
-            key +
-            "/reb2b.js.gz";
-          var first = document.getElementsByTagName("script")[0];
-          first.parentNode.insertBefore(script, first);
-        };
-        reb2b.SNIPPET_VERSION = "1.0.1";
-        reb2b.load("ZQO92DHEM2N7");
-      })();
     </script>
   </body>
 </html>

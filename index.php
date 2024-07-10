@@ -50,35 +50,38 @@
     <meta name="theme-color" content="#ffffff" />
 
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16633775810"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-16633775810"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'AW-16633775810');
-</script>
+      gtag("config", "AW-16633775810");
+    </script>
 
-
-  <!-- Event snippet for Web Form conversion page
+    <!-- Event snippet for Web Form conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-16633775810/IXCmCKqYisEZEMKNzfs9',
-      'event_callback': callback
-  });
-  return false;
-}
-</script>
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-16633775810/IXCmCKqYisEZEMKNzfs9",
+          event_callback: callback,
+        });
+        return false;
+      }
+    </script>
 
-
-    <title>Pixiu X - Inicio</title>
+    <title>Pixiu X - Home</title>
   </head>
 
   <body>
@@ -86,7 +89,7 @@ function gtag_report_conversion(url) {
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
         <div class="container">
-          <a class="navbar-brand" href="index-es.html">
+          <a class="navbar-brand" href="index.php">
             <img
               src="sources/images/logo.png"
               alt="Pixiu X Logo"
@@ -109,7 +112,7 @@ function gtag_report_conversion(url) {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="index-es.html">Inicio</a>
+                <a class="nav-link" href="index.php">Home</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -121,22 +124,20 @@ function gtag_report_conversion(url) {
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  Servicios
+                  Services
                 </a>
                 <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-                  <a class="dropdown-item" href="web-es.html"
-                    >Desarrollo de Software Personalizado</a
+                  <a class="dropdown-item" href="web.php"
+                    >Custom Software Development</a
                   >
-                  <a class="dropdown-item" href="hubspot-es.html"
-                    >Implementación y Consultoría de HubSpot</a
+                  <a class="dropdown-item" href="hubspot.php"
+                    >HubSpot implementation and consulting</a
                   >
-                  <a class="dropdown-item" href="scrap-es.html"
-                    >Extracción de Datos</a
-                  >
+                  <a class="dropdown-item" href="scrap.php">Data Extraction</a>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contacto</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
               <li class="nav-item">
                 <a
@@ -144,21 +145,22 @@ function gtag_report_conversion(url) {
                   href="https://meetings.hubspot.com/pixiu"
                   style="color: #fff"
                   target="_blank"
-                  >Agendar una Llamada</a
                 >
+                  Book A Call
+                </a>
               </li>
               <li class="nav-item">
                 <a
                   id="language-toggle"
                   class="nav-link flag-spain"
-                  href="index.html"
+                  href="index-es.php"
                 >
                   <img
-                    src="../sources/icons/USA.svg"
-                    alt="Bandera de US"
+                    src="sources/icons/spain.svg"
+                    alt="Bandera de México"
                     class="flag-icon"
                   />
-                  En
+                  Es
                 </a>
               </li>
             </ul>
@@ -170,23 +172,25 @@ function gtag_report_conversion(url) {
     <section id="home" class="section">
       <div class="container-fluid">
         <div class="row align-items-center">
+          <!-- Column for text content -->
           <div class="col-md-6">
             <div>
               <h1 class="responsive-heading">
-                Impulsa tus Proyectos con Pixiu X
+                Accelerate Your Project With Pixiu X
               </h1>
-              <p>Descubre cómo Pixiu puede elevar tu negocio hoy</p>
+              <p>Discover how Pixiu can elevate your business today</p>
             </div>
             <div class="row">
               <div class="col-md-6">
                 <a
                   href="#contact"
                   class="btn btn-custom-orange btn-lg btn-block"
-                  >Contáctanos</a
+                  >Contact us</a
                 >
               </div>
             </div>
           </div>
+          <!-- Column for image -->
           <div class="col-md-6 mt-4 mt-md-0">
             <div class="text-center">
               <img
@@ -215,13 +219,12 @@ function gtag_report_conversion(url) {
           <div class="col-md-6">
             <div class="row">
               <div class="col-md-12">
-                <h2>Desarrollo de Software Personalizado</h2>
+                <h2>Custom Software Development</h2>
                 <p>
-                  Nos especializamos en crear soluciones de software
-                  personalizadas que satisfacen las necesidades específicas de
-                  tu negocio. Nuestro equipo garantiza software de alta calidad,
-                  eficiente y escalable que mejora tus operaciones y impulsa el
-                  crecimiento.
+                  We specialize in creating tailored software solutions that
+                  meet your specific business needs. Our team ensures
+                  high-quality, efficient, and scalable software that enhances
+                  your operations and drives growth.
                 </p>
               </div>
               <div class="col-md-14 mt-4">
@@ -229,13 +232,14 @@ function gtag_report_conversion(url) {
                   <div class="col-md-6 mb-3">
                     <div class="card border-0">
                       <div class="card-body">
-                        <h5 class="card-title">Desarrollo Web Personalizado</h5>
+                        <h5 class="card-title">Custom Web Development</h5>
                         <p class="card-text">
-                          Aplicaciones web tecnológicamente competentes y de
-                          alta precisión que elevan tu presencia digital.
+                          High-accuracy, technologically competent web
+                          applications that elevate your digital presence.
                         </p>
-                        <a href="web-es.html" style="color: #dd6d2c"
-                          >Saber Más<img
+                        <a href="web.php" style="color: #dd6d2c"
+                          >Learn More
+                          <img
                             src="sources/icons/arrow.svg"
                             alt="Arrow"
                             class="ml-2"
@@ -246,14 +250,14 @@ function gtag_report_conversion(url) {
                   <div class="col-md-6 mb-3">
                     <div class="card border-0">
                       <div class="card-body">
-                        <h5 class="card-title">Desarrollo Web</h5>
+                        <h5 class="card-title">Web Development</h5>
                         <p class="card-text">
-                          Creación profesional de sitios web basada en tu
-                          visión, convirtiendo ideas en experiencias online
-                          convincentes.
+                          Professional website creation based on your vision,
+                          turning ideas into compelling online experiences.
                         </p>
-                        <a href="web-es.html" style="color: #dd6d2c"
-                          >Saber Más<img
+                        <a href="web.php" style="color: #dd6d2c"
+                          >Learn More
+                          <img
                             src="sources/icons/arrow.svg"
                             alt="Arrow"
                             class="ml-2"
@@ -264,14 +268,15 @@ function gtag_report_conversion(url) {
                   <div class="col-md-6 mb-3">
                     <div class="card border-0">
                       <div class="card-body">
-                        <h5 class="card-title">Diseño Web</h5>
+                        <h5 class="card-title">Web Design</h5>
                         <p class="card-text">
-                          Diseños digitales únicos que dan vida a tu marca,
-                          creando experiencias visuales que resuenan con tu
-                          audiencia.
+                          Unique digital designs that bring your brand to life,
+                          creating visual experiences that resonate with your
+                          audience.
                         </p>
-                        <a href="web-es.html" style="color: #dd6d2c"
-                          >Saber Más<img
+                        <a href="web.php" style="color: #dd6d2c"
+                          >Learn More
+                          <img
                             src="sources/icons/arrow.svg"
                             alt="Arrow"
                             class="ml-2"
@@ -282,14 +287,15 @@ function gtag_report_conversion(url) {
                   <div class="col-md-6 mb-3">
                     <div class="card border-0">
                       <div class="card-body">
-                        <h5 class="card-title">Desarrollo de E-commerce</h5>
+                        <h5 class="card-title">E-commerce Web Development</h5>
                         <p class="card-text">
-                          Soluciones simplificadas para crear y lanzar tu tienda
-                          online rápidamente y sin complicaciones, facilitando
-                          las ventas de productos.
+                          Streamlined solutions to create and launch your online
+                          store quickly and easily, enabling hassle-free product
+                          sales.
                         </p>
-                        <a href="web-es.html" style="color: #dd6d2c"
-                          >Saber Más<img
+                        <a href="web.php" style="color: #dd6d2c"
+                          >Learn More
+                          <img
                             src="sources/icons/arrow.svg"
                             alt="Arrow"
                             class="ml-2"
@@ -309,40 +315,36 @@ function gtag_report_conversion(url) {
     <section class="section" id="hubspot">
       <div class="container-fluid">
         <h2 class="responsive-heading mb-4 text-center">
-          Implementación y Consultoría de HubSpot
+          HubSpot implementation and consulting
         </h2>
         <div class="row align-items-center">
           <div class="col-md-6 text-left">
             <img
               src="sources/images/hubspot.webp"
-              alt="Ejemplo de Wireframe"
+              alt="Wireframe Example"
               class="img-fluid mb-4"
             />
           </div>
           <div class="col-md-6 d-flex align-items-end justify-content-center">
             <div class="text-justify">
               <p>
-                <strong>Implementación de HubSpot: </strong>Maximiza el
-                potencial de HubSpot con una Implementación y capacitación
-                personalizadas, integrándose de manera perfecta en tu ecosistema
-                empresarial.
+                <strong>HubSpot Implementation: </strong>Maximize HubSpot's
+                potential with tailored onboarding and training, seamlessly
+                integrating it into your ecosystem.
               </p>
               <p>
-                <strong>Optimización de HubSpot: </strong>Enfrenta los desafíos
-                diarios y mejora el rendimiento de tu sistema con informes
-                personalizados, gestión de datos, creación de objetos
-                personalizados, flujos de trabajo y automatizaciones.
+                <strong>HubSpot Optimization: </strong>Address daily challenges,
+                enhance performance with custom reporting, data management,
+                custom objects, workflows, and automations.
               </p>
               <p>
-                <strong>Consultoría Personalizada de HubSpot: </strong>Nuestros
-                expertos certificados ofrecen consultas individuales para
-                optimizar la infraestructura de HubSpot, resolver problemas
-                existentes y mejorar el uso de Hubspot en tu empresa.
+                <strong>Personalized HubSpot Consulting: </strong>Certified
+                experts offer one-on-one consultations to optimize
+                infrastructure, resolve issues, and boost your company's use of
+                HubSpot.
               </p>
-              <a
-                href="hubspot-es.html"
-                class="btn btn-custom-orange btn-lg mt-4"
-                >Saber Más</a
+              <a href="hubspot.php" class="btn btn-custom-orange btn-lg mt-4"
+                >Learn More</a
               >
             </div>
           </div>
@@ -354,44 +356,40 @@ function gtag_report_conversion(url) {
     <section class="section" id="Data">
       <div class="container-fluid">
         <h2 class="mb-4 text-center" style="font-size: 3rem">
-          Extracción de Datos (Data Scraping)
+          Data Extraction
         </h2>
         <div class="row align-items-center">
           <div class="col-md-6 d-flex align-items-end justify-content-center">
             <div class="text-justify">
               <p>
-                <strong>Extracción de datos del sitio web: </strong>Obtén datos
-                web precisos de manera rápida mediante APIs, scripts y métodos
-                manuales. Organizamos estos datos en una base de datos para
-                facilitar su recuperación.
+                <strong>Website data extraction: </strong>Obtain precise web
+                data promptly using APIs, scripts, and manual methods, organized
+                into a database for easy retrieval.
               </p>
               <p>
-                <strong>Extracción de Datos de Prospectos/Leads: </strong>Mejora
-                tus esfuerzos de ventas y marketing identificando y extrayendo
-                información de leads de clientes, proporcionándote listas de
-                prospectos personalizadas.
+                <strong>Prospect/Lead Data Extraction: </strong>Enhance sales
+                and marketing by identifying and extracting customer lead
+                information, providing tailored prospect lists.
               </p>
               <p>
-                <strong>Extracción de Datos de Redes Sociales: </strong>Recopila
-                datos completos de LinkedIn, Facebook, X (anteriormente Twitter)
-                y otras redes sociales utilizando diversos criterios de
-                búsqueda.
+                <strong>Social Media Data Extraction: </strong>Gather
+                comprehensive data from LinkedIn, Facebook, X (formerly
+                Twitter), and more, using diverse search criteria.
               </p>
               <p>
-                <strong>Investigación de Mercado y Extracción de Datos: </strong
-                >Agiliza tu investigación con datos precisos sobre audiencias
-                objetivo, tendencias de mercado, análisis competitivo e insights
-                de clientes.
+                <strong>Market Research Data Extraction: </strong>Accelerate
+                research with accurate data on target audiences, market trends,
+                competitive analysis, and customer insights.
               </p>
-              <a href="scrap-es.html" class="btn btn-custom-orange btn-lg mt-4"
-                >Saber Más</a
+              <a href="scrap.php" class="btn btn-custom-orange btn-lg mt-4"
+                >Lear More</a
               >
             </div>
           </div>
           <div class="col-md-6 text-right">
             <img
               src="sources/images/Data.webp"
-              alt="Ejemplo de Wireframe"
+              alt="Wireframe Example"
               class="img-fluid mb-4"
               style="width: 85%"
             />
@@ -406,52 +404,49 @@ function gtag_report_conversion(url) {
       style="background-color: #fee4d9"
     >
       <div class="container-fluid">
-        <h2 style="margin-bottom: 1rem">Nuestro Proceso de Trabajo</h2>
+        <h2 style="margin-bottom: 1rem">How we work</h2>
         <div class="steps">
           <div class="step" id="step1">
-            <div class="step-title">1er Paso</div>
+            <div class="step-title">1st Step</div>
             <div class="step-content">
-              <h3>Consulta Inicial</h3>
+              <h3>Initial Consultation</h3>
               <p>
-                Nuestra primera interacción comienza con la comprensión de tus
-                requisitos, industria, pilas tecnológicas, arquitectura, plazos
-                y presupuesto para desarrollo de software personalizado,
-                consultoría de HubSpot o servicios de extracción de datos.
+                Our first interaction begins with understanding your
+                requirements, industry, tech stacks, architecture, deadlines,
+                and budget for custom software development, HubSpot consulting,
+                or data scraping services.
               </p>
             </div>
           </div>
           <div class="step" id="step2">
-            <div class="step-title">2do Paso</div>
+            <div class="step-title">2nd Step</div>
             <div class="step-content">
-              <h3>Análisis de Requisitos</h3>
+              <h3>Requirement Analysis</h3>
               <p>
-                Luego, te conectarás con nuestro equipo técnico para simplificar
-                tu proyecto y explorar posibilidades técnicas adaptadas a tus
-                necesidades.
+                Next, you connect with our tech team to simplify your project
+                and explore technical possibilities tailored to your needs.
               </p>
             </div>
           </div>
           <div class="step" id="step3">
-            <div class="step-title">3er Paso</div>
+            <div class="step-title">3rd Step</div>
             <div class="step-content">
-              <h3>Estimación Final del Proyecto</h3>
+              <h3>Final Project Estimation</h3>
               <p>
-                Prepararemos una estimación detallada con el alcance y los
-                objetivos del proyecto. Te la compartiremos para su revisión y,
-                una vez acordada, procederemos con la firma del acuerdo de
-                confidencialidad (NDA).
+                We’ll prepare an estimation with scope and objectives and share
+                it with you for review. Once agreed, we can proceed with signing
+                the NDA.
               </p>
             </div>
           </div>
           <div class="step" id="step4">
-            <div class="step-title">4to Paso</div>
+            <div class="step-title">4th Step</div>
             <div class="step-content">
-              <h3>Inicio del Proyecto</h3>
+              <h3>Project Kickoff</h3>
               <p>
-                Una vez aprobado el proyecto, comenzaremos de inmediato. Nuestro
-                equipo trabajará estrechamente contigo, funcionando como una
-                extensión de tu equipo interno para asegurar una colaboración
-                fluida y exitosa.
+                After you sign off on the project, we will immediately begin.
+                Our team will work closely with you, functioning as an extension
+                of your in-house team.
               </p>
             </div>
           </div>
@@ -462,6 +457,8 @@ function gtag_report_conversion(url) {
         </div>
       </div>
     </section>
+
+    <?php include 'components/slider.php'; ?>
 
     <!-- Section 6: Calendar for scheduling calls/meetings -->
     <section id="contact" class="section" style="padding-top: calc(5vh + 20px)">
@@ -484,7 +481,7 @@ function gtag_report_conversion(url) {
                 <label>
                   <input
                     required
-                    placeholder="Nombre"
+                    placeholder="First Name"
                     type="text"
                     class="input"
                     name="firstName"
@@ -494,7 +491,7 @@ function gtag_report_conversion(url) {
                 <label>
                   <input
                     required
-                    placeholder="Apellido"
+                    placeholder="Last Name"
                     type="text"
                     class="input"
                     name="lastName"
@@ -505,7 +502,7 @@ function gtag_report_conversion(url) {
               <label>
                 <input
                   required
-                  placeholder="Correo"
+                  placeholder="Email"
                   type="email"
                   class="input"
                   name="email"
@@ -519,16 +516,14 @@ function gtag_report_conversion(url) {
                   id="service-select"
                   name="service"
                 >
-                  <option value="" selected disabled>
-                    Selecciona Un Servicio
-                  </option>
+                  <option value="" selected disabled>Select a Service</option>
                   <option value="Custom Software Development">
-                    Desarrollo de Software Personalizado
+                    Custom Software Development
                   </option>
                   <option value="HubSpot implementation and consulting">
-                    Implementación y consultoría de HubSpot
+                    HubSpot implementation and consulting
                   </option>
-                  <option value="Data Extraction">Extracción de datos</option>
+                  <option value="Data Extraction">Data Extraction</option>
                 </select>
               </label>
 
@@ -536,16 +531,16 @@ function gtag_report_conversion(url) {
               <div class="custom-software-dropdown" style="display: none">
                 <label>
                   <select class="input" name="customOption">
-                    <option value="" selected disabled>Select a Service</option>
-                    <option value="Web Design">Diseño web</option>
+                    <option value="" selected disabled>Select an Option</option>
+                    <option value="Web Design">Web Design</option>
                     <option value="Custom Web Development">
-                      Desarrollo web a medida
+                      Custom Web Development
                     </option>
                     <option value="Mobile Applications">
-                      Aplicaciones móviles
+                      Mobile Applications
                     </option>
                     <option value="E-Commerce Web Development">
-                      Desarrollo web de comercio electrónico
+                      E-Commerce Web Development
                     </option>
                   </select>
                 </label>
@@ -555,7 +550,7 @@ function gtag_report_conversion(url) {
                 <textarea
                   required
                   rows="3"
-                  placeholder="Hola, estoy interesado en contratar sus servicios para....."
+                  placeholder="Hello, I am interested in hiring your services for....."
                   class="input01"
                   name="Message"
                 ></textarea>
@@ -563,7 +558,7 @@ function gtag_report_conversion(url) {
 
               <button type="submit" class="fancy">
                 <span class="top-key"></span>
-                <span class="text">Enviar</span>
+                <span class="text">Submit</span>
                 <span class="bottom-key-1"></span>
                 <span class="bottom-key-2"></span>
               </button>
@@ -573,15 +568,14 @@ function gtag_report_conversion(url) {
       </div>
     </section>
 
-    <!-- Modal de alerta -->
+    <!-- Success Modal -->
     <div id="success-modal" class="modal">
       <div class="modal-content">
-        <span class="close-button">×</span>
+        <span class="close-button">&times;</span>
         <p>
-          Formulario completado correctamente. Nos estaremos contactando con
-          usted en breve.
+          Form successfully completed. We will be in touch with you shortly.
         </p>
-        <button id="accept-button">Aceptar</button>
+        <button id="accept-button">Accept</button>
       </div>
     </div>
 
@@ -605,7 +599,7 @@ function gtag_report_conversion(url) {
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h2>Acelera el Éxito de tus Proyectos con Pixiu X</h2>
+            <h2>Discover how Pixiu can elevate your business today</h2>
           </div>
         </div>
       </div>
@@ -627,11 +621,10 @@ function gtag_report_conversion(url) {
               class="img-fluid mb- logo-footer"
             />
             <p>
-              En Pixiu, nos enfocamos en ofrecer un servicio excelente e
-              innovación, especializándonos en desarrollo de software
-              personalizado, consultoría de HubSpot y servicios de extracción de
-              datos. Contáctenos para consultas sobre cómo podemos mejorar su
-              negocio
+              At Pixiu, we focus on excellent service and innovation,
+              specializing in custom software development, HubSpot consulting,
+              and data scraping services. Contact us for inquiries on how we can
+              improve your business.
             </p>
             <div class="wrapper">
               <a
@@ -666,18 +659,16 @@ function gtag_report_conversion(url) {
           <div class="col-lg-4 col-md-4 mb-4 mb-lg-0"></div>
           <!-- Columna 2: Servicios -->
           <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
-            <h5>Servicios</h5>
+            <h5>Services</h5>
             <ul class="list-unstyled">
-              <li>
-                <a href="web-es.html">Desarrollo de Software Personalizado</a>
-              </li>
-              <li><a href="hubspot-es.html">Consultoría de HubSpot</a></li>
-              <li><a href="scrap-es.html">Extracción de Datos</a></li>
+              <li><a href="web.php">Custom Web Development</a></li>
+              <li><a href="hubspot.php">HubSpot Consulting</a></li>
+              <li><a href="scrap.php">Data Extraction</a></li>
             </ul>
           </div>
           <!-- Columna 3: Oficina en EE.UU. -->
           <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
-            <h5>Oficinas</h5>
+            <h5>Office Locations</h5>
             <ul class="list-unstyled">
               <li>Miami Beach, FL, US</li>
               <li>+1 (786) 798-8207</li>
@@ -701,7 +692,7 @@ function gtag_report_conversion(url) {
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-    <!-- <script src="js/scripts.js"></script> -->
+
     <script>
       let currentStep = 0;
       const stepsVisible = 1; // Number of steps visible at a time
@@ -832,6 +823,39 @@ function gtag_report_conversion(url) {
               console.error("Error:", error);
             });
         });
+    </script>
+    <script>
+      !(function () {
+        var reb2b = (window.reb2b = window.reb2b || []);
+        if (reb2b.invoked) return;
+        reb2b.invoked = true;
+        reb2b.methods = ["identify", "collect"];
+        reb2b.factory = function (method) {
+          return function () {
+            var args = Array.prototype.slice.call(arguments);
+            args.unshift(method);
+            reb2b.push(args);
+            return reb2b;
+          };
+        };
+        for (var i = 0; i < reb2b.methods.length; i++) {
+          var key = reb2b.methods[i];
+          reb2b[key] = reb2b.factory(key);
+        }
+        reb2b.load = function (key) {
+          var script = document.createElement("script");
+          script.type = "text/javascript";
+          script.async = true;
+          script.src =
+            "https://s3-us-west-2.amazonaws.com/b2bjsstore/b/" +
+            key +
+            "/reb2b.js.gz";
+          var first = document.getElementsByTagName("script")[0];
+          first.parentNode.insertBefore(script, first);
+        };
+        reb2b.SNIPPET_VERSION = "1.0.1";
+        reb2b.load("ZQO92DHEM2N7");
+      })();
     </script>
   </body>
 </html>

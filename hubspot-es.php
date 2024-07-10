@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -83,14 +83,14 @@ function gtag_report_conversion(url) {
 </script>
 
 
-    <title>Pixiu X | HubSpot implementation and consulting</title>
+    <title>Pixiu X | Implementación y Consultoría de HubSpot</title>
   </head>
 
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
         <div class="container">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index-es.php">
             <img
               src="sources/images/logo.png"
               alt="Pixiu X Logo"
@@ -113,7 +113,7 @@ function gtag_report_conversion(url) {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="index-es.php">Inicio</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -125,20 +125,22 @@ function gtag_report_conversion(url) {
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  Services
+                  Servicios
                 </a>
                 <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-                  <a class="dropdown-item" href="web.html"
-                    >Custom Software Development</a
+                  <a class="dropdown-item" href="web-es.php"
+                    >Desarrollo de Software Personalizado</a
                   >
-                  <a class="dropdown-item" href="hubspot.html"
-                    >HubSpot implementation and consulting</a
+                  <a class="dropdown-item" href="hubspot-es.php"
+                    >Implementación y Consultoría de HubSpot</a
                   >
-                  <a class="dropdown-item" href="scrap.html">Data Extraction</a>
+                  <a class="dropdown-item" href="scrap-es.php"
+                    >Extracción de Datos</a
+                  >
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="#contact">Contacto</a>
               </li>
               <li class="nav-item">
                 <a
@@ -146,22 +148,21 @@ function gtag_report_conversion(url) {
                   href="https://meetings.hubspot.com/pixiu"
                   style="color: #fff"
                   target="_blank"
+                  >Agendar una Llamada</a
                 >
-                  Book A Call
-                </a>
               </li>
               <li class="nav-item">
                 <a
                   id="language-toggle"
                   class="nav-link flag-spain"
-                  href="hubspot-es.html"
+                  href="hubspot.php"
                 >
                   <img
-                    src="sources/icons/spain.svg"
-                    alt="Bandera de México"
+                    src="../sources/icons/USA.svg"
+                    alt="Bandera de US"
                     class="flag-icon"
                   />
-                  Es
+                  En
                 </a>
               </li>
             </ul>
@@ -180,18 +181,20 @@ function gtag_report_conversion(url) {
         <div class="row h-100 align-items-center">
           <div class="col-md-6">
             <div class="welcome-content text-left">
-              <h1 style="font-size: 4rem">Unlock HubSpot's Full Potential</h1>
+              <h1 style="font-size: 4rem">
+                Desbloquea todo el Potencial de HubSpot
+              </h1>
               <p>
-                At Pixiu, we specialize in seamless HubSpot onboarding and
-                training tailored to your team's needs. Integrate HubSpot
-                effortlessly into your company's ecosystem for smooth and
-                effective implementation.
+                En Pixiu, nos especializamos en la integración y capacitación
+                fluida de HubSpot adaptada a las necesidades de tu equipo.
+                Integra HubSpot sin esfuerzo en el ecosistema de tu empresa para
+                una implementación efectiva y sin complicaciones.
               </p>
               <a
                 href="https://meetings.hubspot.com/pixiu"
                 class="btn mt-5 custom-btn"
                 target="_blank"
-                >Book A Call</a
+                >Agenda una Llamada</a
               >
             </div>
           </div>
@@ -228,11 +231,11 @@ function gtag_report_conversion(url) {
                 />
               </div>
               <h4 style="color: #dd6d2c">
-                HubSpot Implementation and Training
+                Implementación y Formación de HubSpot
               </h4>
               <p>
-                Customized onboarding and training to maximize your HubSpot
-                investment.
+                Onboarding y formación personalizados para maximizar tu
+                inversión en HubSpot.
               </p>
             </div>
           </div>
@@ -251,10 +254,10 @@ function gtag_report_conversion(url) {
                   style="max-width: 80px; height: auto"
                 />
               </div>
-              <h4 style="color: #dd6d2c">HubSpot Optimization</h4>
+              <h4 style="color: #dd6d2c">Optimización de HubSpot</h4>
               <p>
-                Optimize and streamline your HubSpot processes for enhanced
-                efficiency.
+                Optimiza y agiliza tus procesos en HubSpot para mejorar la
+                eficiencia.
               </p>
             </div>
           </div>
@@ -273,10 +276,12 @@ function gtag_report_conversion(url) {
                   style="max-width: 80px; height: auto"
                 />
               </div>
-              <h4 style="color: #dd6d2c">Personalized HubSpot Consulting</h4>
+              <h4 style="color: #dd6d2c">
+                Consultoría Personalizada de HubSpot
+              </h4>
               <p>
-                Consulting services tailored to your specific business needs and
-                goals.
+                Servicios de consultoría adaptados a las necesidades y objetivos
+                específicos de tu negocio.
               </p>
             </div>
           </div>
@@ -290,22 +295,23 @@ function gtag_report_conversion(url) {
         <div class="row mb-5" style="margin-bottom: -7.5rem !important">
           <div class="col-md-6 d-flex align-items-center">
             <div class="service-detail-item">
-              <h3>HubSpot Implementation and Training</h3>
+              <h3>Implementación y Formación de HubSpot</h3>
               <p>
-                Unlock HubSpot's potential with Pixiu's onboarding and training.
-                Our tailored approach ensures seamless integration and minimal
-                disruption. We offer step-by-step onboarding, comprehensive
-                training sessions, and detailed playbooks to equip your team
-                with essential skills. Maximize efficiency and growth by
-                leveraging all of HubSpot's robust features with Pixiu's expert
-                support and continuous guidance.
+                Desbloquea el potencial de HubSpot con el onboarding y la
+                formación de Pixiu. Nuestro enfoque personalizado garantiza una
+                integración sin problemas y mínima interrupción. Ofrecemos
+                onboarding paso a paso, sesiones de formación exhaustivas y
+                guías detalladas para equipar a tu equipo con habilidades
+                esenciales. Maximiza la eficiencia y el crecimiento aprovechando
+                todas las funciones robustas de HubSpot con el soporte experto y
+                la guía continua de Pixiu.
               </p>
             </div>
           </div>
           <div class="col-md-6">
             <img
               src="sources/images/Imagenes Pixiu/Operating system-amico.png"
-              alt="HubSpot Implementation and Training"
+              alt="Implementación y Formación de HubSpot"
               class="service-detail-img"
             />
           </div>
@@ -313,23 +319,25 @@ function gtag_report_conversion(url) {
         <div class="row mb-5" style="margin-bottom: -7.5rem !important">
           <div class="col-md-6 order-md-2 d-flex align-items-center">
             <div class="service-detail-item">
-              <h3>HubSpot Optimization</h3>
+              <h3>Optimización de HubSpot</h3>
               <p>
-                Pixiu's HubSpot optimization services enhance your business's
-                performance and productivity by addressing daily challenges. We
-                identify and resolve potential issues to ensure peak efficiency.
-                Our experts provide custom reporting for informed decisions and
-                manage your data for accuracy. We create custom objects,
-                workflows, check integrations, and tailor automations to
-                streamline operations. We provide ongoing support and
-                optimization to meet your evolving needs.
+                Los servicios de optimización de HubSpot de Pixiu mejoran el
+                rendimiento y la productividad de tu negocio al abordar desafíos
+                diarios. Identificamos y resolvemos posibles problemas para
+                garantizar una eficiencia óptima. Nuestros expertos proporcionan
+                informes personalizados para decisiones informadas y gestionan
+                tus datos para asegurar precisión. Creamos objetos
+                personalizados, flujos de trabajo, verificamos integraciones y
+                adaptamos automatizaciones para optimizar operaciones. Ofrecemos
+                soporte continuo y optimización para satisfacer tus necesidades
+                en evolución.
               </p>
             </div>
           </div>
           <div class="col-md-6 order-md-1">
             <img
               src="sources/images/Imagenes Pixiu/Operating system-pana.png"
-              alt="HubSpot Optimization"
+              alt="Optimización de HubSpot"
               class="service-detail-img"
             />
           </div>
@@ -337,25 +345,27 @@ function gtag_report_conversion(url) {
         <div class="row mb-5" style="margin-bottom: -2.5rem !important">
           <div class="col-md-6 d-flex align-items-center">
             <div class="service-detail-item">
-              <h3>Personalized HubSpot Consulting</h3>
+              <h3>Consultoría Personalizada de HubSpot</h3>
               <p>
-                Pixiu's certified HubSpot experts offer personalized, one-on-one
-                consulting to optimize your HubSpot infrastructure. We address
-                your unique challenges and goals, whether fixing issues,
-                enhancing your setup, or exploring new performance strategies.
-                Our consultations cover troubleshooting, strategic planning, and
-                implementation. We keep you updated on integrations like Clay,
-                Instantly, and Apollo. Our continuous improvement strategies
-                ensure your HubSpot environment aligns with your business
-                objectives and adapts to new opportunities. Partner with Pixiu
-                for enhanced efficiency, productivity, and growth.
+                Los expertos certificados en HubSpot de Pixiu ofrecen
+                consultoría personalizada y uno a uno para optimizar tu
+                infraestructura de HubSpot. Abordamos tus desafíos y objetivos
+                únicos, ya sea corrigiendo problemas, mejorando tu configuración
+                o explorando nuevas estrategias de rendimiento. Nuestras
+                consultas cubren solución de problemas, planificación
+                estratégica e implementación. Te mantenemos actualizado sobre
+                integraciones como Clay, Instantly y Apollo. Nuestras
+                estrategias de mejora continua garantizan que tu entorno de
+                HubSpot se alinee con los objetivos de tu negocio y se adapte a
+                nuevas oportunidades. Asóciate con Pixiu para obtener una
+                eficiencia, productividad y crecimiento mejorados.
               </p>
             </div>
           </div>
           <div class="col-md-6">
             <img
               src="sources/images/Imagenes Pixiu/Operating system-rafiki.png"
-              alt="Personalized HubSpot Consulting"
+              alt="Consultoría Personalizada de HubSpot"
               class="service-detail-img"
             />
           </div>
@@ -372,7 +382,7 @@ function gtag_report_conversion(url) {
         <div class="row">
           <div class="col-md-12">
             <h2 style="text-align: center; margin-bottom: 50px">
-              Our HubSpot Service Packages
+              Nuestros Paquetes de Servicios HubSpot
             </h2>
           </div>
         </div>
@@ -382,12 +392,13 @@ function gtag_report_conversion(url) {
             <div class="plan">
               <div class="inner">
                 <span class="pricing">
-                  <span> Talk to sales<small></small> </span>
+                  <span> Habla con ventas<small></small> </span>
                 </span>
-                <p class="title">Implementation Package</p>
+                <p class="title">Paquete de Implementación</p>
                 <p class="info">
-                  We'll work together to define objectives for your team,
-                  ensuring HubSpot aligns perfectly with your business goals.
+                  Trabajaremos juntos para definir objetivos para tu equipo,
+                  asegurando que HubSpot se alinee perfectamente con los
+                  objetivos de tu negocio.
                 </p>
                 <ul class="features">
                   <li>
@@ -405,7 +416,7 @@ function gtag_report_conversion(url) {
                         ></path>
                       </svg>
                     </span>
-                    <span><strong>Data </strong>mapping</span>
+                    <span><strong>Mapeo de </strong>datos</span>
                   </li>
                   <li>
                     <span class="icon">
@@ -422,7 +433,7 @@ function gtag_report_conversion(url) {
                         ></path>
                       </svg>
                     </span>
-                    <span>Data <strong>migration</strong></span>
+                    <span><strong>Migración de </strong>datos</span>
                   </li>
                   <li>
                     <span class="icon">
@@ -439,7 +450,9 @@ function gtag_report_conversion(url) {
                         ></path>
                       </svg>
                     </span>
-                    <span><strong>Training</strong>, Team workshops</span>
+                    <span
+                      ><strong>Capacitación</strong>, Talleres en equipo</span
+                    >
                   </li>
                   <li>
                     <span class="icon">
@@ -456,7 +469,7 @@ function gtag_report_conversion(url) {
                         ></path>
                       </svg>
                     </span>
-                    <span><strong>CRM </strong>configuration </span>
+                    <span><strong>Configuración de </strong>CRM</span>
                   </li>
                   <li>
                     <span class="icon">
@@ -473,7 +486,9 @@ function gtag_report_conversion(url) {
                         ></path>
                       </svg>
                     </span>
-                    <span>Email <strong>templates</strong></span>
+                    <span
+                      >Plantillas de <strong>correo electrónico</strong></span
+                    >
                   </li>
                   <li>
                     <span class="icon">
@@ -490,7 +505,9 @@ function gtag_report_conversion(url) {
                         ></path>
                       </svg>
                     </span>
-                    <span>Email <strong>sequences</strong></span>
+                    <span
+                      >Secuencias de <strong>correo electrónico</strong></span
+                    >
                   </li>
                   <li>
                     <span class="icon">
@@ -507,7 +524,7 @@ function gtag_report_conversion(url) {
                         ></path>
                       </svg>
                     </span>
-                    <span><strong>Data </strong>automations</span>
+                    <span><strong>Automatizaciones de </strong>datos</span>
                   </li>
                   <li>
                     <span class="icon">
@@ -524,7 +541,7 @@ function gtag_report_conversion(url) {
                         ></path>
                       </svg>
                     </span>
-                    <span><strong>Reporting</strong></span>
+                    <span><strong>Reportes</strong></span>
                   </li>
                 </ul>
                 <div class="action">
@@ -533,23 +550,23 @@ function gtag_report_conversion(url) {
                     href="https://meetings.hubspot.com/pixiu"
                     style="color: #fff"
                     target="_blank"
-                    >Book A Call</a
+                    >Agendar una llamada</a
                   >
                 </div>
               </div>
             </div>
           </div>
-          <!-- Card 2 - Growth Package -->
+          <!-- Card 2 - Paquete de Crecimiento -->
           <div class="col-md-3">
             <div class="plan">
               <div class="inner">
                 <span class="pricing">
-                  <span> $1399 <small>/ m</small> </span>
+                  <span> $1399 <small>/ mes</small> </span>
                 </span>
                 <p class="title">Starter</p>
                 <p class="info">
-                  This service is tailored to address potential issues and
-                  challenges you may encounter daily.
+                  Este servicio está diseñado para abordar problemas potenciales
+                  y desafíos que puedas enfrentar diariamente.
                 </p>
                 <ul class="features">
                   <li>
@@ -567,7 +584,7 @@ function gtag_report_conversion(url) {
                         ></path>
                       </svg>
                     </span>
-                    <span><strong>Daily </strong>issue resolution</span>
+                    <span><strong>Resolución </strong>diaria de problemas</span>
                   </li>
                   <li>
                     <span class="icon">
@@ -584,7 +601,7 @@ function gtag_report_conversion(url) {
                         ></path>
                       </svg>
                     </span>
-                    <span>8 hours/month <strong>support</strong></span>
+                    <span>8 horas/mes de <strong>soporte</strong></span>
                   </li>
                   <li>
                     <span class="icon">
@@ -601,7 +618,7 @@ function gtag_report_conversion(url) {
                         ></path>
                       </svg>
                     </span>
-                    <span>Weekday ticket response</span>
+                    <span>Respuesta a tickets de lunes a viernes</span>
                   </li>
                   <li>
                     <span class="icon">
@@ -618,7 +635,7 @@ function gtag_report_conversion(url) {
                         ></path>
                       </svg>
                     </span>
-                    <span><strong>Prioritized </strong>ticket handling</span>
+                    <span>Manejo <strong>priorizado</strong> de tickets</span>
                   </li>
                   <li>
                     <span class="icon">
@@ -635,7 +652,7 @@ function gtag_report_conversion(url) {
                         ></path>
                       </svg>
                     </span>
-                    <span><strong>Troubleshooting</strong></span>
+                    <span><strong>Resolución </strong>de errores</span>
                   </li>
                   <li>
                     <span class="icon">
@@ -652,7 +669,7 @@ function gtag_report_conversion(url) {
                         ></path>
                       </svg>
                     </span>
-                    <span>Error <strong>resolution</strong></span>
+                    <span><strong>Soporte </strong>de tickets</span>
                   </li>
                   <li>
                     <span class="icon">
@@ -669,24 +686,7 @@ function gtag_report_conversion(url) {
                         ></path>
                       </svg>
                     </span>
-                    <span><strong>Support </strong>tickets</span>
-                  </li>
-                  <li>
-                    <span class="icon">
-                      <svg
-                        height="24"
-                        width="24"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M0 0h24v24H0z" fill="none"></path>
-                        <path
-                          fill="currentColor"
-                          d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"
-                        ></path>
-                      </svg>
-                    </span>
-                    <span>Technical guidance</span>
+                    <span>Guía <strong>técnica</strong></span>
                   </li>
                 </ul>
                 <div class="action">
@@ -695,23 +695,23 @@ function gtag_report_conversion(url) {
                     href="https://meetings.hubspot.com/pixiu"
                     style="color: #fff"
                     target="_blank"
-                    >Book A Call</a
+                    >Agendar una llamada</a
                   >
                 </div>
               </div>
             </div>
           </div>
-          <!-- Card 3 - Hyper Growth Package -->
+          <!-- Card 3 - Paquete de Crecimiento Hiperactivo -->
           <div class="col-md-3">
             <div class="plan">
               <div class="inner">
                 <span class="pricing">
-                  <span> $2900 <small>/ m</small> </span>
+                  <span> $2900 <small>/ mes</small> </span>
                 </span>
-                <p class="title">Growth</p>
+                <p class="title">Crecimiento</p>
                 <p class="info">
-                  Receive 20 credits per month to use for development, support
-                  tickets, or a combination of both.
+                  Reciba 20 créditos por mes para usar en desarrollo, tickets de
+                  soporte, o una combinación de ambos.
                 </p>
                 <ul class="features">
                   <li>
@@ -729,7 +729,9 @@ function gtag_report_conversion(url) {
                         ></path>
                       </svg>
                     </span>
-                    <span><strong>Dedicated </strong> HubSpot specialist</span>
+                    <span
+                      ><strong>Especialista dedicado</strong> en HubSpot</span
+                    >
                   </li>
                   <li>
                     <span class="icon">
@@ -746,7 +748,7 @@ function gtag_report_conversion(url) {
                         ></path>
                       </svg>
                     </span>
-                    <span>Full <strong>HubSpot support</strong></span>
+                    <span><strong>Soporte completo</strong> de HubSpot</span>
                   </li>
                   <li>
                     <span class="icon">
@@ -763,7 +765,7 @@ function gtag_report_conversion(url) {
                         ></path>
                       </svg>
                     </span>
-                    <span><strong>Proactive </strong>planning</span>
+                    <span><strong>Planificación proactiva</strong></span>
                   </li>
                   <li>
                     <span class="icon">
@@ -780,7 +782,7 @@ function gtag_report_conversion(url) {
                         ></path>
                       </svg>
                     </span>
-                    <span>Monthly <strong>reporting</strong></span>
+                    <span><strong>Reportes mensuales</strong></span>
                   </li>
                   <li>
                     <span class="icon">
@@ -797,7 +799,7 @@ function gtag_report_conversion(url) {
                         ></path>
                       </svg>
                     </span>
-                    <span><strong>Issue </strong>resolution</span>
+                    <span><strong>Resolución de problemas</strong></span>
                   </li>
                   <li>
                     <span class="icon">
@@ -814,7 +816,7 @@ function gtag_report_conversion(url) {
                         ></path>
                       </svg>
                     </span>
-                    <span><strong>20 </strong>credits/month</span>
+                    <span><strong>20 </strong>créditos/mes</span>
                   </li>
                   <li>
                     <span class="icon">
@@ -831,7 +833,7 @@ function gtag_report_conversion(url) {
                         ></path>
                       </svg>
                     </span>
-                    <span><strong>Development </strong>support</span>
+                    <span><strong>Soporte de desarrollo</strong></span>
                   </li>
                   <li>
                     <span class="icon">
@@ -848,7 +850,7 @@ function gtag_report_conversion(url) {
                         ></path>
                       </svg>
                     </span>
-                    <span>Long-term <strong>optimization</strong></span>
+                    <span><strong>Optimización a largo plazo</strong></span>
                   </li>
                 </ul>
                 <div class="action">
@@ -857,23 +859,23 @@ function gtag_report_conversion(url) {
                     href="https://meetings.hubspot.com/pixiu"
                     style="color: #fff"
                     target="_blank"
-                    >Book A Call</a
+                    >Reservar una Llamada</a
                   >
                 </div>
               </div>
             </div>
           </div>
-          <!-- Card 4 - Hyper Growth Package -->
+          <!-- Card 4 - Paquete de Crecimiento Hiperactivo -->
           <div class="col-md-3">
             <div class="plan">
               <div class="inner">
                 <span class="pricing">
-                  <span> $3900 <small>/ m</small> </span>
+                  <span> $3900 <small>/ mes</small> </span>
                 </span>
-                <p class="title">Hyper Growth</p>
+                <p class="title">Crecimiento Hiperactivo</p>
                 <p class="info">
-                  Receive 30 credits per month to use for development, support
-                  tickets, or both.
+                  Recibe 30 créditos por mes para usar en desarrollo, tickets de
+                  soporte, o ambos.
                 </p>
                 <ul class="features">
                   <li>
@@ -891,7 +893,9 @@ function gtag_report_conversion(url) {
                         ></path>
                       </svg>
                     </span>
-                    <span><strong>Dedicated </strong>HubSpot specialist</span>
+                    <span
+                      ><strong>Especialista </strong>dedicado de HubSpot</span
+                    >
                   </li>
                   <li>
                     <span class="icon">
@@ -908,7 +912,7 @@ function gtag_report_conversion(url) {
                         ></path>
                       </svg>
                     </span>
-                    <span>Full <strong>HubSpot support</strong></span>
+                    <span>Soporte completo de <strong>HubSpot</strong></span>
                   </li>
                   <li>
                     <span class="icon">
@@ -925,7 +929,9 @@ function gtag_report_conversion(url) {
                         ></path>
                       </svg>
                     </span>
-                    <span><strong>Monthly </strong>planning & reporting</span>
+                    <span
+                      ><strong>Planificación </strong>y reporte mensual</span
+                    >
                   </li>
                   <li>
                     <span class="icon">
@@ -942,7 +948,7 @@ function gtag_report_conversion(url) {
                         ></path>
                       </svg>
                     </span>
-                    <span>Issue <strong>resolution</strong></span>
+                    <span><strong>Resolución </strong>de problemas</span>
                   </li>
                   <li>
                     <span class="icon">
@@ -959,7 +965,7 @@ function gtag_report_conversion(url) {
                         ></path>
                       </svg>
                     </span>
-                    <span><strong>30 </strong>credits/month</span>
+                    <span><strong>30 </strong>créditos/mes</span>
                   </li>
                   <li>
                     <span class="icon">
@@ -976,7 +982,7 @@ function gtag_report_conversion(url) {
                         ></path>
                       </svg>
                     </span>
-                    <span>Development <strong>support</strong></span>
+                    <span>Soporte de <strong>desarrollo</strong></span>
                   </li>
                   <li>
                     <span class="icon">
@@ -993,7 +999,10 @@ function gtag_report_conversion(url) {
                         ></path>
                       </svg>
                     </span>
-                    <span>Long-term <strong>HubSpot optimization</strong></span>
+                    <span
+                      >Optimización a largo plazo de
+                      <strong>HubSpot</strong></span
+                    >
                   </li>
                   <li>
                     <span class="icon">
@@ -1010,7 +1019,7 @@ function gtag_report_conversion(url) {
                         ></path>
                       </svg>
                     </span>
-                    <span>License tier management</span>
+                    <span>Administración de niveles de licencia</span>
                   </li>
                 </ul>
                 <div class="action">
@@ -1019,7 +1028,7 @@ function gtag_report_conversion(url) {
                     href="https://meetings.hubspot.com/pixiu"
                     style="color: #fff"
                     target="_blank"
-                    >Book A Call</a
+                    >Reservar una llamada</a
                   >
                 </div>
               </div>
@@ -1035,49 +1044,52 @@ function gtag_report_conversion(url) {
       style="background-color: #fee4d9"
     >
       <div class="container-fluid">
-        <h2 style="margin-bottom: 1rem">How we work</h2>
+        <h2 style="margin-bottom: 1rem">Nuestro Proceso de Trabajo</h2>
         <div class="steps">
           <div class="step" id="step1">
-            <div class="step-title">1st Step</div>
+            <div class="step-title">1er Paso</div>
             <div class="step-content">
-              <h3>Initial Consultation</h3>
+              <h3>Consulta Inicial</h3>
               <p>
-                Our first interaction begins with understanding your
-                requirements, industry, tech stacks, architecture, deadlines,
-                and budget for custom software development, HubSpot consulting,
-                or data scraping services.
+                Nuestra primera interacción comienza con la comprensión de tus
+                requisitos, industria, pilas tecnológicas, arquitectura, plazos
+                y presupuesto para desarrollo de software personalizado,
+                consultoría de HubSpot o servicios de extracción de datos.
               </p>
             </div>
           </div>
           <div class="step" id="step2">
-            <div class="step-title">2nd Step</div>
+            <div class="step-title">2do Paso</div>
             <div class="step-content">
-              <h3>Requirement Analysis</h3>
+              <h3>Análisis de Requisitos</h3>
               <p>
-                Next, you connect with our tech team to simplify your project
-                and explore technical possibilities tailored to your needs.
+                Luego, te conectarás con nuestro equipo técnico para simplificar
+                tu proyecto y explorar posibilidades técnicas adaptadas a tus
+                necesidades.
               </p>
             </div>
           </div>
           <div class="step" id="step3">
-            <div class="step-title">3rd Step</div>
+            <div class="step-title">3er Paso</div>
             <div class="step-content">
-              <h3>Final Project Estimation</h3>
+              <h3>Estimación Final del Proyecto</h3>
               <p>
-                We’ll prepare an estimation with scope and objectives and share
-                it with you for review. Once agreed, we can proceed with signing
-                the NDA.
+                Prepararemos una estimación detallada con el alcance y los
+                objetivos del proyecto. Te la compartiremos para su revisión y,
+                una vez acordada, procederemos con la firma del acuerdo de
+                confidencialidad (NDA).
               </p>
             </div>
           </div>
           <div class="step" id="step4">
-            <div class="step-title">4th Step</div>
+            <div class="step-title">4to Paso</div>
             <div class="step-content">
-              <h3>Project Kickoff</h3>
+              <h3>Inicio del Proyecto</h3>
               <p>
-                After you sign off on the project, we will immediately begin.
-                Our team will work closely with you, functioning as an extension
-                of your in-house team.
+                Una vez aprobado el proyecto, comenzaremos de inmediato. Nuestro
+                equipo trabajará estrechamente contigo, funcionando como una
+                extensión de tu equipo interno para asegurar una colaboración
+                fluida y exitosa.
               </p>
             </div>
           </div>
@@ -1094,62 +1106,63 @@ function gtag_report_conversion(url) {
       <div class="faq-container">
         <div class="faq-header">FAQ</div>
         <div class="faq">
-          <div class="faq-question">
-            What is included in the consultation package?
-          </div>
+          <div class="faq-question">¿Qué incluye el paquete de consulta?</div>
           <div class="faq-answer">
-            Our consultation package includes:
+            Nuestro paquete de consulta incluye:
             <ul>
               <li>
-                One-on-one consultations with a certified HubSpot expert,
-                available via video call.
+                Consultas individuales con un experto certificado en HubSpot,
+                disponibles mediante videollamada.
               </li>
               <li>
-                A thorough review of your current HubSpot setup, including
-                integrations, data management, and workflows.
+                Una revisión exhaustiva de su configuración actual de HubSpot,
+                incluyendo integraciones, gestión de datos y flujos de trabajo.
               </li>
               <li>
-                Recommendations for optimizations, tech improvements, and
-                tailored solutions to address your unique challenges.
+                Recomendaciones para optimizaciones, mejoras tecnológicas y
+                soluciones personalizadas para abordar sus desafíos únicos.
               </li>
               <li>
-                A workshop and discovery phase for larger solutions, analyzing
-                your current setup and creating a concept for a new one. We are
-                also available to assist with any other needs you might have!
+                Un taller y fase de descubrimiento para soluciones más grandes,
+                analizando su configuración actual y creando un concepto para
+                una nueva. ¡También estamos disponibles para ayudar con
+                cualquier otra necesidad que pueda tener!
               </li>
             </ul>
           </div>
         </div>
         <div class="faq">
           <div class="faq-question">
-            I have an in-house team that uses HubSpot. Can you get on a call
-            with them and help them solve my problem?
+            Tengo un equipo interno que usa HubSpot. ¿Pueden unirse a una
+            llamada con ellos y ayudarlos a resolver mi problema?
           </div>
           <div class="faq-answer">
-            Yes, we can collaborate with your in-house team. We’ll join a call
-            with your team to help develop or fix your HubSpot-related
-            solutions.
+            Sí, podemos colaborar con su equipo interno. Nos uniremos a una
+            llamada con su equipo para ayudar a desarrollar o solucionar sus
+            problemas relacionados con HubSpot.
           </div>
         </div>
         <div class="faq">
           <div class="faq-question">
-            I am having issues with an integration/tool/app that is not closely
-            connected with HubSpot. Can you still help me with that?
+            Estoy teniendo problemas con una integración/herramienta/aplicación
+            que no está estrechamente conectada con HubSpot. ¿Pueden ayudarme
+            igualmente con eso?
           </div>
           <div class="faq-answer">
-            Yes, of course. While many of our clients seek help with HubSpot, we
-            are also happy to assist with more general software or integration
-            issues, including those that need to connect with HubSpot.
+            Sí, por supuesto. Aunque muchos de nuestros clientes buscan ayuda
+            con HubSpot, también estamos encantados de ayudar con problemas de
+            software o integración más generales, incluidos aquellos que
+            necesitan conectarse con HubSpot.
           </div>
         </div>
         <div class="faq">
           <div class="faq-question">
-            I have some questions, but I am unsure if you can help me out.
+            Tengo algunas preguntas, pero no estoy seguro si pueden ayudarme.
           </div>
           <div class="faq-answer">
-            Don’t hesitate to reach out and schedule an introductory call. It is
-            free of charge, and we will let you know if we can solve your issue
-            with our solutions or through consultations.
+            No dude en comunicarse y programar una llamada introductoria. Es
+            gratuita, y le informaremos si podemos resolver su problema con
+            nuestras soluciones o a través de consultas.
           </div>
         </div>
       </div>
@@ -1160,7 +1173,7 @@ function gtag_report_conversion(url) {
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 text-center">
-            <h2>Contact Us</h2>
+            <h2>Contacto</h2>
           </div>
         </div>
         <div class="row justify-content-center">
@@ -1176,7 +1189,7 @@ function gtag_report_conversion(url) {
                 <label>
                   <input
                     required
-                    placeholder="First Name"
+                    placeholder="Nombre"
                     type="text"
                     class="input"
                     name="firstName"
@@ -1186,7 +1199,7 @@ function gtag_report_conversion(url) {
                 <label>
                   <input
                     required
-                    placeholder="Last Name"
+                    placeholder="Apellido"
                     type="text"
                     class="input"
                     name="lastName"
@@ -1197,7 +1210,7 @@ function gtag_report_conversion(url) {
               <label>
                 <input
                   required
-                  placeholder="Email"
+                  placeholder="Correo"
                   type="email"
                   class="input"
                   name="email"
@@ -1211,14 +1224,16 @@ function gtag_report_conversion(url) {
                   id="service-select"
                   name="service"
                 >
-                  <option value="" selected disabled>Select a Service</option>
+                  <option value="" selected disabled>
+                    Selecciona Un Servicio
+                  </option>
                   <option value="Custom Software Development">
-                    Custom Software Development
+                    Desarrollo de Software Personalizado
                   </option>
                   <option value="HubSpot implementation and consulting">
-                    HubSpot implementation and consulting
+                    Implementación y consultoría de HubSpot
                   </option>
-                  <option value="Data Extraction">Data Extraction</option>
+                  <option value="Data Extraction">Extracción de datos</option>
                 </select>
               </label>
 
@@ -1226,16 +1241,16 @@ function gtag_report_conversion(url) {
               <div class="custom-software-dropdown" style="display: none">
                 <label>
                   <select class="input" name="customOption">
-                    <option value="" selected disabled>Select an Option</option>
-                    <option value="Web Design">Web Design</option>
+                    <option value="" selected disabled>Select a Service</option>
+                    <option value="Web Design">Diseño web</option>
                     <option value="Custom Web Development">
-                      Custom Web Development
+                      Desarrollo web a medida
                     </option>
                     <option value="Mobile Applications">
-                      Mobile Applications
+                      Aplicaciones móviles
                     </option>
                     <option value="E-Commerce Web Development">
-                      E-Commerce Web Development
+                      Desarrollo web de comercio electrónico
                     </option>
                   </select>
                 </label>
@@ -1245,7 +1260,7 @@ function gtag_report_conversion(url) {
                 <textarea
                   required
                   rows="3"
-                  placeholder="Hello, I am interested in hiring your services for....."
+                  placeholder="Hola, estoy interesado en contratar sus servicios para....."
                   class="input01"
                   name="Message"
                 ></textarea>
@@ -1253,7 +1268,7 @@ function gtag_report_conversion(url) {
 
               <button type="submit" class="fancy">
                 <span class="top-key"></span>
-                <span class="text">Submit</span>
+                <span class="text">Enviar</span>
                 <span class="bottom-key-1"></span>
                 <span class="bottom-key-2"></span>
               </button>
@@ -1263,14 +1278,15 @@ function gtag_report_conversion(url) {
       </div>
     </section>
 
-    <!-- Success Modal -->
+    <!-- Modal de alerta -->
     <div id="success-modal" class="modal">
       <div class="modal-content">
-        <span class="close-button">&times;</span>
+        <span class="close-button">×</span>
         <p>
-          Form successfully completed. We will be in touch with you shortly.
+          Formulario completado correctamente. Nos estaremos contactando con
+          usted en breve.
         </p>
-        <button id="accept-button">Accept</button>
+        <button id="accept-button">Aceptar</button>
       </div>
     </div>
 
@@ -1286,7 +1302,11 @@ function gtag_report_conversion(url) {
     </style>
 
     <!-- Footer -->
-    <footer id="footer" class="footer bg-dark text-white">
+    <footer
+      id="footer"
+      class="footer text-white"
+      style="background-color: black"
+    >
       <div class="container-fluid">
         <div class="row">
           <!-- Columna 1: Logo, párrafo y redes sociales -->
@@ -1297,10 +1317,11 @@ function gtag_report_conversion(url) {
               class="img-fluid mb- logo-footer"
             />
             <p>
-              At Pixiu, we focus on excellent service and innovation,
-              specializing in custom software development, HubSpot consulting,
-              and data scraping services. Contact us for inquiries on how we can
-              improve your business.
+              En Pixiu, nos enfocamos en ofrecer un servicio excelente e
+              innovación, especializándonos en desarrollo de software
+              personalizado, consultoría de HubSpot y servicios de extracción de
+              datos. Contáctenos para consultas sobre cómo podemos mejorar su
+              negocio
             </p>
             <div class="wrapper">
               <a
@@ -1335,16 +1356,18 @@ function gtag_report_conversion(url) {
           <div class="col-lg-4 col-md-4 mb-4 mb-lg-0"></div>
           <!-- Columna 2: Servicios -->
           <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
-            <h5>Services</h5>
+            <h5>Servicios</h5>
             <ul class="list-unstyled">
-              <li><a href="web.html">Custom Web Development</a></li>
-              <li><a href="hubspot.html">HubSpot Consulting</a></li>
-              <li><a href="scrap.html">Data Extraction</a></li>
+              <li>
+                <a href="web-es.php">Desarrollo de Software Personalizado</a>
+              </li>
+              <li><a href="hubspot-es.php">Consultoría de HubSpot</a></li>
+              <li><a href="scrap-es.php">Extracción de Datos</a></li>
             </ul>
           </div>
           <!-- Columna 3: Oficina en EE.UU. -->
           <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
-            <h5>Office Locations</h5>
+            <h5>Oficinas</h5>
             <ul class="list-unstyled">
               <li>Miami Beach, FL, US</li>
               <li>+1 (786) 798-8207</li>

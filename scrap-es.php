@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -83,14 +83,14 @@ function gtag_report_conversion(url) {
 </script>
 
 
-    <title>Pixiu X | Desarrollo de Software Personalizado</title>
+    <title>Pixiu X | Extracción de Datos</title>
   </head>
 
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
         <div class="container">
-          <a class="navbar-brand" href="index-es.html">
+          <a class="navbar-brand" href="index-es.php">
             <img
               src="sources/images/logo.png"
               alt="Pixiu X Logo"
@@ -113,7 +113,7 @@ function gtag_report_conversion(url) {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="index-es.html">Inicio</a>
+                <a class="nav-link" href="index-es.php">Inicio</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -128,13 +128,13 @@ function gtag_report_conversion(url) {
                   Servicios
                 </a>
                 <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-                  <a class="dropdown-item" href="web-es.html"
+                  <a class="dropdown-item" href="web-es.php"
                     >Desarrollo de Software Personalizado</a
                   >
-                  <a class="dropdown-item" href="hubspot-es.html"
+                  <a class="dropdown-item" href="hubspot-es.php"
                     >Implementación y Consultoría de HubSpot</a
                   >
-                  <a class="dropdown-item" href="scrap-es.html"
+                  <a class="dropdown-item" href="scrap-es.php"
                     >Extracción de Datos</a
                   >
                 </div>
@@ -155,7 +155,7 @@ function gtag_report_conversion(url) {
                 <a
                   id="language-toggle"
                   class="nav-link flag-spain"
-                  href="web.html"
+                  href="scrap.php"
                 >
                   <img
                     src="../sources/icons/USA.svg"
@@ -181,26 +181,22 @@ function gtag_report_conversion(url) {
         <div class="row h-100 align-items-center">
           <div class="col-md-6">
             <div class="welcome-content text-left">
-              <h1 style="font-size: 4rem">Soluciones de Software a Medida</h1>
+              <h1 style="font-size: 3.5rem">Crea scrapers web eficientes</h1>
               <p>
-                Desarrollamos soluciones de software personalizadas que se
-                alinean perfectamente con los requisitos de tu negocio. Pixiu se
-                especializa en ofrecer software de alta calidad, eficiente y
-                escalable que optimiza tus operaciones y impulsa el crecimiento
-                empresarial.
+                Pixiu automatiza la extracción de datos para mejorar tu negocio.
               </p>
               <a
                 href="https://meetings.hubspot.com/pixiu"
                 class="btn mt-5 custom-btn"
                 target="_blank"
-                >Agenda una Llamada</a
+                >Agenda una llamada</a
               >
             </div>
           </div>
           <div class="col-md-6">
             <div class="welcome-image floating-image">
               <img
-                src="sources/images/Imagenes Pixiu/Hand coding-pana.png"
+                src="sources/images/Imagenes Pixiu/Data extraction-cuate.png"
                 alt="Imagen de bienvenida"
                 style="max-width: 100%; height: auto"
               />
@@ -210,7 +206,7 @@ function gtag_report_conversion(url) {
       </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Sección de Servicios de HubSpot -->
     <section id="servicios-hubspot" style="padding-top: 50px">
       <div class="container-fluid">
         <div class="row">
@@ -224,15 +220,15 @@ function gtag_report_conversion(url) {
                 "
               >
                 <img
-                  src="sources/icons/web-design.svg"
+                  src="sources/icons/web-data.svg"
                   alt="Icono 1"
                   style="max-width: 80px; height: auto"
                 />
               </div>
-              <h4 style="color: #dd6d2c">Diseño Web</h4>
+              <h4 style="color: #dd6d2c">Extracción de Datos Web</h4>
               <p>
-                Creación de diseños digitales únicos que captan la atención y
-                reflejan tu marca en línea.
+                Pixiu extrae datos web usando APIs, scripts, organizándolos en
+                bases de datos.
               </p>
             </div>
           </div>
@@ -246,15 +242,15 @@ function gtag_report_conversion(url) {
                 "
               >
                 <img
-                  src="sources/icons/custom-coding.svg"
+                  src="sources/icons/data.svg"
                   alt="Icono 2"
                   style="max-width: 80px; height: auto"
                 />
               </div>
-              <h4 style="color: #dd6d2c">Desarrollo Web Personalizado</h4>
+              <h4 style="color: #dd6d2c">Extracción de Prospectos/Leads</h4>
               <p>
-                Soluciones precisas y avanzadas de desarrollo web para
-                aplicaciones dinámicas e interactivas.
+                Personalizamos la extracción de datos de prospectos,
+                recolectando información de clientes.
               </p>
             </div>
           </div>
@@ -268,15 +264,17 @@ function gtag_report_conversion(url) {
                 "
               >
                 <img
-                  src="sources/icons/online-shop.svg"
+                  src="sources/icons/social-media.svg"
                   alt="Icono 3"
                   style="max-width: 80px; height: auto"
                 />
               </div>
-              <h4 style="color: #dd6d2c">Desarrollo de E-commerce</h4>
+              <h4 style="color: #dd6d2c">
+                Extracción de Datos de Redes Sociales
+              </h4>
               <p>
-                Creamos y lanzamos tu tienda en línea de manera rápida y
-                sencilla para que puedas empezar a vender.
+                Recopilamos perfiles, publicaciones y comentarios de redes
+                sociales usando palabras clave.
               </p>
             </div>
           </div>
@@ -290,15 +288,17 @@ function gtag_report_conversion(url) {
                 "
               >
                 <img
-                  src="sources/icons/mobile-code.svg"
+                  src="sources/icons/market-research.svg"
                   alt="Icono 4"
                   style="max-width: 80px; height: auto"
                 />
               </div>
-              <h4 style="color: #dd6d2c">Aplicaciones Móviles</h4>
+              <h4 style="color: #dd6d2c">
+                Extracción de Datos de Investigación de Mercado
+              </h4>
               <p>
-                Desarrollo de aplicaciones nativas, híbridas y web con la
-                tecnología óptima para cada proyecto.
+                Pixiu acelera tu investigación con datos precisos sobre
+                audiencias objetivo.
               </p>
             </div>
           </div>
@@ -306,45 +306,49 @@ function gtag_report_conversion(url) {
       </div>
     </section>
 
-    <!-- Sección de Detalles de Servicios -->
+    <!-- Sección de Detalles de Servicios de HubSpot -->
     <section id="detalle-servicios-hubspot" style="padding: 50px">
       <div class="container-fluid">
-        <div class="row mb-5" style="margin-bottom: -2.5rem !important">
+        <div class="row mb-5" style="margin-bottom: -4rem !important">
           <div class="col-md-6 d-flex align-items-center">
             <div class="service-detail-item">
-              <h3>Diseño Web</h3>
+              <h3>Extracción de Datos de Sitios Web</h3>
               <p>
-                Desarrollamos impresionantes diseños digitales únicos que captan
-                la atención y dan vida a tu marca en línea. Nuestro equipo
-                creativo crea experiencias visuales únicas que resuenan con tu
-                audiencia.
+                Aproveche nuestros servicios de extracción de datos de Pixiu
+                para obtener información precisa de la web de manera eficiente.
+                Nuestro equipo utiliza APIs, scripts y métodos manuales para
+                recopilar datos de diversos sitios web, organizándolos
+                meticulosamente en una base de datos para su fácil acceso
+                futuro.
               </p>
             </div>
           </div>
           <div class="col-md-6">
             <img
-              src="sources/images/Imagenes Pixiu/Website Creator-bro.png"
-              alt="Diseño Web"
+              src="sources/images/Imagenes Pixiu/Data extraction-amico.png"
+              alt="Implementación y Entrenamiento de HubSpot"
               class="service-detail-img"
             />
           </div>
         </div>
-        <div class="row mb-5" style="margin-bottom: -5rem !important">
+        <div class="row mb-5" style="margin-bottom: -1.5rem !important">
           <div class="col-md-6 order-md-2 d-flex align-items-center">
             <div class="service-detail-item">
-              <h3>Desarrollo Web Personalizado</h3>
+              <h3>Extracción de Prospectos y Leads</h3>
               <p>
-                Nuestras soluciones personalizadas de desarrollo web ofrecen
-                alta precisión y competencia tecnológica. Entregamos
-                aplicaciones web completamente funcionales, altamente
-                interactivas y dinámicas que mejoran tu presencia digital.
+                Mejore sus estrategias de ventas y marketing con nuestros
+                servicios de extracción de prospectos y leads. Adoptamos un
+                enfoque personalizado para profundizar en su audiencia objetivo,
+                identificar fuentes de datos confiables, extraer información de
+                leads y proporcionarle una lista personalizada de prospectos
+                potenciales.
               </p>
             </div>
           </div>
           <div class="col-md-6 order-md-1">
             <img
-              src="sources/images/Imagenes Pixiu/Website Creator-pana.png"
-              alt="Desarrollo Web Personalizado"
+              src="sources/images/Imagenes Pixiu/Data extraction-rafiki.png"
+              alt="Optimización de HubSpot"
               class="service-detail-img"
             />
           </div>
@@ -352,19 +356,21 @@ function gtag_report_conversion(url) {
         <div class="row mb-5" style="margin-bottom: -2.5rem !important">
           <div class="col-md-6 d-flex align-items-center">
             <div class="service-detail-item">
-              <h3>Desarrollo de E-commerce</h3>
+              <h3>Extracción de Datos de Redes Sociales</h3>
               <p>
-                Te ayudamos a crear y lanzar tu propia tienda en línea de manera
-                fácil y rápida. Nuestras soluciones agilizan el proceso,
-                permitiéndote comenzar a vender tus productos sin
-                complicaciones.
+                Recopilamos una amplia variedad de datos, como perfiles de
+                usuario, publicaciones, comentarios e información de usuarios de
+                plataformas sociales destacadas como LinkedIn, Facebook, X
+                (anteriormente Twitter) y otras más. Nuestro método incluye el
+                uso de diversos criterios de búsqueda, palabras clave y temas
+                relevantes para sus redes sociales clave.
               </p>
             </div>
           </div>
           <div class="col-md-6">
             <img
-              src="sources/images/Imagenes Pixiu/Website Creator-rafiki.png"
-              alt="Desarrollo de E-commerce"
+              src="sources/images/Imagenes Pixiu/Data extraction-cuate.png"
+              alt="Consultoría Personalizada de HubSpot"
               class="service-detail-img"
             />
           </div>
@@ -372,19 +378,21 @@ function gtag_report_conversion(url) {
         <div class="row mb-5" style="margin-bottom: -2.5rem !important">
           <div class="col-md-6 order-md-2 d-flex align-items-center">
             <div class="service-detail-item">
-              <h3>Aplicaciones Móviles</h3>
+              <h3>Extracción de Datos para Investigación de Mercado</h3>
               <p>
-                Desarrollamos aplicaciones nativas, híbridas y web. Nuestro
-                equipo asiste a los clientes en la selección de la mejor
-                tecnología para su proyecto, asegurando un proceso de desarrollo
-                fluido y eficiente.
+                Impulse su investigación y análisis con datos precisos y
+                relevantes sobre su audiencia objetivo, tendencias de mercado,
+                análisis competitivo, insights de clientes y estudios
+                anteriores. Nuestros servicios de extracción de datos están
+                diseñados a medida para satisfacer sus necesidades específicas
+                de investigación de mercado.
               </p>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 order-md-1">
             <img
-              src="sources/images/Imagenes Pixiu/Hand coding-cuate.png"
-              alt="Aplicaciones Móviles"
+              src="sources/images/Imagenes Pixiu/Telecommuting-rafiki.png"
+              alt="Optimización de HubSpot"
               class="service-detail-img"
             />
           </div>
@@ -392,65 +400,58 @@ function gtag_report_conversion(url) {
       </div>
     </section>
 
-    <!-- Stepline -->
+    <!-- Step timeline -->
     <section
       class="section section-how-we-work"
       style="background-color: #fee4d9"
     >
       <div class="container-fluid">
-        <h2 style="margin-bottom: 1rem">Cómo trabajamos</h2>
+        <h2 style="margin-bottom: 1rem">Nuestro Proceso de Trabajo</h2>
         <div class="steps">
           <div class="step" id="step1">
             <div class="step-title">1er Paso</div>
             <div class="step-content">
-              <h3>Descubrimiento</h3>
+              <h3>Consulta Inicial</h3>
               <p>
-                Comenzamos evaluando la adecuación de tu proyecto de software
-                personalizado, discutiendo detalles y tomando decisiones
-                informadas juntos.
+                Nuestra primera interacción comienza con la comprensión de tus
+                requisitos, industria, pilas tecnológicas, arquitectura, plazos
+                y presupuesto para desarrollo de software personalizado,
+                consultoría de HubSpot o servicios de extracción de datos.
               </p>
             </div>
           </div>
           <div class="step" id="step2">
             <div class="step-title">2do Paso</div>
             <div class="step-content">
-              <h3>Diseño</h3>
+              <h3>Análisis de Requisitos</h3>
               <p>
-                Colabora con nuestro gerente de proyectos para alinear
-                estrategias y clarificar las especificaciones del producto,
-                asegurando un plan de diseño integral.
+                Luego, te conectarás con nuestro equipo técnico para simplificar
+                tu proyecto y explorar posibilidades técnicas adaptadas a tus
+                necesidades.
               </p>
             </div>
           </div>
           <div class="step" id="step3">
             <div class="step-title">3er Paso</div>
             <div class="step-content">
-              <h3>Desarrollo</h3>
+              <h3>Estimación Final del Proyecto</h3>
               <p>
-                Nuestros desarrolladores expertos transforman el diseño en una
-                solución digital funcional, creando software personalizado
-                adaptado a las necesidades de tu negocio.
+                Prepararemos una estimación detallada con el alcance y los
+                objetivos del proyecto. Te la compartiremos para su revisión y,
+                una vez acordada, procederemos con la firma del acuerdo de
+                confidencialidad (NDA).
               </p>
             </div>
           </div>
           <div class="step" id="step4">
             <div class="step-title">4to Paso</div>
             <div class="step-content">
-              <h3>Revisión</h3>
+              <h3>Inicio del Proyecto</h3>
               <p>
-                Probamos el software en escenarios del mundo real, confirmando
-                su confiabilidad y rendimiento bajo diversas condiciones.
-              </p>
-            </div>
-          </div>
-          <div class="step" id="step5">
-            <div class="step-title">5to Paso</div>
-            <div class="step-content">
-              <h3>Mantenimiento</h3>
-              <p>
-                Nuestro equipo evoluciona continuamente el software junto con tu
-                negocio, asegurando que se mantenga sincronizado con los
-                requisitos cambiantes y los avances tecnológicos.
+                Una vez aprobado el proyecto, comenzaremos de inmediato. Nuestro
+                equipo trabajará estrechamente contigo, funcionando como una
+                extensión de tu equipo interno para asegurar una colaboración
+                fluida y exitosa.
               </p>
             </div>
           </div>
@@ -462,76 +463,68 @@ function gtag_report_conversion(url) {
       </div>
     </section>
 
+    <!-- Sección de Preguntas Frecuentes -->
     <section id="faq" class="faq-section">
       <div class="faq-container">
         <div class="faq-header">FAQ</div>
-
         <div class="faq">
-          <div class="faq-question">
-            Tengo una idea de software, pero no estoy seguro de todas sus
-            características. ¿Pueden ayudarme a validarla?
-          </div>
+          <div class="faq-question">¿Qué incluye el paquete de consulta?</div>
           <div class="faq-answer">
-            Yes, we hold workshops with clients as part of our services. They
-            usually last from 16 hours to 80 hours, during which we deep dive
-            into the software's functionality and help you design the concept.
+            Nuestro paquete de consulta incluye:
+            <ul>
+              <li>
+                Consultas individuales con un experto certificado en HubSpot,
+                disponibles mediante videollamada.
+              </li>
+              <li>
+                Una revisión exhaustiva de su configuración actual de HubSpot,
+                incluyendo integraciones, gestión de datos y flujos de trabajo.
+              </li>
+              <li>
+                Recomendaciones para optimizaciones, mejoras tecnológicas y
+                soluciones personalizadas para abordar sus desafíos únicos.
+              </li>
+              <li>
+                Un taller y fase de descubrimiento para soluciones más grandes,
+                analizando su configuración actual y creando un concepto para
+                una nueva. ¡También estamos disponibles para ayudar con
+                cualquier otra necesidad que pueda tener!
+              </li>
+            </ul>
           </div>
         </div>
-
         <div class="faq">
           <div class="faq-question">
-            Estoy preocupado por el soporte de mi aplicación o sitio web.
-            ¿También mantienen el software después de su implementación?
+            Tengo un equipo interno que usa HubSpot. ¿Pueden unirse a una
+            llamada con ellos y ayudarlos a resolver mi problema?
           </div>
           <div class="faq-answer">
-            Sí, ofrecemos soporte continuo y paquetes de mantenimiento
-            flexibles. Seguramente podremos encontrar un plan de soporte que
-            funcione para ti. Sin embargo, si decides que no necesitas ningún
-            tipo de soporte, ¡también está bien! Ya que la solución es
-            completamente tuya, al final, la decisión es tuya.
+            Sí, podemos colaborar con su equipo interno. Nos uniremos a una
+            llamada con su equipo para ayudar a desarrollar o solucionar sus
+            problemas relacionados con HubSpot.
           </div>
         </div>
-
         <div class="faq">
           <div class="faq-question">
-            ¿Cómo manejan las revisiones y comentarios durante el proceso de
-            diseño?
+            Estoy teniendo problemas con una integración/herramienta/aplicación
+            que no está estrechamente conectada con HubSpot. ¿Pueden ayudarme
+            igualmente con eso?
           </div>
           <div class="faq-answer">
-            En Pixiu, tus comentarios son fundamentales para nuestro proceso de
-            diseño. Valoramos tus ideas, ajustes y momentos "¡aja!",
-            incorporándolos en cada iteración para asegurar que el producto
-            final cumpla con tus expectativas de perfección. Nuestro enfoque
-            colaborativo asegura que tu voz se escuche claramente durante todo
-            el proceso, garantizando que entreguemos un producto que supere tus
-            expectativas.
+            Sí, por supuesto. Aunque muchos de nuestros clientes buscan ayuda
+            con HubSpot, también estamos encantados de ayudar con problemas de
+            software o integración más generales, incluidos aquellos que
+            necesitan conectarse con HubSpot.
           </div>
         </div>
-
         <div class="faq">
           <div class="faq-question">
-            ¿Cuánto cuesta típicamente el diseño y desarrollo web??
+            Tengo algunas preguntas, pero no estoy seguro si pueden ayudarme.
           </div>
           <div class="faq-answer">
-            En Pixiu, la mayoría de nuestros proyectos de diseño y desarrollo
-            web oscilan alrededor de $500. Sin embargo, el costo final depende
-            del alcance específico de cada proyecto. Generalmente tenemos un
-            tamaño mínimo de proyecto y preferimos acordar un costo fijo con
-            pagos por hitos para garantizar claridad y satisfacción durante todo
-            el proceso de desarrollo.
-          </div>
-        </div>
-
-        <div class="faq">
-          <div class="faq-question">
-            ¿Quién es dueño del software o sitio web después de que lo
-            construyen?
-          </div>
-          <div class="faq-answer">
-            Una vez que el proyecto se completa e implementa, legalmente posees
-            todo lo necesario para construir, mantener o extender el software en
-            el futuro, como archivos ejecutables, scripts, archivos de proyecto,
-            código fuente, etc.
+            No dude en comunicarse y programar una llamada introductoria. Es
+            gratuita, y le informaremos si podemos resolver su problema con
+            nuestras soluciones o a través de consultas.
           </div>
         </div>
       </div>
@@ -728,10 +721,10 @@ function gtag_report_conversion(url) {
             <h5>Servicios</h5>
             <ul class="list-unstyled">
               <li>
-                <a href="web-es.html">Desarrollo de Software Personalizado</a>
+                <a href="web-es.php">Desarrollo de Software Personalizado</a>
               </li>
-              <li><a href="hubspot-es.html">Consultoría de HubSpot</a></li>
-              <li><a href="scrap-es.html">Extracción de Datos</a></li>
+              <li><a href="hubspot-es.php">Consultoría de HubSpot</a></li>
+              <li><a href="scrap-es.php">Extracción de Datos</a></li>
             </ul>
           </div>
           <!-- Columna 3: Oficina en EE.UU. -->

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -55,42 +55,42 @@
     <meta name="theme-color" content="#ffffff" />
 
     <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=AW-16633775810"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "AW-16633775810");
-    </script>
-    <!-- Event snippet for Web Form conversion page -->
-    <script>
-      function gtag_report_conversion(url) {
-        var callback = function () {
-          if (typeof url != "undefined") {
-            window.location = url;
-          }
-        };
-        gtag("event", "conversion", {
-          send_to: "AW-16633775810/IXCmCKqYisEZEMKNzfs9",
-          event_callback: callback,
-        });
-        return false;
-      }
-    </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16633775810"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <title>Pixiu X | Custom Software Development</title>
+  gtag('config', 'AW-16633775810');
+</script>
+
+
+  <!-- Event snippet for Web Form conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16633775810/IXCmCKqYisEZEMKNzfs9',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
+
+    <title>Pixiu X | Desarrollo de Software Personalizado</title>
   </head>
 
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
         <div class="container">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index-es.php">
             <img
               src="sources/images/logo.png"
               alt="Pixiu X Logo"
@@ -113,7 +113,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="index-es.php">Inicio</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -125,20 +125,22 @@
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  Services
+                  Servicios
                 </a>
                 <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-                  <a class="dropdown-item" href="web.html"
-                    >Custom Software Development</a
+                  <a class="dropdown-item" href="web-es.php"
+                    >Desarrollo de Software Personalizado</a
                   >
-                  <a class="dropdown-item" href="hubspot.html"
-                    >HubSpot implementation and consulting</a
+                  <a class="dropdown-item" href="hubspot-es.php"
+                    >Implementación y Consultoría de HubSpot</a
                   >
-                  <a class="dropdown-item" href="scrap.html">Data Extraction</a>
+                  <a class="dropdown-item" href="scrap-es.php"
+                    >Extracción de Datos</a
+                  >
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="#contact">Contacto</a>
               </li>
               <li class="nav-item">
                 <a
@@ -146,22 +148,21 @@
                   href="https://meetings.hubspot.com/pixiu"
                   style="color: #fff"
                   target="_blank"
+                  >Agendar una Llamada</a
                 >
-                  Book A Call
-                </a>
               </li>
               <li class="nav-item">
                 <a
                   id="language-toggle"
                   class="nav-link flag-spain"
-                  href="web-es.html"
+                  href="web.php"
                 >
                   <img
-                    src="sources/icons/spain.svg"
-                    alt="Bandera de México"
+                    src="../sources/icons/USA.svg"
+                    alt="Bandera de US"
                     class="flag-icon"
                   />
-                  Es
+                  En
                 </a>
               </li>
             </ul>
@@ -180,18 +181,19 @@
         <div class="row h-100 align-items-center">
           <div class="col-md-6">
             <div class="welcome-content text-left">
-              <h1 style="font-size: 4rem">Tailored Software Solutions</h1>
+              <h1 style="font-size: 4rem">Soluciones de Software a Medida</h1>
               <p>
-                Crafting bespoke software solutions that precisely align with
-                your business requirements. Pixiu specializes in delivering
-                high-quality, efficient, and scalable software that optimizes
-                your operations and fuels business growth
+                Desarrollamos soluciones de software personalizadas que se
+                alinean perfectamente con los requisitos de tu negocio. Pixiu se
+                especializa en ofrecer software de alta calidad, eficiente y
+                escalable que optimiza tus operaciones y impulsa el crecimiento
+                empresarial.
               </p>
               <a
                 href="https://meetings.hubspot.com/pixiu"
                 class="btn mt-5 custom-btn"
                 target="_blank"
-                >Book A Call</a
+                >Agenda una Llamada</a
               >
             </div>
           </div>
@@ -223,14 +225,14 @@
               >
                 <img
                   src="sources/icons/web-design.svg"
-                  alt="Icon 1"
+                  alt="Icono 1"
                   style="max-width: 80px; height: auto"
                 />
               </div>
-              <h4 style="color: #dd6d2c">Web Design</h4>
+              <h4 style="color: #dd6d2c">Diseño Web</h4>
               <p>
-                Creating unique digital designs that capture attention and
-                reflect your brand online.
+                Creación de diseños digitales únicos que captan la atención y
+                reflejan tu marca en línea.
               </p>
             </div>
           </div>
@@ -245,14 +247,14 @@
               >
                 <img
                   src="sources/icons/custom-coding.svg"
-                  alt="Icon 2"
+                  alt="Icono 2"
                   style="max-width: 80px; height: auto"
                 />
               </div>
-              <h4 style="color: #dd6d2c">Custom Web Development</h4>
+              <h4 style="color: #dd6d2c">Desarrollo Web Personalizado</h4>
               <p>
-                Precise and advanced web development solutions for dynamic and
-                interactive applications.
+                Soluciones precisas y avanzadas de desarrollo web para
+                aplicaciones dinámicas e interactivas.
               </p>
             </div>
           </div>
@@ -267,14 +269,14 @@
               >
                 <img
                   src="sources/icons/online-shop.svg"
-                  alt="Icon 3"
+                  alt="Icono 3"
                   style="max-width: 80px; height: auto"
                 />
               </div>
-              <h4 style="color: #dd6d2c">E-commerce Development</h4>
+              <h4 style="color: #dd6d2c">Desarrollo de E-commerce</h4>
               <p>
-                We create and launch your online store quickly and easily to
-                start selling.
+                Creamos y lanzamos tu tienda en línea de manera rápida y
+                sencilla para que puedas empezar a vender.
               </p>
             </div>
           </div>
@@ -289,14 +291,14 @@
               >
                 <img
                   src="sources/icons/mobile-code.svg"
-                  alt="Icon 4"
+                  alt="Icono 4"
                   style="max-width: 80px; height: auto"
                 />
               </div>
-              <h4 style="color: #dd6d2c">Mobile Applications</h4>
+              <h4 style="color: #dd6d2c">Aplicaciones Móviles</h4>
               <p>
-                Developing native, hybrid, and web applications with optimal
-                technology for each project.
+                Desarrollo de aplicaciones nativas, híbridas y web con la
+                tecnología óptima para cada proyecto.
               </p>
             </div>
           </div>
@@ -310,19 +312,19 @@
         <div class="row mb-5" style="margin-bottom: -2.5rem !important">
           <div class="col-md-6 d-flex align-items-center">
             <div class="service-detail-item">
-              <h3>Web Design</h3>
+              <h3>Diseño Web</h3>
               <p>
-                Developing stunning one-of-a-kind digital designs that catch
-                people’s eyes and bring your brand to life online. Our creative
-                team crafts unique visual experiences that resonate with your
-                audience
+                Desarrollamos impresionantes diseños digitales únicos que captan
+                la atención y dan vida a tu marca en línea. Nuestro equipo
+                creativo crea experiencias visuales únicas que resuenan con tu
+                audiencia.
               </p>
             </div>
           </div>
           <div class="col-md-6">
             <img
               src="sources/images/Imagenes Pixiu/Website Creator-bro.png"
-              alt="Web Design"
+              alt="Diseño Web"
               class="service-detail-img"
             />
           </div>
@@ -330,19 +332,19 @@
         <div class="row mb-5" style="margin-bottom: -5rem !important">
           <div class="col-md-6 order-md-2 d-flex align-items-center">
             <div class="service-detail-item">
-              <h3>Custom Web Development</h3>
+              <h3>Desarrollo Web Personalizado</h3>
               <p>
-                Our customized web development solutions provide high accuracy
-                and technological competence. We deliver fully functional,
-                highly interactive, and dynamic web applications that elevate
-                your digital presence
+                Nuestras soluciones personalizadas de desarrollo web ofrecen
+                alta precisión y competencia tecnológica. Entregamos
+                aplicaciones web completamente funcionales, altamente
+                interactivas y dinámicas que mejoran tu presencia digital.
               </p>
             </div>
           </div>
           <div class="col-md-6 order-md-1">
             <img
               src="sources/images/Imagenes Pixiu/Website Creator-pana.png"
-              alt="Custom Web Development"
+              alt="Desarrollo Web Personalizado"
               class="service-detail-img"
             />
           </div>
@@ -350,18 +352,19 @@
         <div class="row mb-5" style="margin-bottom: -2.5rem !important">
           <div class="col-md-6 d-flex align-items-center">
             <div class="service-detail-item">
-              <h3>E-commerce Web Development</h3>
+              <h3>Desarrollo de E-commerce</h3>
               <p>
-                We help you create and launch your own online store easily and
-                quickly. Our solutions streamline the process, allowing you to
-                start selling your products without hassle
+                Te ayudamos a crear y lanzar tu propia tienda en línea de manera
+                fácil y rápida. Nuestras soluciones agilizan el proceso,
+                permitiéndote comenzar a vender tus productos sin
+                complicaciones.
               </p>
             </div>
           </div>
           <div class="col-md-6">
             <img
               src="sources/images/Imagenes Pixiu/Website Creator-rafiki.png"
-              alt="E-commerce Web Development"
+              alt="Desarrollo de E-commerce"
               class="service-detail-img"
             />
           </div>
@@ -369,18 +372,19 @@
         <div class="row mb-5" style="margin-bottom: -2.5rem !important">
           <div class="col-md-6 order-md-2 d-flex align-items-center">
             <div class="service-detail-item">
-              <h3>Mobile Applications</h3>
+              <h3>Aplicaciones Móviles</h3>
               <p>
-                We develop native, hybrid, and web applications. Our team
-                assists clients in selecting the best technology for their
-                project, ensuring a seamless and efficient development process
+                Desarrollamos aplicaciones nativas, híbridas y web. Nuestro
+                equipo asiste a los clientes en la selección de la mejor
+                tecnología para su proyecto, asegurando un proceso de desarrollo
+                fluido y eficiente.
               </p>
             </div>
           </div>
           <div class="col-md-6">
             <img
               src="sources/images/Imagenes Pixiu/Hand coding-cuate.png"
-              alt="Mobile Applications"
+              alt="Aplicaciones Móviles"
               class="service-detail-img"
             />
           </div>
@@ -394,58 +398,59 @@
       style="background-color: #fee4d9"
     >
       <div class="container-fluid">
-        <h2 style="margin-bottom: 1rem">How we work</h2>
+        <h2 style="margin-bottom: 1rem">Cómo trabajamos</h2>
         <div class="steps">
           <div class="step" id="step1">
-            <div class="step-title">1st Step</div>
+            <div class="step-title">1er Paso</div>
             <div class="step-content">
-              <h3>Discovery</h3>
+              <h3>Descubrimiento</h3>
               <p>
-                We begin by evaluating the fit of your custom software project,
-                discussing details, and making an informed decision together.
+                Comenzamos evaluando la adecuación de tu proyecto de software
+                personalizado, discutiendo detalles y tomando decisiones
+                informadas juntos.
               </p>
             </div>
           </div>
           <div class="step" id="step2">
-            <div class="step-title">2nd Step</div>
+            <div class="step-title">2do Paso</div>
             <div class="step-content">
-              <h3>Design</h3>
+              <h3>Diseño</h3>
               <p>
-                Collaborate with our project manager to align strategies and
-                clarify product specifications, ensuring a comprehensive design
-                plan.
+                Colabora con nuestro gerente de proyectos para alinear
+                estrategias y clarificar las especificaciones del producto,
+                asegurando un plan de diseño integral.
               </p>
             </div>
           </div>
           <div class="step" id="step3">
-            <div class="step-title">3rd Step</div>
+            <div class="step-title">3er Paso</div>
             <div class="step-content">
-              <h3>Development</h3>
+              <h3>Desarrollo</h3>
               <p>
-                Our expert developers transform the design into a functional
-                digital solution, crafting custom software tailored to your
-                business needs.
+                Nuestros desarrolladores expertos transforman el diseño en una
+                solución digital funcional, creando software personalizado
+                adaptado a las necesidades de tu negocio.
               </p>
             </div>
           </div>
           <div class="step" id="step4">
-            <div class="step-title">4th Step</div>
+            <div class="step-title">4to Paso</div>
             <div class="step-content">
-              <h3>Review</h3>
+              <h3>Revisión</h3>
               <p>
-                We test the software in real-world scenarios, confirming its
-                reliability and performance under various conditions.
+                Probamos el software en escenarios del mundo real, confirmando
+                su confiabilidad y rendimiento bajo diversas condiciones.
               </p>
             </div>
           </div>
           <div class="step" id="step5">
-            <div class="step-title">5th Step</div>
+            <div class="step-title">5to Paso</div>
             <div class="step-content">
-              <h3>Maintenance</h3>
+              <h3>Mantenimiento</h3>
               <p>
-                Our team continuously evolves the software alongside your
-                business, ensuring it stays in sync with changing requirements
-                and technological advancements.
+                Nuestro equipo evoluciona continuamente el software junto con tu
+                negocio, asegurando que se mantenga sincronizado con los
+                requisitos cambiantes y los avances tecnológicos.
               </p>
             </div>
           </div>
@@ -463,8 +468,8 @@
 
         <div class="faq">
           <div class="faq-question">
-            I have a software idea, but I am not sure about all its features.
-            Can you help me to validate it?
+            Tengo una idea de software, pero no estoy seguro de todas sus
+            características. ¿Pueden ayudarme a validarla?
           </div>
           <div class="faq-answer">
             Yes, we hold workshops with clients as part of our services. They
@@ -475,54 +480,58 @@
 
         <div class="faq">
           <div class="faq-question">
-            I am worried about the support of my app or website. Are you also
-            maintaining the software after its implementation?
+            Estoy preocupado por el soporte de mi aplicación o sitio web.
+            ¿También mantienen el software después de su implementación?
           </div>
           <div class="faq-answer">
-            Yes, we provide ongoing support and offer flexible maintenance
-            packages. Surely we will be able to find a support plan that works
-            for you. Yet, if you choose that you don't need any support, that's
-            also okay! Since the solution is entirely yours, in the end, it's
-            for you to decide.
+            Sí, ofrecemos soporte continuo y paquetes de mantenimiento
+            flexibles. Seguramente podremos encontrar un plan de soporte que
+            funcione para ti. Sin embargo, si decides que no necesitas ningún
+            tipo de soporte, ¡también está bien! Ya que la solución es
+            completamente tuya, al final, la decisión es tuya.
           </div>
         </div>
 
         <div class="faq">
           <div class="faq-question">
-            How do you handle revisions and feedback during the design process?
+            ¿Cómo manejan las revisiones y comentarios durante el proceso de
+            diseño?
           </div>
           <div class="faq-answer">
-            At Pixiu, your feedback is integral to our design process. We value
-            your thoughts, tweaks, and "aha" moments, incorporating them into
-            each iteration to ensure the final product meets your expectations
-            of perfection. Our collaborative approach ensures that your voice is
-            heard clearly throughout the entire process, ensuring we deliver a
-            product that exceeds your expectations.
+            En Pixiu, tus comentarios son fundamentales para nuestro proceso de
+            diseño. Valoramos tus ideas, ajustes y momentos "¡aja!",
+            incorporándolos en cada iteración para asegurar que el producto
+            final cumpla con tus expectativas de perfección. Nuestro enfoque
+            colaborativo asegura que tu voz se escuche claramente durante todo
+            el proceso, garantizando que entreguemos un producto que supere tus
+            expectativas.
           </div>
         </div>
 
         <div class="faq">
           <div class="faq-question">
-            How much does web design and development typically cost?
+            ¿Cuánto cuesta típicamente el diseño y desarrollo web??
           </div>
           <div class="faq-answer">
-            At Pixiu, the majority of our web design and development projects
-            range from 500$. However, the final cost depends on the specific
-            scope of work for each project. We generally have a minimum project
-            size and prefer to agree on a fixed cost with milestone payments to
-            ensure clarity and satisfaction throughout the development process.
+            En Pixiu, la mayoría de nuestros proyectos de diseño y desarrollo
+            web oscilan alrededor de $500. Sin embargo, el costo final depende
+            del alcance específico de cada proyecto. Generalmente tenemos un
+            tamaño mínimo de proyecto y preferimos acordar un costo fijo con
+            pagos por hitos para garantizar claridad y satisfacción durante todo
+            el proceso de desarrollo.
           </div>
         </div>
 
         <div class="faq">
           <div class="faq-question">
-            Who owns the software or website after you build it?
+            ¿Quién es dueño del software o sitio web después de que lo
+            construyen?
           </div>
           <div class="faq-answer">
-            Once the project is completed and implemented, you legally own
-            everything necessary to build, maintain, or extend the software in
-            the future, such as "executable" files, scripts, project files,
-            source code, etc.
+            Una vez que el proyecto se completa e implementa, legalmente posees
+            todo lo necesario para construir, mantener o extender el software en
+            el futuro, como archivos ejecutables, scripts, archivos de proyecto,
+            código fuente, etc.
           </div>
         </div>
       </div>
@@ -533,7 +542,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 text-center">
-            <h2>Contact Us</h2>
+            <h2>Contacto</h2>
           </div>
         </div>
         <div class="row justify-content-center">
@@ -549,7 +558,7 @@
                 <label>
                   <input
                     required
-                    placeholder="First Name"
+                    placeholder="Nombre"
                     type="text"
                     class="input"
                     name="firstName"
@@ -559,7 +568,7 @@
                 <label>
                   <input
                     required
-                    placeholder="Last Name"
+                    placeholder="Apellido"
                     type="text"
                     class="input"
                     name="lastName"
@@ -570,7 +579,7 @@
               <label>
                 <input
                   required
-                  placeholder="Email"
+                  placeholder="Correo"
                   type="email"
                   class="input"
                   name="email"
@@ -584,14 +593,16 @@
                   id="service-select"
                   name="service"
                 >
-                  <option value="" selected disabled>Select a Service</option>
+                  <option value="" selected disabled>
+                    Selecciona Un Servicio
+                  </option>
                   <option value="Custom Software Development">
-                    Custom Software Development
+                    Desarrollo de Software Personalizado
                   </option>
                   <option value="HubSpot implementation and consulting">
-                    HubSpot implementation and consulting
+                    Implementación y consultoría de HubSpot
                   </option>
-                  <option value="Data Extraction">Data Extraction</option>
+                  <option value="Data Extraction">Extracción de datos</option>
                 </select>
               </label>
 
@@ -599,16 +610,16 @@
               <div class="custom-software-dropdown" style="display: none">
                 <label>
                   <select class="input" name="customOption">
-                    <option value="" selected disabled>Select an Option</option>
-                    <option value="Web Design">Web Design</option>
+                    <option value="" selected disabled>Select a Service</option>
+                    <option value="Web Design">Diseño web</option>
                     <option value="Custom Web Development">
-                      Custom Web Development
+                      Desarrollo web a medida
                     </option>
                     <option value="Mobile Applications">
-                      Mobile Applications
+                      Aplicaciones móviles
                     </option>
                     <option value="E-Commerce Web Development">
-                      E-Commerce Web Development
+                      Desarrollo web de comercio electrónico
                     </option>
                   </select>
                 </label>
@@ -618,7 +629,7 @@
                 <textarea
                   required
                   rows="3"
-                  placeholder="Hello, I am interested in hiring your services for....."
+                  placeholder="Hola, estoy interesado en contratar sus servicios para....."
                   class="input01"
                   name="Message"
                 ></textarea>
@@ -626,7 +637,7 @@
 
               <button type="submit" class="fancy">
                 <span class="top-key"></span>
-                <span class="text">Submit</span>
+                <span class="text">Enviar</span>
                 <span class="bottom-key-1"></span>
                 <span class="bottom-key-2"></span>
               </button>
@@ -636,14 +647,15 @@
       </div>
     </section>
 
-    <!-- Success Modal -->
+    <!-- Modal de alerta -->
     <div id="success-modal" class="modal">
       <div class="modal-content">
-        <span class="close-button">&times;</span>
+        <span class="close-button">×</span>
         <p>
-          Form successfully completed. We will be in touch with you shortly.
+          Formulario completado correctamente. Nos estaremos contactando con
+          usted en breve.
         </p>
-        <button id="accept-button">Accept</button>
+        <button id="accept-button">Aceptar</button>
       </div>
     </div>
 
@@ -659,7 +671,11 @@
     </style>
 
     <!-- Footer -->
-    <footer id="footer" class="footer bg-dark text-white">
+    <footer
+      id="footer"
+      class="footer text-white"
+      style="background-color: black"
+    >
       <div class="container-fluid">
         <div class="row">
           <!-- Columna 1: Logo, párrafo y redes sociales -->
@@ -670,10 +686,11 @@
               class="img-fluid mb- logo-footer"
             />
             <p>
-              At Pixiu, we focus on excellent service and innovation,
-              specializing in custom software development, HubSpot consulting,
-              and data scraping services. Contact us for inquiries on how we can
-              improve your business.
+              En Pixiu, nos enfocamos en ofrecer un servicio excelente e
+              innovación, especializándonos en desarrollo de software
+              personalizado, consultoría de HubSpot y servicios de extracción de
+              datos. Contáctenos para consultas sobre cómo podemos mejorar su
+              negocio
             </p>
             <div class="wrapper">
               <a
@@ -708,16 +725,18 @@
           <div class="col-lg-4 col-md-4 mb-4 mb-lg-0"></div>
           <!-- Columna 2: Servicios -->
           <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
-            <h5>Services</h5>
+            <h5>Servicios</h5>
             <ul class="list-unstyled">
-              <li><a href="web.html">Custom Web Development</a></li>
-              <li><a href="hubspot.html">HubSpot Consulting</a></li>
-              <li><a href="scrap.html">Data Extraction</a></li>
+              <li>
+                <a href="web-es.php">Desarrollo de Software Personalizado</a>
+              </li>
+              <li><a href="hubspot-es.php">Consultoría de HubSpot</a></li>
+              <li><a href="scrap-es.php">Extracción de Datos</a></li>
             </ul>
           </div>
           <!-- Columna 3: Oficina en EE.UU. -->
           <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
-            <h5>Office Locations</h5>
+            <h5>Oficinas</h5>
             <ul class="list-unstyled">
               <li>Miami Beach, FL, US</li>
               <li>+1 (786) 798-8207</li>

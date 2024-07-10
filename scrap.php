@@ -90,7 +90,7 @@ function gtag_report_conversion(url) {
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
         <div class="container">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index.php">
             <img
               src="sources/images/logo.png"
               alt="Pixiu X Logo"
@@ -113,7 +113,7 @@ function gtag_report_conversion(url) {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="index.php">Home</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -128,13 +128,13 @@ function gtag_report_conversion(url) {
                   Services
                 </a>
                 <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-                  <a class="dropdown-item" href="web.html"
+                  <a class="dropdown-item" href="web.php"
                     >Custom Software Development</a
                   >
-                  <a class="dropdown-item" href="hubspot.html"
+                  <a class="dropdown-item" href="hubspot.php"
                     >HubSpot implementation and consulting</a
                   >
-                  <a class="dropdown-item" href="scrap.html">Data Extraction</a>
+                  <a class="dropdown-item" href="scrap.php">Data Extraction</a>
                 </div>
               </li>
               <li class="nav-item">
@@ -154,7 +154,7 @@ function gtag_report_conversion(url) {
                 <a
                   id="language-toggle"
                   class="nav-link flag-spain"
-                  href="scrap-es.html"
+                  href="scrap-es.php"
                 >
                   <img
                     src="sources/icons/spain.svg"
@@ -703,9 +703,9 @@ function gtag_report_conversion(url) {
           <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
             <h5>Services</h5>
             <ul class="list-unstyled">
-              <li><a href="web.html">Custom Web Development</a></li>
-              <li><a href="hubspot.html">HubSpot Consulting</a></li>
-              <li><a href="scrap.html">Data Extraction</a></li>
+              <li><a href="web.php">Custom Web Development</a></li>
+              <li><a href="hubspot.php">HubSpot Consulting</a></li>
+              <li><a href="scrap.php">Data Extraction</a></li>
             </ul>
           </div>
           <!-- Columna 3: Oficina en EE.UU. -->

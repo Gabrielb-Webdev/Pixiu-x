@@ -58,7 +58,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
       <div class="container">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="index.php">
           <img src="sources/images/logo.png" alt="Pixiu X Logo" width="100" height="auto" />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,16 +68,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="index.php">Home</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Services
               </a>
               <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-                <a class="dropdown-item" href="web.html">Custom Software Development</a>
-                <a class="dropdown-item" href="hubspot.html">HubSpot implementation and consulting</a>
-                <a class="dropdown-item" href="scrap.html">Data Extraction</a>
+                <a class="dropdown-item" href="web.php">Custom Software Development</a>
+                <a class="dropdown-item" href="hubspot.php">HubSpot implementation and consulting</a>
+                <a class="dropdown-item" href="scrap.php">Data Extraction</a>
               </div>
             </li>
             <li class="nav-item">
@@ -89,7 +89,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a id="language-toggle" class="nav-link flag-spain" href="index-es.html">
+              <a id="language-toggle" class="nav-link flag-spain" href="index-es.php">
                 <img src="sources/icons/spain.svg" alt="Bandera de México" class="flag-icon" />
                 Es
               </a>
@@ -223,9 +223,9 @@
         <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
           <h5>Services</h5>
           <ul class="list-unstyled">
-            <li><a href="web.html">Custom Web Development</a></li>
-            <li><a href="hubspot.html">HubSpot Consulting</a></li>
-            <li><a href="scrap.html">Data Extraction</a></li>
+            <li><a href="web.php">Custom Web Development</a></li>
+            <li><a href="hubspot.php">HubSpot Consulting</a></li>
+            <li><a href="scrap.php">Data Extraction</a></li>
           </ul>
         </div>
         <!-- Columna 3: Oficina en EE.UU. -->

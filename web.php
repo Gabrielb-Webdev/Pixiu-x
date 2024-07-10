@@ -55,42 +55,42 @@
     <meta name="theme-color" content="#ffffff" />
 
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16633775810"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-16633775810"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "AW-16633775810");
+    </script>
+    <!-- Event snippet for Web Form conversion page -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-16633775810/IXCmCKqYisEZEMKNzfs9",
+          event_callback: callback,
+        });
+        return false;
+      }
+    </script>
 
-  gtag('config', 'AW-16633775810');
-</script>
-
-
-  <!-- Event snippet for Web Form conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-16633775810/IXCmCKqYisEZEMKNzfs9',
-      'event_callback': callback
-  });
-  return false;
-}
-</script>
-
-
-    <title>Pixiu X | Extracción de Datos</title>
+    <title>Pixiu X | Custom Software Development</title>
   </head>
 
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
         <div class="container">
-          <a class="navbar-brand" href="index-es.html">
+          <a class="navbar-brand" href="index.php">
             <img
               src="sources/images/logo.png"
               alt="Pixiu X Logo"
@@ -113,7 +113,7 @@ function gtag_report_conversion(url) {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="index-es.html">Inicio</a>
+                <a class="nav-link" href="index.php">Home</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -125,22 +125,20 @@ function gtag_report_conversion(url) {
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  Servicios
+                  Services
                 </a>
                 <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-                  <a class="dropdown-item" href="web-es.html"
-                    >Desarrollo de Software Personalizado</a
+                  <a class="dropdown-item" href="web.php"
+                    >Custom Software Development</a
                   >
-                  <a class="dropdown-item" href="hubspot-es.html"
-                    >Implementación y Consultoría de HubSpot</a
+                  <a class="dropdown-item" href="hubspot.php"
+                    >HubSpot implementation and consulting</a
                   >
-                  <a class="dropdown-item" href="scrap-es.html"
-                    >Extracción de Datos</a
-                  >
+                  <a class="dropdown-item" href="scrap.php">Data Extraction</a>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contacto</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
               <li class="nav-item">
                 <a
@@ -148,21 +146,22 @@ function gtag_report_conversion(url) {
                   href="https://meetings.hubspot.com/pixiu"
                   style="color: #fff"
                   target="_blank"
-                  >Agendar una Llamada</a
                 >
+                  Book A Call
+                </a>
               </li>
               <li class="nav-item">
                 <a
                   id="language-toggle"
                   class="nav-link flag-spain"
-                  href="scrap.html"
+                  href="web-es.php"
                 >
                   <img
-                    src="../sources/icons/USA.svg"
-                    alt="Bandera de US"
+                    src="sources/icons/spain.svg"
+                    alt="Bandera de México"
                     class="flag-icon"
                   />
-                  En
+                  Es
                 </a>
               </li>
             </ul>
@@ -181,22 +180,25 @@ function gtag_report_conversion(url) {
         <div class="row h-100 align-items-center">
           <div class="col-md-6">
             <div class="welcome-content text-left">
-              <h1 style="font-size: 3.5rem">Crea scrapers web eficientes</h1>
+              <h1 style="font-size: 4rem">Tailored Software Solutions</h1>
               <p>
-                Pixiu automatiza la extracción de datos para mejorar tu negocio.
+                Crafting bespoke software solutions that precisely align with
+                your business requirements. Pixiu specializes in delivering
+                high-quality, efficient, and scalable software that optimizes
+                your operations and fuels business growth
               </p>
               <a
                 href="https://meetings.hubspot.com/pixiu"
                 class="btn mt-5 custom-btn"
                 target="_blank"
-                >Agenda una llamada</a
+                >Book A Call</a
               >
             </div>
           </div>
           <div class="col-md-6">
             <div class="welcome-image floating-image">
               <img
-                src="sources/images/Imagenes Pixiu/Data extraction-cuate.png"
+                src="sources/images/Imagenes Pixiu/Hand coding-pana.png"
                 alt="Imagen de bienvenida"
                 style="max-width: 100%; height: auto"
               />
@@ -206,7 +208,7 @@ function gtag_report_conversion(url) {
       </div>
     </section>
 
-    <!-- Sección de Servicios de HubSpot -->
+    <!-- Services Section -->
     <section id="servicios-hubspot" style="padding-top: 50px">
       <div class="container-fluid">
         <div class="row">
@@ -220,15 +222,15 @@ function gtag_report_conversion(url) {
                 "
               >
                 <img
-                  src="sources/icons/web-data.svg"
-                  alt="Icono 1"
+                  src="sources/icons/web-design.svg"
+                  alt="Icon 1"
                   style="max-width: 80px; height: auto"
                 />
               </div>
-              <h4 style="color: #dd6d2c">Extracción de Datos Web</h4>
+              <h4 style="color: #dd6d2c">Web Design</h4>
               <p>
-                Pixiu extrae datos web usando APIs, scripts, organizándolos en
-                bases de datos.
+                Creating unique digital designs that capture attention and
+                reflect your brand online.
               </p>
             </div>
           </div>
@@ -242,15 +244,15 @@ function gtag_report_conversion(url) {
                 "
               >
                 <img
-                  src="sources/icons/data.svg"
-                  alt="Icono 2"
+                  src="sources/icons/custom-coding.svg"
+                  alt="Icon 2"
                   style="max-width: 80px; height: auto"
                 />
               </div>
-              <h4 style="color: #dd6d2c">Extracción de Prospectos/Leads</h4>
+              <h4 style="color: #dd6d2c">Custom Web Development</h4>
               <p>
-                Personalizamos la extracción de datos de prospectos,
-                recolectando información de clientes.
+                Precise and advanced web development solutions for dynamic and
+                interactive applications.
               </p>
             </div>
           </div>
@@ -264,17 +266,15 @@ function gtag_report_conversion(url) {
                 "
               >
                 <img
-                  src="sources/icons/social-media.svg"
-                  alt="Icono 3"
+                  src="sources/icons/online-shop.svg"
+                  alt="Icon 3"
                   style="max-width: 80px; height: auto"
                 />
               </div>
-              <h4 style="color: #dd6d2c">
-                Extracción de Datos de Redes Sociales
-              </h4>
+              <h4 style="color: #dd6d2c">E-commerce Development</h4>
               <p>
-                Recopilamos perfiles, publicaciones y comentarios de redes
-                sociales usando palabras clave.
+                We create and launch your online store quickly and easily to
+                start selling.
               </p>
             </div>
           </div>
@@ -288,17 +288,15 @@ function gtag_report_conversion(url) {
                 "
               >
                 <img
-                  src="sources/icons/market-research.svg"
-                  alt="Icono 4"
+                  src="sources/icons/mobile-code.svg"
+                  alt="Icon 4"
                   style="max-width: 80px; height: auto"
                 />
               </div>
-              <h4 style="color: #dd6d2c">
-                Extracción de Datos de Investigación de Mercado
-              </h4>
+              <h4 style="color: #dd6d2c">Mobile Applications</h4>
               <p>
-                Pixiu acelera tu investigación con datos precisos sobre
-                audiencias objetivo.
+                Developing native, hybrid, and web applications with optimal
+                technology for each project.
               </p>
             </div>
           </div>
@@ -306,49 +304,45 @@ function gtag_report_conversion(url) {
       </div>
     </section>
 
-    <!-- Sección de Detalles de Servicios de HubSpot -->
+    <!-- Sección de Detalles de Servicios -->
     <section id="detalle-servicios-hubspot" style="padding: 50px">
       <div class="container-fluid">
-        <div class="row mb-5" style="margin-bottom: -4rem !important">
+        <div class="row mb-5" style="margin-bottom: -2.5rem !important">
           <div class="col-md-6 d-flex align-items-center">
             <div class="service-detail-item">
-              <h3>Extracción de Datos de Sitios Web</h3>
+              <h3>Web Design</h3>
               <p>
-                Aproveche nuestros servicios de extracción de datos de Pixiu
-                para obtener información precisa de la web de manera eficiente.
-                Nuestro equipo utiliza APIs, scripts y métodos manuales para
-                recopilar datos de diversos sitios web, organizándolos
-                meticulosamente en una base de datos para su fácil acceso
-                futuro.
+                Developing stunning one-of-a-kind digital designs that catch
+                people’s eyes and bring your brand to life online. Our creative
+                team crafts unique visual experiences that resonate with your
+                audience
               </p>
             </div>
           </div>
           <div class="col-md-6">
             <img
-              src="sources/images/Imagenes Pixiu/Data extraction-amico.png"
-              alt="Implementación y Entrenamiento de HubSpot"
+              src="sources/images/Imagenes Pixiu/Website Creator-bro.png"
+              alt="Web Design"
               class="service-detail-img"
             />
           </div>
         </div>
-        <div class="row mb-5" style="margin-bottom: -1.5rem !important">
+        <div class="row mb-5" style="margin-bottom: -5rem !important">
           <div class="col-md-6 order-md-2 d-flex align-items-center">
             <div class="service-detail-item">
-              <h3>Extracción de Prospectos y Leads</h3>
+              <h3>Custom Web Development</h3>
               <p>
-                Mejore sus estrategias de ventas y marketing con nuestros
-                servicios de extracción de prospectos y leads. Adoptamos un
-                enfoque personalizado para profundizar en su audiencia objetivo,
-                identificar fuentes de datos confiables, extraer información de
-                leads y proporcionarle una lista personalizada de prospectos
-                potenciales.
+                Our customized web development solutions provide high accuracy
+                and technological competence. We deliver fully functional,
+                highly interactive, and dynamic web applications that elevate
+                your digital presence
               </p>
             </div>
           </div>
           <div class="col-md-6 order-md-1">
             <img
-              src="sources/images/Imagenes Pixiu/Data extraction-rafiki.png"
-              alt="Optimización de HubSpot"
+              src="sources/images/Imagenes Pixiu/Website Creator-pana.png"
+              alt="Custom Web Development"
               class="service-detail-img"
             />
           </div>
@@ -356,21 +350,18 @@ function gtag_report_conversion(url) {
         <div class="row mb-5" style="margin-bottom: -2.5rem !important">
           <div class="col-md-6 d-flex align-items-center">
             <div class="service-detail-item">
-              <h3>Extracción de Datos de Redes Sociales</h3>
+              <h3>E-commerce Web Development</h3>
               <p>
-                Recopilamos una amplia variedad de datos, como perfiles de
-                usuario, publicaciones, comentarios e información de usuarios de
-                plataformas sociales destacadas como LinkedIn, Facebook, X
-                (anteriormente Twitter) y otras más. Nuestro método incluye el
-                uso de diversos criterios de búsqueda, palabras clave y temas
-                relevantes para sus redes sociales clave.
+                We help you create and launch your own online store easily and
+                quickly. Our solutions streamline the process, allowing you to
+                start selling your products without hassle
               </p>
             </div>
           </div>
           <div class="col-md-6">
             <img
-              src="sources/images/Imagenes Pixiu/Data extraction-cuate.png"
-              alt="Consultoría Personalizada de HubSpot"
+              src="sources/images/Imagenes Pixiu/Website Creator-rafiki.png"
+              alt="E-commerce Web Development"
               class="service-detail-img"
             />
           </div>
@@ -378,21 +369,18 @@ function gtag_report_conversion(url) {
         <div class="row mb-5" style="margin-bottom: -2.5rem !important">
           <div class="col-md-6 order-md-2 d-flex align-items-center">
             <div class="service-detail-item">
-              <h3>Extracción de Datos para Investigación de Mercado</h3>
+              <h3>Mobile Applications</h3>
               <p>
-                Impulse su investigación y análisis con datos precisos y
-                relevantes sobre su audiencia objetivo, tendencias de mercado,
-                análisis competitivo, insights de clientes y estudios
-                anteriores. Nuestros servicios de extracción de datos están
-                diseñados a medida para satisfacer sus necesidades específicas
-                de investigación de mercado.
+                We develop native, hybrid, and web applications. Our team
+                assists clients in selecting the best technology for their
+                project, ensuring a seamless and efficient development process
               </p>
             </div>
           </div>
-          <div class="col-md-6 order-md-1">
+          <div class="col-md-6">
             <img
-              src="sources/images/Imagenes Pixiu/Telecommuting-rafiki.png"
-              alt="Optimización de HubSpot"
+              src="sources/images/Imagenes Pixiu/Hand coding-cuate.png"
+              alt="Mobile Applications"
               class="service-detail-img"
             />
           </div>
@@ -400,58 +388,64 @@ function gtag_report_conversion(url) {
       </div>
     </section>
 
-    <!-- Step timeline -->
+    <!-- Stepline -->
     <section
       class="section section-how-we-work"
       style="background-color: #fee4d9"
     >
       <div class="container-fluid">
-        <h2 style="margin-bottom: 1rem">Nuestro Proceso de Trabajo</h2>
+        <h2 style="margin-bottom: 1rem">How we work</h2>
         <div class="steps">
           <div class="step" id="step1">
-            <div class="step-title">1er Paso</div>
+            <div class="step-title">1st Step</div>
             <div class="step-content">
-              <h3>Consulta Inicial</h3>
+              <h3>Discovery</h3>
               <p>
-                Nuestra primera interacción comienza con la comprensión de tus
-                requisitos, industria, pilas tecnológicas, arquitectura, plazos
-                y presupuesto para desarrollo de software personalizado,
-                consultoría de HubSpot o servicios de extracción de datos.
+                We begin by evaluating the fit of your custom software project,
+                discussing details, and making an informed decision together.
               </p>
             </div>
           </div>
           <div class="step" id="step2">
-            <div class="step-title">2do Paso</div>
+            <div class="step-title">2nd Step</div>
             <div class="step-content">
-              <h3>Análisis de Requisitos</h3>
+              <h3>Design</h3>
               <p>
-                Luego, te conectarás con nuestro equipo técnico para simplificar
-                tu proyecto y explorar posibilidades técnicas adaptadas a tus
-                necesidades.
+                Collaborate with our project manager to align strategies and
+                clarify product specifications, ensuring a comprehensive design
+                plan.
               </p>
             </div>
           </div>
           <div class="step" id="step3">
-            <div class="step-title">3er Paso</div>
+            <div class="step-title">3rd Step</div>
             <div class="step-content">
-              <h3>Estimación Final del Proyecto</h3>
+              <h3>Development</h3>
               <p>
-                Prepararemos una estimación detallada con el alcance y los
-                objetivos del proyecto. Te la compartiremos para su revisión y,
-                una vez acordada, procederemos con la firma del acuerdo de
-                confidencialidad (NDA).
+                Our expert developers transform the design into a functional
+                digital solution, crafting custom software tailored to your
+                business needs.
               </p>
             </div>
           </div>
           <div class="step" id="step4">
-            <div class="step-title">4to Paso</div>
+            <div class="step-title">4th Step</div>
             <div class="step-content">
-              <h3>Inicio del Proyecto</h3>
+              <h3>Review</h3>
               <p>
-                Una vez aprobado el proyecto, comenzaremos de inmediato. Nuestro
-                equipo trabajará estrechamente contigo, funcionando como una
-                extensión de tu equipo interno para asegurar una colaboración
-                fluida y exitosa.
+                We test the software in real-world scenarios, confirming its
+                reliability and performance under various conditions.
+              </p>
+            </div>
+          </div>
+          <div class="step" id="step5">
+            <div class="step-title">5th Step</div>
+            <div class="step-content">
+              <h3>Maintenance</h3>
+              <p>
+                Our team continuously evolves the software alongside your
+                business, ensuring it stays in sync with changing requirements
+                and technological advancements.
               </p>
             </div>
           </div>
@@ -463,68 +457,72 @@ function gtag_report_conversion(url) {
       </div>
     </section>
 
-    <!-- Sección de Preguntas Frecuentes -->
     <section id="faq" class="faq-section">
       <div class="faq-container">
         <div class="faq-header">FAQ</div>
-        <div class="faq">
-          <div class="faq-question">¿Qué incluye el paquete de consulta?</div>
-          <div class="faq-answer">
-            Nuestro paquete de consulta incluye:
-            <ul>
-              <li>
-                Consultas individuales con un experto certificado en HubSpot,
-                disponibles mediante videollamada.
-              </li>
-              <li>
-                Una revisión exhaustiva de su configuración actual de HubSpot,
-                incluyendo integraciones, gestión de datos y flujos de trabajo.
-              </li>
-              <li>
-                Recomendaciones para optimizaciones, mejoras tecnológicas y
-                soluciones personalizadas para abordar sus desafíos únicos.
-              </li>
-              <li>
-                Un taller y fase de descubrimiento para soluciones más grandes,
-                analizando su configuración actual y creando un concepto para
-                una nueva. ¡También estamos disponibles para ayudar con
-                cualquier otra necesidad que pueda tener!
-              </li>
-            </ul>
-          </div>
-        </div>
+
         <div class="faq">
           <div class="faq-question">
-            Tengo un equipo interno que usa HubSpot. ¿Pueden unirse a una
-            llamada con ellos y ayudarlos a resolver mi problema?
+            I have a software idea, but I am not sure about all its features.
+            Can you help me to validate it?
           </div>
           <div class="faq-answer">
-            Sí, podemos colaborar con su equipo interno. Nos uniremos a una
-            llamada con su equipo para ayudar a desarrollar o solucionar sus
-            problemas relacionados con HubSpot.
+            Yes, we hold workshops with clients as part of our services. They
+            usually last from 16 hours to 80 hours, during which we deep dive
+            into the software's functionality and help you design the concept.
           </div>
         </div>
+
         <div class="faq">
           <div class="faq-question">
-            Estoy teniendo problemas con una integración/herramienta/aplicación
-            que no está estrechamente conectada con HubSpot. ¿Pueden ayudarme
-            igualmente con eso?
+            I am worried about the support of my app or website. Are you also
+            maintaining the software after its implementation?
           </div>
           <div class="faq-answer">
-            Sí, por supuesto. Aunque muchos de nuestros clientes buscan ayuda
-            con HubSpot, también estamos encantados de ayudar con problemas de
-            software o integración más generales, incluidos aquellos que
-            necesitan conectarse con HubSpot.
+            Yes, we provide ongoing support and offer flexible maintenance
+            packages. Surely we will be able to find a support plan that works
+            for you. Yet, if you choose that you don't need any support, that's
+            also okay! Since the solution is entirely yours, in the end, it's
+            for you to decide.
           </div>
         </div>
+
         <div class="faq">
           <div class="faq-question">
-            Tengo algunas preguntas, pero no estoy seguro si pueden ayudarme.
+            How do you handle revisions and feedback during the design process?
           </div>
           <div class="faq-answer">
-            No dude en comunicarse y programar una llamada introductoria. Es
-            gratuita, y le informaremos si podemos resolver su problema con
-            nuestras soluciones o a través de consultas.
+            At Pixiu, your feedback is integral to our design process. We value
+            your thoughts, tweaks, and "aha" moments, incorporating them into
+            each iteration to ensure the final product meets your expectations
+            of perfection. Our collaborative approach ensures that your voice is
+            heard clearly throughout the entire process, ensuring we deliver a
+            product that exceeds your expectations.
+          </div>
+        </div>
+
+        <div class="faq">
+          <div class="faq-question">
+            How much does web design and development typically cost?
+          </div>
+          <div class="faq-answer">
+            At Pixiu, the majority of our web design and development projects
+            range from 500$. However, the final cost depends on the specific
+            scope of work for each project. We generally have a minimum project
+            size and prefer to agree on a fixed cost with milestone payments to
+            ensure clarity and satisfaction throughout the development process.
+          </div>
+        </div>
+
+        <div class="faq">
+          <div class="faq-question">
+            Who owns the software or website after you build it?
+          </div>
+          <div class="faq-answer">
+            Once the project is completed and implemented, you legally own
+            everything necessary to build, maintain, or extend the software in
+            the future, such as "executable" files, scripts, project files,
+            source code, etc.
           </div>
         </div>
       </div>
@@ -535,7 +533,7 @@ function gtag_report_conversion(url) {
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 text-center">
-            <h2>Contacto</h2>
+            <h2>Contact Us</h2>
           </div>
         </div>
         <div class="row justify-content-center">
@@ -551,7 +549,7 @@ function gtag_report_conversion(url) {
                 <label>
                   <input
                     required
-                    placeholder="Nombre"
+                    placeholder="First Name"
                     type="text"
                     class="input"
                     name="firstName"
@@ -561,7 +559,7 @@ function gtag_report_conversion(url) {
                 <label>
                   <input
                     required
-                    placeholder="Apellido"
+                    placeholder="Last Name"
                     type="text"
                     class="input"
                     name="lastName"
@@ -572,7 +570,7 @@ function gtag_report_conversion(url) {
               <label>
                 <input
                   required
-                  placeholder="Correo"
+                  placeholder="Email"
                   type="email"
                   class="input"
                   name="email"
@@ -586,16 +584,14 @@ function gtag_report_conversion(url) {
                   id="service-select"
                   name="service"
                 >
-                  <option value="" selected disabled>
-                    Selecciona Un Servicio
-                  </option>
+                  <option value="" selected disabled>Select a Service</option>
                   <option value="Custom Software Development">
-                    Desarrollo de Software Personalizado
+                    Custom Software Development
                   </option>
                   <option value="HubSpot implementation and consulting">
-                    Implementación y consultoría de HubSpot
+                    HubSpot implementation and consulting
                   </option>
-                  <option value="Data Extraction">Extracción de datos</option>
+                  <option value="Data Extraction">Data Extraction</option>
                 </select>
               </label>
 
@@ -603,16 +599,16 @@ function gtag_report_conversion(url) {
               <div class="custom-software-dropdown" style="display: none">
                 <label>
                   <select class="input" name="customOption">
-                    <option value="" selected disabled>Select a Service</option>
-                    <option value="Web Design">Diseño web</option>
+                    <option value="" selected disabled>Select an Option</option>
+                    <option value="Web Design">Web Design</option>
                     <option value="Custom Web Development">
-                      Desarrollo web a medida
+                      Custom Web Development
                     </option>
                     <option value="Mobile Applications">
-                      Aplicaciones móviles
+                      Mobile Applications
                     </option>
                     <option value="E-Commerce Web Development">
-                      Desarrollo web de comercio electrónico
+                      E-Commerce Web Development
                     </option>
                   </select>
                 </label>
@@ -622,7 +618,7 @@ function gtag_report_conversion(url) {
                 <textarea
                   required
                   rows="3"
-                  placeholder="Hola, estoy interesado en contratar sus servicios para....."
+                  placeholder="Hello, I am interested in hiring your services for....."
                   class="input01"
                   name="Message"
                 ></textarea>
@@ -630,7 +626,7 @@ function gtag_report_conversion(url) {
 
               <button type="submit" class="fancy">
                 <span class="top-key"></span>
-                <span class="text">Enviar</span>
+                <span class="text">Submit</span>
                 <span class="bottom-key-1"></span>
                 <span class="bottom-key-2"></span>
               </button>
@@ -640,15 +636,14 @@ function gtag_report_conversion(url) {
       </div>
     </section>
 
-    <!-- Modal de alerta -->
+    <!-- Success Modal -->
     <div id="success-modal" class="modal">
       <div class="modal-content">
-        <span class="close-button">×</span>
+        <span class="close-button">&times;</span>
         <p>
-          Formulario completado correctamente. Nos estaremos contactando con
-          usted en breve.
+          Form successfully completed. We will be in touch with you shortly.
         </p>
-        <button id="accept-button">Aceptar</button>
+        <button id="accept-button">Accept</button>
       </div>
     </div>
 
@@ -664,11 +659,7 @@ function gtag_report_conversion(url) {
     </style>
 
     <!-- Footer -->
-    <footer
-      id="footer"
-      class="footer text-white"
-      style="background-color: black"
-    >
+    <footer id="footer" class="footer bg-dark text-white">
       <div class="container-fluid">
         <div class="row">
           <!-- Columna 1: Logo, párrafo y redes sociales -->
@@ -679,11 +670,10 @@ function gtag_report_conversion(url) {
               class="img-fluid mb- logo-footer"
             />
             <p>
-              En Pixiu, nos enfocamos en ofrecer un servicio excelente e
-              innovación, especializándonos en desarrollo de software
-              personalizado, consultoría de HubSpot y servicios de extracción de
-              datos. Contáctenos para consultas sobre cómo podemos mejorar su
-              negocio
+              At Pixiu, we focus on excellent service and innovation,
+              specializing in custom software development, HubSpot consulting,
+              and data scraping services. Contact us for inquiries on how we can
+              improve your business.
             </p>
             <div class="wrapper">
               <a
@@ -718,18 +708,16 @@ function gtag_report_conversion(url) {
           <div class="col-lg-4 col-md-4 mb-4 mb-lg-0"></div>
           <!-- Columna 2: Servicios -->
           <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
-            <h5>Servicios</h5>
+            <h5>Services</h5>
             <ul class="list-unstyled">
-              <li>
-                <a href="web-es.html">Desarrollo de Software Personalizado</a>
-              </li>
-              <li><a href="hubspot-es.html">Consultoría de HubSpot</a></li>
-              <li><a href="scrap-es.html">Extracción de Datos</a></li>
+              <li><a href="web.php">Custom Web Development</a></li>
+              <li><a href="hubspot.php">HubSpot Consulting</a></li>
+              <li><a href="scrap.php">Data Extraction</a></li>
             </ul>
           </div>
           <!-- Columna 3: Oficina en EE.UU. -->
           <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
-            <h5>Oficinas</h5>
+            <h5>Office Locations</h5>
             <ul class="list-unstyled">
               <li>Miami Beach, FL, US</li>
               <li>+1 (786) 798-8207</li>
