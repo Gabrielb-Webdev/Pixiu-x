@@ -1,0 +1,46 @@
+/* Estilos para la tabla de contenido sticky */
+.sticky-sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px; /* Ajusta la distancia desde arriba según sea necesario */
+  height: calc(100vh - 40px); /* Ajusta la altura según sea necesario */
+  overflow-y: auto; /* Permite desplazamiento vertical si el contenido excede la altura */
+}
+
+.table-of-contents {
+  background-color: #f8f9fa; /* Color de fondo de la tabla de contenido */
+  padding: 20px;
+}
+
+.table-of-contents h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.table-of-contents ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.table-of-contents ul li {
+  margin-bottom: 10px;
+}
+
+.table-of-contents ul li a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.table-of-contents ul li a:hover {
+  color: #dd6d2c;
+}
+
+/* Estilos para el contenido principal */
+#content-section {
+  padding-top: 50px; /* Ajusta el espacio superior según sea necesario */
+}
+
+.content-section {
+  margin-bottom: 40px; /* Ajusta el espacio entre secciones según sea necesario */
+}

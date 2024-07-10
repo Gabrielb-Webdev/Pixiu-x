@@ -51,20 +51,34 @@
   </script>
 
   <title>Pixiu X | Blog</title>
+
+  <style>
+    /* Estilos adicionales personalizados */
+    .custom-section {
+      padding: 80px 0; /* Espaciado interno */
+      background-color: #f8f9fa; /* Color de fondo */
+    }
+
+    .custom-column {
+      padding: 20px;
+      border: 1px solid #ccc; /* Borde para visualización */
+    }
+  </style>
 </head>
 
 <body>
   <!-- Page Content -->
   <?php include 'components/header.php'; ?>
 
-  <!-- Sección de Bienvenidos -->
-  <section id="welcome-section" style="background: linear-gradient(to bottom, #fee4d9, #dd6d2c);" class="section">
+  <!-- Sección de Bienvenida -->
+  <section id="welcome-section" style="background-image: url('sources/images/blog_01.jpeg'); background-size: cover; background-position: center;" class="section">
+    <div class="overlay"></div> <!-- Capa superpuesta para oscurecer la imagen -->
     <div class="container-fluid h-100">
       <div class="row h-100 align-items-center">
         <div class="col-12">
           <div class="welcome-content text-center">
-            <h1 style="font-size: 4rem">Blog</h1>
-            <p>
+            <h1 style="font-size: 4rem; color: white;">Blog</h1> <!-- Título blanco -->
+            <p style="color: white;">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             </p>
           </div>
@@ -73,9 +87,29 @@
     </div>
   </section>
 
+  <!-- Sección de dos columnas -->
+  <section class="custom-section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4" style="padding-left: 7.5rem;">
+          <div class="custom-column">
+            <h2>Columna 1</h2>
+            <p>Contenido de la columna 1.</p>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="custom-column">
+            <h2>Columna 2</h2>
+            <p>Contenido de la columna 2.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <?php include 'components/footer.php'; ?>
 
-  <!-- Scripts at the end of the body -->
+  <!-- Scripts al final del body -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
