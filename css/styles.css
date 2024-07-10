@@ -970,8 +970,8 @@ button:focus {
 }
 
 @media (max-width: 768px) {
-    .welcome-content h2 {
-        font-size: 3rem !important;
+    .welcome-content h1 {
+        font-size: 2rem !important;
     }
 
     #detalle-servicios-hubspot .container-fluid .row:nth-of-type(2) {

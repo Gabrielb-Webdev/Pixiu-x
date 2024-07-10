@@ -97,7 +97,8 @@
         <img src="sources/images/blog_01.jpeg" class="card-img-top" alt="Card Image 1">
       </div>
       <div class="card-body card-body-custom">
-        <h5 class="card-title">Card Title 1</h5>
+        <h5 class="card-title">How to Prevent Fraud in Remotely Hiring and Secure Your Company
+</h5>
         <div class="card-space"></div>
         <a href="#" class="card-link">Read more</a>
       </div>
@@ -109,7 +110,8 @@
         <img src="sources/images/blog_01.jpeg" class="card-img-top" alt="Card Image 2">
       </div>
       <div class="card-body card-body-custom">
-        <h5 class="card-title">Card Title 2</h5>
+        <h5 class="card-title">How to Prevent Fraud in Remotely Hiring and Secure Your Company
+</h5>
         <div class="card-space"></div>
         <a href="#" class="card-link">Read more</a>
       </div>
@@ -121,7 +123,8 @@
         <img src="sources/images/blog_01.jpeg" class="card-img-top" alt="Card Image 3">
       </div>
       <div class="card-body card-body-custom">
-        <h5 class="card-title">Card Title 3</h5>
+        <h5 class="card-title">How to Prevent Fraud in Remotely Hiring and Secure Your Company
+</h5>
         <div class="card-space"></div>
         <a href="#" class="card-link">Read more</a>
       </div>
@@ -137,7 +140,8 @@
         <img src="sources/images/blog_01.jpeg" class="card-img-top" alt="Card Image 1">
       </div>
       <div class="card-body card-body-custom">
-        <h5 class="card-title">Card Title 1</h5>
+        <h5 class="card-title">How to Prevent Fraud in Remotely Hiring and Secure Your Company
+</h5>
         <div class="card-space"></div>
         <a href="#" class="card-link">Read more</a>
       </div>
@@ -149,7 +153,8 @@
         <img src="sources/images/blog_01.jpeg" class="card-img-top" alt="Card Image 2">
       </div>
       <div class="card-body card-body-custom">
-        <h5 class="card-title">Card Title 2</h5>
+        <h5 class="card-title">How to Prevent Fraud in Remotely Hiring and Secure Your Company
+</h5>
         <div class="card-space"></div>
         <a href="#" class="card-link">Read more</a>
       </div>
@@ -161,7 +166,8 @@
         <img src="sources/images/blog_01.jpeg" class="card-img-top" alt="Card Image 3">
       </div>
       <div class="card-body card-body-custom">
-        <h5 class="card-title">Card Title 3</h5>
+        <h5 class="card-title">How to Prevent Fraud in Remotely Hiring and Secure Your Company
+</h5>
         <div class="card-space"></div>
         <a href="#" class="card-link">Read more</a>
       </div>
@@ -177,7 +183,8 @@
         <img src="sources/images/blog_01.jpeg" class="card-img-top" alt="Card Image 1">
       </div>
       <div class="card-body card-body-custom">
-        <h5 class="card-title">Card Title 1</h5>
+        <h5 class="card-title">How to Prevent Fraud in Remotely Hiring and Secure Your Company
+</h5>
         <div class="card-space"></div>
         <a href="#" class="card-link">Read more</a>
       </div>
@@ -189,7 +196,8 @@
         <img src="sources/images/blog_01.jpeg" class="card-img-top" alt="Card Image 2">
       </div>
       <div class="card-body card-body-custom">
-        <h5 class="card-title">Card Title 2</h5>
+        <h5 class="card-title">How to Prevent Fraud in Remotely Hiring and Secure Your Company
+</h5>
         <div class="card-space"></div>
         <a href="#" class="card-link">Read more</a>
       </div>
@@ -201,7 +209,8 @@
         <img src="sources/images/blog_01.jpeg" class="card-img-top" alt="Card Image 3">
       </div>
       <div class="card-body card-body-custom">
-        <h5 class="card-title">Card Title 3</h5>
+        <h5 class="card-title">How to Prevent Fraud in Remotely Hiring and Secure Your Company
+</h5>
         <div class="card-space"></div>
         <a href="#" class="card-link">Read more</a>
       </div>
@@ -217,7 +226,8 @@
         <img src="sources/images/blog_01.jpeg" class="card-img-top" alt="Card Image 1">
       </div>
       <div class="card-body card-body-custom">
-        <h5 class="card-title">Card Title 1</h5>
+        <h5 class="card-title">How to Prevent Fraud in Remotely Hiring and Secure Your Company
+</h5>
         <div class="card-space"></div>
         <a href="#" class="card-link">Read more</a>
       </div>
@@ -229,7 +239,8 @@
         <img src="sources/images/blog_01.jpeg" class="card-img-top" alt="Card Image 2">
       </div>
       <div class="card-body card-body-custom">
-        <h5 class="card-title">Card Title 2</h5>
+        <h5 class="card-title">How to Prevent Fraud in Remotely Hiring and Secure Your Company
+</h5>
         <div class="card-space"></div>
         <a href="#" class="card-link">Read more</a>
       </div>
@@ -241,7 +252,8 @@
         <img src="sources/images/blog_01.jpeg" class="card-img-top" alt="Card Image 3">
       </div>
       <div class="card-body card-body-custom">
-        <h5 class="card-title">Card Title 3</h5>
+        <h5 class="card-title">How to Prevent Fraud in Remotely Hiring and Secure Your Company
+</h5>
         <div class="card-space"></div>
         <a href="#" class="card-link">Read more</a>
       </div>
