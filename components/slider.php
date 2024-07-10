@@ -169,6 +169,7 @@
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
+              <img class="star" src="sources/icons/stars.svg" alt="">
             </div>
             <div class="infos">
               <p class="date-time">15/09/2021</p>
@@ -180,6 +181,8 @@
         <div class="slide">
           <div class="card">
             <div class="stars">
+              <img class="star" src="sources/icons/stars.svg" alt="">
+              <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
@@ -211,6 +214,7 @@
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
+              <img class="star" src="sources/icons/stars.svg" alt="">
             </div>
             <div class="infos">
               <p class="date-time">10/03/2024</p>
@@ -225,6 +229,8 @@
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
+              <img class="star" src="sources/icons/stars.svg" alt="">
+              <img class="star" src="sources/icons/stars.svg" alt="">
             </div>
             <div class="infos">
               <p class="date-time">05/12/2020</p>
@@ -236,6 +242,7 @@
         <div class="slide">
           <div class="card">
             <div class="stars">
+              <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
@@ -267,6 +274,7 @@
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
+              <img class="star" src="sources/icons/stars.svg" alt="">
             </div>
             <div class="infos">
               <p class="date-time">16/10/2023</p>
@@ -278,6 +286,8 @@
         <div class="slide">
           <div class="card">
             <div class="stars">
+              <img class="star" src="sources/icons/stars.svg" alt="">
+              <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
@@ -309,6 +319,8 @@
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
+              <img class="star" src="sources/icons/stars.svg" alt="">
+              <img class="star" src="sources/icons/stars.svg" alt="">
             </div>
             <div class="infos">
               <p class="date-time">13/07/2021</p>
@@ -334,6 +346,7 @@
         <div class="slide">
           <div class="card">
             <div class="stars">
+              <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
