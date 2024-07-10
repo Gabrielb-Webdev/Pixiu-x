@@ -50,7 +50,7 @@
     }
   </script>
 
-  <title>Pixiu X | Blog | Pixiu X</title>
+  <title>Pixiu X | Blog</title>
 </head>
 
 <body>

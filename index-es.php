@@ -463,7 +463,7 @@ function gtag_report_conversion(url) {
       </div>
     </section>
 
-    <?php include 'components/slider.php'; ?>
+    <?php include 'components/slider-es.php'; ?>
 
     <!-- Section 6: Calendar for scheduling calls/meetings -->
     <section id="contact" class="section" style="padding-top: calc(5vh + 20px)">

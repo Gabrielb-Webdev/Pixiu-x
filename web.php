@@ -83,7 +83,7 @@
       }
     </script>
 
-    <title>Pixiu X | Custom Software Development</title>
+<title>Pixiu X | Custom Software Development (EN)</title>
   </head>
 
   <body>

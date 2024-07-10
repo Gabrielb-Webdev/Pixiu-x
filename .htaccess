@@ -1,10 +1,74 @@
+# Activar el módulo de reescritura
 RewriteEngine On
 
-# Redireccionar URLs terminadas en .php a sus equivalentes sin .php
+# Redirigir el acceso a index.php a la raíz
+RewriteCond %{THE_REQUEST} /index\.php [NC]
+RewriteRule ^index\.php$ / [R=301,L]
+
+# Redirigir el acceso a index-es.php a /es
+RewriteCond %{THE_REQUEST} /index-es\.php [NC]
+RewriteRule ^index-es\.php$ /es [R=301,L]
+
+# Redirigir el acceso a web.php a /custom-software-development
+RewriteCond %{THE_REQUEST} /web\.php [NC]
+RewriteRule ^web\.php$ /custom-software-development [R=301,L]
+
+# Redirigir el acceso a web-es.php a /custom-software-development-es
+RewriteCond %{THE_REQUEST} /web-es\.php [NC]
+RewriteRule ^web-es\.php$ /custom-software-development-es [R=301,L]
+
+# Redirigir el acceso a hubspot.php a /hubSpot-implementation-and-consulting
+RewriteCond %{THE_REQUEST} /hubspot\.php [NC]
+RewriteRule ^hubspot\.php$ /hubSpot-implementation-and-consulting [R=301,L]
+
+# Redirigir el acceso a hubspot-es.php a /hubSpot-implementation-and-consulting-es
+RewriteCond %{THE_REQUEST} /hubspot-es\.php [NC]
+RewriteRule ^hubspot-es\.php$ /hubSpot-implementation-and-consulting-es [R=301,L]
+
+# Redirigir el acceso a scrap.php a /data-extraction
+RewriteCond %{THE_REQUEST} /scrap\.php [NC]
+RewriteRule ^scrap\.php$ /data-extraction [R=301,L]
+
+# Redirigir el acceso a scrap-es.php a /data-extraction-es
+RewriteCond %{THE_REQUEST} /scrap-es\.php [NC]
+RewriteRule ^scrap-es\.php$ /data-extraction-es [R=301,L]
+
+# Asegurarse de que cualquier acceso a la raíz cargue index.php si no es un archivo o directorio existente
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([^/]+)\.php$ /$1 [L,R=301]
+RewriteRule ^$ index.php [L]
 
-# Redireccionar URLs sin .php a sus equivalentes con .php internamente
-RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule ^([^/]+)/?$ /$1.php [L]
+# Asegurarse de que cualquier acceso a /es cargue index-es.php si no es un archivo o directorio existente
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^es$ index-es.php [L]
+
+# Asegurarse de que cualquier acceso a /custom-software-development cargue web.php si no es un archivo o directorio existente
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^custom-software-development$ web.php [L]
+
+# Asegurarse de que cualquier acceso a /custom-software-development-es cargue web-es.php si no es un archivo o directorio existente
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^custom-software-development-es$ web-es.php [L]
+
+# Asegurarse de que cualquier acceso a /hubSpot-implementation-and-consulting cargue hubspot.php si no es un archivo o directorio existente
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^hubSpot-implementation-and-consulting$ hubspot.php [L]
+
+# Asegurarse de que cualquier acceso a /hubSpot-implementation-and-consulting-es cargue hubspot-es.php si no es un archivo o directorio existente
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^hubSpot-implementation-and-consulting-es$ hubspot-es.php [L]
+
+# Asegurarse de que cualquier acceso a /data-extraction cargue scrap.php si no es un archivo o directorio existente
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^data-extraction$ scrap.php [L]
+
+# Asegurarse de que cualquier acceso a /data-extraction-es cargue scrap-es.php si no es un archivo o directorio existente
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^data-extraction-es$ scrap-es.php [L]

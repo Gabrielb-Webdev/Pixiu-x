@@ -83,7 +83,7 @@ function gtag_report_conversion(url) {
 </script>
 
 
-    <title>Pixiu X | Extracción de Datos</title>
+<title>Pixiu X | Extracción de Datos (ES)</title>
   </head>
 
   <body>

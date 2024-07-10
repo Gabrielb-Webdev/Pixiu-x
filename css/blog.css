@@ -2,3 +2,7 @@
     border-color: #dd6d2c;
     box-shadow: 0 0 0 0.2rem rgba(221, 109, 44, 0.25);
 }
+
+.btn-outline-secondary:hover {
+    background-color: #dd6d2c;
+}

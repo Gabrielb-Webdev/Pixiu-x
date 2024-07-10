@@ -83,7 +83,7 @@ function gtag_report_conversion(url) {
 </script>
 
 
-    <title>Pixiu X | Desarrollo de Software Personalizado</title>
+<title>Pixiu X | Desarrollo de Software Personalizado (ES)</title>
   </head>
 
   <body>

@@ -155,12 +155,13 @@
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
+              <img class="star" src="sources/icons/stars.svg" alt="">
             </div>
             <div class="infos">
               <p class="date-time">19/11/2020</p>
               <p class="description">Pixiux brindó un servicio excepcional en el desarrollo de nuestro software personalizado. Su equipo fue atento a nuestras necesidades y entregó una solución que superó nuestras expectativas.</p>
             </div>
-            <div class="author">— Emily Johnson</div>
+            <div class="author">— Juan Carlos Martínez</div>
           </div>
         </div>
         <div class="slide">
@@ -169,12 +170,14 @@
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
+              <img class="star" src="sources/icons/stars.svg" alt="">
+              <img class="star" src="sources/icons/stars.svg" alt="">
             </div>
             <div class="infos">
               <p class="date-time">15/09/2021</p>
               <p class="description">Trabajar con Pixiux para la implementación de HubSpot fue muy fácil. Nos guiaron expertamente en el proceso, y ahora estamos viendo excelentes resultados en nuestros esfuerzos de marketing.</p>
             </div>
-            <div class="author">— Samantha Lee</div>
+            <div class="author">— María Fernández</div>
           </div>
         </div>
         <div class="slide">
@@ -188,12 +191,13 @@
               <p class="date-time">03/05/2022</p>
               <p class="description">Los servicios de scraping de datos de Pixiux nos ayudaron a obtener rápidamente información crítica de mercado. Su experiencia en automatización y extracción de datos es excelente.</p>
             </div>
-            <div class="author">— Michael Davis</div>
+            <div class="author">— Alejandro Gómez</div>
           </div>
         </div>
         <div class="slide">
           <div class="card">
             <div class="stars">
+              <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
@@ -202,7 +206,7 @@
               <p class="date-time">20/07/2023</p>
               <p class="description">El equipo de diseño web de Pixiux creó una impresionante presencia digital para nuestra marca. Su creatividad y atención al detalle realmente los destacan.</p>
             </div>
-            <div class="author">— Sarah Thompson</div>
+            <div class="author">— Ana Rodríguez</div>
           </div>
         </div>
         <div class="slide">
@@ -211,12 +215,14 @@
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
+              <img class="star" src="sources/icons/stars.svg" alt="">
+              <img class="star" src="sources/icons/stars.svg" alt="">
             </div>
             <div class="infos">
               <p class="date-time">10/03/2024</p>
               <p class="description">Elegir Pixiux para el desarrollo de nuestro comercio electrónico fue un cambio de juego. Hicieron el proceso fácil y entregaron una plataforma que superó nuestras expectativas.</p>
             </div>
-            <div class="author">— David Wilson</div>
+            <div class="author">— Javier Pérez</div>
           </div>
         </div>
         <div class="slide">
@@ -230,12 +236,13 @@
               <p class="date-time">05/12/2020</p>
               <p class="description">La consultoría personalizada de HubSpot de Pixiux nos ayudó a optimizar nuestro CRM de manera efectiva. Sus ideas y estrategias fueron invaluables.</p>
             </div>
-            <div class="author">— Olivia Brown</div>
+            <div class="author">— Laura Gutiérrez</div>
           </div>
         </div>
         <div class="slide">
           <div class="card">
             <div class="stars">
+              <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
@@ -244,7 +251,7 @@
               <p class="date-time">14/08/2022</p>
               <p class="description">Estamos encantados con los servicios de desarrollo de aplicaciones móviles de Pixiux. Entregaron una solución robusta que ha mejorado significativamente nuestro compromiso con los clientes.</p>
             </div>
-            <div class="author">— Christopher Anderson</div>
+            <div class="author">— Diego Martínez</div>
           </div>
         </div>
         <div class="slide">
@@ -255,10 +262,10 @@
               <img class="star" src="sources/icons/stars.svg" alt="">
             </div>
             <div class="infos">
-              <p class="date-time">21/11/2021</p>
+              <p class="date-time">08/06/2023</p>
               <p class="description">La experiencia de Pixiux en el desarrollo de software personalizado es incomparable. Entregaron una solución que se alineó perfectamente con nuestras necesidades empresariales y superó nuestras expectativas.</p>
             </div>
-            <div class="author">— Rachel Miller</div>
+            <div class="author">— Marta Sánchez</div>
           </div>
         </div>
         <div class="slide">
@@ -267,12 +274,14 @@
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
+              <img class="star" src="sources/icons/stars.svg" alt="">
+              <img class="star" src="sources/icons/stars.svg" alt="">
             </div>
             <div class="infos">
-              <p class="date-time">16/10/2023</p>
+              <p class="date-time">22/10/2022</p>
               <p class="description">Contratamos a Pixiux para nuestro proyecto de scraping web, y su eficiencia y precisión fueron impresionantes. Nos proporcionaron información valiosa que nos ayudó a tomar decisiones informadas.</p>
             </div>
-            <div class="author">— Thomas Scott</div>
+            <div class="author">— Andrés López</div>
           </div>
         </div>
         <div class="slide">
@@ -281,12 +290,13 @@
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
+              <img class="star" src="sources/icons/stars.svg" alt="">
             </div>
             <div class="infos">
-              <p class="date-time">25/09/2021</p>
+              <p class="date-time">30/01/2023</p>
               <p class="description">Elegir a Pixiux para el desarrollo de nuestro comercio electrónico fue una decisión acertada. Entregaron una plataforma fácil de usar que ha aumentado significativamente nuestras ventas en línea.</p>
             </div>
-            <div class="author">— Jessica Clark</div>
+            <div class="author">— María Jiménez</div>
           </div>
         </div>
         <div class="slide">
@@ -297,10 +307,10 @@
               <img class="star" src="sources/icons/stars.svg" alt="">
             </div>
             <div class="infos">
-              <p class="date-time">08/08/2022</p>
+              <p class="date-time">05/04/2022</p>
               <p class="description">Los servicios de consultoría de HubSpot de Pixiux fueron fundamentales para optimizar nuestros esfuerzos de marketing. Proporcionaron soluciones prácticas que mejoraron nuestra eficiencia general.</p>
             </div>
-            <div class="author">— Daniel Roberts</div>
+            <div class="author">— Antonio Gutiérrez</div>
           </div>
         </div>
         <div class="slide">
@@ -309,12 +319,13 @@
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
+              <img class="star" src="sources/icons/stars.svg" alt="">
             </div>
             <div class="infos">
-              <p class="date-time">13/07/2021</p>
-              <p class="description">La experiencia de Pixiux en la optimización de HubSpot ha sido invaluable para nuestro negocio. Nos ayudaron a maximizar el potencial de nuestro CRM y mejorar nuestra eficiencia general de ventas.</p>
+              <p class="date-time">12/12/2023</p>
+              <p class="description">El equipo de desarrollo de aplicaciones móviles de Pixiux entregó exactamente lo que necesitábamos. Fueron receptivos, creativos y produjeron una aplicación de alta calidad que a nuestros usuarios les encanta.</p>
             </div>
-            <div class="author">— Emma Wilson</div>
+            <div class="author">— Laura López</div>
           </div>
         </div>
         <div class="slide">
@@ -323,12 +334,14 @@
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
               <img class="star" src="sources/icons/stars.svg" alt="">
+              <img class="star" src="sources/icons/stars.svg" alt="">
+              <img class="star" src="sources/icons/stars.svg" alt="">
             </div>
             <div class="infos">
-              <p class="date-time">09/06/2022</p>
+              <p class="date-time">07/06/2024</p>
               <p class="description">Trabajar con Pixiux en nuestro proyecto de desarrollo web personalizado fue un placer. Entendieron nuestra visión y entregaron un sitio web que representa perfectamente nuestra marca.</p>
             </div>
-            <div class="author">— Benjamin Taylor</div>
+            <div class="author">— Carlos Martínez</div>
           </div>
         </div>
         <div class="slide">
@@ -339,13 +352,15 @@
               <img class="star" src="sources/icons/stars.svg" alt="">
             </div>
             <div class="infos">
-              <p class="date-time">28/05/2022</p>
-              <p class="description">Pixiux's expertise in optimizing HubSpot has been invaluable to our business. They helped us maximize our CRM's potential and improve our overall sales efficiency.</p>
+              <p class="date-time">25/02/2023</p>
+              <p class="description">La experiencia de Pixiux en la optimización de HubSpot ha sido invaluable para nuestro negocio. Nos ayudaron a maximizar el potencial de nuestro CRM y mejorar nuestra eficiencia general de ventas.</p>
             </div>
-            <div class="author">— Sophia King</div>
+            <div class="author">— Patricia Rodríguez</div>
           </div>
         </div>
       </div>
     </div>
   </body>
+
+
 </html>

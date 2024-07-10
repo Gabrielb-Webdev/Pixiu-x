@@ -521,6 +521,12 @@ h2 {
     /* Espacio entre steps */
 }
 
+@media (max-width: 720px) {
+    .step {
+        flex: 0 0 50%;
+    }
+}
+
 .step-title {
     font-size: 1.2em;
     color: #000;

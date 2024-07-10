@@ -83,7 +83,7 @@ function gtag_report_conversion(url) {
 </script>
 
 
-    <title>Pixiu X | Implementación y Consultoría de HubSpot</title>
+    <title>Pixiu X | Implementación y Consultoría de HubSpot (ES)</title>
   </head>
 
   <body>
