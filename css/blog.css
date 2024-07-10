@@ -1,3 +1,7 @@
+#welcome-section {
+    min-height: calc(25vh + 100px);
+}
+
 .form-control:focus {
     border-color: #dd6d2c;
     box-shadow: 0 0 0 0.2rem rgba(221, 109, 44, 0.25);

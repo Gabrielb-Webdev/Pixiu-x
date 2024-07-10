@@ -17,7 +17,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css""
     />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/card.css" />
@@ -87,88 +87,8 @@ function gtag_report_conversion(url) {
   </head>
 
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-        <div class="container">
-          <a class="navbar-brand" href="index.php">
-            <img
-              src="sources/images/logo.png"
-              alt="Pixiu X Logo"
-              width="100"
-              height="auto"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+      <?php include 'components/header.php'; ?>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.php">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="servicesDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Services
-                </a>
-                <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-                  <a class="dropdown-item" href="web.php"
-                    >Custom Software Development</a
-                  >
-                  <a class="dropdown-item" href="hubspot.php"
-                    >HubSpot implementation and consulting</a
-                  >
-                  <a class="dropdown-item" href="scrap.php">Data Extraction</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link custom-btn"
-                  href="https://meetings.hubspot.com/pixiu"
-                  style="color: #fff"
-                  target="_blank"
-                >
-                  Book A Call
-                </a>
-              </li>
-              <li class="nav-item">
-                <a
-                  id="language-toggle"
-                  class="nav-link flag-spain"
-                  href="scrap-es.php"
-                >
-                  <img
-                    src="sources/icons/spain.svg"
-                    alt="Bandera de México"
-                    class="flag-icon"
-                  />
-                  Es
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
 
     <!-- Sección de Bienvenidos -->
     <section
@@ -651,82 +571,7 @@ function gtag_report_conversion(url) {
       }
     </style>
 
-    <!-- Footer -->
-    <footer id="footer" class="footer bg-dark text-white">
-      <div class="container-fluid">
-        <div class="row">
-          <!-- Columna 1: Logo, párrafo y redes sociales -->
-          <div class="col-lg-4 col-md-4 mb-4 mb-lg-0">
-            <img
-              src="sources/images/logo.png"
-              alt="Logo"
-              class="img-fluid mb- logo-footer"
-            />
-            <p>
-              At Pixiu, we focus on excellent service and innovation,
-              specializing in custom software development, HubSpot consulting,
-              and data scraping services. Contact us for inquiries on how we can
-              improve your business.
-            </p>
-            <div class="wrapper">
-              <a
-                href="https://www.linkedin.com/company/pixiu-x"
-                target="_blank"
-              >
-                <li class="icon linkedin">
-                  <span class="tooltip">LinkedIn</span>
-                  <img src="sources/icons/linkedin.svg" alt="" />
-                </li>
-              </a>
-              <a href="" target="_blank">
-                <li class="icon github">
-                  <span class="tooltip">GitHub</span>
-                  <img src="sources/icons/GitHub.svg" alt="" />
-                </li>
-              </a>
-              <a href="" target="_blank">
-                <li class="icon Upwork">
-                  <span class="tooltip">Upwork</span>
-                  <img src="sources/icons/UpWork.svg" alt="" />
-                </li>
-              </a>
-              <a href="" target="_blank">
-                <li class="icon Whatsapp">
-                  <span class="tooltip">Whatsapp</span>
-                  <img src="sources/icons/Whatsapp.svg" alt="" />
-                </li>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 mb-4 mb-lg-0"></div>
-          <!-- Columna 2: Servicios -->
-          <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
-            <h5>Services</h5>
-            <ul class="list-unstyled">
-              <li><a href="web.php">Custom Web Development</a></li>
-              <li><a href="hubspot.php">HubSpot Consulting</a></li>
-              <li><a href="scrap.php">Data Extraction</a></li>
-            </ul>
-          </div>
-          <!-- Columna 3: Oficina en EE.UU. -->
-          <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
-            <h5>Office Locations</h5>
-            <ul class="list-unstyled">
-              <li>Miami Beach, FL, US</li>
-              <li>+1 (786) 798-8207</li>
-            </ul>
-            <ul class="list-unstyled">
-              <li>Buenos Aires, Argentina</li>
-              <li>+54 9 11 3510-8922</li>
-            </ul>
-          </div>
-          <!-- Columna 5: Columna vacía para espacio -->
-          <div class="col-lg-4 col-md-12">
-            <!-- Espacio en blanco -->
-          </div>
-        </div>
-      </div>
-    </footer>
+    <?php include 'components/footer.php'; ?>
 
     <!-- Scripts at the end of the body -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

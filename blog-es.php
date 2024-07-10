@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
@@ -55,7 +55,7 @@
 
 <body>
   <!-- Page Content -->
-  <?php include 'components/header.php'; ?>
+  <?php include 'components/header-es.php'; ?>
 
   <!-- Sección de Bienvenidos -->
   <section id="welcome-section" style="background: linear-gradient(to bottom, #fee4d9, #dd6d2c);" class="section">
