@@ -78,6 +78,7 @@
         padding: 20px;
         max-width: 500px;
         border: groove;
+        border-radius: 25px
       }
 
       .stars {
@@ -102,14 +103,15 @@
         margin-top: 0.4rem;
         line-height: 1.625;
         color: rgba(107, 114, 128, 1);
+        font-weight: 400;
       }
 
       .author {
-        margin-top: 1.3rem;
-        font-size: 0.875rem;
+        margin-top: 0rem;
+        font-size: 1.2rem;
         line-height: 1.25rem;
         color: rgba(107, 114, 128, 1);
-        font-weight: bold;
+        font-weight: 900;
       }
 
       @media (max-width: 720px) {
