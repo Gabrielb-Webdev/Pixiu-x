@@ -2,29 +2,31 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/href=" https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/card.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pixiu X se especializa en implementación, optimización y consultoría de HubSpot para maximizar la eficiencia y el crecimiento de tu negocio. ¡Reserva una llamada hoy mismo!">
+  <meta name="keywords" content="Pixiu X, implementación de HubSpot, optimización de HubSpot, consultoría de HubSpot, integración de CRM, gestión de datos, automatización de flujos de trabajo, onboarding de HubSpot, formación en HubSpot, configuración de HubSpot, soporte de HubSpot, experto en HubSpot, servicios de HubSpot, automatización empresarial, marketing digital, marketing inbound, gestión de relaciones con clientes, estrategias de crecimiento empresarial">
+  <meta name="author" content="Pixiu X">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/card.css">
 
   <!-- Logos -->
-  <link rel="apple-touch-icon" sizes="180x180" href="Logos/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="Logos/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="Logos/android-chrome-192x192.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="Logos/favicon-16x16.png" />
-  <link rel="manifest" href="Logos/site.webmanifest" />
-  <link rel="mask-icon" href="Logos/safari-pinned-tab.svg" color="#5bbad5" />
-  <link rel="shortcut icon" href="Logos/favicon.ico" />
-  <meta name="msapplication-TileColor" content="#da532c" />
-  <meta name="msapplication-TileImage" content="Logos/mstile-144x144.png" />
-  <meta name="msapplication-config" content="Logos/browserconfig.xml" />
-  <meta name="theme-color" content="#ffffff" />
+  <link rel="apple-touch-icon" sizes="180x180" href="Logos/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="Logos/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="Logos/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="Logos/favicon-16x16.png">
+  <link rel="manifest" href="Logos/site.webmanifest">
+  <link rel="mask-icon" href="Logos/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="Logos/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="Logos/mstile-144x144.png">
+  <meta name="msapplication-config" content="Logos/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
 
-  <!-- Google tag (gtag.js) -->
+  <!-- Google Tag Manager -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16633775810"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -33,13 +35,10 @@
       dataLayer.push(arguments);
     }
     gtag('js', new Date());
-
     gtag('config', 'AW-16633775810');
   </script>
 
-
-  <!-- Event snippet for Web Form conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+  <!-- Event snippet for Web Form conversion page -->
   <script>
     function gtag_report_conversion(url) {
       var callback = function() {
@@ -54,7 +53,6 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       return false;
     }
   </script>
-
 
   <title>Pixiu X | Implementación y Consultoría de HubSpot (ES)</title>
 </head>

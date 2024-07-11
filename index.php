@@ -4,13 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="description" content="Discover custom software development and HubSpot consulting services at Pixiu X. We offer advanced solutions in data extraction and web design. Contact us to enhance your business.">
+  <meta name="keywords" content="custom software development, HubSpot consulting, data extraction, web design, technology solutions, business consulting, application development, system integration, process automation, digital services, advanced technology, web optimization, backend development, responsive frontend, IT consulting, innovative solutions">
+  <meta name="author" content="Pixiu X">
+  <title>Pixiu X - Home</title>
 
-  <!-- Logos -->
+  <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="Logos/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="Logos/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="Logos/android-chrome-192x192.png" />
@@ -23,7 +22,19 @@
   <meta name="msapplication-config" content="Logos/browserconfig.xml" />
   <meta name="theme-color" content="#ffffff" />
 
-  <!-- Google tag (gtag.js) -->
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <!-- Datepicker CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Google Tag Manager -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16633775810"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -36,11 +47,22 @@
     gtag("config", "AW-16633775810");
   </script>
 
-  <!-- Event snippet for Web Form conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123456789-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-123456789-1');
+  </script>
+
+  <!-- Event snippet for Web Form conversion page -->
   <script>
     function gtag_report_conversion(url) {
-      var callback = function () {
+      var callback = function() {
         if (typeof url != "undefined") {
           window.location = url;
         }
@@ -52,8 +74,6 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       return false;
     }
   </script>
-
-  <title>Pixiu X - Home</title>
 </head>
 
 <body>
@@ -80,8 +100,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         <!-- Column for image -->
         <div class="col-md-6 mt-4 mt-md-0">
           <div class="text-center">
-            <img src="sources/images/construction.webp" alt="Imagen Principal" class="img-fluid floating-image"
-              style="max-width: 100%" />
+            <img src="sources/images/construction.webp" alt="Imagen Principal" class="img-fluid floating-image" style="max-width: 100%" />
           </div>
         </div>
       </div>
@@ -93,8 +112,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-6 d-flex justify-content-start align-items-center">
-          <img src="sources/images/Imagenes Pixiu/Programming-pana.png" alt="Imagen de servicios de programacion"
-            class="img-fluid custom-img" />
+          <img src="sources/images/Imagenes Pixiu/Programming-pana.png" alt="Imagen de servicios de programacion" class="img-fluid custom-img" />
         </div>
         <div class="col-md-6">
           <div class="row">
@@ -239,8 +257,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           </div>
         </div>
         <div class="col-md-6 text-right">
-          <img src="sources/images/Data.webp" alt="Imagen de servicios data extraction" class="img-fluid mb-4"
-            style="width: 85%" Discover how Pixiu />
+          <img src="sources/images/Data.webp" alt="Imagen de servicios data extraction" class="img-fluid mb-4" style="width: 85%" Discover how Pixiu />
         </div>
       </div>
     </div>
@@ -315,8 +332,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       </div>
       <div class="row justify-content-center">
         <div class="col-lg-8 d-flex justify-content-center">
-          <form id="contact-form" class="form" action="https://hooks.zapier.com/hooks/catch/19364540/23ky1q3/"
-            method="post" onsubmit="gtag_report_conversion(); return true;">
+          <form id="contact-form" class="form" action="https://hooks.zapier.com/hooks/catch/19364540/23ky1q3/" method="post" onsubmit="gtag_report_conversion(); return true;">
             <div class="flex">
               <label>
                 <input required placeholder="First Name" type="text" class="input" name="firstName" />
@@ -364,8 +380,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             </div>
 
             <label>
-              <textarea required rows="3" placeholder="Hello, I am interested in hiring your services for....."
-                class="input01" name="Message"></textarea>
+              <textarea required rows="3" placeholder="Hello, I am interested in hiring your services for....." class="input01" name="Message"></textarea>
             </label>
 
             <button type="submit" class="fancy">
@@ -420,8 +435,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 
   <script>
     let currentStep = 0;
@@ -471,8 +485,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 
     const inputs = document.querySelectorAll(".form .input, .form .input01");
 
-    inputs.forEach(function (input) {
-      input.addEventListener("input", function () {
+    inputs.forEach(function(input) {
+      input.addEventListener("input", function() {
         const label = input.parentElement.querySelector("span");
         if (label) {
           if (input.value.trim() !== "") {
@@ -486,7 +500,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 
     const serviceSelect = document.getElementById("service-select");
     if (serviceSelect) {
-      serviceSelect.addEventListener("change", function () {
+      serviceSelect.addEventListener("change", function() {
         const serviceValue = this.value;
         const dropdown = document.querySelector(".custom-software-dropdown");
         if (dropdown) {
@@ -497,7 +511,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     }
 
     // jQuery document ready
-    $(document).ready(function () {
+    $(document).ready(function() {
       $("#date").datepicker({
         autoclose: true,
         todayHighlight: true,
@@ -507,7 +521,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 
     document
       .getElementById("contact-form")
-      .addEventListener("submit", function (event) {
+      .addEventListener("submit", function(event) {
         event.preventDefault(); // Prevenir el envío por defecto del formulario
 
         // Obtener los datos del formulario
@@ -515,9 +529,9 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 
         // Enviar los datos a través de fetch
         fetch(this.action, {
-          method: this.method,
-          body: formData,
-        })
+            method: this.method,
+            body: formData,
+          })
           .then((response) => {
             if (response.ok) {
               // Mostrar el modal
@@ -525,19 +539,19 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
               modal.style.display = "block";
 
               // Manejar el clic en el botón de cerrar
-              document.querySelector(".close-button").onclick = function () {
+              document.querySelector(".close-button").onclick = function() {
                 modal.style.display = "none";
                 location.reload();
               };
 
               // Manejar el clic en el botón de aceptar
-              document.getElementById("accept-button").onclick = function () {
+              document.getElementById("accept-button").onclick = function() {
                 modal.style.display = "none";
                 location.reload();
               };
 
               // Cerrar el modal al hacer clic fuera de él
-              window.onclick = function (event) {
+              window.onclick = function(event) {
                 if (event.target == modal) {
                   modal.style.display = "none";
                   location.reload();
@@ -554,13 +568,13 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       });
   </script>
   <script>
-    !(function () {
+    !(function() {
       var reb2b = (window.reb2b = window.reb2b || []);
       if (reb2b.invoked) return;
       reb2b.invoked = true;
       reb2b.methods = ["identify", "collect"];
-      reb2b.factory = function (method) {
-        return function () {
+      reb2b.factory = function(method) {
+        return function() {
           var args = Array.prototype.slice.call(arguments);
           args.unshift(method);
           reb2b.push(args);
@@ -571,7 +585,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         var key = reb2b.methods[i];
         reb2b[key] = reb2b.factory(key);
       }
-      reb2b.load = function (key) {
+      reb2b.load = function(key) {
         var script = document.createElement("script");
         script.type = "text/javascript";
         script.async = true;

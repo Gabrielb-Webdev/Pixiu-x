@@ -2,28 +2,34 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/blog.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explora artículos sobre inteligencia artificial, web scraping, desarrollo web, diseño web y consultoría HubSpot en el blog de Pixiu X. Aprende cómo aplicar estas tecnologías para mejorar tu estrategia digital.">
+  <meta name="keywords" content="inteligencia artificial, IA, aprendizaje automático, web scraping, scraping de datos, desarrollo web, diseño web, consultoría HubSpot, estrategia digital, innovación tecnológica">
+  <meta name="author" content="Pixiu X">
+  <title>Pixiu X | Blog</title>
+
+  <!-- Hojas de Estilo -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/blog.css">
 
   <!-- Logos -->
-  <link rel="apple-touch-icon" sizes="180x180" href="Logos/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="Logos/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="Logos/android-chrome-192x192.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="Logos/favicon-16x16.png" />
-  <link rel="manifest" href="Logos/site.webmanifest" />
-  <link rel="mask-icon" href="Logos/safari-pinned-tab.svg" color="#5bbad5" />
-  <link rel="shortcut icon" href="Logos/favicon.ico" />
-  <meta name="msapplication-TileColor" content="#da532c" />
-  <meta name="msapplication-TileImage" content="Logos/mstile-144x144.png" />
-  <meta name="msapplication-config" content="Logos/browserconfig.xml" />
-  <meta name="theme-color" content="#ffffff" />
+  <link rel="apple-touch-icon" sizes="180x180" href="Logos/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="Logos/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="Logos/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="Logos/favicon-16x16.png">
+  <link rel="manifest" href="Logos/site.webmanifest">
+  <link rel="mask-icon" href="Logos/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="Logos/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="Logos/mstile-144x144.png">
+  <meta name="msapplication-config" content="Logos/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
 
-  <!-- Google tag (gtag.js) -->
+  <!-- Google Tag Manager -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16633775810"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -31,26 +37,25 @@
     function gtag() {
       dataLayer.push(arguments);
     }
-    gtag("js", new Date());
-    gtag("config", "AW-16633775810");
+    gtag('js', new Date());
+    gtag('config', 'AW-16633775810');
   </script>
+
   <!-- Event snippet for Web Form conversion page -->
   <script>
     function gtag_report_conversion(url) {
       var callback = function() {
-        if (typeof url != "undefined") {
+        if (typeof url != 'undefined') {
           window.location = url;
         }
       };
-      gtag("event", "conversion", {
-        send_to: "AW-16633775810/IXCmCKqYisEZEMKNzfs9",
-        event_callback: callback,
+      gtag('event', 'conversion', {
+        'send_to': 'AW-16633775810/IXCmCKqYisEZEMKNzfs9',
+        'event_callback': callback
       });
       return false;
     }
   </script>
-
-  <title>Pixiu X | Blog</title>
 </head>
 
 <body>
@@ -91,7 +96,7 @@
     </div>
   </section>
 
-    <?php include 'components/footer.php'; ?>
+  <?php include 'components/footer.php'; ?>
 
   <!-- Scripts at the end of the body -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
