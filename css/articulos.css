@@ -1,3 +1,42 @@
+.custom-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.custom-column {
+  padding: 20px;
+  /* Eliminamos el background y el borde */
+}
+
+.custom-column h2 {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.custom-column h3 {
+  font-size: 2rem;
+}
+
+.custom-column p {
+  margin-bottom: 20px;
+}
+
+.custom-column h6 {
+  font-size: 1.1rem;
+}
+
+.sticky-sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10rem;
+  height: 100%;
+  overflow-y: auto;
+  background-color: transparent;
+  /* Elimina el fondo */
+  border: none;
+  /* Elimina el borde */
+}
+
 #welcome-section {
   position: relative;
   min-height: calc(50vh + 100px);
@@ -13,101 +52,39 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  /* Color oscuro con transparencia */
   z-index: 0;
-  /* Asegura que esté por encima de la imagen de fondo */
 }
 
 .welcome-content {
   position: relative;
   z-index: 1;
-  /* Asegura que el contenido esté por encima de la capa superpuesta */
+  color: white;
+  text-align: center;
 }
 
-/* Estilos adicionales personalizados */
-.custom-section {
-  padding: 80px 0;
-  /* Espaciado interno */
-  background-color: #f8f9fa;
-  /* Color de fondo */
+.welcome-content h1 {
+  font-size: 4rem;
 }
 
-.custom-column {
-  padding: 20px;
-  border: 1px solid #ccc;
-  /* Borde para visualización */
-}
-
-.custom-column p {
-  margin-bottom: 10px;
-}
-
-/* Estilos para la tabla de contenido sticky */
-.sticky-sidebar {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 20px;
-  /* Ajusta la distancia desde arriba según sea necesario */
-  height: calc(100vh - 40px);
-  /* Ajusta la altura según sea necesario */
-  overflow-y: auto;
-  /* Permite desplazamiento vertical si el contenido excede la altura */
-}
-
-.table-of-contents {
-  background-color: #f8f9fa;
-  /* Color de fondo de la tabla de contenido */
-  padding: 20px;
-}
-
-.table-of-contents h3 {
+.welcome-content p {
   font-size: 1.5rem;
-  margin-bottom: 15px;
 }
 
-.table-of-contents ul {
-  list-style-type: none;
-  padding: 0;
+.custom-column .col-12 h6 {
+  margin-bottom: 1.5rem;
+  /* Ajusta el valor según el espacio que desees */
 }
 
-.table-of-contents ul li {
-  margin-bottom: 10px;
+.custom-column .col-12 h6 {
+  cursor: pointer;
+  /* Cambia el cursor al pasar sobre los títulos */
+  margin-bottom: 0.5rem;
+  /* Ajusta el espacio entre los títulos */
+  padding: 5px;
+  /* Añade un relleno para mejor aspecto */
 }
 
-.table-of-contents ul li a {
-  color: #333;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.table-of-contents ul li a:hover {
-  color: #dd6d2c;
-}
-
-/* Estilos para el contenido principal */
-#content-section {
-  padding-top: 50px;
-  /* Ajusta el espacio superior según sea necesario */
-}
-
-.content-section {
-  margin-bottom: 40px;
-  /* Ajusta el espacio entre secciones según sea necesario */
-}
-
-.custom-column h2 {
-  font-size: 1.3rem;
-  margin-bottom: 1rem;
-}
-
-.custom-column h6 {
-  font-size: 1.1rem;
-}
-
-.custom-column h3 {
-  font-size: 2rem;
-}
-
-.custom-p p {
-  font-size: 1.25rem;
+.active-title {
+  background-color: #FF8C00;
+  color: white;
 }

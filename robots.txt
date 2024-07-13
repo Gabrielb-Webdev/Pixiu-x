@@ -7,5 +7,10 @@ Disallow: /private/
 # Permitir el rastreo de todo lo demás
 Allow: /
 
+# Permitir el rastreo de los favicons
+Allow: /Logos/favicon.ico
+Allow: /Logos/favicon-32x32.png
+Allow: /Logos/favicon-16x16.png
+
 # Especificar la ubicación del sitemap
 Sitemap: https://pixiux.com/sitemap.xml
