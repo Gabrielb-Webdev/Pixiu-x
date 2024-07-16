@@ -79,6 +79,24 @@
               </div>
             </div>
           </div>
+          <!-- Share Button Section -->
+          <div class="container-fluid text-center mt-4">
+            <div class="share-icons">
+              <a href="https://api.whatsapp.com/send?text=Check%20out%20this%20article" target="_blank" class="share-icon whatsapp">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="https://www.instagram.com/?url=https://yourwebsite.com" target="_blank" class="share-icon instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://twitter.com/intent/tweet?url=https://yourwebsite.com&text=Check%20out%20this%20article" target="_blank" class="share-icon twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.facebook.com/sharer/sharer.php?u=https://yourwebsite.com" target="_blank" class="share-icon facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </div>
+          </div>
+
         </div>
         <div class="col-md-8">
           <div class="custom-column" id="main-column" style="padding: 0 7.5rem 0 3rem;">
