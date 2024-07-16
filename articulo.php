@@ -7,7 +7,7 @@
   <meta name="description" content="Artículos sobre desarrollo web, IA, HubSpot consulting, data scraping, diseño web y más en el blog de Pixiu X.">
   <meta name="keywords" content="desarrollo web, web development, IA, artificial intelligence, machine learning, HubSpot, data scraping, data extraction, diseño web, web design, UX design, desarrollo de software, software development, consultoría HubSpot, HubSpot consulting, análisis de datos, data analytics, programación web, web programming, Pixiu X, tecnología, tecnología de la información, IT solutions">
   <meta name="author" content="Pixiu X">
-  <title>Pixiu X | Blog</title>
+  <title>Pixiu X | Articulo</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
@@ -101,6 +101,53 @@
       </div>
     </div>
   </section>
+
+  <!-- Row with 3 Cards -->
+  <div class="container-fluid">
+    <h1 class="related-stories-title">Related stories</h1>
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <div class="card card-custom">
+          <div class="card-img-container">
+            <img src="sources/images/blog_01.jpeg" class="card-img-top" alt="Card Image 1">
+          </div>
+          <div class="card-body card-body-custom">
+            <h5 class="card-title">How to Prevent Fraud in Remotely Hiring and Secure Your Company
+            </h5>
+            <div class="card-space"></div>
+            <a href="articulo.php?id=1" class="card-link">Read more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-custom">
+          <div class="card-img-container">
+            <img src="sources/images/blog_01.jpeg" class="card-img-top" alt="Card Image 2">
+          </div>
+          <div class="card-body card-body-custom">
+            <h5 class="card-title">How to Prevent Fraud in Remotely Hiring and Secure Your Company
+            </h5>
+            <div class="card-space"></div>
+            <a href="articulo.php?id=1" class="card-link">Read more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-custom">
+          <div class="card-img-container">
+            <img src="sources/images/blog_01.jpeg" class="card-img-top" alt="Card Image 3">
+          </div>
+          <div class="card-body card-body-custom">
+            <h5 class="card-title">How to Prevent Fraud in Remotely Hiring and Secure Your Company
+            </h5>
+            <div class="card-space"></div>
+            <a href="articulo.php?id=1" class="card-link">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Row with 3 Cards -->
 
 
   <!-- Footer -->
