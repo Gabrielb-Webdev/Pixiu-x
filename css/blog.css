@@ -1,5 +1,5 @@
 #welcome-section {
-  min-height: calc(25vh + 100px);
+  height: calc(25vh + 100px);
 }
 
 .form-control:focus {
