@@ -1,3 +1,8 @@
+<?php
+require_once('database/session.php');
+check_session();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

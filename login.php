@@ -30,6 +30,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
+<?php
+require_once('database/session.php');
+check_session();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
