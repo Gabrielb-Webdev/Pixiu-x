@@ -26,7 +26,9 @@ function logout() {
 
     // Finalmente, destruir la sesión
     session_destroy();
-    header("Location: /");
+
+    // Redirigir al usuario a la página de inicio o a donde desees después de cerrar sesión
+    header("Location: ../login.php");
     exit();
 }
 ?>

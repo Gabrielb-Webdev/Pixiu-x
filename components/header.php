@@ -7,7 +7,7 @@ session_set_cookie_params($cookie_lifetime);
 
 // Regenerar la sesión para aplicar los nuevos parámetros de cookie
 session_regenerate_id(true);
-?>  
+?>
 
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
