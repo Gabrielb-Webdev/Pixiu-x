@@ -6,12 +6,6 @@ if (!isset($_SESSION['username'])) {
     header("Location: https://pixiux.com");
     exit();
 }
-
-// Mostrar mensaje de éxito si existe
-if (isset($_SESSION['message'])) {
-    echo '<div class="alert alert-success" role="alert">' . $_SESSION['message'] . '</div>';
-    unset($_SESSION['message']);
-}
 ?>
 
 <!DOCTYPE html>
@@ -52,6 +46,13 @@ if (isset($_SESSION['message'])) {
 
     <div class="container mt-4">
         <h2>Artículos</h2>
+        <?php
+        // Mostrar mensaje de éxito si existe
+        if (isset($_SESSION['message'])) {
+            echo '<div class="alert alert-success" role="alert">' . $_SESSION['message'] . '</div>';
+            unset($_SESSION['message']);
+        }
+        ?>
         <table class="table">
             <thead class="thead-light">
                 <tr>
@@ -102,17 +103,19 @@ if (isset($_SESSION['message'])) {
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-        // Script para manejar el clic en el botón de editar
         $(document).ready(function () {
-            $('.edit-article').click(function () {
-                var articleId = $(this).data('article-id');
-                console.log('ID del artículo seleccionado para editar:', articleId);
-            });
+            // Mostrar alerta si existe mensaje de éxito
+            <?php if (isset($_SESSION['message'])) : ?>
+                alert('<?php echo $_SESSION['message']; ?>');
+            <?php endif; ?>
 
             // Script para manejar el clic en el botón de eliminar
             $('.delete-article').click(function () {
                 var articleId = $(this).data('article-id');
-                console.log('ID del artículo seleccionado para eliminar:', articleId);
+                var confirmation = confirm('¿Estás seguro de que deseas eliminar este artículo?');
+                if (confirmation) {
+                    window.location.href = 'eliminar_articulo.php?id=' + articleId;
+                }
             });
         });
     </script>
