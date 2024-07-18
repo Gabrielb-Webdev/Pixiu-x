@@ -4,7 +4,7 @@
     <div class="row">
       <!-- Columna 1: Logo, párrafo y redes sociales -->
       <div class="col-lg-4 col-md-4 mb-4 mb-lg-0">
-        <img src="sources/images/logo.png" alt="Logo" class="img-fluid mb- logo-footer" />
+        <img src="../sources/images/logo.png" alt="Logo" class="img-fluid mb- logo-footer" />
         <p>
           At Pixiu, we focus on excellent service and innovation,
           specializing in custom software development, HubSpot consulting,
@@ -15,25 +15,25 @@
           <a href="https://www.linkedin.com/company/pixiu-x" target="_blank">
             <li class="icon linkedin">
               <span class="tooltip">LinkedIn</span>
-              <img src="sources/icons/linkedin.svg" alt="" />
+              <img src="../sources/icons/linkedin.svg" alt="" />
             </li>
           </a>
           <a href="" target="_blank">
             <li class="icon github">
               <span class="tooltip">GitHub</span>
-              <img src="sources/icons/GitHub.svg" alt="" />
+              <img src="../sources/icons/GitHub.svg" alt="" />
             </li>
           </a>
           <a href="" target="_blank">
             <li class="icon Upwork">
               <span class="tooltip">Upwork</span>
-              <img src="sources/icons/UpWork.svg" alt="" />
+              <img src="../sources/icons/UpWork.svg" alt="" />
             </li>
           </a>
           <a href="" target="_blank">
             <li class="icon Whatsapp">
               <span class="tooltip">Whatsapp</span>
-              <img src="sources/icons/Whatsapp.svg" alt="" />
+              <img src="../sources/icons/Whatsapp.svg" alt="" />
             </li>
           </a>
         </div>
@@ -43,9 +43,9 @@
       <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
         <h5>Services</h5>
         <ul class="list-unstyled">
-          <li><a href="web.php">Custom Web Development</a></li>
-          <li><a href="hubspot.php">HubSpot Consulting</a></li>
-          <li><a href="scrap.php">Data Extraction</a></li>
+          <li><a href="../web.php">Custom Web Development</a></li>
+          <li><a href="../hubspot.php">HubSpot Consulting</a></li>
+          <li><a href="../scrap.php">Data Extraction</a></li>
         </ul>
         <!-- <ul class="list-unstyled">
             <li><h5><a href="blog.php">Blog</a></h5></li>

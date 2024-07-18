@@ -4,7 +4,7 @@
     <div class="row">
       <!-- Columna 1: Logo, párrafo y redes sociales -->
       <div class="col-lg-4 col-md-4 mb-4 mb-lg-0">
-        <img src="sources/images/logo.png" alt="Logo" class="img-fluid mb- logo-footer" />
+        <img src="../sources/images/logo.png" alt="Logo" class="img-fluid mb- logo-footer" />
         <p>
           En Pixiu, nos enfocamos en ofrecer un servicio excelente e
           innovación, especializándonos en desarrollo de software
@@ -16,25 +16,25 @@
           <a href="https://www.linkedin.com/company/pixiu-x" target="_blank">
             <li class="icon linkedin">
               <span class="tooltip">LinkedIn</span>
-              <img src="sources/icons/linkedin.svg" alt="" />
+              <img src="../sources/icons/linkedin.svg" alt="" />
             </li>
           </a>
           <a href="" target="_blank">
             <li class="icon github">
               <span class="tooltip">GitHub</span>
-              <img src="sources/icons/GitHub.svg" alt="" />
+              <img src="../sources/icons/GitHub.svg" alt="" />
             </li>
           </a>
           <a href="" target="_blank">
             <li class="icon Upwork">
               <span class="tooltip">Upwork</span>
-              <img src="sources/icons/UpWork.svg" alt="" />
+              <img src="../sources/icons/UpWork.svg" alt="" />
             </li>
           </a>
           <a href="" target="_blank">
             <li class="icon Whatsapp">
               <span class="tooltip">Whatsapp</span>
-              <img src="sources/icons/Whatsapp.svg" alt="" />
+              <img src="../sources/icons/Whatsapp.svg" alt="" />
             </li>
           </a>
         </div>
@@ -45,10 +45,10 @@
         <h5>Servicios</h5>
         <ul class="list-unstyled">
           <li>
-            <a href="web-es.php">Desarrollo de Software Personalizado</a>
+            <a href="../web-es.php">Desarrollo de Software Personalizado</a>
           </li>
-          <li><a href="hubspot-es.php">Consultoría de HubSpot</a></li>
-          <li><a href="scrap-es.php">Extracción de Datos</a></li>
+          <li><a href="../hubspot-es.php">Consultoría de HubSpot</a></li>
+          <li><a href="../scrap-es.php">Extracción de Datos</a></li>
         </ul>
         <!-- <ul class="list-unstyled">
           <li>
