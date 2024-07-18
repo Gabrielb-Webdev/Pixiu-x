@@ -26,4 +26,7 @@ function logout() {
 
     // Finalmente, destruir la sesión
     session_destroy();
+    header("Location: /");
+    exit();
 }
+?>

@@ -32,21 +32,59 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+        }
+        .login-container {
+            width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .login-container .form-group {
+            margin-bottom: 15px;
+        }
+        .login-container .form-control {
+            border-radius: 5px;
+        }
+        .login-container .btn {
+            width: 100%;
+            background-color: #007bff;
+            color: #fff;
+        }
+        .login-container .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
-
 <body>
-    <h2>Login</h2>
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-        <label for="username">Usuario:</label><br>
-        <input type="text" id="username" name="username" autocomplete="username"><br>
-        <label for="password">Contraseña:</label><br>
-        <input type="password" id="password" name="password" autocomplete="current-password"><br><br>
-        <input type="submit" value="Login">
-    </form>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+            <div class="form-group">
+                <label for="username">Usuario:</label>
+                <input type="text" class="form-control" id="username" name="username" autocomplete="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" class="form-control" id="password" name="password" autocomplete="current-password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </div>
 </body>
-
 </html>

@@ -1,3 +1,8 @@
+<?php
+require_once('database/session.php');
+$isLoggedIn = check_session();
+?>
+
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
         <div class="container">
@@ -33,6 +38,11 @@
                             Es
                         </a>
                     </li>
+                    <?php if ($isLoggedIn && basename($_SERVER['PHP_SELF']) == 'blog.php'): ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logout.php">Cerrar Sesión</a>
+                    </li>
+                    <?php endif; ?>
                 </ul>
             </div>
         </div>
