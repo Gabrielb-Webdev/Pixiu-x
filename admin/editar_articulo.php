@@ -7,12 +7,42 @@ if (!isset($_SESSION['username'])) {
     exit();
 }
 
-// Simular datos del artículo seleccionado (debes adaptar esto a tu lógica real)
-$titulo = "Título del artículo"; // Ejemplo de título
-$descripcion = "Descripción del artículo"; // Ejemplo de descripción
-$keywords = "Palabra1, Palabra2, Palabra3"; // Ejemplo de keywords
-// Puedes cargar la imagen guardada en el servidor o mostrar su URL si está almacenada
-$imagenUrl = "../sources/articulos/blog_01.jpeg"; // Ejemplo de URL de la imagen
+// Verificar si se recibió el ID del artículo
+if (!isset($_GET['id'])) {
+    header("Location: ../admin/dashboard.php");
+    exit();
+}
+
+// Obtener el ID del artículo desde la URL
+$articleId = $_GET['id'];
+
+// Consultar los datos del artículo desde la base de datos
+require_once('../database/db_config.php');
+
+try {
+    $stmt = $conn->prepare("SELECT * FROM articulos_blog WHERE id = :id AND usuario = :usuario");
+    $stmt->bindParam(':id', $articleId);
+    $stmt->bindParam(':usuario', $_SESSION['username']);
+    $stmt->execute();
+
+    if ($stmt->rowCount() == 1) {
+        // El artículo existe y pertenece al usuario actual
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        // Datos del artículo
+        $titulo = $row['Titulo'];
+        $descripcion = $row['Descripcion'];
+        $keywords = $row['keywords'];
+        $imagenUrl = $row['img'];
+
+    } else {
+        // El artículo no existe o no pertenece al usuario actual
+        header("Location: ../admin/dashboard.php");
+        exit();
+    }
+} catch (PDOException $e) {
+    echo "Error: " . $e->getMessage();
+}
 ?>
 
 <!DOCTYPE html>
@@ -85,6 +115,16 @@ $imagenUrl = "../sources/articulos/blog_01.jpeg"; // Ejemplo de URL de la imagen
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Script para mostrar alerta al guardar cambios -->
+    <script>
+        $(document).ready(function () {
+            // Cuando se envíe el formulario, mostrar alerta
+            $('form').submit(function () {
+                alert('Artículo actualizado satisfactoriamente');
+            });
+        });
+    </script>
 </body>
 
 </html>

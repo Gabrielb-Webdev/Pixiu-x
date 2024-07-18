@@ -6,6 +6,12 @@ if (!isset($_SESSION['username'])) {
     header("Location: https://pixiux.com");
     exit();
 }
+
+// Mostrar mensaje de éxito si existe
+if (isset($_SESSION['message'])) {
+    echo '<div class="alert alert-success" role="alert">' . $_SESSION['message'] . '</div>';
+    unset($_SESSION['message']);
+}
 ?>
 
 <!DOCTYPE html>
@@ -51,40 +57,36 @@ if (!isset($_SESSION['username'])) {
                 <tr>
                     <th scope="col">Img</th>
                     <th scope="col">Título</th>
-                    <th scope="col">Resumen</th>
+                    <th scope="col">Descripcion</th>
                     <th scope="col">Keywords</th>
                     <th scope="col"></th>
                     <th scope="col"></th>
                 </tr>
             </thead>
             <tbody>
-                <!-- Ejemplo de fila de artículo -->
-                <tr>
-                    <td><img src="../sources/articulos/blog_01.jpeg" alt="Imagen del artículo" style="max-width: 100px; height: auto;"></td>
-                    <td>titulo_1</td>
-                    <td>Resumen_1</td>
-                    <td>keywords_1</td>
-                    <td><a href="editar_articulo.php" class="btn btn-primary"><i class="fas fa-edit"></i></a></td>
-                    <td><a href="#" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a></td>
-                </tr>
-                <tr>
-                    <td><img src="../sources/articulos/blog_01.jpeg" alt="Imagen del artículo" style="max-width: 100px; height: auto;"></td>
-                    <td>titulo_2</td>
-                    <td>Resumen_2</td>
-                    <td>keywords_2</td>
-                    <td><a href="editar_articulo.php" class="btn btn-primary"><i class="fas fa-edit"></i></a></td>
-                    <td><a href="#" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a></td>
-                </tr>
-                <tr>
-                    <td><img src="../sources/articulos/blog_01.jpeg" alt="Imagen del artículo" style="max-width: 100px; height: auto;"></td>
-                    <td>Título_3</td>
-                    <td>Resumen_3</td>
-                    <td>keywords_3</td>
-                    <td><a href="editar_articulo.php" class="btn btn-primary"><i class="fas fa-edit"></i></a></td>
-                    <td><a href="#" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a></td>
-                </tr>
-                <!-- Repite esta fila para cada artículo -->
+                <?php
+                // Consultar los artículos desde la base de datos y mostrar cada uno
+                require_once('../database/db_config.php');
 
+                try {
+                    $stmt = $conn->prepare("SELECT * FROM articulos_blog WHERE usuario = :usuario");
+                    $stmt->bindParam(':usuario', $_SESSION['username']);
+                    $stmt->execute();
+
+                    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                        echo "<tr>";
+                        echo "<td><img src='" . htmlspecialchars($row['img']) . "' alt='Imagen del artículo' style='max-width: 100px; height: auto;'></td>";
+                        echo "<td>" . htmlspecialchars($row['Titulo']) . "</td>";
+                        echo "<td>" . htmlspecialchars($row['Descripcion']) . "</td>";
+                        echo "<td>" . htmlspecialchars($row['keywords']) . "</td>";
+                        echo "<td><a href='editar_articulo.php?id=" . $row['id'] . "' class='btn btn-primary'><i class='fas fa-edit'></i></a></td>";
+                        echo "<td><button class='btn btn-danger delete-article' data-article-id='" . $row['id'] . "'><i class='fas fa-trash-alt'></i></button></td>";
+                        echo "</tr>";
+                    }
+                } catch (PDOException $e) {
+                    echo "Error: " . $e->getMessage();
+                }
+                ?>
             </tbody>
         </table>
 
@@ -99,6 +101,21 @@ if (!isset($_SESSION['username'])) {
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Script para manejar el clic en el botón de editar
+        $(document).ready(function () {
+            $('.edit-article').click(function () {
+                var articleId = $(this).data('article-id');
+                console.log('ID del artículo seleccionado para editar:', articleId);
+            });
+
+            // Script para manejar el clic en el botón de eliminar
+            $('.delete-article').click(function () {
+                var articleId = $(this).data('article-id');
+                console.log('ID del artículo seleccionado para eliminar:', articleId);
+            });
+        });
+    </script>
 </body>
 
 </html>

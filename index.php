@@ -7,7 +7,7 @@
   <meta name="description" content="Discover custom software development and HubSpot consulting services at Pixiu X. We offer advanced solutions in data extraction and web design. Contact us to enhance your business.">
   <meta name="keywords" content="custom software development, HubSpot consulting, data extraction, web design, technology solutions, business consulting, application development, system integration, process automation, digital services, advanced technology, web optimization, backend development, responsive frontend, IT consulting, innovative solutions">
   <meta name="author" content="Pixiu X">
-  <title>Pixiu X</title>
+  <title>Pixiu X - Home</title>
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="https://pixiux.com/Logos/apple-touch-icon.png" />

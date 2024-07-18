@@ -7,22 +7,36 @@ if (!isset($_SESSION['username'])) {
     exit();
 }
 
+// Configuración de la base de datos
+require_once('../database/db_config.php');
+
+// Función para generar un nombre de archivo aleatorio único
+function generateRandomFileName($file_extension)
+{
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $random_string = '';
+    for ($i = 0; $i < 10; $i++) {
+        $random_string .= $characters[rand(0, strlen($characters) - 1)];
+    }
+    return $random_string . '.' . $file_extension;
+}
+
+// Validar y procesar el formulario de agregar artículo
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Procesar el formulario cuando se envíe
-    $titulo = $_POST['titulo'];
-    $descripcion = $_POST['descripcion'];
-    $keywords = $_POST['keywords'];
+    $titulo = $_POST["titulo"];
+    $descripcion = $_POST["descripcion"];
+    $keywords = $_POST["keywords"];
 
-    // Manejar la subida de la imagen
+    // Procesar la imagen subida
     $target_dir = "../sources/articulos/";
-    $target_file = $target_dir . basename($_FILES["imagen"]["name"]);
+    $imageFileType = strtolower(pathinfo($_FILES["imagen"]["name"], PATHINFO_EXTENSION));
+    $target_file = $target_dir . generateRandomFileName($imageFileType);
     $uploadOk = 1;
-    $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
-    // Verificar si el archivo de imagen es una imagen real o un archivo falso
-    if(isset($_POST["submit"])) {
+    // Verificar si el archivo de imagen es una imagen real o falsa
+    if (isset($_POST["submit"])) {
         $check = getimagesize($_FILES["imagen"]["tmp_name"]);
-        if($check !== false) {
+        if ($check !== false) {
             echo "El archivo es una imagen - " . $check["mime"] . ".";
             $uploadOk = 1;
         } else {
@@ -33,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Verificar si el archivo ya existe
     if (file_exists($target_file)) {
-        echo "Lo siento, el archivo ya existe.";
+        echo "El archivo ya existe.";
         $uploadOk = 0;
     }
 
@@ -44,25 +58,41 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Permitir ciertos formatos de archivo
-    if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
-    && $imageFileType != "gif" ) {
-        echo "Lo siento, solo se permiten archivos JPG, JPEG, PNG y GIF.";
+    if (
+        $imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
+        && $imageFileType != "gif"
+    ) {
+        echo "Lo siento, solo se permiten archivos JPG, JPEG, PNG & GIF.";
         $uploadOk = 0;
     }
 
-    // Verificar si $uploadOk está configurado en 0 por un error
+    // Verificar si $uploadOk es set a 0 por algún error
     if ($uploadOk == 0) {
         echo "Lo siento, tu archivo no fue subido.";
-    // Si todo está bien, intentar subir el archivo
+
+        // Si todo está bien, intenta subir el archivo
     } else {
         if (move_uploaded_file($_FILES["imagen"]["tmp_name"], $target_file)) {
-            echo "El archivo ". basename( $_FILES["imagen"]["name"]). " ha sido subido.";
-            // Aquí puedes guardar la información en la base de datos
-            // Por ahora, mostraremos los datos para verificar
-            echo "<br>Título: " . $titulo;
-            echo "<br>Descripción: " . $descripcion;
-            echo "<br>Keywords: " . $keywords;
-            echo "<br>Imagen guardada en: " . $target_file;
+            echo "El archivo " . htmlspecialchars(basename($_FILES["imagen"]["name"])) . " ha sido subido.";
+
+            // Insertar datos en la base de datos
+            try {
+                $stmt = $conn->prepare("INSERT INTO articulos_blog (Titulo, Descripcion, img, usuario, keywords) 
+                                       VALUES (:titulo, :descripcion, :img, :usuario, :keywords)");
+                $stmt->bindParam(':titulo', $titulo);
+                $stmt->bindParam(':descripcion', $descripcion);
+                $stmt->bindParam(':img', $target_file);  // Guardar la ruta de la imagen en la base de datos
+                $stmt->bindParam(':usuario', $_SESSION['username']);
+                $stmt->bindParam(':keywords', $keywords);
+
+                $stmt->execute();
+
+                // Redirigir a dashboard.php con un parámetro de éxito
+                header("Location: dashboard.php?status=success");
+                exit();
+            } catch (PDOException $e) {
+                echo "Error: " . $e->getMessage();
+            }
         } else {
             echo "Lo siento, hubo un error al subir tu archivo.";
         }
@@ -71,71 +101,78 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Pixiu X">
-    <title>Pixiu X - Agregar Artículo</title>
+    <title>Agregar Artículo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+        }
 
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="https://pixiux.com/Logos/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://pixiux.com/Logos/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="https://pixiux.com/Logos/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://pixiux.com/Logos/favicon-16x16.png">
-    <link rel="manifest" href="https://pixiux.com/Logos/site.webmanifest">
-    <link rel="mask-icon" href="https://pixiux.com/Logos/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="https://pixiux.com/Logos/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-TileImage" content="https://pixiux.com/Logos/mstile-144x144.png">
-    <meta name="msapplication-config" content="https://pixiux.com/Logos/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+        .form-container {
+            width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        .form-container h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        .form-container .form-group {
+            margin-bottom: 15px;
+        }
 
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="../css/styles.css">
+        .form-container .form-control {
+            border-radius: 5px;
+        }
+
+        .form-container .btn {
+            width: 100%;
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .form-container .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Page Content -->
-    <?php include '../components/header.php'; ?>
-
-    <div class="container mt-4">
+    <div class="form-container">
         <h2>Agregar Artículo</h2>
-        <!-- Formulario para agregar un nuevo artículo -->
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" enctype="multipart/form-data">
+        <form method="post" enctype="multipart/form-data">
             <div class="form-group">
-                <label for="titulo">Título</label>
-                <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Ingrese el título del artículo" required>
+                <label for="titulo">Título:</label>
+                <input type="text" class="form-control" id="titulo" name="titulo" required>
             </div>
             <div class="form-group">
-                <label for="descripcion">Descripción</label>
-                <textarea class="form-control" id="descripcion" name="descripcion" rows="4" placeholder="Ingrese la descripción del artículo" required></textarea>
+                <label for="descripcion">Descripción:</label>
+                <textarea class="form-control" id="descripcion" name="descripcion" rows="4" required></textarea>
             </div>
             <div class="form-group">
-                <label for="keywords">Keywords</label>
-                <input type="text" class="form-control" id="keywords" name="keywords" placeholder="Ingrese las keywords separadas por comas">
-            </div>
-            <div class="form-group">
-                <label for="imagen">Imagen</label>
+                <label for="imagen">Imagen:</label>
                 <input type="file" class="form-control-file" id="imagen" name="imagen" required>
             </div>
-            <button type="submit" name="submit" class="btn btn-primary">Guardar Artículo</button>
-            <a href="../admin/dashboard.php" class="btn btn-secondary">Cancelar</a>
+            <div class="form-group">
+                <label for="keywords">Palabras clave:</label>
+                <input type="text" class="form-control" id="keywords" name="keywords" required>
+            </div>
+            <button type="submit" class="btn btn-primary" name="submit">Agregar Artículo</button>
         </form>
     </div>
-
-    <!-- Scripts al final del body -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
