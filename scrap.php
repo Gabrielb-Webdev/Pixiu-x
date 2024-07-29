@@ -290,70 +290,71 @@
   </section>
 
   <!-- Sección de Preguntas Frecuentes -->
-  <section id="faq" class="faq-section">
-    <div class="faq-container">
-      <div class="faq-header">FAQ</div>
-      <div class="faq">
-        <div class="faq-question">
-          What is included in the consultation package?
-        </div>
-        <div class="faq-answer">
-          Our consultation package includes:
-          <ul>
-            <li>
-              One-on-one consultations with a certified HubSpot expert,
-              available via video call.
-            </li>
-            <li>
-              A thorough review of your current HubSpot setup, including
-              integrations, data management, and workflows.
-            </li>
-            <li>
-              Recommendations for optimizations, tech improvements, and
-              tailored solutions to address your unique challenges.
-            </li>
-            <li>
-              A workshop and discovery phase for larger solutions, analyzing
-              your current setup and creating a concept for a new one. We are
-              also available to assist with any other needs you might have!
-            </li>
-          </ul>
-        </div>
+<section id="faq" class="faq-section">
+  <div class="faq-container">
+    <div class="faq-header">FAQ</div>
+    
+    <div class="faq">
+      <div class="faq-question">
+        What does your data scraping service include?
       </div>
-      <div class="faq">
-        <div class="faq-question">
-          I have an in-house team that uses HubSpot. Can you get on a call
-          with them and help them solve my problem?
-        </div>
-        <div class="faq-answer">
-          Yes, we can collaborate with your in-house team. We’ll join a call
-          with your team to help develop or fix your HubSpot-related
-          solutions.
-        </div>
-      </div>
-      <div class="faq">
-        <div class="faq-question">
-          I am having issues with an integration/tool/app that is not closely
-          connected with HubSpot. Can you still help me with that?
-        </div>
-        <div class="faq-answer">
-          Yes, of course. While many of our clients seek help with HubSpot, we
-          are also happy to assist with more general software or integration
-          issues, including those that need to connect with HubSpot.
-        </div>
-      </div>
-      <div class="faq">
-        <div class="faq-question">
-          I have some questions, but I am unsure if you can help me out.
-        </div>
-        <div class="faq-answer">
-          Don’t hesitate to reach out and schedule an introductory call. It is
-          free of charge, and we will let you know if we can solve your issue
-          with our solutions or through consultations.
-        </div>
+      <div class="faq-answer">
+        Our data scraping services encompass:
+        <ul>
+          <li>
+            Website Data Extraction: Leveraging advanced techniques to swiftly and accurately gather data from websites, which is meticulously organized for easy retrieval.
+          </li>
+          <li>
+            Prospect/Lead Data Extraction: Enhancing your sales and marketing strategies by identifying and extracting detailed customer and prospect data tailored to your business needs.
+          </li>
+          <li>
+            Social Media Data Extraction: Comprehensive extraction of data from major social platforms, including profiles, posts, and comments to provide you with in-depth insights.
+          </li>
+          <li>
+            Market Research Data Extraction: Gathering critical data on market trends, customer insights, and competitive analysis to accelerate your research and strategic planning.
+          </li>
+        </ul>
       </div>
     </div>
-  </section>
+    
+    <div class="faq">
+      <div class="faq-question">
+        Can you develop custom web scraping tools for our specific needs?
+      </div>
+      <div class="faq-answer">
+        Absolutely! At Pixiu, we specialize in crafting custom web scraping solutions that are both fast and precise. Our expertise allows us to build tools that are perfectly aligned with your business's requirements and operational goals.
+      </div>
+    </div>
+    
+    <div class="faq">
+      <div class="faq-question">
+        We already have some web scraping in place. Can you enhance our existing tools?
+      </div>
+      <div class="faq-answer">
+        Yes, we can! We will review your current setup and provide recommendations for optimizations and tech improvements. We can also expand your existing tools to cover more sources or integrate additional functionalities.
+      </div>
+    </div>
+    
+    <div class="faq">
+      <div class="faq-question">
+        What if I need data from a platform not directly connected to the common scraping APIs?
+      </div>
+      <div class="faq-answer">
+        We can handle that as well. Our team is skilled in developing solutions that involve complex data sources and integrations, even if they are not commonly connected through standard APIs.
+      </div>
+    </div>
+    
+    <div class="faq">
+      <div class="faq-question">
+        I’m interested, but unsure how to start. Can I get a consultation?
+      </div>
+      <div class="faq-answer">
+        Of course! Schedule an introductory call with us at no charge. We'll discuss your specific needs and outline how our data scraping services can help you achieve your objectives. This consultation will help clarify how we can assist and the potential impacts on your business.
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <!-- Section 6: Calendar for scheduling calls/meetings -->
   <section id="contact" class="section" style="padding-top: calc(5vh + 20px)">
@@ -365,7 +366,7 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-lg-8 d-flex justify-content-center">
-          <form id="contact-form" class="form" action="https://hooks.zapier.com/hooks/catch/19364540/23ky1q3/" method="post" onsubmit="gtag_report_conversion(); return true;">
+          <form id="contact-form" class="form" action="../database/form.php" method="post" onsubmit="gtag_report_conversion(); return true;">
             <div class="flex">
               <label>
                 <input required placeholder="First Name" type="text" class="input" name="firstName" />

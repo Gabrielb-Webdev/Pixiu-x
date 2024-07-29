@@ -7,8 +7,8 @@ if (!isset($_SESSION['username'])) {
     exit();
 }
 
-// Verificar si se recibieron los datos necesarios
-if (!isset($_POST['titulo'], $_POST['descripcion'], $_POST['keywords'], $_GET['id'])) {
+// Verificar si se recibió el ID del artículo
+if (!isset($_GET['id'])) {
     header("Location: ../admin/dashboard.php");
     exit();
 }
@@ -20,52 +20,37 @@ $articleId = $_GET['id'];
 $titulo = $_POST['titulo'];
 $descripcion = $_POST['descripcion'];
 $keywords = $_POST['keywords'];
+$nueva_imagen = $_FILES['nueva_imagen'];
 
-// Procesar la nueva imagen si se subió una
-$nuevaImagen = $_FILES['nueva_imagen'];
-$imagenUrl = null;
-
-if ($nuevaImagen['error'] == UPLOAD_ERR_OK) {
-    $uploadDir = '../sources/articulos/';
-    $uploadFile = $uploadDir . basename($nuevaImagen['name']);
-
-    if (move_uploaded_file($nuevaImagen['tmp_name'], $uploadFile)) {
-        $imagenUrl = $uploadFile;
-    } else {
-        // Manejar error en la subida de la imagen
-        echo "Error al subir la imagen.";
-        exit();
-    }
-}
-
-// Actualizar los datos del artículo en la base de datos
+// Consultar los datos del artículo desde la base de datos
 require_once('../database/db_config.php');
 
 try {
-    // Construir la consulta de actualización
-    $sql = "UPDATE articulos_blog SET Titulo = :titulo, Descripcion = :descripcion, keywords = :keywords";
-    if ($imagenUrl !== null) {
-        $sql .= ", img = :img";
+    // Verificar si se subió una nueva imagen
+    if ($nueva_imagen['error'] === UPLOAD_ERR_OK) {
+        $imagenRuta = '../sources/articulos/' . basename($nueva_imagen['name']);
+        move_uploaded_file($nueva_imagen['tmp_name'], $imagenRuta);
+    } else {
+        // Mantener la imagen existente si no se subió una nueva
+        $stmt = $conn->prepare("SELECT img FROM articulos_blog WHERE id = :id");
+        $stmt->bindParam(':id', $articleId);
+        $stmt->execute();
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+        $imagenRuta = $row['img'];
     }
-    $sql .= " WHERE id = :id AND usuario = :usuario";
 
-    $stmt = $conn->prepare($sql);
+    // Actualizar el artículo en la base de datos
+    $stmt = $conn->prepare("UPDATE articulos_blog SET Titulo = :titulo, Descripcion = :descripcion, keywords = :keywords, img = :img WHERE id = :id AND usuario = :usuario");
     $stmt->bindParam(':titulo', $titulo);
     $stmt->bindParam(':descripcion', $descripcion);
     $stmt->bindParam(':keywords', $keywords);
-    if ($imagenUrl !== null) {
-        $stmt->bindParam(':img', $imagenUrl);
-    }
+    $stmt->bindParam(':img', $imagenRuta);
     $stmt->bindParam(':id', $articleId);
     $stmt->bindParam(':usuario', $_SESSION['username']);
-
     $stmt->execute();
 
-    // Redirigir al dashboard con un mensaje de éxito
-    $_SESSION['message'] = "Artículo actualizado satisfactoriamente.";
     header("Location: ../admin/dashboard.php");
     exit();
-
 } catch (PDOException $e) {
     echo "Error: " . $e->getMessage();
 }

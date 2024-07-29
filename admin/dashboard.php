@@ -38,6 +38,15 @@ if (!isset($_SESSION['username'])) {
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="../css/styles.css" />
+    
+    <style>
+        .description-cell {
+            max-width: 200px; /* Ajusta el ancho máximo según tus necesidades */
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    </style>
 </head>
 
 <body>
@@ -78,7 +87,7 @@ if (!isset($_SESSION['username'])) {
                         echo "<tr>";
                         echo "<td><img src='" . htmlspecialchars($row['img']) . "' alt='Imagen del artículo' style='max-width: 100px; height: auto;'></td>";
                         echo "<td>" . htmlspecialchars($row['Titulo']) . "</td>";
-                        echo "<td>" . htmlspecialchars($row['Descripcion']) . "</td>";
+                        echo "<td class='description-cell'>" . htmlspecialchars($row['Descripcion']) . "</td>";
                         echo "<td>" . htmlspecialchars($row['keywords']) . "</td>";
                         echo "<td><a href='editar_articulo.php?id=" . $row['id'] . "' class='btn btn-primary'><i class='fas fa-edit'></i></a></td>";
                         echo "<td><button class='btn btn-danger delete-article' data-article-id='" . $row['id'] . "'><i class='fas fa-trash-alt'></i></button></td>";

@@ -724,7 +724,7 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-lg-8 d-flex justify-content-center">
-          <form id="contact-form" class="form" action="https://hooks.zapier.com/hooks/catch/19364540/23ky1q3/" method="post" onsubmit="gtag_report_conversion(); return true;">
+          <form id="contact-form" class="form" action="../database/form.php" method="post" onsubmit="gtag_report_conversion(); return true;">
             <div class="flex">
               <label>
                 <input required placeholder="First Name" type="text" class="input" name="firstName" />

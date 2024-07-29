@@ -294,71 +294,71 @@
   </section>
 
   <!-- Sección de Preguntas Frecuentes -->
-  <section id="faq" class="faq-section">
-    <div class="faq-container">
-      <div class="faq-header">FAQ</div>
-      <div class="faq">
-        <div class="faq-question">¿Qué incluye el paquete de consulta?</div>
-        <div class="faq-answer">
-          Nuestro paquete de consulta incluye:
-          <ul>
-            <li>
-              Consultas individuales con un experto certificado en HubSpot,
-              disponibles mediante videollamada.
-            </li>
-            <li>
-              Una revisión exhaustiva de su configuración actual de HubSpot,
-              incluyendo integraciones, gestión de datos y flujos de trabajo.
-            </li>
-            <li>
-              Recomendaciones para optimizaciones, mejoras tecnológicas y
-              soluciones personalizadas para abordar sus desafíos únicos.
-            </li>
-            <li>
-              Un taller y fase de descubrimiento para soluciones más grandes,
-              analizando su configuración actual y creando un concepto para
-              una nueva. ¡También estamos disponibles para ayudar con
-              cualquier otra necesidad que pueda tener!
-            </li>
-          </ul>
-        </div>
+<section id="faq" class="faq-section">
+  <div class="faq-container">
+    <div class="faq-header">Preguntas Frecuentes</div>
+    
+    <div class="faq">
+      <div class="faq-question">
+        ¿Qué incluye su servicio de scraping de datos?
       </div>
-      <div class="faq">
-        <div class="faq-question">
-          Tengo un equipo interno que usa HubSpot. ¿Pueden unirse a una
-          llamada con ellos y ayudarlos a resolver mi problema?
-        </div>
-        <div class="faq-answer">
-          Sí, podemos colaborar con su equipo interno. Nos uniremos a una
-          llamada con su equipo para ayudar a desarrollar o solucionar sus
-          problemas relacionados con HubSpot.
-        </div>
-      </div>
-      <div class="faq">
-        <div class="faq-question">
-          Estoy teniendo problemas con una integración/herramienta/aplicación
-          que no está estrechamente conectada con HubSpot. ¿Pueden ayudarme
-          igualmente con eso?
-        </div>
-        <div class="faq-answer">
-          Sí, por supuesto. Aunque muchos de nuestros clientes buscan ayuda
-          con HubSpot, también estamos encantados de ayudar con problemas de
-          software o integración más generales, incluidos aquellos que
-          necesitan conectarse con HubSpot.
-        </div>
-      </div>
-      <div class="faq">
-        <div class="faq-question">
-          Tengo algunas preguntas, pero no estoy seguro si pueden ayudarme.
-        </div>
-        <div class="faq-answer">
-          No dude en comunicarse y programar una llamada introductoria. Es
-          gratuita, y le informaremos si podemos resolver su problema con
-          nuestras soluciones o a través de consultas.
-        </div>
+      <div class="faq-answer">
+        Nuestros servicios de scraping de datos incluyen:
+        <ul>
+          <li>
+            Extracción de datos de sitios web: Utilizando técnicas avanzadas para recopilar datos de sitios web de manera rápida y precisa, organizados para su fácil acceso.
+          </li>
+          <li>
+            Extracción de datos de prospectos/clientes: Mejorando tus estrategias de ventas y marketing al identificar y extraer datos detallados de clientes y prospectos adaptados a las necesidades de tu negocio.
+          </li>
+          <li>
+            Extracción de datos de redes sociales: Extracción completa de datos de las principales plataformas sociales, incluyendo perfiles, publicaciones y comentarios para proporcionarte información detallada.
+          </li>
+          <li>
+            Extracción de datos para investigación de mercado: Recopilación de datos críticos sobre tendencias de mercado, opiniones de clientes y análisis de la competencia para acelerar tu investigación y planificación estratégica.
+          </li>
+        </ul>
       </div>
     </div>
-  </section>
+    
+    <div class="faq">
+      <div class="faq-question">
+        ¿Pueden desarrollar herramientas personalizadas de scraping web para nuestras necesidades específicas?
+      </div>
+      <div class="faq-answer">
+        ¡Por supuesto! En Pixiu, nos especializamos en crear soluciones de scraping web personalizadas que son rápidas y precisas. Nuestra experiencia nos permite construir herramientas que se alinean perfectamente con los requisitos y objetivos operativos de tu negocio.
+      </div>
+    </div>
+    
+    <div class="faq">
+      <div class="faq-question">
+        Ya tenemos algunas herramientas de scraping web. ¿Pueden mejorar nuestras herramientas existentes?
+      </div>
+      <div class="faq-answer">
+        Sí, podemos hacerlo. Revisaremos tu configuración actual y proporcionaremos recomendaciones para optimizaciones y mejoras tecnológicas. También podemos expandir tus herramientas existentes para cubrir más fuentes o integrar funcionalidades adicionales.
+      </div>
+    </div>
+    
+    <div class="faq">
+      <div class="faq-question">
+        ¿Qué pasa si necesito datos de una plataforma no conectada directamente con las APIs comunes de scraping?
+      </div>
+      <div class="faq-answer">
+        También podemos manejar eso. Nuestro equipo está capacitado para desarrollar soluciones que involucren fuentes de datos complejas e integraciones, incluso si no están comúnmente conectadas a través de APIs estándar.
+      </div>
+    </div>
+    
+    <div class="faq">
+      <div class="faq-question">
+        Estoy interesado, pero no sé cómo empezar. ¿Puedo obtener una consulta?
+      </div>
+      <div class="faq-answer">
+        ¡Claro! Agenda una llamada introductoria con nosotros sin costo. Discutiremos tus necesidades específicas y te explicaremos cómo nuestros servicios de scraping de datos pueden ayudarte a alcanzar tus objetivos. Esta consulta te ayudará a clarificar cómo podemos asistirte y el impacto potencial en tu negocio.
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <!-- Section 6: Calendar for scheduling calls/meetings -->
   <section id="contact" class="section" style="padding-top: calc(5vh + 20px)">
@@ -370,7 +370,7 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-lg-8 d-flex justify-content-center">
-          <form id="contact-form" class="form" action="https://hooks.zapier.com/hooks/catch/19364540/23ky1q3/" method="post" onsubmit="gtag_report_conversion(); return true;">
+          <form id="contact-form" class="form" action="../database/form.php" method="post" onsubmit="gtag_report_conversion(); return true;">
             <div class="flex">
               <label>
                 <input required placeholder="Nombre" type="text" class="input" name="firstName" />

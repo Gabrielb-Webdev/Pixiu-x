@@ -24,18 +24,18 @@
               <img src="../sources/icons/GitHub.svg" alt="" />
             </li>
           </a>
-          <a href="" target="_blank">
-            <li class="icon Upwork">
-              <span class="tooltip">Upwork</span>
-              <img src="../sources/icons/UpWork.svg" alt="" />
-            </li>
-          </a>
-          <a href="" target="_blank">
+          <a href="https://www.upwork.com/agencies/pixiux" target="_blank">
+                <li class="icon Upwork">
+                    <span class="tooltip">Upwork</span>
+                    <img src="../sources/icons/UpWork.svg" alt="" />
+                </li>
+            </a>
+          <a href="https://wa.me/5491135108922" target="_blank">
             <li class="icon Whatsapp">
-              <span class="tooltip">Whatsapp</span>
-              <img src="../sources/icons/Whatsapp.svg" alt="" />
+                <span class="tooltip">Whatsapp</span>
+                <img src="../sources/icons/Whatsapp.svg" alt="" />
             </li>
-          </a>
+            </a>
         </div>
       </div>
       <div class="col-lg-4 col-md-4 mb-4 mb-lg-0"></div>

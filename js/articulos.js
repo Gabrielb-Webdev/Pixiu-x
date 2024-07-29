@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const mainTitles = document.querySelectorAll("#main-column h3");
+  // Obtener todos los encabezados <h1> en la descripción
+  const mainTitles = document.querySelectorAll("#main-column h1");
   const tocTitles = document.querySelectorAll(".custom-column h6");
 
   function handleScroll() {
     const fromTop = window.scrollY + -500; // Ajuste para compensar cualquier offset o margen
 
     mainTitles.forEach((title, index) => {
-      const contentId = title.id;
       const tocTitle = tocTitles[index];
 
       if (tocTitle) {
@@ -27,7 +27,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // Llama a la función al inicio para establecer el estado inicial
+  handleScroll();
+
+  // Agrega eventos para manejar el scroll y el resize
   window.addEventListener("scroll", handleScroll);
   window.addEventListener("resize", handleScroll); // Manejamos también el evento resize
-  handleScroll(); // Llamamos a la función al inicio para establecer el estado inicial
 });

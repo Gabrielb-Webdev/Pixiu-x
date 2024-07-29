@@ -1,10 +1,5 @@
-<?php
-require_once('database/session.php');
-check_session();
-?>
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -38,7 +33,10 @@ check_session();
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16633775810"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
     gtag('config', 'AW-16633775810');
   </script>
@@ -62,7 +60,7 @@ check_session();
 
 <body>
   <!-- Page Content -->
-  <?php include 'components/header.php'; ?>
+  <?php include 'components/header-es.php'; ?>
 
   <!-- Sección de Bienvenidos -->
   <section id="welcome-section" style="background: linear-gradient(to bottom, #fee4d9, #dd6d2c);" class="section">
@@ -71,7 +69,9 @@ check_session();
         <div class="col-12">
           <div class="welcome-content text-center">
             <h1 style="font-size: 4rem">Blog</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
           </div>
         </div>
       </div>
@@ -94,36 +94,50 @@ check_session();
         </div>
       </div>
 
-      <!-- Row with Articles -->
+      <!-- Row with 3 Cards -->
       <div class="row mt-4">
-        <?php
-        // Conectar a la base de datos y obtener los artículos
-        require_once('database/db_config.php');
-
-        try {
-            $stmt = $conn->prepare("SELECT id, Titulo, img FROM articulos_blog WHERE usuario = :usuario");
-            $stmt->bindParam(':usuario', $_SESSION['username']);
-            $stmt->execute();
-
-            while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                echo "<div class='col-md-4'>";
-                echo "<div class='card card-custom'>";
-                echo "<div class='card-img-container'>";
-                echo "<img src='" . htmlspecialchars($row['img']) . "' class='card-img-top' alt='Imagen del artículo'>";
-                echo "</div>";
-                echo "<div class='card-body card-body-custom'>";
-                echo "<h5 class='card-title'>" . htmlspecialchars($row['Titulo']) . "</h5>";
-                echo "<a href='articulo.php?id=" . $row['id'] . "' class='card-link'>Read more</a>";
-                echo "</div>";
-                echo "</div>";
-                echo "</div>";
-            }
-        } catch (PDOException $e) {
-            echo "Error: " . $e->getMessage();
-        }
-        ?>
+        <div class="col-md-4">
+          <div class="card card-custom">
+            <div class="card-img-container">
+              <img src="sources/images/blog_01.jpeg" class="card-img-top" alt="Card Image 1">
+            </div>
+            <div class="card-body card-body-custom">
+              <h5 class="card-title">How to Prevent Fraud in Remotely Hiring and Secure Your Company
+              </h5>
+              <div class="card-space"></div>
+              <a href="articulo.php?id=1" class="card-link card-link-readmore">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-custom">
+            <div class="card-img-container">
+              <img src="sources/images/blog_01.jpeg" class="card-img-top" alt="Card Image 2">
+            </div>
+            <div class="card-body card-body-custom">
+              <h5 class="card-title">How to Prevent Fraud in Remotely Hiring and Secure Your Company
+              </h5>
+              <div class="card-space"></div>
+              <a href="articulo.php?id=1" class="card-link card-link-readmore">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-custom">
+            <div class="card-img-container">
+              <img src="sources/images/blog_01.jpeg" class="card-img-top" alt="Card Image 3">
+            </div>
+            <div class="card-body card-body-custom">
+              <h5 class="card-title">How to Prevent Fraud in Remotely Hiring and Secure Your Company
+              </h5>
+              <div class="card-space"></div>
+              <a href="articulo.php?id=1" class="card-link card-link-readmore">Read more</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- End of Row with Articles -->
+      <!-- End of Row with 3 Cards -->
+      <!-- Repeat the same structure for more rows as needed -->
     </div>
   </section>
 
@@ -135,6 +149,19 @@ check_session();
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+  <script>
+    // JavaScript para mostrar el ID en la consola
+    document.querySelectorAll('.card-link-readmore').forEach(function (element) {
+      element.addEventListener('click', function (event) {
+        event.preventDefault();
+        const url = new URL(this.href);
+        const id = url.searchParams.get('id');
+        console.log('ID del artículo:', id);
+        window.location.href = this.href;
+      });
+    });
+  </script>
 </body>
 
 </html>

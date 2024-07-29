@@ -46,12 +46,10 @@ try {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Pixiu X">
     <title>Pixiu X - Editar Artículo</title>
 
     <!-- Favicons -->
@@ -75,8 +73,16 @@ try {
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="../css/styles.css" />
-</head>
 
+    <!-- Quill CSS -->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
+    <style>
+        #editor-container {
+            height: 300px;
+        }
+    </style>
+</head>
 <body>
     <!-- Page Content -->
     <?php include '../components/header.php'; ?>
@@ -84,14 +90,15 @@ try {
     <div class="container mt-4">
         <h2>Editar Artículo</h2>
         <!-- Formulario para editar el artículo -->
-        <form action="guardar_edicion.php" method="POST">
+        <form action="guardar_edicion.php?id=<?php echo $articleId; ?>" method="POST" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="titulo">Título</label>
                 <input type="text" class="form-control" id="titulo" name="titulo" value="<?php echo htmlspecialchars($titulo); ?>">
             </div>
             <div class="form-group">
                 <label for="descripcion">Descripción</label>
-                <textarea class="form-control" id="descripcion" name="descripcion" rows="4"><?php echo htmlspecialchars($descripcion); ?></textarea>
+                <div id="editor-container"></div>
+                <input type="hidden" name="descripcion" id="descripcion">
             </div>
             <div class="form-group">
                 <label for="keywords">Keywords</label>
@@ -116,15 +123,35 @@ try {
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <!-- Script para mostrar alerta al guardar cambios -->
+    <!-- Quill JS -->
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
     <script>
-        $(document).ready(function () {
-            // Cuando se envíe el formulario, mostrar alerta
-            $('form').submit(function () {
-                alert('Artículo actualizado satisfactoriamente');
-            });
-        });
+    var quill = new Quill('#editor-container', {
+        theme: 'snow',
+        modules: {
+            toolbar: [
+                [{ 'header': [1, 2, 3, false] }],
+                [{ 'font': [] }],
+                [{ 'size': ['small', 'medium', 'large', 'huge'] }],
+                ['bold', 'italic', 'underline', 'strike'],
+                [{ 'color': [] }, { 'background': [] }],
+                [{ 'list': 'ordered' }, { 'list': 'bullet' }],
+                [{ 'align': [] }],
+                ['link', 'image', 'video'],
+                ['blockquote', 'code-block'],
+                ['clean'],
+                [{ 'table': [] }]
+            ]
+        }
+    });
+
+    // Insertar el contenido inicial en el editor Quill
+    quill.clipboard.dangerouslyPasteHTML("<?php echo $descripcion; ?>");
+
+    document.querySelector('form').onsubmit = function() {
+        var descripcion = document.querySelector('input[name=descripcion]');
+        descripcion.value = quill.root.innerHTML; // Asegura que se guarde el HTML correctamente
+    };
     </script>
 </body>
-
 </html>
