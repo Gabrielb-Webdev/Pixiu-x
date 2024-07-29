@@ -59,27 +59,6 @@
             <div><img src="../sources/images/blog_01.jpeg" alt="Imagen 10"></div>
         </div>
     </section>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.slider').slick({
-                slidesToShow: 5,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 0,
-                speed: 3000,
-                cssEase: 'linear',
-                infinite: true,
-                arrows: false,
-                dots: false,
-                pauseOnHover: false,
-                draggable: true, // Permite arrastrar con el mouse
-                variableWidth: true // Ajusta el ancho de los slides para un desplazamiento continuo
-            });
-        });
-    </script>
 </body>
 
 </html>

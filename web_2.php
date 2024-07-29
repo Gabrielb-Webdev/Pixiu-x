@@ -221,8 +221,10 @@
         </div>
     </section>
 
-    <!-- Sección del Carousel -->
-    <?php include 'components/carousel.php'; ?>
+    <!-- Contenido de tu página -->
+    <section class="container-fluid" style="margin-top: 80px;">
+        <?php include 'components/carousel.php'; ?>
+    </section>
 
     <?php include 'components/footer.php'; ?>
 
@@ -232,6 +234,26 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 0,
+                speed: 3000,
+                cssEase: 'linear',
+                infinite: true,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                draggable: true, // Permite arrastrar con el mouse
+                variableWidth: true // Ajusta el ancho de los slides para un desplazamiento continuo
+            });
+        });
+    </script>
+
 
 </body>
 
