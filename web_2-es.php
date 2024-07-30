@@ -80,28 +80,39 @@
     <!-- Page Content -->
     <?php include 'components/header.php'; ?>
 
+    <h2 class="text-center mb-4" style="font-size: 3rem;">Impulsa tu negocio con un Sitio Web hecho a medida</h2>
     <!-- Nueva Sección -->
-    <section class="container-fluid" style="margin-top: 120px;">
-        <h2 class="text-center mb-4">Impulsa tu negocio con un Sitio Web hecho a medida</h2>
-        <div class="card" style="background-color: #fee4d9;">
-            <div class="row no-gutters">
-                <div class="col-md-8 d-flex align-items-center">
-                    <div class="card-body">
-                        <h5 class="card-title">Beneficios de tener un sitio web:</h5>
-                        <p class="card-text">
-                            <i class="fas fa-check-circle" style="color: #28a745;"></i> Abre un canal innovador para ventas y comunicación. <i class="fas fa-shopping-cart" style="color: #ff6347;"></i><br>
-                            <i class="fas fa-check-circle" style="color: #28a745;"></i> Mejora la imagen profesional de tu marca. <i class="fas fa-chart-line" style="color: #1e90ff;"></i><br>
-                            <i class="fas fa-check-circle" style="color: #28a745;"></i> Amplía tu alcance, permitiéndote vender productos digitales como cursos, sesiones, libros electrónicos, videojuegos y otros recursos descargables. <i class="fas fa-globe" style="color: #ff8c00;"></i><br>
-                            <i class="fas fa-check-circle" style="color: #28a745;"></i> Facilita la creación y gestión de contenido propio mediante un blog autogestionable. <i class="fas fa-blog" style="color: #6a5acd;"></i>
-                        </p>
+    <section style="background-color: #fee4d9; padding: 40px 0;">
+        <div class="container">
+            <div class="card border-0">
+                <div class="row no-gutters">
+                    <div class="col-md-8 d-flex align-items-center">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-size: 1.5rem; font-weight: bold;">Beneficios de tener un sitio web:</h5>
+                            <p class="card-text">
+                                <span class="benefit-item">
+                                    <i class="fas fa-check-circle" style="color: #28a745;"></i> Abre un canal innovador para ventas y comunicación. <i class="fas fa-shopping-cart" style="color: #ff6347;"></i>
+                                </span><br>
+                                <span class="benefit-item">
+                                    <i class="fas fa-check-circle" style="color: #28a745;"></i> Mejora la imagen profesional de tu marca. <i class="fas fa-chart-line" style="color: #1e90ff;"></i>
+                                </span><br>
+                                <span class="benefit-item">
+                                    <i class="fas fa-check-circle" style="color: #28a745;"></i> Amplía tu alcance, permitiéndote vender productos digitales como cursos, sesiones, libros electrónicos, videojuegos y otros recursos descargables. <i class="fas fa-globe" style="color: #ff8c00;"></i>
+                                </span><br>
+                                <span class="benefit-item">
+                                    <i class="fas fa-check-circle" style="color: #28a745;"></i> Facilita la creación y gestión de contenido propio mediante un blog autogestionable. <i class="fas fa-blog" style="color: #6a5acd;"></i>
+                                </span>
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4 d-flex align-items-center">
-                    <img src="sources/images/blog_01.jpeg" class="card-img" alt="Imagen Descriptiva">
+                    <div class="col-md-4 d-flex align-items-center">
+                        <img src="sources/images/blog_01.jpeg" class="card-img" alt="Imagen Descriptiva">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Sección de Servicios -->
     <section class="container-fluid" style="margin-top: 80px;">
@@ -182,7 +193,7 @@
                         <p class="card-text">
                             <i class="fas fa-check-circle" style="color: #28a745;"></i> Necesitas diseño de tu marca y páginas web para convertir a tus posibles clientes.
                         </p>
-                        <button class="custom-btn btn-block">Hablar con Ventas</button>
+                        <button class="custom-btn btn-block">Contactanos</button>
                         <div class="payment-icons">
                             <i class="fab fa-cc-paypal" style="color: #003087;"></i>
                             <i class="fab fa-cc-visa" style="color: #1a1f71;"></i>
@@ -246,30 +257,39 @@
     </section>
 
     <!-- Nueva Sección -->
-    <section class="container-fluid" style="margin-top: 120px;">
-        <div class="card" style="background-color: #fee4d9;">
-            <div class="row no-gutters">
-                <div class="col-md-8 d-flex align-items-center">
-                    <div class="card-body">
-                        <h5 class="card-title">Ventajas de colaborar con Pixiu X</h5>
-                        <p class="card-text">
-                            <i class="fas fa-check-circle" style="color: #28a745;"></i> Canal de Chat 24/7 exclusivo para tu Marca. <i class="fas fa-comments" style="color: #1e90ff;"></i><br>
-                            <i class="fas fa-check-circle" style="color: #28a745;"></i> Plataforma flexible para gestionar tus solicitudes y cada etapa de la comunicación fluida con todo el equipo. <i class="fas fa-tasks" style="color: #ff6347;"></i><br>
-                            <i class="fas fa-check-circle" style="color: #28a745;"></i> Asesoramiento para el desarrollo de tu marca. <i class="fas fa-lightbulb" style="color: #ffc107;"></i><br>
-                            <i class="fas fa-check-circle" style="color: #28a745;"></i> 1 Sesión de Mentoría Gratuita para asesorarte en Marketing. <i class="fas fa-chalkboard-teacher" style="color: #6a5acd;"></i>
-                        </p>
+    <section style="margin-top: 120px; background-color: #fee4d9; padding: 40px 0;">
+        <div class="container">
+            <div class="card border-0">
+                <div class="row no-gutters">
+                    <div class="col-md-8 d-flex align-items-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Ventajas de colaborar con Pixiu X</h5>
+                            <p class="card-text">
+                                <i class="fas fa-check-circle" style="color: #28a745;"></i> Canal de Chat 24/7 exclusivo para tu Marca. <i class="fas fa-comments" style="color: #1e90ff;"></i><br>
+                                <i class="fas fa-check-circle" style="color: #28a745;"></i> Plataforma flexible para gestionar tus solicitudes y cada etapa de la comunicación fluida con todo el equipo. <i class="fas fa-tasks" style="color: #ff6347;"></i><br>
+                                <i class="fas fa-check-circle" style="color: #28a745;"></i> Asesoramiento para el desarrollo de tu marca. <i class="fas fa-lightbulb" style="color: #ffc107;"></i><br>
+                                <i class="fas fa-check-circle" style="color: #28a745;"></i> 1 Sesión de Mentoría Gratuita para asesorarte en Marketing. <i class="fas fa-chalkboard-teacher" style="color: #6a5acd;"></i>
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4 d-flex align-items-center">
-                    <img src="sources/images/blog_01.jpeg" class="card-img" alt="Imagen Descriptiva">
+                    <div class="col-md-4 d-flex align-items-center">
+                        <img src="sources/images/blog_01.jpeg" class="card-img" alt="Imagen Descriptiva">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+
     <!-- Contenido de tu página -->
     <section class="container-fluid" style="margin-top: 80px;">
         <?php include 'components/carousel.php'; ?>
+    </section>
+
+    <!-- Nueva Sección para el botón de reserva -->
+    <section class="container-fluid text-center my-4" style="max-width: 400px; margin: 0 auto;">
+        <h2>¿Todavía tienes dudas?</h2>
+        <a class="nav-link custom-btn" href="https://meetings.hubspot.com/pixiu" style="color: #fff; max-width: 150px; margin: 0 auto;" target="_blank">Book A Call</a>
     </section>
 
     <section id="faq" class="faq-section">
@@ -347,14 +367,10 @@
         </div>
     </section>
 
-    <!-- Nueva Sección para el botón de reserva -->
-    <section class="container-fluid text-center my-4" style="max-width: 400px; margin: 0 auto;">
-        <h2>¿Todavía tienes dudas?</h2>
-        <a class="nav-link custom-btn" href="https://meetings.hubspot.com/pixiu" style="color: #fff; max-width: 150px; margin: 0 auto;" target="_blank">Book A Call</a>
-    </section>
+    
 
 
-    <?php include 'components/footer.php'; ?>
+    <?php include 'components/footer-es.php'; ?>
 
     <!-- Scripts at the end of the body -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
