@@ -24,7 +24,7 @@ function generateRandomFileName($file_extension)
 // Validar y procesar el formulario de agregar artículo
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $titulo = $_POST["titulo"];
-    $descripcion = $_POST["descripcion"];
+    $descripcion = $_POST["descripcion"];  // Aquí se recibe el contenido de Quill como HTML
     $keywords = $_POST["keywords"];
 
     // Procesar la imagen subida
@@ -37,7 +37,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST["submit"])) {
         $check = getimagesize($_FILES["imagen"]["tmp_name"]);
         if ($check !== false) {
-            echo "El archivo es una imagen - " . $check["mime"] . ".";
             $uploadOk = 1;
         } else {
             echo "El archivo no es una imagen.";
@@ -69,18 +68,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Verificar si $uploadOk es set a 0 por algún error
     if ($uploadOk == 0) {
         echo "Lo siento, tu archivo no fue subido.";
-
-        // Si todo está bien, intenta subir el archivo
     } else {
         if (move_uploaded_file($_FILES["imagen"]["tmp_name"], $target_file)) {
-            echo "El archivo " . htmlspecialchars(basename($_FILES["imagen"]["name"])) . " ha sido subido.";
-
             // Insertar datos en la base de datos
             try {
                 $stmt = $conn->prepare("INSERT INTO articulos_blog (Titulo, Descripcion, img, usuario, keywords) 
                                        VALUES (:titulo, :descripcion, :img, :usuario, :keywords)");
                 $stmt->bindParam(':titulo', $titulo);
-                $stmt->bindParam(':descripcion', $descripcion);
+                $stmt->bindParam(':descripcion', $descripcion);  // Guardar el contenido HTML en la base de datos
                 $stmt->bindParam(':img', $target_file);  // Guardar la ruta de la imagen en la base de datos
                 $stmt->bindParam(':usuario', $_SESSION['username']);
                 $stmt->bindParam(':keywords', $keywords);
@@ -102,12 +97,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <title>Agregar Artículo</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css" />
+    <!-- Quill CSS -->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
     <style>
         body {
             display: flex;
@@ -147,9 +143,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         .form-container .btn:hover {
             background-color: #0056b3;
         }
+
+        #editor-container {
+            height: 200px;
+        }
     </style>
 </head>
-
 <body>
     <div class="form-container">
         <h2>Agregar Artículo</h2>
@@ -160,7 +159,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class="form-group">
                 <label for="descripcion">Descripción:</label>
-                <textarea class="form-control" id="descripcion" name="descripcion" rows="4" required></textarea>
+                <div id="editor-container"></div>
+                <input type="hidden" name="descripcion" id="descripcion">
             </div>
             <div class="form-group">
                 <label for="imagen">Imagen:</label>
@@ -173,6 +173,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <button type="submit" class="btn btn-primary" name="submit">Agregar Artículo</button>
         </form>
     </div>
-</body>
 
+    <!-- Scripts al final del body -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Quill JS -->
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script>
+    var quill = new Quill('#editor-container', {
+        theme: 'snow',
+        modules: {
+            toolbar: [
+                [{ 'header': [1, 2, 3, false] }],
+                [{ 'font': [] }],
+                [{ 'size': ['small', false, 'large', 'huge'] }],
+                ['bold', 'italic', 'underline', 'strike'],
+                [{ 'color': [] }, { 'background': [] }],
+                [{ 'list': 'ordered' }, { 'list': 'bullet' }],
+                [{ 'align': [] }],
+                ['link', 'image', 'video'],
+                ['blockquote', 'code-block'],
+                ['clean']
+            ]
+        }
+    });
+
+    document.querySelector('form').onsubmit = function() {
+        var descripcion = document.querySelector('input[name=descripcion]');
+        descripcion.value = quill.root.innerHTML; // Asegura que se guarde el HTML correctamente
+    };
+    </script>
+</body>
 </html>
