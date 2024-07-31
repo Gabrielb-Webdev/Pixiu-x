@@ -21,10 +21,11 @@
 
         .slider img {
             width: 100%;
-            max-width: 150px; /* Ajusta el tamaño máximo de las imágenes */
-            border-radius: 15px;
-            border: 2px solid #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 350px; /* Ajusta el tamaño máximo de las imágenes */
+            border-radius: 0; /* Elimina el borde redondeado */
+            border: none; /* Elimina el borde */
+            box-shadow: none; /* Elimina la sombra */
+            background: transparent; /* Fondo transparente */
         }
 
         .slick-list {
@@ -36,27 +37,23 @@
 <body>
     <section class="container-fluid" style="margin-top: 80px;">
         <div class="slider">
-            <div><img src="../sources/images/blog_01.jpeg" alt="Imagen 1"></div>
-            <div><img src="../sources/images/blog_01.jpeg" alt="Imagen 2"></div>
-            <div><img src="../sources/images/blog_01.jpeg" alt="Imagen 3"></div>
-            <div><img src="../sources/images/blog_01.jpeg" alt="Imagen 4"></div>
-            <div><img src="../sources/images/blog_01.jpeg" alt="Imagen 5"></div>
-            <div><img src="../sources/images/blog_01.jpeg" alt="Imagen 6"></div>
-            <div><img src="../sources/images/blog_01.jpeg" alt="Imagen 7"></div>
-            <div><img src="../sources/images/blog_01.jpeg" alt="Imagen 8"></div>
-            <div><img src="../sources/images/blog_01.jpeg" alt="Imagen 9"></div>
-            <div><img src="../sources/images/blog_01.jpeg" alt="Imagen 10"></div>
+            <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_2.png" alt="Imagen 2"></div>
+            <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_8.png" alt="Imagen 8"></div>
+            <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_6.png" alt="Imagen 6"></div>
+            <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_5.png" alt="Imagen 5"></div>
+            <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_10.png" alt="Imagen 10"></div>
+            <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_3.png" alt="Imagen 3"></div>
+            <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_9.png" alt="Imagen 9"></div>
+            <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_7.png" alt="Imagen 7"></div>
             <!-- Duplicamos las imágenes para crear un bucle perfecto -->
-            <div><img src="../sources/images/blog_01.jpeg" alt="Imagen 1"></div>
-            <div><img src="../sources/images/blog_01.jpeg" alt="Imagen 2"></div>
-            <div><img src="../sources/images/blog_01.jpeg" alt="Imagen 3"></div>
-            <div><img src="../sources/images/blog_01.jpeg" alt="Imagen 4"></div>
-            <div><img src="../sources/images/blog_01.jpeg" alt="Imagen 5"></div>
-            <div><img src="../sources/images/blog_01.jpeg" alt="Imagen 6"></div>
-            <div><img src="../sources/images/blog_01.jpeg" alt="Imagen 7"></div>
-            <div><img src="../sources/images/blog_01.jpeg" alt="Imagen 8"></div>
-            <div><img src="../sources/images/blog_01.jpeg" alt="Imagen 9"></div>
-            <div><img src="../sources/images/blog_01.jpeg" alt="Imagen 10"></div>
+            <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_9.png" alt="Imagen 9"></div>
+            <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_6.png" alt="Imagen 6"></div>
+            <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_8.png" alt="Imagen 8"></div>
+            <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_2.png" alt="Imagen 2"></div>
+            <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_3.png" alt="Imagen 3"></div>
+            <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_10.png" alt="Imagen 10"></div>
+            <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_5.png" alt="Imagen 5"></div>
+            <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_7.png" alt="Imagen 7"></div>
         </div>
     </section>
 </body>

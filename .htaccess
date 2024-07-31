@@ -72,3 +72,21 @@ RewriteRule ^data-extraction$ scrap.php [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^data-extraction-es$ scrap-es.php [L]
+
+# Redirigir el acceso a web_2.php a /create_a_web_page
+RewriteCond %{THE_REQUEST} /web_2\.php [NC]
+RewriteRule ^web_2\.php$ /create_a_web_page [R=301,L]
+
+# Asegurarse de que cualquier acceso a /create_a_web_page cargue web_2.php si no es un archivo o directorio existente
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^create_a_web_page$ web_2.php [L]
+
+# Redirigir el acceso a web_2-es.php a /create_a_web_page-es
+RewriteCond %{THE_REQUEST} /web_2-es\.php [NC]
+RewriteRule ^web_2-es\.php$ /create_a_web_page-es [R=301,L]
+
+# Asegurarse de que cualquier acceso a /create_a_web_page-es cargue web_2-es.php si no es un archivo o directorio existente
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^create_a_web_page-es$ web_2-es.php [L]

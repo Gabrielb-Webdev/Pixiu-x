@@ -30,6 +30,7 @@
 
     <!-- Datepicker CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/styles.css" />
@@ -74,13 +75,90 @@
             return false;
         }
     </script>
+    <style>
+        .image-card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            width: 100%;
+            height: 250px;
+            /* Ajusta la altura deseada */
+        }
+
+        .image-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Mantiene la proporción de la imagen */
+        }
+
+        .custom-btn {
+            background-color: #dd6d2c;
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-transform: uppercase;
+        }
+
+        .custom-btn:hover {
+            background-color: #e67a2c;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .custom-btn:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(221, 109, 44, 0.5);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .mb-4 {
+            margin-bottom: 1.5rem;
+        }
+
+        hr {
+            border-top: 1px solid #ddd;
+        }
+
+        .sub-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .sub-card img {
+            border-radius: 5px;
+        }
+
+        .service-card-body {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 55%;
+        }
+    </style>
 </head>
 
 <body>
     <!-- Page Content -->
-    <?php include 'components/header.php'; ?>
+    <?php include 'components/header-es.php'; ?>
 
-    <h2 class="text-center mb-4" style="font-size: 3rem;">Impulsa tu negocio con un Sitio Web hecho a medida</h2>
+    <section class="container" style="margin-top: 50px; width: 50%;">
+        <h2 class="text-center mb-4" style="font-size: 3rem; font-weight: bold;">Impulsa tu negocio con un Sitio Web hecho a medida</h2>
+    </section>
     <!-- Nueva Sección -->
     <section style="background-color: #fee4d9; padding: 40px 0;">
         <div class="container-fluid">
@@ -88,123 +166,143 @@
                 <div class="row no-gutters">
                     <div class="col-md-8 d-flex align-items-center">
                         <div class="card-body">
-                            <h5 class="card-title" style="font-size: 1.5rem; font-weight: bold;">Beneficios de tener un sitio web:</h5>
+                            <h5 class="card-title" style="font-size: 2rem; font-weight: bold;margin-bottom: 1.5rem;">Beneficios de tener un sitio web:</h5>
                             <p class="card-text">
                                 <span class="benefit-item">
-                                    <i class="fas fa-check-circle" style="color: #28a745;"></i> Abre un canal innovador para ventas y comunicación. <i class="fas fa-shopping-cart" style="color: #ff6347;"></i>
+                                    <i class="fas fa-shopping-cart" style="color: #ff6347;"></i> Abre un canal innovador para ventas y comunicación.
                                 </span><br>
                                 <span class="benefit-item">
-                                    <i class="fas fa-check-circle" style="color: #28a745;"></i> Mejora la imagen profesional de tu marca. <i class="fas fa-chart-line" style="color: #1e90ff;"></i>
+                                    <i class="fas fa-chart-line" style="color: #1e90ff;"></i> Mejora la imagen profesional de tu marca.
                                 </span><br>
                                 <span class="benefit-item">
-                                    <i class="fas fa-check-circle" style="color: #28a745;"></i> Amplía tu alcance, permitiéndote vender productos digitales como cursos, sesiones, libros electrónicos, videojuegos y otros recursos descargables. <i class="fas fa-globe" style="color: #ff8c00;"></i>
+                                    <i class="fas fa-globe" style="color: #ff8c00;"></i> Amplía tu alcance, permitiéndote vender productos digitales como cursos, sesiones, libros electrónicos, videojuegos y otros recursos descargables.
                                 </span><br>
                                 <span class="benefit-item">
-                                    <i class="fas fa-check-circle" style="color: #28a745;"></i> Facilita la creación y gestión de contenido propio mediante un blog autogestionable. <i class="fas fa-blog" style="color: #6a5acd;"></i>
+                                    <i class="fas fa-blog" style="color: #6a5acd;"></i> Facilita la creación y gestión de contenido propio mediante un blog autogestionable.
                                 </span>
                             </p>
                         </div>
                     </div>
                     <div class="col-md-4 d-flex align-items-center">
-                        <img src="sources/images/blog_01.jpeg" class="card-img" alt="Imagen Descriptiva">
+                        <img src="https://pixiux.com/sources/images/JPGS/3.jpg" class="card-img" alt="Imagen Descriptiva">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
     <!-- Sección de Servicios -->
-    <section class="container-fluid" style="margin-top: 80px;">
-        <h2 class="text-center mb-4 section-title">Nuestros Servicios</h2>
-        <div class="row">
-            <!-- Primera tarjeta -->
-            <div class="col-md-4 mb-4">
-                <div class="service-card">
-                    <img src="sources/images/blog_01.jpeg" class="service-card-img" alt="Oferta Express">
+<section class="container-fluid" style="margin-top: 80px;">
+    <h2 class="text-center mb-4 section-title">Nuestros Servicios</h2>
+    <div class="row justify-content-center">
+        <!-- Primera tarjeta -->
+        <div class="col-md-3 mb-4">
+            <div class="service-card">
+                <div class="sub-card">
+                    <img src="https://pixiux.com/sources/images/JPGS/2.jpg" class="service-card-img" alt="Oferta Express">
                     <div class="service-card-body">
                         <h5 class="service-card-title">Oferta Express</h5>
                         <h6 class="service-card-subtitle">3 días de entrega</h6>
-                        <p class="service-card-price"><span style="text-decoration: line-through; color: #888;">$499</span> <strong>$199</strong></p>
-                        <ul class="service-card-list">
-                            <li><i class="fas fa-check-circle" style="color: #28a745;"></i> Number of Pages: 1</li>
-                            <li><i class="fas fa-times-circle" style="color: #dc3545;"></i> No es para páginas ecommerce</li>
-                            <li><i class="fas fa-paint-brush" style="color: #007bff;"></i> Diseño, Logo, Branding</li>
-                        </ul>
-                        <h6 class="service-card-subtitle">Adicionales opcionales:</h6>
-                        <ul class="service-card-list">
-                            <li><i class="fas fa-plus-circle" style="color: #ffc107;"></i> Diseño de Logo: +$50</li>
-                            <li><i class="fas fa-plus-circle" style="color: #ffc107;"></i> Diseños adicionales: +$25</li>
-                            <li><i class="fas fa-plus-circle" style="color: #ffc107;"></i> Branding (Colores): +$50</li>
-                            <li><i class="fas fa-plus-circle" style="color: #ffc107;"></i> Páginas adicionales: +$50</li>
-                        </ul>
-                        <p class="card-text"><strong>Entrega en 5 días</strong> desde que recibimos toda la información relevante para completar el proyecto.</p>
+                        <p class="service-card-price"><span class="old-price">$499</span> <strong>$199</strong></p>
+                        <p class="limited-offer">¡Oferta limitada!</p>
                         <button class="custom-btn btn-block">Comprar</button>
-                        <p class="text-center" style="color: #ff6347;">¡Oferta limitada!</p>
-                        <div class="payment-icons">
-                            <i class="fab fa-cc-paypal" style="color: #003087;"></i>
-                            <i class="fab fa-cc-visa" style="color: #1a1f71;"></i>
-                            <i class="fas fa-credit-card" style="color: #007bff;"></i>
-                            <i class="fas fa-money-bill-wave" style="color: #28a745;"></i>
-                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Segunda tarjeta -->
-            <div class="col-md-4 mb-4">
-                <div class="service-card">
-                    <img src="sources/images/blog_01.jpeg" class="service-card-img" alt="Tienda Online">
-                    <div class="service-card-body">
-                        <h5 class="service-card-title">Tienda Online</h5>
-                        <h6 class="service-card-subtitle">Ecommerce Express</h6>
-                        <p class="service-card-price"><span style="text-decoration: line-through; color: #888;">$999</span> <strong>$499</strong></p>
-                        <ul class="service-card-list">
-                            <li><i class="fas fa-check-circle" style="color: #28a745;"></i> Páginas: Inicio, Página de productos, Contacto, Página autogestionable (editor de productos, Agregar/Eliminar productos)</li>
-                            <li><i class="fas fa-shopping-cart" style="color: #ff6347;"></i> Cart online</li>
-                            <li><i class="fas fa-credit-card" style="color: #007bff;"></i> Acepta pagos online</li>
-                            <li><i class="fas fa-user" style="color: #6a5acd;"></i> Login para historial de compras</li>
-                        </ul>
-                        <h6 class="service-card-subtitle">Adicionales opcionales:</h6>
-                        <ul class="service-card-list">
-                            <li><i class="fas fa-plus-circle" style="color: #ffc107;"></i> Diseño de Logo: +$50</li>
-                            <li><i class="fas fa-plus-circle" style="color: #ffc107;"></i> Diseños adicionales: +$25</li>
-                            <li><i class="fas fa-plus-circle" style="color: #ffc107;"></i> Branding (Colores): +$50</li>
-                            <li><i class="fas fa-plus-circle" style="color: #ffc107;"></i> Páginas adicionales: +$50</li>
-                        </ul>
-                        <p class="card-text"><strong>Entrega en 7 días</strong> desde que recibimos toda la información relevante para completar el proyecto.</p>
-                        <button class="custom-btn btn-block">Comprar</button>
-                        <p class="text-center" style="color: #ff6347;">¡Oferta limitada!</p>
-                        <div class="payment-icons">
-                            <i class="fab fa-cc-paypal" style="color: #003087;"></i>
-                            <i class="fab fa-cc-visa" style="color: #1a1f71;"></i>
-                            <i class="fas fa-credit-card" style="color: #007bff;"></i>
-                            <i class="fas fa-money-bill-wave" style="color: #28a745;"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Tercera tarjeta -->
-            <div class="col-md-4 mb-4">
-                <div class="service-card">
-                    <img src="sources/images/blog_01.jpeg" class="service-card-img" alt="Web Personalizada">
-                    <div class="service-card-body">
-                        <h5 class="service-card-title">Web Personalizada</h5>
-                        <h6 class="service-card-subtitle">¿Buscas algo más personalizado?</h6>
-                        <p class="card-text">
-                            <i class="fas fa-check-circle" style="color: #28a745;"></i> Necesitas diseño de tu marca y páginas web para convertir a tus posibles clientes.
-                        </p>
-                        <button class="custom-btn btn-block">Contactanos</button>
-                        <div class="payment-icons">
-                            <i class="fab fa-cc-paypal" style="color: #003087;"></i>
-                            <i class="fab fa-cc-visa" style="color: #1a1f71;"></i>
-                            <i class="fas fa-credit-card" style="color: #007bff;"></i>
-                            <i class="fas fa-money-bill-wave" style="color: #28a745;"></i>
-                        </div>
+                <div class="service-card-body">
+                    <p class="service-card-description"><strong>Entrega en 5 días</strong> desde que recibimos toda la información relevante para completar el proyecto.</p>
+                    <ul class="service-card-list">
+                        <li><i class="fas fa-check-circle" style="color: #28a745;"></i> Number of Pages: 1</li>
+                        <li><i class="fas fa-paint-brush" style="color: #007bff;"></i> Diseño, Logo, Branding</li>
+                        <li><i class="fas fa-bolt" style="color: #ff9800;"></i> Perfecto para negocios que necesitan una página web rápida y efectiva.</li>
+                        <li><i class="fas fa-times-circle" style="color: #dc3545;"></i> No es para páginas ecommerce</li>
+                    </ul>
+                    <h6 class="service-card-subtitle">Adicionales opcionales:</h6>
+                    <ul class="service-card-list">
+                        <li><i class="fas fa-plus-circle" style="color: #ffc107;"></i> Diseño de Logo: +$50</li>
+                        <li><i class="fas fa-plus-circle" style="color: #ffc107;"></i> Diseños adicionales: +$25</li>
+                        <li><i class="fas fa-plus-circle" style="color: #ffc107;"></i> Branding (Colores): +$50</li>
+                        <li><i class="fas fa-plus-circle" style="color: #ffc107;"></i> Páginas adicionales: +$50</li>
+                    </ul>
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-paypal" style="color: #003087;"></i>
+                        <i class="fab fa-cc-visa" style="color: #1a1f71;"></i>
+                        <i class="fas fa-credit-card" style="color: #007bff;"></i>
+                        <i class="fas fa-money-bill-wave" style="color: #28a745;"></i>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+        <!-- Segunda tarjeta -->
+        <div class="col-md-3 mb-4">
+            <div class="service-card">
+                <div class="sub-card">
+                    <img src="https://pixiux.com/sources/images/JPGS/3.jpg" class="service-card-img" alt="Tienda Online">
+                    <div class="service-card-body">
+                        <h5 class="service-card-title">Tienda Online</h5>
+                        <h6 class="service-card-subtitle">Ecommerce Express</h6>
+                        <p class="service-card-price"><span class="old-price">$999</span> <strong>$499</strong></p>
+                        <p class="limited-offer">¡Oferta limitada!</p>
+                        <button class="custom-btn btn-block">Comprar</button>
+                    </div>
+                </div>
+                <div class="service-card-body">
+                    <p class="service-card-description"><strong>Entrega en 7 días</strong> desde que recibimos toda la información relevante para completar el proyecto.</p>
+                    <ul class="service-card-list">
+                        <li><i class="fas fa-check-circle" style="color: #28a745;"></i> Páginas: Inicio, Página de productos, Contacto</li>
+                        <li><i class="fas fa-edit" style="color: #1e90ff;"></i> Página autogestionable (editor de productos, Agregar/Eliminar productos)</li>
+                        <li><i class="fas fa-shopping-cart" style="color: #ff6347;"></i> Cart online</li>
+                        <li><i class="fas fa-credit-card" style="color: #007bff;"></i> Acepta pagos online</li>
+                        <li><i class="fas fa-user-lock" style="color: #6a5acd;"></i> Login para historial de compras</li>
+                    </ul>
+                    <h6 class="service-card-subtitle">Adicionales opcionales:</h6>
+                    <ul class="service-card-list">
+                        <li><i class="fas fa-plus-circle" style="color: #ffc107;"></i> Diseño de Logo: +$50</li>
+                        <li><i class="fas fa-plus-circle" style="color: #ffc107;"></i> Diseños adicionales: +$25</li>
+                        <li><i class="fas fa-plus-circle" style="color: #ffc107;"></i> Branding (Colores): +$50</li>
+                        <li><i class="fas fa-plus-circle" style="color: #ffc107;"></i> Páginas adicionales: +$50</li>
+                    </ul>
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-paypal" style="color: #003087;"></i>
+                        <i class="fab fa-cc-visa" style="color: #1a1f71;"></i>
+                        <i class="fas fa-credit-card" style="color: #007bff;"></i>
+                        <i class="fas fa-money-bill-wave" style="color: #28a745;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tercera tarjeta -->
+        <div class="col-md-3 mb-4">
+            <div class="service-card">
+                <div class="sub-card">
+                    <img src="https://pixiux.com/sources/images/JPGS/4.jpg" class="service-card-img" alt="Web Personalizada">
+                    <div class="service-card-body">
+                        <h5 class="service-card-title">Web Personalizada</h5>
+                        <h6 class="service-card-subtitle">¿Buscas algo más personalizado?</h6>
+                        <p class="service-card-price"><strong>Esta opcion es ideal para ti</strong></p>
+                        <p class="limited-offer">¡Oferta limitada!</p>
+                        <button class="custom-btn btn-block">Contactanos</button>
+                    </div>
+                </div>
+                <div class="service-card-body">
+                    <p class="service-card-description">Ofrecemos soluciones a medida para tu negocio, adaptadas a tus necesidades específicas. Diseñamos desde el Logo, los Colores que debes utilizar, Branding, versiones web y app, y mucho más.</p>
+                    <ul class="service-card-list">
+                        <li><i class="fas fa-check-circle" style="color: #28a745;"></i> Diseño de marca completo</li>
+                        <li><i class="fas fa-check-circle" style="color: #28a745;"></i> Páginas web y aplicaciones personalizadas</li>
+                        <li><i class="fas fa-check-circle" style="color: #28a745;"></i> Branding y estrategia visual</li>
+                    </ul>
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-paypal" style="color: #003087;"></i>
+                        <i class="fab fa-cc-visa" style="color: #1a1f71;"></i>
+                        <i class="fas fa-credit-card" style="color: #007bff;"></i>
+                        <i class="fas fa-money-bill-wave" style="color: #28a745;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
     <!-- Nueva Sección con Imágenes y Botones de Compra -->
     <section class="container-fluid" style="margin-top: 80px;">
@@ -215,17 +313,17 @@
         <div class="row mb-4">
             <div class="col-md-4 mb-4">
                 <div class="image-card">
-                    <img src="sources/images/blog_01.jpeg" class="img-fluid rescale-image" alt="Imagen 1">
+                    <img src="https://pixiux.com/sources/images/JPGS/5.jpg" class="img-fluid" alt="Imagen 1">
                 </div>
             </div>
             <div class="col-md-4 mb-4">
                 <div class="image-card">
-                    <img src="sources/images/blog_01.jpeg" class="img-fluid rescale-image" alt="Imagen 2">
+                    <img src="https://pixiux.com/sources/images/JPGS/6.jpg" class="img-fluid" alt="Imagen 2">
                 </div>
             </div>
             <div class="col-md-4 mb-4">
                 <div class="image-card">
-                    <img src="sources/images/blog_01.jpeg" class="img-fluid rescale-image" alt="Imagen 3">
+                    <img src="https://pixiux.com/sources/images/JPGS/7.jpg" class="img-fluid" alt="Imagen 3">
                 </div>
             </div>
         </div>
@@ -237,17 +335,17 @@
         <div class="row mb-4">
             <div class="col-md-4 mb-4">
                 <div class="image-card">
-                    <img src="sources/images/blog_01.jpeg" class="img-fluid rescale-image" alt="Imagen 4">
+                    <img src="https://pixiux.com/sources/images/JPGS/8.jpg" class="img-fluid" alt="Imagen 4">
                 </div>
             </div>
             <div class="col-md-4 mb-4">
                 <div class="image-card">
-                    <img src="sources/images/blog_01.jpeg" class="img-fluid rescale-image" alt="Imagen 5">
+                    <img src="https://pixiux.com/sources/images/JPGS/9.jpg" class="img-fluid" alt="Imagen 5">
                 </div>
             </div>
             <div class="col-md-4 mb-4">
                 <div class="image-card">
-                    <img src="sources/images/blog_01.jpeg" class="img-fluid rescale-image" alt="Imagen 6">
+                    <img src="https://pixiux.com/sources/images/JPGS/10.jpg" class="img-fluid" alt="Imagen 6">
                 </div>
             </div>
         </div>
@@ -273,7 +371,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 d-flex align-items-center">
-                        <img src="sources/images/blog_01.jpeg" class="card-img" alt="Imagen Descriptiva">
+                        <img src="https://pixiux.com/sources/images/JPGS/5.jpg" class="card-img" alt="Imagen Descriptiva">
                     </div>
                 </div>
             </div>
@@ -287,8 +385,8 @@
     </section>
 
     <!-- Nueva Sección para el botón de reserva -->
-    <section class="container-fluid text-center my-4" style="max-width: 400px; margin: 0 auto;">
-        <h2>¿Todavía tienes dudas?</h2>
+    <section class="container-fluid text-center my-4" style="max-width: 1600px; margin: 0 auto;">
+        <h2 style="font-size: 2.5rem; font-weight: bold;">¿Todavía tienes dudas?</h2>
         <a class="nav-link custom-btn" href="https://meetings.hubspot.com/pixiu" style="color: #fff; max-width: 150px; margin: 0 auto;" target="_blank">Book A Call</a>
     </section>
 
@@ -367,7 +465,7 @@
         </div>
     </section>
 
-    
+
 
 
     <?php include 'components/footer-es.php'; ?>

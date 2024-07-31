@@ -18,6 +18,10 @@
     <loc>https://pixiux.com/web</loc>
     <changefreq>weekly</changefreq>
   </url>
+  <url>
+    <loc>https://pixiux.com/create_a_web_page</loc>
+    <changefreq>weekly</changefreq>
+  </url>
 
   <!-- Archivos HTML en español -->
   <url>
@@ -34,6 +38,10 @@
   </url>
   <url>
     <loc>https://pixiux.com/web-es</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pixiux.com/create_a_web_page-es</loc>
     <changefreq>weekly</changefreq>
   </url>
 

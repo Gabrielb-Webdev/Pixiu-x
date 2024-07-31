@@ -1151,3 +1151,21 @@ button:focus {
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+
+.benefit-item i {
+    font-size: 1.5rem; /* Tamaño de los iconos */
+    margin-right: 0.5rem; /* Espacio entre el icono y el texto */
+    vertical-align: middle; /* Alineación vertical del icono */
+}
+
+.benefit-item {
+    font-size: 1.25rem; /* Tamaño del texto */
+    line-height: 2rem; /* Altura de la línea */
+    display: flex; /* Usar flexbox para alinear icono y texto */
+    align-items: center; /* Centrar icono y texto verticalmente */
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: grey;
+}https://pixiux.com/web_2-es.php
