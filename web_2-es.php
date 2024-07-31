@@ -83,7 +83,7 @@
     <h2 class="text-center mb-4" style="font-size: 3rem;">Impulsa tu negocio con un Sitio Web hecho a medida</h2>
     <!-- Nueva Sección -->
     <section style="background-color: #fee4d9; padding: 40px 0;">
-        <div class="container">
+        <div class="container-fluid">
             <div class="card border-0">
                 <div class="row no-gutters">
                     <div class="col-md-8 d-flex align-items-center">
