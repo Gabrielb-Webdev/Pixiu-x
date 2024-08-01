@@ -7,6 +7,8 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="Pixiu X">
+    <meta name="description" content="Impulsa tu negocio con un sitio web hecho a medida por Pixiu X. Disfruta de beneficios como una imagen profesional mejorada, mayor alcance y fácil gestión de contenido con nuestras soluciones web personalizadas." />
+    <meta name="keywords" content="sitio web personalizado, diseño web, sitio web para negocios, imagen profesional, ventas en línea, Pixiu X, gestión de contenido, productos digitales, desarrollo web, sitio web ecommerce, branding, diseño de logo, entrega rápida de sitios web, plantillas web, soluciones a medida, marketing digital, SEO, aplicaciones web, desarrollo de apps, diseño responsivo, sitios web amigables, servicios web profesionales, alojamiento web, registro de dominios, mantenimiento web, estrategia de marketing, analíticas de sitios web, pagos en línea seguros, tienda en línea, gestión de blogs, consultoría de marketing, soporte por chat, gestión de proyectos, mentoría, plataforma flexible, crecimiento empresarial, creación de sitios web, optimización de sitios web, soporte web, soluciones escalables, diseño creativo, estrategia visual" />
     <title>Pixiu X - Create a website with Pixiu X </title>
 
     <!-- Favicons -->
@@ -194,9 +196,9 @@
     <!-- Sección de Servicios -->
     <section class="container-fluid" style="margin-top: 80px;">
         <h2 class="text-center mb-4 section-title">Nuestros Servicios</h2>
-        <div class="row">
+        <div class="row justify-content-center">
             <!-- Primera tarjeta -->
-            <div class="col-md-4 mb-4">
+            <div class="col-md-3 mb-4">
                 <div class="service-card">
                     <div class="sub-card">
                         <img src="https://pixiux.com/sources/images/JPGS/2.jpg" class="service-card-img" alt="Oferta Express">
@@ -233,7 +235,7 @@
                 </div>
             </div>
             <!-- Segunda tarjeta -->
-            <div class="col-md-4 mb-4">
+            <div class="col-md-3 mb-4">
                 <div class="service-card">
                     <div class="sub-card">
                         <img src="https://pixiux.com/sources/images/JPGS/3.jpg" class="service-card-img" alt="Tienda Online">
@@ -249,7 +251,7 @@
                         <p class="service-card-description"><strong>Entrega en 7 días</strong> desde que recibimos toda la información relevante para completar el proyecto.</p>
                         <ul class="service-card-list">
                             <li><i class="fas fa-check-circle" style="color: #28a745;"></i> Páginas: Inicio, Página de productos, Contacto</li>
-                            <li><i class="fas fa-edit" style="color: #1e90ff;"></i> Página autogestionable (editor de productos, Agregar/Eliminar productos)</li>
+                            <li><i class="fas fa-edit" style="color: #1e90ff;"></i> Página autogestionable (editor de productos)</li>
                             <li><i class="fas fa-shopping-cart" style="color: #ff6347;"></i> Cart online</li>
                             <li><i class="fas fa-credit-card" style="color: #007bff;"></i> Acepta pagos online</li>
                             <li><i class="fas fa-user-lock" style="color: #6a5acd;"></i> Login para historial de compras</li>
@@ -271,7 +273,7 @@
                 </div>
             </div>
             <!-- Tercera tarjeta -->
-            <div class="col-md-4 mb-4">
+            <div class="col-md-3 mb-4">
                 <div class="service-card">
                     <div class="sub-card">
                         <img src="https://pixiux.com/sources/images/JPGS/4.jpg" class="service-card-img" alt="Web Personalizada">
@@ -284,7 +286,7 @@
                         </div>
                     </div>
                     <div class="service-card-body">
-                        <p class="service-card-description">Ofrecemos soluciones a medida para tu negocio, adaptadas a tus necesidades específicas. Diseñamos desde el Logo, los Colores que debes utilizar, Branding, versiones web y app, y mucho más.</p>
+                        <p class="service-card-description"><strong>Ofrecemos soluciones</strong> a medida para tu negocio, adaptadas a tus necesidades específicas. Diseñamos desde el Logo, los Colores que debes utilizar, Branding, versiones web y app, y mucho más.</p>
                         <ul class="service-card-list">
                             <li><i class="fas fa-check-circle" style="color: #28a745;"></i> Diseño de marca completo</li>
                             <li><i class="fas fa-check-circle" style="color: #28a745;"></i> Páginas web y aplicaciones personalizadas</li>

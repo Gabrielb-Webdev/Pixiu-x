@@ -27,7 +27,7 @@ session_regenerate_id(true);
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
                         <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-                            <a class="dropdown-item" href="/create_a_web_page">Create a Web Page</a>
+                            <a class="dropdown-item" href="/create-a-web-page">Create a Web Page</a>
                             <a class="dropdown-item" href="/custom-software-development">Custom Software Development</a>
                             <a class="dropdown-item" href="/hubSpot-implementation-and-consulting">HubSpot Implementation and Consulting</a>
                             <a class="dropdown-item" href="/data-extraction">Data Extraction</a>
@@ -136,8 +136,8 @@ session_regenerate_id(true);
         const links = {
             'https://pixiux.com/': 'https://pixiux.com/es',
             'https://pixiux.com/es': 'https://pixiux.com',
-            'https://pixiux.com/create_a_web_page': 'https://pixiux.com/create_a_web_page-es',
-            'https://pixiux.com/https://pixiux.com/create_a_web_page-es': 'https://pixiux.com/create_a_web_page',
+            'https://pixiux.com/create-a-web-page': 'https://pixiux.com/crea-tu-sitio-web',
+            'https://pixiux.com/crea-tu-sitio-web': 'https://pixiux.com/create-a-web-page',
             'https://pixiux.com/custom-software-development': 'https://pixiux.com/custom-software-development-es',
             'https://pixiux.com/custom-software-development-es': 'https://pixiux.com/custom-software-development',
             'https://pixiux.com/hubSpot-implementation-and-consulting': 'https://pixiux.com/hubSpot-implementation-and-consulting-es',

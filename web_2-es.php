@@ -7,7 +7,9 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="Pixiu X">
-    <title>Pixiu X - Create a website with Pixiu X </title>
+    <meta name="description" content="Impulsa tu negocio con un sitio web hecho a medida por Pixiu X. Disfruta de beneficios como una imagen profesional mejorada, mayor alcance y fácil gestión de contenido con nuestras soluciones web personalizadas." />
+    <meta name="keywords" content="sitio web personalizado, diseño web, sitio web para negocios, imagen profesional, ventas en línea, Pixiu X, gestión de contenido, productos digitales, desarrollo web, sitio web ecommerce, branding, diseño de logo, entrega rápida de sitios web, plantillas web, soluciones a medida, marketing digital, SEO, aplicaciones web, desarrollo de apps, diseño responsivo, sitios web amigables, servicios web profesionales, alojamiento web, registro de dominios, mantenimiento web, estrategia de marketing, analíticas de sitios web, pagos en línea seguros, tienda en línea, gestión de blogs, consultoría de marketing, soporte por chat, gestión de proyectos, mentoría, plataforma flexible, crecimiento empresarial, creación de sitios web, optimización de sitios web, soporte web, soluciones escalables, diseño creativo, estrategia visual" />
+    <title>Pixiu X - Crea Tu Sitio Web Con Pixiu X </title>
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="https://pixiux.com/Logos/apple-touch-icon.png" />
@@ -164,7 +166,7 @@
         <div class="container-fluid">
             <div class="card border-0">
                 <div class="row no-gutters">
-                    <div class="col-md-8 d-flex align-items-center">
+                    <div class="col-md-5 d-flex align-items-center">
                         <div class="card-body">
                             <h5 class="card-title" style="font-size: 2rem; font-weight: bold;margin-bottom: 1.5rem;">Beneficios de tener un sitio web:</h5>
                             <p class="card-text">
@@ -183,126 +185,253 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-4 d-flex align-items-center">
-                        <img src="https://pixiux.com/sources/images/JPGS/3.jpg" class="card-img" alt="Imagen Descriptiva">
+                    <div class="col-md-6 d-flex align-items-center">
+                        <!-- Sección del formulario de contacto -->
+                        <div class="container-fluid">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-12 d-flex justify-content-right flex-column">
+                                    <h5 class="card-title text-center" style="font-size: 2rem; font-weight: bold;margin-bottom: 0rem;">Contáctanos</h5>
+                                    <form id="contact-form" class="form" action="../database/form.php" method="post" onsubmit="gtag_report_conversion(); return true;">
+                                        <div class="flex">
+                                            <label>
+                                                <input required placeholder="Nombre" type="text" class="input" name="firstName" />
+                                            </label>
+
+                                            <label>
+                                                <input required placeholder="Apellido" type="text" class="input" name="lastName" />
+                                            </label>
+                                        </div>
+
+                                        <label>
+                                            <input required placeholder="Correo" type="email" class="input" name="email" />
+                                        </label>
+
+                                        <label>
+                                            <select required class="input" id="service-select" name="service">
+                                                <option value="" selected disabled>Selecciona Un Servicio</option>
+                                                <option value="Custom Software Development">
+                                                    Desarrollo de Software Personalizado
+                                                </option>
+                                                <option value="HubSpot implementation and consulting">
+                                                    Implementación y consultoría de HubSpot
+                                                </option>
+                                                <option value="Data Extraction">Extracción de datos</option>
+                                            </select>
+                                        </label>
+
+                                        <!-- Segundo dropdown que se muestra cuando se selecciona "Custom Software Development" -->
+                                        <div class="custom-software-dropdown" style="display: none">
+                                            <label>
+                                                <select class="input" name="customOption">
+                                                    <option value="" selected disabled>Select a Service</option>
+                                                    <option value="Web Design">Diseño web</option>
+                                                    <option value="Custom Web Development">
+                                                    Desarrollo web a medida
+                                                    </option>
+                                                    <option value="Mobile Applications">
+                                                    Aplicaciones móviles
+                                                    </option>
+                                                    <option value="E-Commerce Web Development">
+                                                    Desarrollo web de comercio electrónico
+                                                    </option>
+                                                </select>
+                                            </label>
+                                        </div>
+
+                                        <label>
+                                            <textarea required rows="3" placeholder="Hola, estoy interesado en contratar sus servicios para....." class="input01" name="Message"></textarea>
+                                        </label>
+
+                                        <button type="submit" class="fancy">
+                                            <span class="top-key"></span>
+                                            <span class="text">Enviar</span>
+                                            <span class="bottom-key-1"></span>
+                                            <span class="bottom-key-2"></span>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección de Servicios -->
-<section class="container-fluid" style="margin-top: 80px;">
-    <h2 class="text-center mb-4 section-title">Nuestros Servicios</h2>
-    <div class="row justify-content-center">
-        <!-- Primera tarjeta -->
-        <div class="col-md-3 mb-4">
-            <div class="service-card">
-                <div class="sub-card">
-                    <img src="https://pixiux.com/sources/images/JPGS/2.jpg" class="service-card-img" alt="Oferta Express">
-                    <div class="service-card-body">
-                        <h5 class="service-card-title">Oferta Express</h5>
-                        <h6 class="service-card-subtitle">3 días de entrega</h6>
-                        <p class="service-card-price"><span class="old-price">$499</span> <strong>$199</strong></p>
-                        <p class="limited-offer">¡Oferta limitada!</p>
-                        <button class="custom-btn btn-block">Comprar</button>
-                    </div>
-                </div>
-                <div class="service-card-body">
-                    <p class="service-card-description"><strong>Entrega en 5 días</strong> desde que recibimos toda la información relevante para completar el proyecto.</p>
-                    <ul class="service-card-list">
-                        <li><i class="fas fa-check-circle" style="color: #28a745;"></i> Number of Pages: 1</li>
-                        <li><i class="fas fa-paint-brush" style="color: #007bff;"></i> Diseño, Logo, Branding</li>
-                        <li><i class="fas fa-bolt" style="color: #ff9800;"></i> Perfecto para negocios que necesitan una página web rápida y efectiva.</li>
-                        <li><i class="fas fa-times-circle" style="color: #dc3545;"></i> No es para páginas ecommerce</li>
-                    </ul>
-                    <h6 class="service-card-subtitle">Adicionales opcionales:</h6>
-                    <ul class="service-card-list">
-                        <li><i class="fas fa-plus-circle" style="color: #ffc107;"></i> Diseño de Logo: +$50</li>
-                        <li><i class="fas fa-plus-circle" style="color: #ffc107;"></i> Diseños adicionales: +$25</li>
-                        <li><i class="fas fa-plus-circle" style="color: #ffc107;"></i> Branding (Colores): +$50</li>
-                        <li><i class="fas fa-plus-circle" style="color: #ffc107;"></i> Páginas adicionales: +$50</li>
-                    </ul>
-                    <div class="payment-icons">
-                        <i class="fab fa-cc-paypal" style="color: #003087;"></i>
-                        <i class="fab fa-cc-visa" style="color: #1a1f71;"></i>
-                        <i class="fas fa-credit-card" style="color: #007bff;"></i>
-                        <i class="fas fa-money-bill-wave" style="color: #28a745;"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Segunda tarjeta -->
-        <div class="col-md-3 mb-4">
-            <div class="service-card">
-                <div class="sub-card">
-                    <img src="https://pixiux.com/sources/images/JPGS/3.jpg" class="service-card-img" alt="Tienda Online">
-                    <div class="service-card-body">
-                        <h5 class="service-card-title">Tienda Online</h5>
-                        <h6 class="service-card-subtitle">Ecommerce Express</h6>
-                        <p class="service-card-price"><span class="old-price">$999</span> <strong>$499</strong></p>
-                        <p class="limited-offer">¡Oferta limitada!</p>
-                        <button class="custom-btn btn-block">Comprar</button>
-                    </div>
-                </div>
-                <div class="service-card-body">
-                    <p class="service-card-description"><strong>Entrega en 7 días</strong> desde que recibimos toda la información relevante para completar el proyecto.</p>
-                    <ul class="service-card-list">
-                        <li><i class="fas fa-check-circle" style="color: #28a745;"></i> Páginas: Inicio, Página de productos, Contacto</li>
-                        <li><i class="fas fa-edit" style="color: #1e90ff;"></i> Página autogestionable (editor de productos, Agregar/Eliminar productos)</li>
-                        <li><i class="fas fa-shopping-cart" style="color: #ff6347;"></i> Cart online</li>
-                        <li><i class="fas fa-credit-card" style="color: #007bff;"></i> Acepta pagos online</li>
-                        <li><i class="fas fa-user-lock" style="color: #6a5acd;"></i> Login para historial de compras</li>
-                    </ul>
-                    <h6 class="service-card-subtitle">Adicionales opcionales:</h6>
-                    <ul class="service-card-list">
-                        <li><i class="fas fa-plus-circle" style="color: #ffc107;"></i> Diseño de Logo: +$50</li>
-                        <li><i class="fas fa-plus-circle" style="color: #ffc107;"></i> Diseños adicionales: +$25</li>
-                        <li><i class="fas fa-plus-circle" style="color: #ffc107;"></i> Branding (Colores): +$50</li>
-                        <li><i class="fas fa-plus-circle" style="color: #ffc107;"></i> Páginas adicionales: +$50</li>
-                    </ul>
-                    <div class="payment-icons">
-                        <i class="fab fa-cc-paypal" style="color: #003087;"></i>
-                        <i class="fab fa-cc-visa" style="color: #1a1f71;"></i>
-                        <i class="fas fa-credit-card" style="color: #007bff;"></i>
-                        <i class="fas fa-money-bill-wave" style="color: #28a745;"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Tercera tarjeta -->
-        <div class="col-md-3 mb-4">
-            <div class="service-card">
-                <div class="sub-card">
-                    <img src="https://pixiux.com/sources/images/JPGS/4.jpg" class="service-card-img" alt="Web Personalizada">
-                    <div class="service-card-body">
-                        <h5 class="service-card-title">Web Personalizada</h5>
-                        <h6 class="service-card-subtitle">¿Buscas algo más personalizado?</h6>
-                        <p class="service-card-price"><strong>Esta opcion es ideal para ti</strong></p>
-                        <p class="limited-offer">¡Oferta limitada!</p>
-                        <button class="custom-btn btn-block">Contactanos</button>
-                    </div>
-                </div>
-                <div class="service-card-body">
-                    <p class="service-card-description">Ofrecemos soluciones a medida para tu negocio, adaptadas a tus necesidades específicas. Diseñamos desde el Logo, los Colores que debes utilizar, Branding, versiones web y app, y mucho más.</p>
-                    <ul class="service-card-list">
-                        <li><i class="fas fa-check-circle" style="color: #28a745;"></i> Diseño de marca completo</li>
-                        <li><i class="fas fa-check-circle" style="color: #28a745;"></i> Páginas web y aplicaciones personalizadas</li>
-                        <li><i class="fas fa-check-circle" style="color: #28a745;"></i> Branding y estrategia visual</li>
-                    </ul>
-                    <div class="payment-icons">
-                        <i class="fab fa-cc-paypal" style="color: #003087;"></i>
-                        <i class="fab fa-cc-visa" style="color: #1a1f71;"></i>
-                        <i class="fas fa-credit-card" style="color: #007bff;"></i>
-                        <i class="fas fa-money-bill-wave" style="color: #28a745;"></i>
-                    </div>
-                </div>
-            </div>
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p>
+            Formulario completado correctamente. Nos estaremos contactando con
+            usted en breve.
+            </p>
+            <button id="accept-button">Aceptar</button>
         </div>
     </div>
-</section>
 
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 860px;
+            width: 100%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .input:focus {
+            border-color: #fee4d9;
+            /* Cambia el color del borde al hacer clic */
+            outline: none;
+            /* Quita el contorno por defecto */
+            box-shadow: none;
+            /* Quita la sombra por defecto */
+        }
+
+        .fancy {
+            background-color: #dd6d2c;
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-transform: uppercase;
+        }
+
+        .fancy:hover {
+            background-color: #e67a2c;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .fancy:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(221, 109, 44, 0.5);
+        }
+
+        .fancy .text {
+            color: white;
+        }
+    </style>
+
+    <!-- Sección de Servicios -->
+    <section class="container-fluid" style="margin-top: 80px;">
+        <h2 class="text-center mb-4 section-title">Nuestros Servicios</h2>
+        <div class="row justify-content-center">
+            <!-- Primera tarjeta -->
+            <div class="col-md-3 mb-4">
+                <div class="service-card">
+                    <div class="sub-card">
+                        <img src="https://pixiux.com/sources/images/JPGS/2.jpg" class="service-card-img" alt="Oferta Express">
+                        <div class="service-card-body">
+                            <h5 class="service-card-title">Oferta Express</h5>
+                            <h6 class="service-card-subtitle">3 días de entrega</h6>
+                            <p class="service-card-price"><span class="old-price">$499</span> <strong>$199</strong></p>
+                            <p class="limited-offer" style="color: red;"><strong>¡Oferta limitada!</strong></p>
+                            <button class="custom-btn btn-block">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="service-card-body">
+                        <p class="service-card-description"><strong>Entrega en 5 días</strong> desde que recibimos toda la información relevante para completar el proyecto.</p>
+                        <ul class="service-card-list">
+                            <li><i class="fas fa-check-circle" style="color: #28a745;"></i> Number of Pages: 1</li>
+                            <li><i class="fas fa-paint-brush" style="color: #007bff;"></i> Diseño, Logo, Branding</li>
+                            <li><i class="fas fa-bolt" style="color: #ff9800;"></i> Perfecto para negocios que necesitan una página web rápida y efectiva.</li>
+                            <li><i class="fas fa-times-circle" style="color: #dc3545;"></i> No es para páginas ecommerce</li>
+                        </ul>
+                        <h6 class="service-card-subtitle">Adicionales opcionales:</h6>
+                        <ul class="service-card-list">
+                            <li><i class="fas fa-plus-circle" style="color: #ffc107;"></i> Diseño de Logo: +$50</li>
+                            <li><i class="fas fa-plus-circle" style="color: #ffc107;"></i> Diseños adicionales: +$25</li>
+                            <li><i class="fas fa-plus-circle" style="color: #ffc107;"></i> Branding (Colores): +$50</li>
+                            <li><i class="fas fa-plus-circle" style="color: #ffc107;"></i> Páginas adicionales: +$50</li>
+                        </ul>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-paypal" style="color: #003087;"></i>
+                            <i class="fab fa-cc-visa" style="color: #1a1f71;"></i>
+                            <i class="fas fa-credit-card" style="color: #007bff;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Segunda tarjeta -->
+            <div class="col-md-3 mb-4">
+                <div class="service-card">
+                    <div class="sub-card">
+                        <img src="https://pixiux.com/sources/images/JPGS/3.jpg" class="service-card-img" alt="Tienda Online">
+                        <div class="service-card-body">
+                            <h5 class="service-card-title">Tienda Online</h5>
+                            <h6 class="service-card-subtitle">Ecommerce Express</h6>
+                            <p class="service-card-price"><span class="old-price">$999</span> <strong>$499</strong></p>
+                            <p class="limited-offer" style="color: red;"><strong>¡Oferta limitada!</strong></p>
+                            <button class="custom-btn btn-block">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="service-card-body">
+                        <p class="service-card-description"><strong>Entrega en 7 días</strong> desde que recibimos toda la información relevante para completar el proyecto.</p>
+                        <ul class="service-card-list">
+                            <li><i class="fas fa-check-circle" style="color: #28a745;"></i> Páginas: Inicio, productos, Contacto</li>
+                            <li><i class="fas fa-edit" style="color: #1e90ff;"></i> Página autogestionable (editor de productos)</li>
+                            <li><i class="fas fa-shopping-cart" style="color: #ff6347;"></i> Cart online</li>
+                            <li><i class="fas fa-credit-card" style="color: #007bff;"></i> Acepta pagos online</li>
+                            <li><i class="fas fa-user-lock" style="color: #6a5acd;"></i> Login para historial de compras</li>
+                        </ul>
+                        <h6 class="service-card-subtitle">Adicionales opcionales:</h6>
+                        <ul class="service-card-list">
+                            <li><i class="fas fa-plus-circle" style="color: #ffc107;"></i> Diseño de Logo: +$50</li>
+                            <li><i class="fas fa-plus-circle" style="color: #ffc107;"></i> Diseños adicionales: +$25</li>
+                            <li><i class="fas fa-plus-circle" style="color: #ffc107;"></i> Branding (Colores): +$50</li>
+                            <li><i class="fas fa-plus-circle" style="color: #ffc107;"></i> Páginas adicionales: +$50</li>
+                        </ul>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-paypal" style="color: #003087;"></i>
+                            <i class="fab fa-cc-visa" style="color: #1a1f71;"></i>
+                            <i class="fas fa-credit-card" style="color: #007bff;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tercera tarjeta -->
+            <div class="col-md-3 mb-4">
+                <div class="service-card">
+                    <div class="sub-card">
+                        <img src="https://pixiux.com/sources/images/JPGS/4.jpg" class="service-card-img" alt="Web Personalizada">
+                        <div class="service-card-body">
+                            <h5 class="service-card-title">Web Personalizada</h5>
+                            <h6 class="service-card-subtitle" style="margin-bottom: 1.8rem;">¿Buscas algo más personalizado?</h6>
+                            <p class="service-card-price"><strong>Esta es la mejor opcion</strong></p>
+                            <button class="custom-btn btn-block">Contactanos</button>
+                        </div>
+                    </div>
+                    <div class="service-card-body">
+                        <p class="service-card-description"><strong>Ofrecemos soluciones</strong> a medida para tu negocio, adaptadas a tus necesidades específicas.
+                            <br> <br> Diseñamos desde el Logo, los Colores que debes utilizar, Branding, versiones web y app, y mucho más.
+                        </p>
+                        <ul class="service-card-list">
+                            <li><i class="fas fa-check-circle" style="color: #28a745;"></i> Diseño de marca completo</li>
+                            <li><i class="fas fa-check-circle" style="color: #28a745;"></i> Páginas web y aplicaciones personalizadas</li>
+                            <li><i class="fas fa-check-circle" style="color: #28a745;"></i> Branding y estrategia visual</li>
+                        </ul>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-paypal" style="color: #003087;"></i>
+                            <i class="fab fa-cc-visa" style="color: #1a1f71;"></i>
+                            <i class="fas fa-credit-card" style="color: #007bff;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
     <!-- Nueva Sección con Imágenes y Botones de Compra -->
     <section class="container-fluid" style="margin-top: 80px;">
@@ -331,7 +460,7 @@
             <button class="custom-btn">Comprar</button>
         </div>
         <hr>
-        <h5 class="text-center mb-4">PÁGINA WEB SIMPLE CON PLANTILLA ESTÁNDAR</h5>
+        <h5 class="text-center mb-4">PÁGINA WEB SIMPLE</h5>
         <div class="row mb-4">
             <div class="col-md-4 mb-4">
                 <div class="image-card">
@@ -502,7 +631,91 @@
             });
         });
     </script>
+    <script>
+        const inputs = document.querySelectorAll(".form .input, .form .input01");
 
+        inputs.forEach(function(input) {
+            input.addEventListener("input", function() {
+                const label = input.parentElement.querySelector("span");
+                if (label) {
+                    if (input.value.trim() !== "") {
+                        label.style.display = "none";
+                    } else {
+                        label.style.display = "block";
+                    }
+                }
+            });
+        });
+
+        const serviceSelect = document.getElementById("service-select");
+        if (serviceSelect) {
+            serviceSelect.addEventListener("change", function() {
+                const serviceValue = this.value;
+                const dropdown = document.querySelector(".custom-software-dropdown");
+                if (dropdown) {
+                    dropdown.style.display =
+                        serviceValue === "Custom Software Development" ? "block" : "none";
+                }
+            });
+        }
+
+        // jQuery document ready
+        $(document).ready(function() {
+            $("#date").datepicker({
+                autoclose: true,
+                todayHighlight: true,
+                format: "yyyy-mm-dd",
+            });
+        });
+
+        document
+            .getElementById("contact-form")
+            .addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevenir el envío por defecto del formulario
+
+                // Obtener los datos del formulario
+                const formData = new FormData(this);
+
+                // Enviar los datos a través de fetch
+                fetch(this.action, {
+                        method: this.method,
+                        body: formData,
+                    })
+                    .then((response) => {
+                        if (response.ok) {
+                            // Mostrar el modal
+                            const modal = document.getElementById("success-modal");
+                            modal.style.display = "block";
+
+                            // Manejar el clic en el botón de cerrar
+                            document.querySelector(".close-button").onclick = function() {
+                                modal.style.display = "none";
+                                location.reload();
+                            };
+
+                            // Manejar el clic en el botón de aceptar
+                            document.getElementById("accept-button").onclick = function() {
+                                modal.style.display = "none";
+                                location.reload();
+                            };
+
+                            // Cerrar el modal al hacer clic fuera de él
+                            window.onclick = function(event) {
+                                if (event.target == modal) {
+                                    modal.style.display = "none";
+                                    location.reload();
+                                }
+                            };
+                        } else {
+                            // Manejar errores si es necesario
+                            console.error("Error al enviar el formulario");
+                        }
+                    })
+                    .catch((error) => {
+                        console.error("Error:", error);
+                    });
+            });
+    </script>
 </body>
 
 </html>

@@ -27,7 +27,7 @@ session_regenerate_id(true);
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>
                         <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-                            <a class="dropdown-item" href="/create_a_web_page-es">Crea tu Pagina Web</a>
+                            <a class="dropdown-item" href="/crea-tu-sitio-web">Crea tu Pagina Web</a>
                             <a class="dropdown-item" href="/custom-software-development-es">Desarrollo de Software Personalizado</a>
                             <a class="dropdown-item" href="/hubSpot-implementation-and-consulting-es">Implementación y Consultoría de HubSpot</a>
                             <a class="dropdown-item" href="/data-extraction-es">Extracción de Datos</a>
@@ -136,15 +136,14 @@ session_regenerate_id(true);
         const links = {
             'https://pixiux.com/': 'https://pixiux.com/es',
             'https://pixiux.com/es': 'https://pixiux.com',
-            'https://pixiux.com/create_a_web_page': 'https://pixiux.com/create_a_web_page-es',
-            'https://pixiux.com/https://pixiux.com/create_a_web_page-es': 'https://pixiux.com/create_a_web_page',
+            'https://pixiux.com/create-a-web-page': 'https://pixiux.com/crea-tu-sitio-web',
+            'https://pixiux.com/crea-tu-sitio-web': 'https://pixiux.com/create-a-web-page',
             'https://pixiux.com/custom-software-development': 'https://pixiux.com/custom-software-development-es',
             'https://pixiux.com/custom-software-development-es': 'https://pixiux.com/custom-software-development',
             'https://pixiux.com/hubSpot-implementation-and-consulting': 'https://pixiux.com/hubSpot-implementation-and-consulting-es',
             'https://pixiux.com/hubSpot-implementation-and-consulting-es': 'https://pixiux.com/hubSpot-implementation-and-consulting',
             'https://pixiux.com/data-extraction': 'https://pixiux.com/data-extraction-es',
             'https://pixiux.com/data-extraction-es': 'https://pixiux.com/data-extraction'
-
         };
 
         // Obtener la nueva URL

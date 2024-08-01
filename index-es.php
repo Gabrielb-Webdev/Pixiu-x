@@ -308,7 +308,7 @@
 
   <?php include 'components/slider-es.php'; ?>
 
-  <!-- Section 6: Calendar for scheduling calls/meetings -->
+  <!-- Section 6:  Contact Form-->
   <section id="contact" class="section" style="padding-top: calc(5vh + 20px)">
     <div class="container-fluid">
       <div class="row">
