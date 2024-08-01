@@ -151,6 +151,19 @@
             justify-content: space-between;
             height: 55%;
         }
+
+        /* Responsive styles for font size adjustment */
+        @media (max-width: 500px) {
+            .responsive-heading {
+                font-size: 2.25rem !important;
+                /* Adjusts the font size for small screens */
+            }
+
+            .responsive-section {
+                width: 100% !important;
+                /* Adjusts the width for small screens */
+            }
+        }
     </style>
 </head>
 
@@ -158,8 +171,8 @@
     <!-- Page Content -->
     <?php include 'components/header-es.php'; ?>
 
-    <section class="container" style="margin-top: 50px; width: 50%;">
-        <h2 class="text-center mb-4" style="font-size: 3rem; font-weight: bold;">Impulsa tu negocio con un Sitio Web hecho a medida</h2>
+    <section class="container responsive-section" style="margin-top: 50px; width: 50%;">
+        <h2 class="text-center mb-4 responsive-heading" style="font-size: 3rem; font-weight: bold;">Impulsa tu negocio con un Sitio Web hecho a medida</h2>
     </section>
     <!-- Nueva Sección -->
     <section style="background-color: #fee4d9; padding: 40px 0;">
@@ -226,13 +239,13 @@
                                                     <option value="" selected disabled>Select a Service</option>
                                                     <option value="Web Design">Diseño web</option>
                                                     <option value="Custom Web Development">
-                                                    Desarrollo web a medida
+                                                        Desarrollo web a medida
                                                     </option>
                                                     <option value="Mobile Applications">
-                                                    Aplicaciones móviles
+                                                        Aplicaciones móviles
                                                     </option>
                                                     <option value="E-Commerce Web Development">
-                                                    Desarrollo web de comercio electrónico
+                                                        Desarrollo web de comercio electrónico
                                                     </option>
                                                 </select>
                                             </label>
@@ -263,8 +276,8 @@
         <div class="modal-content">
             <span class="close-button">&times;</span>
             <p>
-            Formulario completado correctamente. Nos estaremos contactando con
-            usted en breve.
+                Formulario completado correctamente. Nos estaremos contactando con
+                usted en breve.
             </p>
             <button id="accept-button">Aceptar</button>
         </div>
@@ -336,7 +349,7 @@
                             <h6 class="service-card-subtitle">3 días de entrega</h6>
                             <p class="service-card-price"><span class="old-price">$499</span> <strong>$199</strong></p>
                             <p class="limited-offer" style="color: red;"><strong>¡Oferta limitada!</strong></p>
-                            <button class="custom-btn btn-block">Comprar</button>
+                            <a href="https://meetings.hubspot.com/pixiu" target="_blank" style="text-decoration: none;"><button class="custom-btn btn-block">Agenda una llamada</button></a>
                         </div>
                     </div>
                     <div class="service-card-body">
@@ -358,6 +371,7 @@
                             <i class="fab fa-cc-paypal" style="color: #003087;"></i>
                             <i class="fab fa-cc-visa" style="color: #1a1f71;"></i>
                             <i class="fas fa-credit-card" style="color: #007bff;"></i>
+                            <i class="fab fa-cc-stripe" style="color: #6772e5;"></i>
                         </div>
                     </div>
                 </div>
@@ -372,7 +386,7 @@
                             <h6 class="service-card-subtitle">Ecommerce Express</h6>
                             <p class="service-card-price"><span class="old-price">$999</span> <strong>$499</strong></p>
                             <p class="limited-offer" style="color: red;"><strong>¡Oferta limitada!</strong></p>
-                            <button class="custom-btn btn-block">Comprar</button>
+                            <a href="https://meetings.hubspot.com/pixiu" target="_blank" style="text-decoration: none;"><button class="custom-btn btn-block">Agenda una llamada</button></a>
                         </div>
                     </div>
                     <div class="service-card-body">
@@ -395,6 +409,7 @@
                             <i class="fab fa-cc-paypal" style="color: #003087;"></i>
                             <i class="fab fa-cc-visa" style="color: #1a1f71;"></i>
                             <i class="fas fa-credit-card" style="color: #007bff;"></i>
+                            <i class="fab fa-cc-stripe" style="color: #6772e5;"></i>
                         </div>
                     </div>
                 </div>
@@ -408,7 +423,7 @@
                             <h5 class="service-card-title">Web Personalizada</h5>
                             <h6 class="service-card-subtitle" style="margin-bottom: 1.8rem;">¿Buscas algo más personalizado?</h6>
                             <p class="service-card-price"><strong>Esta es la mejor opcion</strong></p>
-                            <button class="custom-btn btn-block">Contactanos</button>
+                            <a href="https://meetings.hubspot.com/pixiu" target="_blank" style="text-decoration: none;"><button class="custom-btn btn-block">Agenda una llamada</button></a>
                         </div>
                     </div>
                     <div class="service-card-body">
@@ -424,6 +439,7 @@
                             <i class="fab fa-cc-paypal" style="color: #003087;"></i>
                             <i class="fab fa-cc-visa" style="color: #1a1f71;"></i>
                             <i class="fas fa-credit-card" style="color: #007bff;"></i>
+                            <i class="fab fa-cc-stripe" style="color: #6772e5;"></i>
                         </div>
                     </div>
                 </div>
@@ -457,7 +473,7 @@
             </div>
         </div>
         <div class="text-center mb-4">
-            <button class="custom-btn">Comprar</button>
+            <a href="https://meetings.hubspot.com/pixiu" target="_blank" style="text-decoration: none;"><button class="custom-btn">Agenda una llamada</button></a>
         </div>
         <hr>
         <h5 class="text-center mb-4">PÁGINA WEB SIMPLE</h5>
@@ -479,7 +495,7 @@
             </div>
         </div>
         <div class="text-center">
-            <button class="custom-btn">Comprar</button>
+            <a href="https://meetings.hubspot.com/pixiu" target="_blank" style="text-decoration: none;"><button class="custom-btn">Agenda una llamada</button></a>
         </div>
     </section>
 
@@ -509,14 +525,14 @@
 
 
     <!-- Contenido de tu página -->
-    <section class="container-fluid" style="margin-top: 80px;">
+    <section class="" style="margin-top: 80px;">
         <?php include 'components/carousel.php'; ?>
     </section>
 
     <!-- Nueva Sección para el botón de reserva -->
     <section class="container-fluid text-center my-4" style="max-width: 1600px; margin: 0 auto;">
         <h2 style="font-size: 2.5rem; font-weight: bold;">¿Todavía tienes dudas?</h2>
-        <a class="nav-link custom-btn" href="https://meetings.hubspot.com/pixiu" style="color: #fff; max-width: 150px; margin: 0 auto;" target="_blank">Book A Call</a>
+        <a class="nav-link custom-btn" href="https://meetings.hubspot.com/pixiu" style="color: #fff; max-width: 250px; margin: 0 auto;" target="_blank">Agenda una llamada</a>
     </section>
 
     <section id="faq" class="faq-section">

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <style>
         .slider {
-            width: 90%;
+            width: 100%;
             margin: 0 auto;
             padding: 20px 0;
         }
@@ -35,23 +35,36 @@
 </head>
 
 <body>
-    <section class="container-fluid" style="margin-top: 80px;">
+    <section class="" style="margin-top: 80px;">
         <div class="slider">
             <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_2.png" alt="Imagen 2"></div>
+            <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_6.png" alt="Imagen 6"></div>
+            <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_2.png" alt="Imagen 2"></div>
             <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_8.png" alt="Imagen 8"></div>
+            <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_3.png" alt="Imagen 3"></div>
             <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_6.png" alt="Imagen 6"></div>
             <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_5.png" alt="Imagen 5"></div>
+            <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_5.png" alt="Imagen 5"></div>
             <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_10.png" alt="Imagen 10"></div>
+            <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_9.png" alt="Imagen 9"></div>
             <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_3.png" alt="Imagen 3"></div>
             <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_9.png" alt="Imagen 9"></div>
+            <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_6.png" alt="Imagen 6"></div>
             <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_7.png" alt="Imagen 7"></div>
+            <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_3.png" alt="Imagen 3"></div>
             <!-- Duplicamos las imágenes para crear un bucle perfecto -->
+            <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_6.png" alt="Imagen 6"></div>
             <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_9.png" alt="Imagen 9"></div>
             <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_6.png" alt="Imagen 6"></div>
             <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_8.png" alt="Imagen 8"></div>
+            <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_7.png" alt="Imagen 7"></div>
+            <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_5.png" alt="Imagen 5"></div>
+            <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_10.png" alt="Imagen 10"></div>
             <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_2.png" alt="Imagen 2"></div>
+            <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_7.png" alt="Imagen 7"></div>
             <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_3.png" alt="Imagen 3"></div>
             <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_10.png" alt="Imagen 10"></div>
+            <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_2.png" alt="Imagen 2"></div>
             <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_5.png" alt="Imagen 5"></div>
             <div><img src="https://pixiux.com/sources/images/JPGS/test/no_bg_7.png" alt="Imagen 7"></div>
         </div>
