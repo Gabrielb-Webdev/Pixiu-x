@@ -1,0 +1,1562 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Inicio de Sección de Contacto */
+
+.info-section {
+    padding-left: 30px;
+    /* Aumenta la separación lateral */
+    padding-right: 30px;
+    /* Aumenta la separación lateral */
+}
+
+.text-warning {
+    color: #dd6d2c !important;
+}
+
+a:hover {
+    color: #fee4d9 !important;
+}
+
+
+/* Fin de Sección de Contacto */
+
+
+/* Inicio de Estilos de Navbar */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* Asegúrate de que el navbar esté por encima de otros elementos */
+    background-color: #fff;
+    /* Fondo blanco o cualquier color que elijas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra para que el navbar destaque */
+}
+
+.navbar-spacing {
+    padding-left: 30px;
+    /* Aumenta la separación lateral */
+    padding-right: 30px;
+    /* Aumenta la separación lateral */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #dd6d2c;
+    font-weight: 600;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fee4d9;
+}
+
+.navbar-light .navbar-nav .active {
+    color: #dd6d2c;
+}
+
+.navbar-brand img {
+    max-height: 40px;
+}
+
+
+/* Ajuste de la imagen del logo */
+
+.logo-img {
+    max-width: 200px;
+    /* Aumenta el tamaño del ancho del logo */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+}
+
+
+/* Fin de Estilos de Navbar */
+
+
+/* Sección de bienvenida */
+
+
+/* Estilos base para el contenedor */
+
+.image-container {
+    position: absolute;
+    right: 5rem;
+    top: 0;
+    width: 45rem;
+    height: 45rem;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+/* Estilos para las imágenes */
+
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+@media (max-width: 768px) {
+    .image-container img {
+        animation: none;
+        /* Desactivar animaciones en móviles */
+    }
+}
+
+
+/* Animación base de flotación */
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.image-container img {
+    animation: float 6s ease-in-out infinite;
+}
+
+
+/* Control de las capas y variación de la animación */
+
+
+/* Animaciones separadas para cada imagen */
+
+#image-1 {
+    z-index: 8;
+    animation-delay: 0s;
+}
+
+#image-2 {
+    z-index: 7;
+    animation-delay: 0.5s;
+}
+
+#image-3 {
+    z-index: 6;
+    animation-delay: 1s;
+}
+
+#image-4 {
+    z-index: 5;
+    animation-delay: 0.3s;
+}
+
+#image-5 {
+    z-index: 4;
+    animation-delay: 0.7s;
+}
+
+#image-6 {
+    z-index: 3;
+    animation-delay: 0.2s;
+}
+
+#image-7 {
+    z-index: 2;
+    animation-delay: 0.4s;
+}
+
+#image-8 {
+    z-index: 1;
+    animation: none;
+}
+
+
+/* Welcome Section */
+
+.welcome-section {
+    background-image: url('../sources/images/banner-left.webp');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #fff;
+    padding: 7.5rem 0;
+    position: relative;
+    min-height: 50rem;
+    overflow: hidden;
+}
+
+
+/* Estilos del texto en la sección de bienvenida */
+
+
+/* Ajustes para mover la columna .welcome-text más hacia la derecha */
+
+.welcome-text {
+    padding-left: 15rem;
+    opacity: 0;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    /* Will-change solo en este caso donde la animación es necesaria */
+    will-change: opacity, transform;
+}
+
+@media (max-width: 768px) {
+    .welcome-text {
+        padding-left: 20px;
+        /* Reducir padding en pantallas pequeñas para que no quede desbalanceado */
+    }
+}
+
+.welcome-text h6 {
+    font-size: 1.5rem;
+    color: #dd6d2c;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 1.2px;
+}
+
+.welcome-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.welcome-text .text-orange {
+    color: #dd6d2c;
+    font-weight: bold;
+}
+
+.welcome-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.buttons a {
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-orange {
+    background-color: #dd6d2c;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-outline-orange {
+    background-color: #fee4d9;
+    color: #dd6d2c;
+    border: 2px solid #fee4d9;
+}
+
+.buttons span {
+    margin: 0 10px;
+    color: #666;
+    font-weight: normal;
+}
+
+@media (max-width: 768px) {
+    .welcome-section {
+        background-size: cover;
+        padding: 40px 0;
+    }
+
+    .welcome-text h1 {
+        font-size: 2rem;
+    }
+
+    .image-placeholder {
+        height: 300px;
+        /* Ajuste del tamaño de imagen en móviles */
+    }
+
+    .image-placeholder::after {
+        clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 10% 100%, 0% 50%);
+    }
+}
+
+
+/* Estilo para la línea naranja debajo del título */
+
+.underline-orange {
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: #dd6d2c;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+h6.text-orange {
+    display: inline-block;
+    position: relative;
+}
+
+
+/* Estilo de la sección de servicios */
+
+
+/* Sección de Servicios con imagen de fondo volteada a la derecha */
+
+.services-section {
+    position: relative;
+    min-height: 600px;
+    /* Asegúrate de que la sección sea lo suficientemente alta */
+}
+
+
+/* Utilizamos ::before para añadir y voltear la imagen de fondo */
+
+.services-section::before {
+    content: "";
+    position: absolute;
+    top: 25rem;
+    right: 0;
+    width: 600px;
+    /* Ajusta el ancho de la imagen */
+    height: 100%;
+    background-image: url('../sources/images/banner-right.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: scaleX(-1);
+    /* Voltea la imagen horizontalmente */
+    z-index: -1;
+    /* Asegura que la imagen esté detrás del contenido */
+}
+
+.services-image img {
+    width: 95%;
+    /* Hacer la imagen más grande */
+    max-width: 500px;
+    /* Aumentar el tamaño máximo de la imagen */
+}
+
+@media (max-width: 768px) {
+    .services-section::before {
+        width: 100%;
+        /* Ajusta el ancho en pantallas pequeñas */
+        height: 300px;
+        /* Ajusta la altura en pantallas pequeñas */
+        background-position: right top;
+        background-size: cover;
+        /* Asegura que la imagen de fondo cubra bien */
+    }
+}
+
+.services-image img {
+    max-width: 100%;
+    height: auto;
+    transform: scale(1.3);
+    /* Agrandar la imagen y voltearla horizontalmente */
+}
+
+.services-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.text-orange {
+    color: #dd6d2c;
+}
+
+.service-card {
+    background-color: #fff;
+    border: 2px solid #f0f0f0;
+    border-radius: 15px;
+    /* Bordes más redondeados */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    /* Efecto suave en hover */
+}
+
+.service-card:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    /* Sombra más pronunciada en hover */
+    transform: translateY(-10px);
+    /* Elevación al hacer hover */
+}
+
+.service-icon {
+    font-size: 3rem;
+    /* Tamaño de los íconos */
+    color: #dd6d2c;
+    /* Color naranja para los íconos */
+}
+
+.service-card h5 {
+    color: #dd6d2c;
+    margin-top: 15px;
+}
+
+.service-card p {
+    color: #666;
+    margin-top: 10px;
+}
+
+
+/* Ajuste del color del borde en hover */
+
+.service-card:hover {
+    border-color: #dd6d2c;
+    /* Borde naranja en hover */
+}
+
+
+/* Sección Responsiva */
+
+@media (max-width: 768px) {
+    .services-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .service-card h5 {
+        font-size: 1rem;
+    }
+
+    .service-card p {
+        font-size: 0.85rem;
+    }
+}
+
+
+/* Inicio de Sección de Paquetes/Proyectos */
+
+.package-section {
+    background-color: #fff;
+}
+
+.package-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.package-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.package-card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+}
+
+.package-card h5 {
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.package-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.carousel-inner {
+    display: flex;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+}
+
+@media (min-width: 768px) {
+    .carousel-item .col-md-2 {
+        flex: 0 0 20%;
+        /* Mostrar 5 tarjetas por slide */
+    }
+}
+
+
+/* Sección Responsiva */
+
+@media (max-width: 768px) {
+    .package-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .package-card h5 {
+        font-size: 1rem;
+    }
+
+    .package-card p {
+        font-size: 0.85rem;
+    }
+
+    .carousel-inner {
+        display: block;
+    }
+}
+
+
+/* Estilos por defecto para que los botones estén alineados horizontalmente */
+
+.card-overlay a {
+    display: inline-block;
+    margin: 5px;
+    text-align: center;
+}
+
+
+/* Para pantallas con un ancho menor a 1600px */
+
+@media (max-width: 1600px) {
+    .card-overlay {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Los botones se colocan uno encima del otro */
+    .card-overlay a {
+        margin: 10px 0;
+        /* Margen vertical entre los botones */
+        width: 80%;
+        /* Ajusta el ancho de los botones si es necesario */
+    }
+}
+
+@media (max-width: 2200px) {
+    .card-overlay {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-overlay .btn {
+        width: 80%;
+        /* Ajusta el ancho si lo prefieres */
+        margin-bottom: 10px;
+        /* Añade un espacio entre los botones */
+    }
+}
+
+
+/* Sección de Detalles del Servicio */
+
+.service-details-section {
+    position: relative;
+    padding: 80px 0;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+
+/* Imagen de fondo que ocupa todo el ancho */
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../sources/images/Banner_info_2.webp');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    opacity: 0.8;
+    /* Ajuste de opacidad */
+    background-blend-mode: overlay;
+    /* Mezcla de colores */
+}
+
+
+/* Contenedor de la card, centrado */
+
+.card-container {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    /* Ancho máximo de la card */
+    padding: 40px;
+}
+
+
+/* Estilos de la card */
+
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    position: relative;
+    min-height: 500px;
+    /* Añadido: altura mínima para hacer la card más alta */
+    display: flex;
+    /* Para asegurar que la imagen y el contenido se alineen bien */
+}
+
+
+/* Imagen dentro de la card sin espacio alrededor */
+
+.rocket-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    /* Sin bordes redondeados */
+}
+
+
+/* Estilos del contenido de la card */
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.text-orange {
+    color: #dd6d2c;
+}
+
+.service-progress {
+    margin-top: 20px;
+}
+
+.progress-item {
+    margin-bottom: 15px;
+}
+
+.progress-item span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.progress {
+    height: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #dd6d2c;
+}
+
+
+/* Responsivo */
+
+@media (max-width: 768px) {
+    .service-details-section {
+        padding: 50px 0;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .rocket-img {
+        height: 250px;
+    }
+}
+
+
+/* Estilos del porcentaje */
+
+.percentage {
+    font-weight: bold;
+    color: #dd6d2c;
+    /* Color naranja para el porcentaje */
+    float: right;
+    /* Para alinear el porcentaje al final de la barra */
+    margin-left: 10px;
+    /* Separación del texto y la barra */
+    font-size: 0.9rem;
+}
+
+.progress-item {
+    margin-bottom: 15px;
+}
+
+.progress {
+    height: 1.5rem;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #dd6d2c;
+    width: 0;
+    /* Inicia en 0% */
+    transition: width 2s ease-in-out;
+    /* Transición suave para el ancho */
+}
+
+
+/* Sección de contacto */
+
+.contact-section {
+    padding: 50px 0;
+    background-color: #fff;
+    position: relative;
+}
+
+
+/* Card principal que contiene todo */
+
+.main-card {
+    display: flex;
+    border-radius: 30px;
+    /* Bordes más redondeados */
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    /* Efecto de elevación más fuerte */
+    overflow: hidden;
+    max-width: 1200px;
+    /* Card más ancha */
+    margin: 0 auto;
+    position: relative;
+    background-color: #fff;
+}
+
+
+/* Sub-card de la imagen */
+
+.image-card {
+    height: 100%;
+    /* O puedes cambiarlo a un valor específico si prefieres */
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: none;
+    /* Quitar bordes visibles */
+}
+
+
+/* Imagen dentro de la sub-card */
+
+.contact-img {
+    width: 100%;
+    height: 40rem;
+    object-fit: cover;
+    border-radius: 15px;
+    /* Sin bordes para la sub-card */
+}
+
+
+/* Sub-card del formulario */
+
+.form-card {
+    height: 100%;
+    background-color: #fdf9ff;
+    border-radius: 15px;
+    box-shadow: none;
+    /* Quitar bordes visibles */
+    padding: 40px;
+    /* Aumentar el padding para más espacio alrededor del contenido */
+}
+
+
+/* Estilo del formulario de contacto */
+
+.contact-form input,
+.contact-form textarea {
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    padding: 15px 20px;
+    /* Aumentar el padding interno */
+    font-size: 1.2rem;
+    /* Texto más grande */
+    background-color: #fafafa;
+    color: #555;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #bbb;
+    font-size: 1.1rem;
+    /* Placeholder también más grande */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #dd6d2c;
+}
+
+
+/* Estilo del botón */
+
+.btn-orange {
+    background-color: #dd6d2c;
+    color: #fff;
+    padding: 15px 25px;
+    /* Botón más grande */
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    /* Texto del botón más grande */
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos para los selects del formulario */
+.contact-form select {
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    background-color: #fafafa;
+    color: #555;
+    -webkit-appearance: none;
+    /* Quitar flecha de select en algunos navegadores */
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.contact-form select:focus {
+    outline: none;
+    border-color: #dd6d2c;
+    box-shadow: 0 0 0 0.05rem #dd6d2c;
+}
+
+/* Para que el dropdown se vea como los inputs */
+.contact-form .custom-software-dropdown select {
+    width: 100%;
+}
+
+.btn-orange:hover {
+    background-color: #c2591c;
+}
+
+/* Información de contacto adicional */
+
+.contact-info {
+    background: linear-gradient(to top, #ffa751, #dd6d2c);
+    /* Fondo naranja con degradado */
+    padding: 2rem 0rem 1rem 0rem;
+    border-radius: 0 0 20px 20px;
+    /* Bordes redondeados en la parte inferior */
+    color: #fff;
+    /* Texto blanco */
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    /* Icono encima del texto */
+    align-items: center;
+    justify-content: center;
+    margin: 0 40px;
+    /* Espaciado más amplio entre los ítems */
+}
+
+.contact-item i {
+    font-size: 2.5rem;
+    /* Tamaño más grande para los iconos */
+    margin-bottom: 10px;
+    /* Separación entre el icono y el texto */
+    color: #fff;
+    /* Icono blanco */
+}
+
+.contact-item p {
+    margin: 0;
+    font-size: 1rem;
+    /* Tamaño del texto */
+    color: #fff;
+    /* Texto blanco */
+}
+
+
+/* Responsivo */
+
+@media (max-width: 768px) {
+    .main-card {
+        flex-direction: column;
+        border-radius: 20px;
+    }
+
+    .image-card {
+        height: 200px;
+    }
+
+    .contact-img {
+        height: 200px;
+    }
+
+    .form-card {
+        padding: 20px;
+    }
+
+    .contact-item {
+        margin-bottom: 15px;
+        /* Espacio entre los ítems para móviles */
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.05rem #dd6d2c;
+}
+
+.modal-title-custom {
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    margin: 0;
+}
+
+.modal-header-custom {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal-header-custom .close-custom {
+    display: none;
+    /* Oculta el botón de cerrar */
+}
+
+/* RESPONSIVE STYLES */
+
+
+/* Estilos para pantallas pequeñas (tablets y móviles) */
+
+@media (max-width: 768px) {
+
+    /* Ajustes generales */
+    body {
+        font-size: 14px;
+        /* Ajustar el tamaño de fuente general */
+    }
+
+    /* Contact Section: flex direction a column para que los elementos se apilen */
+    .contact-section .container {
+        flex-direction: column;
+        padding: 20px 10px;
+        /* Reducir el padding */
+    }
+
+    /* Bienvenida */
+    .welcome-section {
+        padding: 60px 20px;
+        /* Reducir padding */
+        min-height: auto;
+        /* Ajuste de altura mínima para pantallas pequeñas */
+    }
+
+    .welcome-text h1 {
+        font-size: 2rem;
+        /* Reducir el tamaño del título */
+    }
+
+    .buttons {
+        flex-direction: column;
+        /* Botones en columnas */
+        align-items: stretch;
+    }
+
+    .buttons a {
+        margin-bottom: 10px;
+        /* Espacio entre botones */
+    }
+
+    /* Cards de servicios */
+    .service-card {
+        margin-bottom: 20px;
+        /* Separación entre las cards */
+    }
+
+    .service-card h5 {
+        font-size: 1.2rem;
+        /* Ajustar tamaño de texto */
+    }
+
+    .service-card p {
+        font-size: 0.9rem;
+        /* Ajustar tamaño de texto */
+    }
+
+    /* Imagenes de servicios e información */
+    .services-image img {
+        width: 100%;
+        /* Ajustar la imagen al 100% en móviles */
+        margin-left: 0;
+        /* Eliminar el margen negativo */
+    }
+
+    /* Carousel */
+    .custom-carousel-container {
+        overflow-x: scroll;
+        /* Permitir scroll horizontal */
+    }
+
+    .carousel-item {
+        flex: 0 0 80%;
+        /* Mostrar un ítem a la vez en pantallas pequeñas */
+    }
+
+    /* Sección de contacto */
+    .contact-section .main-card {
+        flex-direction: column;
+        /* Colocar el contenido en columna */
+        padding: 20px;
+    }
+
+    .contact-section .image-card,
+    .contact-section .form-card {
+        width: 100%;
+        /* Ocupa todo el ancho en móviles */
+    }
+
+    .contact-img {
+        height: 250px;
+        /* Ajustar altura de la imagen en móviles */
+    }
+
+    /* Ajuste de formulario de contacto */
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1rem;
+        /* Reducir el tamaño del texto */
+        padding: 10px 15px;
+        /* Ajustar el padding */
+    }
+}
+
+
+/* Estilos para pantallas medianas (768px - 1200px) */
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+    /* General adjustments */
+    .navbar-spacing {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* Ajustes en la sección de bienvenida */
+    .welcome-section {
+        padding: 100px 40px;
+        /* Ajuste moderado en el padding */
+    }
+
+    .welcome-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .services-image img {
+        width: 85%;
+        /* Ajustar el ancho de la imagen */
+    }
+
+    .service-card h5 {
+        font-size: 1.3rem;
+        /* Ajuste del tamaño del texto */
+    }
+
+    .service-card p {
+        font-size: 1rem;
+    }
+
+    .contact-section .main-card {
+        padding: 40px;
+        /* Ajustar padding en secciones de contacto */
+    }
+}
+
+
+/* Estilos para pantallas grandes (más de 1200px) */
+
+@media (min-width: 1200px) {
+    .navbar-spacing {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .services-section {
+        padding: 80px 20px;
+    }
+
+    .service-card h5 {
+        font-size: 1.5rem;
+    }
+
+    .service-card p {
+        font-size: 1.1rem;
+    }
+
+    .contact-section .main-card {
+        padding: 60px;
+        /* Mayor padding en pantallas grandes */
+    }
+}
+
+
+/* Sección de contacto con imágenes decorativas */
+
+.contact-section {
+    position: relative;
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+
+/* Imagen en la esquina superior izquierda */
+
+.contact-section::before {
+    content: "";
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 25rem;
+    height: 35rem;
+    background-image: url(../sources/images/banner-right.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+
+/* Imagen en la esquina inferior derecha volteada */
+
+.contact-section::after {
+    content: "";
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+    width: 25rem;
+    height: 35rem;
+    background-image: url(../sources/images/banner-right.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transform: scaleX(-1);
+}
+
+
+/* Estilos mejorados para las cards */
+
+.service-card {
+    border-radius: 20px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    background: #fff;
+}
+
+.service-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Imagen en la card */
+
+.card-img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-img-container img {
+    border-radius: 20px 20px 0 0;
+    transition: transform 0.4s ease;
+}
+
+.card-img-container:hover img {
+    transform: scale(1.08);
+}
+
+
+/* Overlay effect */
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.service-card:hover .card-overlay {
+    opacity: 1;
+}
+
+.card-overlay .btn {
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 30px;
+    transition: background-color 0.4s ease;
+}
+
+.card-overlay .btn:hover {
+    background-color: #c2591c;
+}
+
+
+/* Button styling */
+
+.btn-orange {
+    background-color: #dd6d2c;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size: 1rem;
+    transition: background-color 0.4s ease;
+}
+
+.btn-orange:hover {
+    background-color: #c2591c;
+}
+
+
+/* Card body text */
+
+.card-body {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+/* Sombra y movimiento */
+
+.card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Desactivar el efecto hover en la sección de detalles de servicios */
+
+#info .card:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+
+/* Responsivo */
+
+@media (max-width: 768px) {
+    .card-body {
+        padding: 1rem;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .card-text {
+        font-size: 0.95rem;
+    }
+}
+
+
+/* custom-software */
+
+
+/* Nueva Sección de Pasos */
+
+.steps-section {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Centrar la sección y limitar su ancho */
+}
+
+.steps-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    /* Color del texto para que coincida con tu estilo */
+    margin-bottom: 30px;
+}
+
+.steps-section .nav-tabs {
+    justify-content: center;
+    border-bottom: none;
+    /* Quita la línea predeterminada */
+    margin-bottom: 30px;
+}
+
+.steps-section .nav-tabs .nav-link {
+    color: #333;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    /* Sin borde por defecto */
+    transition: all 0.3s ease;
+}
+
+.steps-section .nav-tabs .nav-link.active {
+    color: white;
+    border-color: #dd6d2c;
+    background-color: #dd6d2c;
+}
+
+.steps-section .nav-tabs .nav-link.active:hover {
+    color: white !important;
+}
+
+.steps-section .nav-tabs .nav-link:hover {
+    color: #dd6d2c !important;
+    /* Solo cambia el texto al pasar el cursor */
+}
+
+.steps-section .tab-content {
+    padding: 30px;
+    /* background-color: #f9f9f9; */
+    border-radius: 10px;
+    margin-top: 20px;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+}
+
+.steps-section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.steps-section .tags .btn {
+    background-color: #dd6d2c;
+    /* Fondo naranja */
+    color: #fff;
+    /* Texto en blanco */
+    border: none;
+    /* Sin borde */
+    border-radius: 50px;
+    /* Bordes redondeados */
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    transition: none;
+    /* Sin efecto de transición */
+}
+
+.steps-section .tags .btn:hover {
+    color: #fff !important;
+    background-color: #dd6d2c;
+    /* Fondo naranja al hacer hover */
+    border-color: #dd6d2c;
+}
+
+.steps-section .tags {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/* Ajustes Responsivos */
+
+@media (max-width: 768px) {
+    .steps-section h2 {
+        font-size: 2rem;
+    }
+
+    .steps-section .nav-tabs .nav-link {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .steps-section .tab-content {
+        padding: 20px;
+    }
+}
+
+.tag-label {
+    background-color: #dd6d2c;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 30px;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    cursor: default;
+    margin-bottom: 1rem;
+}
+
+.tag-label:hover {
+    background-color: #c2591c;
+    /* Un color más oscuro al pasar el cursor */
+}
+
+
+/* Call-to-Action Section */
+
+.cta-section {
+    background: #e55c0cbf;
+    backdrop-filter: blur(10px);
+    position: relative;
+    padding: 60px 0;
+    z-index: 1;
+}
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 0.3;
+    z-index: -1;
+    /* Textura ligera con baja opacidad */
+}
+
+.cta-section h2,
+.cta-section p {
+    color: #fff;
+    /* Texto en blanco */
+    margin-bottom: 20px;
+}
+
+.cta-section .btn-orange {
+    background-color: #dd6d2c;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+}
+
+.cta-section .btn-orange:hover {
+    background-color: #c2591c;
+}
+
+
+/* Footer Section */
+
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+}
+
+.wrapper .icon {
+    position: relative;
+    background: black;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+    top: 60px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+    background: #0a66c2;
+    color: #fff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+    background: #fff;
+    color: #000;
+}
+
+.wrapper .Upwork:hover,
+.wrapper .Upwork:hover .tooltip,
+.wrapper .Upwork:hover .tooltip::before {
+    background: #14a800;
+    color: #fff;
+}
+
+.wrapper .Whatsapp:hover,
+.wrapper .Whatsapp:hover .tooltip,
+.wrapper .Whatsapp:hover .tooltip::before {
+    background: #25d366;
+    color: #fff;
+}

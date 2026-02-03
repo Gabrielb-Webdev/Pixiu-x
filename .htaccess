@@ -1,0 +1,50 @@
+# --- Clean URLs + canonicals + API passthrough ---
+RewriteEngine On
+
+# 0) Deja pasar /api y estáticos sin reescrituras (PHP, assets, etc.)
+RewriteRule ^(api|assets|images|css|js|fonts|vendor|static|uploads)/ - [L]
+
+# 1) Canonical: /index.html -> /
+RewriteCond %{REQUEST_URI} !^/api/ [NC]
+RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+RewriteRule ^index\.html$ / [R=301,L]
+
+# 2) Canonical: cualquier *.html|*.htm -> versión sin extensión (/about, /privacy, etc.)
+RewriteCond %{REQUEST_URI} !^/api/ [NC]
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.(html?|HTML?)[\s?] [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# 3) Canonical: quitar slash final cuando NO es carpeta (/about/ -> /about)
+RewriteCond %{REQUEST_URI} !^/api/ [NC]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# 4) Si el archivo/carpeta existe, no tocar
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# 5) Resolver rutas sin extensión a su .html interno (try_files)
+RewriteCond %{REQUEST_URI} !^/api/ [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f [OR]
+RewriteCond %{REQUEST_FILENAME}.htm  -f
+RewriteRule ^(.+)$ $1.html [L]
+
+# 6) Pretty URL específico para thank-you
+#    /thank-you.html -> /thank-you (301)
+RewriteCond %{THE_REQUEST} \s/thank-you\.html(\s|\?) [NC]
+RewriteRule ^thank-you\.html$ /thank-you [R=301,L]
+#    /thank-you -> sirve thank-you.html
+RewriteRule ^thank-you/?$ /thank-you.html [L]
+
+# 7) Pretty URL específico para Fractional-Hubspor-services
+#    /Fractional-Hubspor-services.html -> /Fractional-Hubspor-services (301)
+RewriteCond %{THE_REQUEST} \s/Fractional-Hubspor-services\.html(\s|\?) [NC]
+RewriteRule ^Fractional-Hubspor-services\.html$ /Fractional-Hubspor-services [R=301,L]
+#    /Fractional-Hubspor-services -> sirve Fractional-Hubspor-services.html
+RewriteRule ^Fractional-Hubspor-services/?$ /Fractional-Hubspor-services.html [L]
+
+# 8) 404 friendly
+ErrorDocument 404 /404.html
